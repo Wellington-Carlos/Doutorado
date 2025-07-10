@@ -1,0 +1,76 @@
+\begin{thebibliography}{14}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{\url{https://doi.org/#1}}
+\providecommand{\eprint}[2][]{\url{#2}}
+ \bibcommenthead
+
+\bibitem[{Abbott et~al.(2019)}]{bib13}
+Abbott TMC, et~al (2019) {Dark Energy Survey Year 1 Results: Constraints on
+  Extended Cosmological Models from Galaxy Clustering and Weak Lensing}. Phys
+  Rev D 99(12):123505. \doi{10.1103/PhysRevD.99.123505},
+  {\href{https://arxiv.org/abs/1810.02499}{{arXiv:1810.02499}}} {[astro-ph.CO]}
+
+\bibitem[{Aliaga(2018)}]{ref5}
+Aliaga W (2018) Valuation of government incentives for hydrocarbon asset
+  developments – a real option approach. SPE Annual Technical Conference and
+  Exhibition pp SPE--191578--MS. \doi{10.2118/191578-MS}
+
+\bibitem[{Babichev et~al.(2002)Babichev, Ries, and Lvovsky}]{bib10}
+Babichev SA, Ries J, Lvovsky AI (2002) Quantum scissors: teleportation of
+  single-mode optical states by means of a nonlocal single photon. Preprint at
+  \url{https://arxiv.org/abs/quant-ph/0208066v1}
+
+\bibitem[{Beneke et~al.(1997)Beneke, Buchalla, and Dunietz}]{bib11}
+Beneke M, Buchalla G, Dunietz I (1997) Mixing induced {CP} asymmetries in
+  inclusive {B} decays. Phys {L}ett B393:132--142.
+  {\href{https://arxiv.org/abs/0707.3168}{{arXiv:0707.3168}}} {[gr-gc]}
+
+\bibitem[{Broy(1992)}]{bib5}
+Broy M (1992) Software engineering---from auxiliary to key technologies. In:
+  Broy M, Denert E (eds) Software Pioneers. Springer, New {Y}ork, p 10--13
+
+\bibitem[{Chung and Morris(1978)}]{bib8}
+Chung ST, Morris RL (1978) Isolation and characterization of plasmid
+  deoxyribonucleic acid from streptomyces fradiae. Paper presented at the 3rd
+  international symposium on the genetics of industrial microorganisms,
+  University of {W}isconsin, {M}adison, 4--9 June 1978
+
+\bibitem[{Dias(2004)}]{ref3}
+Dias MAG (2004) Valuation of exploration and production assets: an overview of
+  real options models. Journal of Petroleum Science and Engineering 44:93--114.
+  \doi{10.1016/j.petrol.2004.02.008}
+
+\bibitem[{Dixit and Pindyck(1994)}]{ref1}
+Dixit AK, Pindyck RS (1994) Investment under Uncertainty. Princeton University
+  Press
+
+\bibitem[{Guedes and Santos(2016)}]{ref4}
+Guedes J, Santos P (2016) Valuing an offshore oil exploration and production
+  project through real options analysis. Energy Economics 60:377--386.
+  \doi{10.1016/j.eneco.2016.09.024}
+
+\bibitem[{Hao et~al.(2014)Hao, AghaKouchak, Nakhjiri, and Farahmand}]{bib9}
+Hao Z, AghaKouchak A, Nakhjiri N, et~al (2014) Global integrated drought
+  monitoring and prediction system (gidmaps) data sets. Figshare
+  \url{https://doi.org/10.6084/m9.figshare.853801}
+
+\bibitem[{Seymour(1981)}]{bib6}
+Seymour RS (ed)  (1981) Conductive {P}olymers. Plenum, New {Y}ork
+
+\bibitem[{Smith(1976)}]{bib7}
+Smith SE (1976) Neuromuscular blocking drugs in man. In: Zaimis E (ed)
+  Neuromuscular junction. {H}andbook of experimental pharmacology, vol~42.
+  Springer, Heidelberg, pp 593--660
+
+\bibitem[{Stahl(2020)}]{bib12}
+Stahl B (2020) deep{SIP}: deep learning of {S}upernova {I}a {P}arameters,
+  0.42. Astrophysics {S}ource {C}ode {L}ibrary,
+  {\href{https://ascl.net/2006.023}{{ascl:2006.023}}}
+
+\bibitem[{Trigeorgis(1996)}]{ref2}
+Trigeorgis L (1996) Real Options: Managerial Flexibility and Strategy in
+  Resource Allocation. MIT Press
+
+\end{thebibliography}

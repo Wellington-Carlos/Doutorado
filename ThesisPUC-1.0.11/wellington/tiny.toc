@@ -1,0 +1,13 @@
+\babel@toc {american}{}\relax 
+\babel@toc {american}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\babel@toc {brazilian}{}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{13}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Review}{14}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Hematite}{14}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Martite}{14}{subsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.1.1}Globular}{14}{subsubsection.2.1.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.1.2}Escaping percent in a title: 100\%}{14}{subsubsection.2.1.1.2}%
+\contentsline {chapter}{\numberline {3}Conclusions}{15}{chapter.3}%
+\contentsline {chapter}{Referências bibliográficas}{16}{chapter*.2}%
+\contentsline {chapter}{\numberline {A}Published paper}{17}{appendix.A}%

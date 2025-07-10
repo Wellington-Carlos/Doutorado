@@ -1,0 +1,226 @@
+% -*- coding: utf-8; -*-
+
+\documentclass[
+  phd,
+  %% master
+  brazilian
+  %%american
+]{ThesisPUC}
+
+
+%%%
+%%% Additional Packages
+%%%
+
+%%  \usepackage[brazilian]{babel}      %% in ThesisPUC.cls
+  %% \usepackage[utf8]{inputenc}        %% .
+  %% \usepackage[T1]{fontenc}           %% .
+  %% \usepackage{lmodern}               %% .
+  %% \usepackage[pdftex]{graphicx}	%% .
+
+  \usepackage{tabularx}
+  \usepackage{multirow}
+  \usepackage{multicol}
+  \usepackage{colortbl}
+  \usepackage[%
+    dvipsnames,
+    svgnames,
+    x11names,
+    fixpdftex
+  ]{xcolor}
+  \usepackage{numprint}
+  \usepackage{textcomp}
+  \usepackage{booktabs}
+  \usepackage{amsmath}
+  \usepackage{enumitem}
+  \usepackage{amssymb}
+  \usepackage{textcomp}
+% \usepackage{etoolbox}
+
+%% numprint 
+\npthousandsep{.}
+\npdecimalsign{,}
+
+%% ThesisPUC option
+%\tablesmode{figtab} %% [nada, fig, tab ou figtab]
+%\abreviationsmode{none} %% [none ou use] %% Default is [use]
+
+
+%%%
+%%% Counters
+%%%
+
+%% uncomment and change for other depth values
+%% \setcounter{tocdepth}{3}
+%% \setcounter{lofdepth}{3}
+%% \setcounter{lotdepth}{3}
+%% \setcounter{secnumdepth}{3}
+
+
+%%%
+%%% New commands and other global definitions
+%%%
+
+\input{defs}
+
+%%%
+%%% Misc.
+%%%
+
+\usecolour{true}
+
+%%%
+%%% Titulos
+%%%
+
+\author{Wellington Carlos da Rosa Nascimento}
+\authorR{Nascimento, Wellington Carlos da Rosa}
+
+\advisor{Marco Aurélio Cavalcanti Pacheco}{Prof.}
+\advisorR{Pacheco, Marco Aurélio Cavalcanti}
+% If the advisor's department is different from author's department, uncomment the next line and type the correct name and acronym of advisor's institution.
+%\advisorInst{institution name}{acronym}
+
+\coadvisor{Marco Antonio Guimarães Dias}{Prof.}
+\coadvisorR{Dias, Marco Antonio Guimarães}
+\coadvisorInst{Departamento de Engenharia Elétrica}{PUC-Rio}
+
+%% \title{Desenvolvimento de um sistema de microscopia digital para
+%%  classificação automática de tipos de hematita em minério de ferro}
+
+\title{Aplicação de Redes Neurais na Avaliação Econômica de Projetos de E\&P: Uma Abordagem Baseada em Valor da Informação Sequencial e Opções Reais}
+
+\titleuk{Neural Networks Applied to the Economic Evaluation of E\&P Projects: A Sequential Value of Information and Real Options Approach}
+
+%% \subtitulo{Aqui vai o subtitulo caso precise}
+
+\day{07}
+\month{Março}
+\year{2025}
+
+\city{Rio de Janeiro}
+\CDD{620.11}
+\department{Engenharia Elétrica}
+\program{Engenharia Elétrica}
+\school{Centro Técnico Científico}
+\university{Pontifícia Universidade Católica do Rio de Janeiro}
+\uni{PUC-Rio}
+
+%%%
+%%% Jury
+%%%
+
+\jury{%
+  \jurymember{Pierre-Simon, Marquis de Laplace}{Prof.}
+    {University of Caen}{France}
+  \jurymember{Andrey Nikolaevich Kolmogorov}{Prof.}
+    {Moscow State University}{Russian}
+  \jurymember{William Sealy Gosset}{Prof.}
+    {New College - Oxford}{England}
+  \jurymember{Fischer Sheffey Black}{Prof.}
+    {Harvard University}{USA}
+}
+
+%%%
+%%% Resume
+%%%
+
+\resume{%
+  Bacharel e Mestre em Física pela Universidade Federal de Alagoas. Trabalha desde de 2010 na Petrobras como Geofísico Senior atuando na Análise Econômica de Projetos Exploratórios.}
+
+%%%
+%%% Acknowledgment (REMINDER TO SCHOLARSHIP STUDENTS. Do not forget to thank the agencies that supported your work.)
+%%%
+
+\acknowledgment{%
+  \noindent I would like to first thank my advisor testando...
+  \bigskip
+
+  \noindent Then I wish to thank ...
+}
+
+%%%
+%%% Catalog prekeywords
+%%%
+
+\catalogprekeywords{%
+  \catalogprekey{Engenharia Química}%
+  \catalogprekey{Engenharia de Materiais}%
+}
+
+%%%
+%%% Keywords
+%%%
+
+\keywords{%
+  \key{Minério de Ferro}
+  \key{Cristais de Hematita}
+  \key{Microscopia Digital}
+  \key{Análise de Imagens}
+  \key{Classificação}
+  \key{Microscopia de Luz Polarizada}
+}
+
+\keywordsuk{%
+  \key{Iron Ore}%
+  \key{Hematite Crystals}%
+  \key{Digital Microscopy}%
+  \key{Image Analysis}%
+  \key{Classification}%
+  \key{Polarized Light Microscopy}%
+}
+
+%%%
+%%% Abstract
+%%%
+
+\abstract{%
+  O minério de ferro é um material policristalino oriundo de processos
+  naturais complexos durante tempos geológicos, que dão origem ...
+}
+
+\abstractuk{%
+  Iron ore is a polycrystalline material created by complex natural
+  processes during geological periods, which give rise to ...}
+
+%%%
+%%% Dedication
+%%%
+
+\dedication{%
+  Aos meu pais, filhos e esposa. A todos os meus familiares.\\
+À hipótese de Laplace.
+}
+
+%%%
+%%% Epigraph
+%%%
+
+\epigraph{%
+  My beautifull epigraph
+}
+\epigraphauthor{Wassily Kandinsky}
+\epigraphbook{Regards sur le passé}
+
+%%%
+%%% Hyphenation
+%%%
+
+\hyphenation{PON-TI-FÍ-CIA}
+
+%%%
+%%% 
+%%%
+
+\begin{document}
+
+  \input{chapter-1}
+  \input{chapter-2}
+  \input{conclusions}
+  %% ...
+  \arial
+  \bibliography{tiny}
+  \normalfont
+  \input{appendix}
+
+\end{document}

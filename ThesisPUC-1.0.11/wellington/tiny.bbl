@@ -1,0 +1,26 @@
+\begin{thebibliography}{1} \addcontentsline{toc}{chapter}{\bibname}
+  \arial\markboth{\bibname}{\bibname}
+
+\bibitem[30]{30}
+\MakeUppercase{\uppercase{Rosa, M}\/}.
+\newblock {\bf Segmentação de grãos de hematita em amostras de minério de
+  ferro por análise de imagens de luz polarizada avaliação da qualidade
+  intrínseca de minérios de ferro para uso em altos-fornos}.
+\newblock Dissertação mestrado em engenharia de produção, Universidade
+  Federal de Santa Maria, Rio Grande do Sul, 2008.
+
+\bibitem[31]{31}
+\MakeUppercase{\uppercase{Barthelmy, D}\/}.
+\newblock {\bf Mineralogy database}.
+\newblock \href{http://webmineral.com/}{Webmineral}, 2010.
+\newblock Acesso em: Abril de 2012.
+
+\bibitem[74]{74}
+\MakeUppercase{\uppercase{Alvarez, J. C}\/}.
+\newblock {\bf Uma metodologia para caracterização de sínter de minério de
+  ferro; microscopia digital e análise de imagens}.
+\newblock Dissertação de mestrado, Departamento de Ciência dos Materiais e
+  Metalurgia, Pontifícia Universidade Católica do Rio de Janeiro, Rio de
+  Janeiro, 2008.
+
+\end{thebibliography}

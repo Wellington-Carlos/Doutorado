@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: tiny.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+The style file: ThesisPUC.bst
+Reallocating 'name_of_file' (item size: 1) to 5 items.
+Database file #1: tiny.bib
+You've used 3 entries,
+            1871 wiz_defined-function locations,
+            485 strings with 4135 characters,
+and the built_in function-call counts, 479 in all, are:
+= -- 45
+> -- 12
+< -- 0
++ -- 6
+- -- 3
+* -- 24
+:= -- 86
+add.period$ -- 10
+call.type$ -- 3
+change.case$ -- 5
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 26
+empty$ -- 45
+format.name$ -- 3
+if$ -- 97
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 0
+newline$ -- 19
+num.names$ -- 3
+pop$ -- 10
+preamble$ -- 1
+purify$ -- 3
+quote$ -- 0
+skip$ -- 5
+stack$ -- 0
+substring$ -- 0
+swap$ -- 10
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 3
+width$ -- 4
+write$ -- 44
