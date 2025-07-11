@@ -474,7 +474,36 @@ This modeling approach allows us to jointly capture both the short-term volatili
 
 The oil price model is characterized by seven parameters ($\kappa$, $\sigma_{\xi}$, $\sigma_{\chi}$, $\mu_{\xi}$, $\lambda_{\chi}$, $\lambda_{\xi}$, and $\rho_{\xi\chi}$), as well as two initial states, $\xi_0$ and $\chi_0$, which need to be estimated. Since these parameters are not directly observable in commodity markets, an appropriate calibration methodology is required. In this work, we follow the procedure proposed by \cite{ref26}, which utilizes the Kalman filter in conjunction with maximum likelihood estimation. The Kalman filter provides recursive estimates of the unobserved parameters by generating a posterior conditional distribution, given a time series of spot and futures prices and the corresponding measurement covariance matrix.
 
- 
+For our calibration, we use the yearly average of Brent crude oil futures prices from January 3, 2000, to March 7, 2025. Specifically, for each year, we observe six futures prices for contracts maturing in 1, 3, 5, 7, 9, and 13 months. Figure \ref{fig11} displays both observed and simulated expected futures prices using the calibrated parameters. The parameters resulting from the calibration are listed in Table \ref{tab4}.
+
+ \begin{figure}[H]
+\centering
+\begin{minipage}{0.95\textwidth}
+  \includegraphics[width=\textwidth]{Price_Calibration.eps}
+  \caption{Schwartz-Smith model calibration for oil prices.}
+  \label{fig11}
+\end{minipage}
+\end{figure}
+
+\begin{table}[h]
+\centering
+\caption{Schwartz-Smith model parameters from calibration}\label{tab4}%
+\begin{tabularx}{10cm}{l *{11}{>{\centering\arraybackslash}X}}
+\hline
+\textbf{Parameter} & \textbf{Value} \\
+\hline
+$\kappa$       & 3.771 \\
+$\sigma_\chi$  & 0.287 \\
+$\chi_0$       & 0.049 \\
+$\lambda_\chi$ & -0.202 \\
+$\mu_\xi$      & -0.161 \\
+$\sigma_\xi$   & 0.222 \\
+$\xi_0$        & 4.207 \\
+$\lambda_\xi$  & -0.092 \\
+$\rho_{\chi\xi}$ & 0.398 \\
+\hline
+\end{tabularx}
+\end{table}
 
 \subsection{Least Squares Monte Carlo}\label{subsec45}
 
@@ -515,14 +544,14 @@ where the $a_j$ coefficients are constants. Other orthogonal polynomials, such a
 
 \subsection{BDH problem}\label{subsec51}
 
-The production profile reported in Table \ref{tab1} is also shown in Figure \ref{fig11}.
+The production profile reported in Table \ref{tab1} is also shown in Figure \ref{fig15}.
 
 \begin{figure}[H]
 \centering
 \begin{minipage}{0.95\textwidth}
   \includegraphics[width=\textwidth]{prod_profile.eps}
   \caption{Production profile for BDH problem.}
-  \label{fig11}
+  \label{fig15}
 \end{minipage}
 \end{figure}
 
