@@ -116,11 +116,11 @@
 \author[1]{\fnm{Marco} \sur{Pacheco}}\email{marco@ele.puc-rio.br}
 %\equalcont{These authors contributed equally to this work.}
 
-\affil[1]{\orgdiv{Department of Electrical Engineering}, \orgname{PUC-Rio}, \orgaddress{\street{Rua Marquês de São Vicente, 225}, \city{Rio de Janeiro}, \postcode{22451-900}, \state{RJ}, \country{Brazil}}}
+\affil[1]{\orgdiv{Department of Electrical Engineering}, \orgname{PUC-Rio}, \orgaddress{\street{Rua Mq. de São Vicente, 225}, \city{Rio de Janeiro}, \postcode{22451-900}, \state{RJ}, \country{Brazil}}}
 
 \affil[2]{\orgdiv{Department of Energy Resources}, \orgname{University of Stavanger}, \orgaddress{\street{Rennebergstien 30}, \city{Stavanger}, \postcode{4021}, \state{Rogaland}, \country{Norway}}}
 
-\affil[3]{\orgdiv{Petrobras}, \orgname{E\&P}, \orgaddress{\street{Av. Henrique Valadares, 28}, \city{Rio de Janeiro}, \postcode{20231-030}, \state{RJ}, \country{Brazil}}}
+\affil[3]{\orgdiv{Petrobras}, \orgaddress{\street{Av. Henq. Valadares, 28}, \city{Rio de Janeiro}, \postcode{20231-030}, \state{RJ}, \country{Brazil}}}
 
 %%==================================%%
 %% Sample for unstructured abstract %%
@@ -168,13 +168,13 @@ There are several numerical approaches to support early-stage decision-making in
 
 \cite{ref8} accentuate for a paradigm shift in petroleum investment evaluation, emphasizing the value of flexibility under uncertainty through ROA. They examine the dominance of traditional NPV methods and presents a structured comparison of ROA, including the Marketed Asset Disclaimer (MAD) and integrated frameworks. It highlights how managerial flexibilities—such as timing, expansion, and abandonment—can be systematically valued, offering strategic insight and higher project value when properly exercised. \cite{ref9} argue that conventional valuation techniques, such as DCF and Value of Information (VoI), often fail to capture the full economic potential of oil and gas investments under uncertainty. They introduce the concept of Value of Flexibility (VoF) as a complement to VoI, pointing out the strategic value of embedding flexibility in project design to manage or exploit uncertainty. Using practical examples, the authors demonstrate how flexibility in development timing, capacity scaling, and operational decisions can significantly increase project value, advocating for a shift from valuation to value creation through real options thinking. \cite{ref10} analyze the disconnect between improvements in uncertainty quantification and the lack of corresponding advances in decision quality within the oil and gas industry. Based on a survey of 494 professionals, they find that while probabilistic modeling has increased, it has not translated into better decisions, largely due to the misconception that more detailed modeling inherently improves outcomes. The authors propose a decision-focused approach emphasizing clarity, flexibility, and value-driven analysis over excessive modeling detail. They advise for iterative, decision-oriented processes and broader adoption of VoI and decision analysis techniques to truly improve decision-making effectiveness. \cite{ref11} propose a novel approach for managing risk in petroleum development by integrating ROA with dynamic programming through the Bellman equation. This mathematical union enables optimal policy development along branching, sequential investment pathways typical of oil and gas projects. Applied to a Central Asian gas condensate field, the approach demonstrates how investment flexibility, particularly in production expansion, can be systematically evaluated to support more robust decision-making under uncertainty.
 
-\cite{ref12} propose a decision-analytic approach for valuing real options using binomial decision trees instead of traditional binomial lattices. This approach allows for intuitive modeling of managerial flexibility by integrating risk-neutral valuation with decision tree structures, making it suitable for problems involving multiple uncertainties and complex options. Applied to an oil production case, the method demonstrates how simulation-based volatility estimation and dynamic programming can produce flexible, transparent, and computationally practical ROA. \cite{ref13} critiques the binomial decision tree method proposed by \cite{ref12} for solving real-options problems, identifying both practical and conceptual limitations. He argues for more consistent use of fully risk-neutral valuation, and recommends binomial lattices over decision trees for computational efficiency and clarity. He also highlight that estimating volatility via discounted cash flow simulations may overstate option values, and promote advanced methods, such as LSM proposed by \cite{ref14} to more accurately capture project uncertainty and optimize real investment decisions.
+\cite{ref12a} propose a decision-analytic approach for valuing real options using binomial decision trees instead of traditional binomial lattices. This approach allows for intuitive modeling of managerial flexibility by integrating risk-neutral valuation with decision tree structures, making it suitable for problems involving multiple uncertainties and complex options. Applied to an oil production case, the method demonstrates how simulation-based volatility estimation and dynamic programming can produce flexible, transparent, and computationally practical ROA. \cite{ref13} critiques the binomial decision tree method proposed by \cite{ref12a} for solving real-options problems, identifying both practical and conceptual limitations. He argues for more consistent use of fully risk-neutral valuation, and recommends binomial lattices over decision trees for computational efficiency and clarity. He also highlight that estimating volatility via discounted cash flow simulations may overstate option values, and promote advanced methods, such as LSM proposed by \cite{ref14} to more accurately capture project uncertainty and optimize real investment decisions.
 
-In this paper, we aim to generalize the problem addressed by \cite{ref12}, hereafter referred to as BDH problem, incorporating the methodological proposed by \cite{ref13} and with the addition of more flexibility to the problem. While the original analysis focuses on exercising flexibility at a particular year, namely Year 5, we extend the ROA to allow for managerial flexibility throughout the entire production period of the oil project. By doing so, we demonstrate that greater flexibility leads to higher project value, consistent with findings in the \cite{ref9}. Additionally, uncertainties will be incorporated into the geological model, thereby introducing variability in the production curve, thus aligning the problem more closely with real projects scenarios. The next section provides a detailed description of the problem setup.
+In this paper, we aim to generalize the problem addressed by \cite{ref12a}, hereafter referred to as BDH problem, incorporating the methodological proposed by \cite{ref13} and with the addition of more flexibility to the problem. While the original analysis focuses on exercising flexibility at a particular year, namely Year 5, we extend the ROA to allow for managerial flexibility throughout the entire production period of the oil project. By doing so, we demonstrate that greater flexibility leads to higher project value, consistent with findings in the \cite{ref9}. Additionally, uncertainties will be incorporated into the geological model, thereby introducing variability in the production curve, thus aligning the problem more closely with real projects scenarios. The next section provides a detailed description of the problem setup.
 
 \section{Problem Description}\label{sec23}
 
-BDH problem, addressed in \cite{ref12}, involves the evaluation of an oil production project using ROA. They illustrate the application of a binomial decision tree approach to this problem. The project comprises an estimated reserve of 90 million barrels, with an initial production of 9 million barrels per year that declines at a rate of 15\% annually over a 10-year horizon. Variable operating costs start at \$10 per barrel and increase by 2\% per year, while oil prices begin at \$25 per barrel and grow at 3\% annually. A fixed annual cost of \$5 million is also included. The analysis uses a 10\% risk-adjusted discount rate and a 5\% risk-free rate. These data and the resulting base case cash flows are summarized in Table \ref{tab1}.
+BDH problem, addressed in \cite{ref12a}, involves the evaluation of an oil production project using ROA. They illustrate the application of a binomial decision tree approach to this problem. The project comprises an estimated reserve of 90 million barrels, with an initial production of 9 million barrels per year that declines at a rate of 15\% annually over a 10-year horizon. Variable operating costs start at \$10 per barrel and increase by 2\% per year, while oil prices begin at \$25 per barrel and grow at 3\% annually. A fixed annual cost of \$5 million is also included. The analysis uses a 10\% risk-adjusted discount rate and a 5\% risk-free rate. These data and the resulting base case cash flows are summarized in Table \ref{tab1}.
 
 
 \begin{table}[h]
@@ -202,12 +202,12 @@ PV of Cash Flows              & \textbf{404.0} & 444.5 & 377.6 & 317.7 & 264.0 &
 Cash Flow Ratios          &    & 0.228 & 0.235 & 0.245 & 0.258 & 0.276 & 0.302 & 0.344 & 0.414 & 0.559 & 1.000  \\
 \bottomrule
 \end{tabularx}
-\footnotetext{Source: Adapted from \cite{ref12}.}
+\footnotetext{Source: Adapted from \cite{ref12a}.}
 \end{table}
 
 Expected cash flows are first calculated using DCF methods, resulting in a base-case project value of \$404 million. MCS is then performed, incorporating uncertainties in oil prices and operating costs, both modeled as GBM. This yields an estimated project return volatility of 46.6\%, which is used to build the binomial decision tree.
 
-Decision tree framework enables the modeling of managerial flexibility through ROA. For example, the firm may divest the project in Year 5 for \$100 million or buy out a partner's 25\% share for \$40 million. These options increase the project value to \$444.9 million. The model also allows for the incorporation of private risks, such as uncertainty related to water breakthrough in the reservoir, and the impact of managerial risk aversion through the use of utility functions \citep{ref12}. This example demonstrates the practical applicability and flexibility of the BDH problem in capturing both market and private risks, as well as the value of strategic decision-making under uncertainty.
+Decision tree framework enables the modeling of managerial flexibility through ROA. For example, the firm may divest the project in Year 5 for \$100 million or buy out a partner's 25\% share for \$40 million. These options increase the project value to \$444.9 million. The model also allows for the incorporation of private risks, such as uncertainty related to water breakthrough in the reservoir, and the impact of managerial risk aversion through the use of utility functions \citep{ref12a}. This example demonstrates the practical applicability and flexibility of the BDH problem in capturing both market and private risks, as well as the value of strategic decision-making under uncertainty.
 
 BDH problem is revisited in \cite{ref13} under a fully risk-neutral valuation approach. In this version of the problem, oil prices are treated as market risks and are assumed to follow a risk-neutral growth rate of 0\% per year. Variable operating costs, on the other hand, are assumed to be private risks, uncorrelated with market variables, and follow their actual process. Assuming the decision maker is risk neutral, the integrated valuation procedure combines the risk-neutral process for market risks with the true process for private risks. This setup results in the same valuation as that produced by the equilibrium approach, meaning both lead to an identical fully risk-neutral valuation model. The input parameters and resulting cash flows for this formulation are detailed in Table \ref{tab2}.
 
@@ -238,9 +238,9 @@ Cash Flow Ratios          &    & 0.233 & 0.241 & 0.251 & 0.265 & 0.284 & 0.311 &
 \footnotetext{Source: Adapted from \cite{ref13}.}
 \end{table}
 
-Using this approach, the value of the investment is simply the expected NPV, calculated using the risk-neutral valuation and discounted at the risk-free rate of 5\% per year. For projects without options, a deterministic model, such as one based on expected values of oil prices and costs, can be used to compute NPV. In this case, the oil production example leads to an NPV of \$392 million under the risk-neutral approach, as compared to \$404 million from the risk-adjusted DCF analysis of \cite{ref12}.
+Using this approach, the value of the investment is simply the expected NPV, calculated using the risk-neutral valuation and discounted at the risk-free rate of 5\% per year. For projects without options, a deterministic model, such as one based on expected values of oil prices and costs, can be used to compute NPV. In this case, the oil production example leads to an NPV of \$392 million under the risk-neutral approach, as compared to \$404 million from the risk-adjusted DCF analysis of \cite{ref12a}.
 
-The discrepancy between the two NPV stems from fundamental differences in how future revenues and costs are valued. In the traditional DCF approach used by \cite{ref12}, oil prices are assumed to grow at 3\% annually and are discounted at a 10\% risk-adjusted rate, resulting in a net annual decline in the present value of future revenues by 7\%. In contrast, the risk-neutral approach assumes no growth in oil prices and applies a lower, risk-free discount rate of 5\%, leading to a slower decline in present value—only 5\% per year. This implies that the risk-neutral method assigns relatively greater weight to future oil revenues. However, because future operating costs are not risk-adjusted and are also discounted at the lower risk-free rate, their present value increases under the risk-neutral approach. In this specific example, the effect of higher-valued future costs outweighs the benefit of more highly valued revenues, leading to a lower overall NPV. Nevertheless, in other situations, such as E\&P projects where most of the production occurs farther into the future, the increased emphasis on long-term revenues could dominate, potentially resulting in a higher valuation using the risk-neutral approach.
+The discrepancy between the two NPV stems from fundamental differences in how future revenues and costs are valued. In the traditional DCF approach used by \cite{ref12a}, oil prices are assumed to grow at 3\% annually and are discounted at a 10\% risk-adjusted rate, resulting in a net annual decline in the present value of future revenues by 7\%. In contrast, the risk-neutral approach assumes no growth in oil prices and applies a lower, risk-free discount rate of 5\%, leading to a slower decline in present value—only 5\% per year. This implies that the risk-neutral method assigns relatively greater weight to future oil revenues. However, because future operating costs are not risk-adjusted and are also discounted at the lower risk-free rate, their present value increases under the risk-neutral approach. In this specific example, the effect of higher-valued future costs outweighs the benefit of more highly valued revenues, leading to a lower overall NPV. Nevertheless, in other situations, such as E\&P projects where most of the production occurs farther into the future, the increased emphasis on long-term revenues could dominate, potentially resulting in a higher valuation using the risk-neutral approach.
 
 \cite{ref13} discusses how to determine an optimal exercise policy for ROA by evaluating the expected continuation value of each available alternative at each decision point, conditioned on the information available at that time. The continuation value represents the expected NPV of future cash flows if a specific decision is made. The optimal policy is the one that selects the alternative with the highest continuation value given the current state. To implement this in practice, \cite{ref13} adopts the LSM approach proposed by \cite{ref14}, which estimates continuation values through regression analysis based on simulation results.
 
@@ -252,7 +252,7 @@ Another interesting result was obtained by \cite{ref16}, who developed an approa
 
 Based on the previously described BDH problem, we propose a revised formulation that enhances generality and realism through improved treatment of key parameters:
 \begin{itemize}
-    \item \textbf{Production level}: uncertainty in the production profile will be incorporated by employing the Egg model (Figure \ref{fig1}), a synthetic reservoir model comprising one deterministic and 100 stochastic permeability realizations, totaling 101 equiprobable scenarios \citep{ref18} and thereby capturing geological uncertainties;
+    \item \textbf{Production level}: uncertainty in the production profile will be incorporated by employing the Egg model, Figure \ref{fig1}, a synthetic reservoir model comprising one deterministic and 100 stochastic permeability realizations, totaling 101 equiprobable scenarios \citep{ref18} and thereby capturing geological uncertainties;
     \item \textbf{Variable operational cost}: this parameter will be modeled as a stochastic process following a GBM, similar to the approaches in \cite{ref19}, \cite{ref20} and \cite{ref21};
     \item \textbf{Oil price}: the oil price dynamics will be captured using the two-factor model proposed by \cite{ref17}.
 \end{itemize}
@@ -266,12 +266,14 @@ Based on the previously described BDH problem, we propose a revised formulation 
 \end{minipage}
 \end{figure}
 
-The available decision options remain unchanged: \textit{buy out partner}, \textit{continue with current share}, or \textit{divest}. However, instead of restricting the exercise of these options to Year 5, we introduce greater flexibility by allowing them to be exercised at any time throughout the production period of the field.
+The available decision options remain as specified by \cite{ref12a}: \textit{buy out partner}, \textit{continue with current share}, or \textit{divest}. However, instead of restricting the exercise of these options to Year 5, we introduce greater flexibility by allowing them to be exercised at any time throughout the production period of the field. Futhermore, geological uncertainty is now explicitly accounted for in the decision-making process.
 
 
 \section{Methodology}\label{sec4}
 
-Sample body text. Sample body text. Sample body text. Sample body text. Sample body text. Sample body text. Sample body text. Sample body text.
+The methodology adopted in this work integrates state-of-the-art techniques for quantifying and managing uncertainty in oil field project valuation. Geological uncertainties are explicitly accounted for by utilizing the Egg model, a widely used synthetic reservoir benchmark that allows for the generation of multiple reservoir realizations. These realizations form the basis for stochastic simulation of oil production profiles. To propagate the impact of these uncertainties throughout the economic evaluation, we employ MCS, a robust framework frequently used in the petroleum industry for uncertainty quantification.
+
+In addition to reservoir uncertainty, we address operational and economic uncertainties by modeling the variable operating costs as a GBM and the oil price dynamics using the two-factor model proposed by \cite{ref17}. Cash flow modeling is performed by integrating the simulated production, cost, and price paths, as outlined in Figure \ref{fig2}. The valuation of managerial flexibility and optimal decision timing is carried out through the LSM approach, which enables the application of ROA. Our analysis is anchored on the BDH problem \citep{ref12a}, serving as a basis to combine and draw insights from all these advanced modeling techniques, thus providing a comprehensive assessment of project value under uncertainty. In the following subsections, we present a detailed description of each component employed in this study.
 
 \begin{figure}[H]
 \centering
@@ -284,7 +286,7 @@ Sample body text. Sample body text. Sample body text. Sample body text. Sample b
 
 \subsection{The Egg Model}\label{subsec41}
 
-Egg Model, originally introduced by \cite{ref23} and further standardized by \cite{ref18}, is a widely used synthetic benchmark for reservoir simulation studies. The model comprises 25,200 gridblocks, of which 18,533 are active, forming an egg-shaped reservoir by excluding inactive gridblocks. Its reservoir architecture features a set of meandering, high-permeability channels embedded within a low-permeability matrix, thereby representing the geological complexity of fluvial depositional environments. Due to the high degree of vertical correlation among the seven layers, the permeability fields can be cosidered almost two dimensional. The standard configuration includes twelve wells, eight injectors and four producers (Figure \ref{fig3}), their locations being well documented in the literature.
+Egg Model, originally introduced by \cite{ref23} and further standardized by \cite{ref18}, is a widely used synthetic benchmark for reservoir simulation studies. The model comprises 25,200 gridblocks, of which 18,533 are active, forming an egg-shaped reservoir by excluding inactive gridblocks. Its reservoir architecture features a set of meandering, high-permeability channels embedded within a low-permeability matrix, thereby representing the geological complexity of fluvial depositional environments. Due to the high degree of vertical correlation among the seven layers, the permeability fields can be cosidered almost two dimensional. The standard configuration includes twelve wells, eight injectors and four producers, Figure \ref{fig3}, their locations being well documented in the literature.
 
 \begin{figure}[H]
 \centering
@@ -410,7 +412,7 @@ C(t) = C(0) \exp\left[ \alpha t - \frac{1}{2} \sigma^2 t + \sigma B(t) \right].
 \label{eq2}
 \end{equation}
 
-A positive drift ($\alpha > 0$) implies an upward trend in variable operating costs, whereas a negative drift ($\alpha < 0$) indicates a downward trend. The volatility parameter, $\sigma$, captures the uncertainty in cost evolution, with higher values leading to greater dispersion in possible future cost paths as time progresses. Figure \ref{fig10} illustrates examples of the simulated price paths and confidence bands based on 10,000 sumulated cases. We employ a GBM with a mean annual rate of increase of $\alpha=0.02$, a volatility of $\sigma=0.1$, and an initial variable operating cost of $\$10$ per barrel, as suggested by \cite{ref12}.
+A positive drift ($\alpha > 0$) implies an upward trend in variable operating costs, whereas a negative drift ($\alpha < 0$) indicates a downward trend. The volatility parameter, $\sigma$, captures the uncertainty in cost evolution, with higher values leading to greater dispersion in possible future cost paths as time progresses. Figure \ref{fig10} illustrates examples of the simulated price paths and confidence bands based on 10,000 simulated cases. We employ a GBM with a mean annual rate of increase of $\alpha=0.02$, a volatility of $\sigma=0.1$, and an initial variable operating cost of $\$10$ per barrel, as suggested by \cite{ref12a}.
 
 \begin{figure}[H]
 \centering
@@ -487,23 +489,41 @@ For our calibration, we use the yearly average of Brent crude oil futures prices
 
 \begin{table}[h]
 \centering
-\caption{Schwartz-Smith model parameters from calibration}\label{tab4}%
-\begin{tabularx}{10cm}{l *{11}{>{\centering\arraybackslash}X}}
+\caption{Calibrated parameter values used for the Schwartz-Smith model}\label{tab4}%
+\begin{tabularx}{12cm}{l *{11}{>{\centering\arraybackslash}X}}
 \hline
-\textbf{Parameter} & \textbf{Value} \\
+\textbf{Parameter} & \textbf{Value} & \textbf{Parameter} & \textbf{Value} \\
 \hline
-$\kappa$       & 3.771 \\
-$\sigma_\chi$  & 0.287 \\
-$\chi_0$       & 0.049 \\
-$\lambda_\chi$ & -0.202 \\
-$\mu_\xi$      & -0.161 \\
-$\sigma_\xi$   & 0.222 \\
-$\xi_0$        & 4.207 \\
-$\lambda_\xi$  & -0.092 \\
-$\rho_{\chi\xi}$ & 0.398 \\
+$\chi_0$       & 0.049 &  $\xi_0$    & 4.207 \\
+$\kappa$       & 3.771 &  $\mu_\xi$      & -0.161 \\
+$\sigma_\chi$  & 0.287 &   $\sigma_\xi$   & 0.222 \\
+$\lambda_\chi$ & -0.202 &  $\lambda_\xi$  & -0.092 \\
+$\rho_{\chi\xi}$ & 0.398 &  &  \\
 \hline
 \end{tabularx}
 \end{table}
+
+\cite{ref17} mentioned that far-maturity futures contracts provide information about the long-term factor, whereas spot and near-maturity contracts inform the short-term factor. Using two-factor model, they derived a closed-form solution for the value of a futures contract as follows:
+\begin{equation}
+    \ln(F_{T,0}) = e^{-\kappa T} \chi_0 + \xi_0 + \mathcal{A}(T)
+\end{equation}
+where the adjustment term $\mathcal{A}(T)$ is defined by:
+\begin{equation}
+    \mathcal{A}(T) = \left(\mu_{\xi} - \lambda_{\xi}\right) T - \left(1-e^{-\kappa T}\right) \frac{\lambda_{\chi}}{\kappa}
+    + \frac{1}{2} \left[ \left(1 - e^{-2\kappa T}\right) \frac{\sigma_{\chi}^2}{2\kappa} + \sigma_{\xi}^2 T + 2 \left(1 - e^{-\kappa T}\right) \frac{\rho_{\chi\xi} \sigma_{\chi} \sigma_{\xi}}{\kappa} \right]
+\end{equation}
+
+In this work, we adopted this approach and employed the calibrated parameters listed in Table \ref{tab4} to compute the expected futures oil prices. Figure \ref{fig12} illustrates examples of the simulated oil price paths and confidence bands based on 10,000 simulated cases. \cite{ref21} concluded that the Schwartz-Smith two-factor model provides a more realistic representation of oil price risk and the likely dynamics of future oil prices, especially when compared to the classical GBM and Mean-Reverting models. According to his findings, two-factor model more accurately captures both the uncertainties and the probable paths of future prices, making it preferable for modeling oil price evolution.
+
+
+ \begin{figure}[H]
+\centering
+\begin{minipage}{0.95\textwidth}
+  \includegraphics[width=\textwidth]{Price_profile.eps}
+  \caption{Oil price simulations results, confidence bands and example price paths.}
+  \label{fig12}
+\end{minipage}
+\end{figure}
 
 \subsection{Least Squares Monte Carlo}\label{subsec45}
 
@@ -535,6 +555,16 @@ F(\omega, t_{K-1}) = \sum_{j=0}^{\infty} a_j\, L_j(x),
 \end{equation}
 where the $a_j$ coefficients are constants. Other orthogonal polynomials, such as Hermite, Legendre, Jacobi, or Chebyshev polynomials, may also be used as basis functions \citep{ref14}. LSM approach presents fundamental advantages over other methods, as it is not very sensitive to the dimensionality of the problem (number of sources of uncertainty), and it is widely used in ROA in the oil and gas industry, since it can efficiently approximate dynamic programming for the selection of single or multiple exercise options \citep{ref15}.
 
+At any decision time $t_k$, the investor can immediately realize a known cash flow by exercising the option, so the value of immediate exercise at $t_k$ is equal to this cash flow. In contrast, the value from continuing the project beyond $t_k$ involves uncertain future cash flows, which are not known at the decision time. According to risk-neutral valuation principles, the value of continuing the option, assuming that exercise is not permitted until after $t_k$, is obtained by taking the expectation of the discounted sum of future cash flows $C(\omega, t_j; t_k, T)$, under the risk-neutral measure $Q$. Thus, the continuation value $F(\omega; t_k)$ at time $t_k$ can be written as \citep{ref14}:
+\begin{equation}
+F(\omega; t_k) = \mathbb{E}_Q \left[ \sum_{j=k+1}^K \exp \left( -\int_{t_k}^{t_j} r(\omega, s) ds \right) C(\omega, t_j; t_k, T) \; \bigg| \; \mathcal{F}_{t_k} \right],
+\end{equation}
+where $r(\omega, t)$ denotes the (potentially stochastic) risk-free discount rate, and the expectation is conditional on the available information set $\mathcal{F}_{t_k}$ at time $t_k$. This approach leads to the standard ROA: at each decision point, the investor should compare the value of immediate exercise with the conditional expectation of continuation \citep{ref14}. The optimal policy is to exercise when the immediate payoff is positive and exceeds the expected value of waiting.
+
+
+\cite{ref13} presented one of the early applications of the LSM method to a simplified oil production project, using the illustrative case study developed by \cite{ref12a, ref12b}. The analysis incorporated both the option to buy out the partnership share at a given cost and the option to divest the project in exchange for a predetermined cash flow. The BDH example, which will be discussed in Subsection \ref{subsec51}, provides a clear and practical decision-making framework for ROA. Its simplicity, combined with relevant managerial flexibility, makes it particularly advantageous for illustrating the solution of optimal policies and project valuation. Furthermore, it is straightforward for readers to replicate and adapt this example for their own analyses \citep{ref15}.
+
+
 
 
 
@@ -562,10 +592,7 @@ The production profile reported in Table \ref{tab1} is also shown in Figure \ref
 
 
 \bmhead{Acknowledgements}
-
-Acknowledgements are not compulsory. Where included they should be brief. Grant or contribution numbers may be acknowledged.
-
-Please refer to Journal-level guidance for any specific requirements.
+This study was financed in part by the Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - Brasil (CAPES) - Process N° 88881.980521/2024-01. The corresponding author acknowledges the financial support provided by Petrobras.
 
 
 
