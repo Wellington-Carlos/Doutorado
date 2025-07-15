@@ -238,7 +238,7 @@ Cash Flow Ratios          &    & 0.233 & 0.241 & 0.251 & 0.265 & 0.284 & 0.311 &
 \footnotetext{Source: Adapted from \cite{ref13}.}
 \end{table}
 
-Using this approach, the value of the investment is simply the expected NPV, calculated using the risk-neutral valuation and discounted at the risk-free rate of 5\% per year. For projects without options, a deterministic model, such as one based on expected values of oil prices and costs, can be used to compute NPV. In this case, the oil production example leads to an NPV of \$392 million under the risk-neutral approach, as compared to \$404 million from the risk-adjusted DCF analysis of \cite{ref12a}.
+Using this approach, the value of the investment is simply the expected NPV, calculated using the risk-neutral valuation and discounted at the risk-free rate of 5\% per year. For projects without options, a deterministic model, such as one based on expected values of oil prices and costs, can be used to compute NPV. In this case, the oil production example leads to an NPV of \$392 million under the risk-neutral approach \citep{ref13}, as compared to \$404 million from the risk-adjusted DCF analysis of \cite{ref12a}.
 
 The discrepancy between the two NPV stems from fundamental differences in how future revenues and costs are valued. In the traditional DCF approach used by \cite{ref12a}, oil prices are assumed to grow at 3\% annually and are discounted at a 10\% risk-adjusted rate, resulting in a net annual decline in the present value of future revenues by 7\%. In contrast, the risk-neutral approach assumes no growth in oil prices and applies a lower, risk-free discount rate of 5\%, leading to a slower decline in present value—only 5\% per year. This implies that the risk-neutral method assigns relatively greater weight to future oil revenues. However, because future operating costs are not risk-adjusted and are also discounted at the lower risk-free rate, their present value increases under the risk-neutral approach. In this specific example, the effect of higher-valued future costs outweighs the benefit of more highly valued revenues, leading to a lower overall NPV. Nevertheless, in other situations, such as E\&P projects where most of the production occurs farther into the future, the increased emphasis on long-term revenues could dominate, potentially resulting in a higher valuation using the risk-neutral approach.
 
@@ -273,7 +273,7 @@ The available decision options remain as specified by \cite{ref12a}: \textit{buy
 
 The methodology adopted in this work integrates state-of-the-art techniques for quantifying and managing uncertainty in oil field project valuation. Geological uncertainties are explicitly accounted for by utilizing the Egg model, a widely used synthetic reservoir benchmark that allows for the generation of multiple reservoir realizations. These realizations form the basis for stochastic simulation of oil production profiles. To propagate the impact of these uncertainties throughout the economic evaluation, we employ MCS, a robust framework frequently used in the petroleum industry for uncertainty quantification.
 
-In addition to reservoir uncertainty, we address operational and economic uncertainties by modeling the variable operating costs as a GBM and the oil price dynamics using the two-factor model proposed by \cite{ref17}. Cash flow modeling is performed by integrating the simulated production, cost, and price paths, as outlined in Figure \ref{fig2}. The valuation of managerial flexibility and optimal decision timing is carried out through the LSM approach, which enables the application of ROA. Our analysis is anchored on the BDH problem \citep{ref12a}, serving as a basis to combine and draw insights from all these advanced modeling techniques, thus providing a comprehensive assessment of project value under uncertainty. In the following subsections, we present a detailed description of each component employed in this study.
+In addition to reservoir uncertainty, we address operational and economic uncertainties by modeling the variable operating costs as a GBM and the oil price dynamics using the two-factor model proposed by \cite{ref17}. Cash flow modeling is performed by integrating the simulated production, cost, and price paths, as outlined in Figure \ref{fig2}. The valuation of managerial flexibility and optimal decision timing is carried out through the LSM approach, which enables the application of ROA. Our analysis is anchored on the BDH problem \citep{ref12a}, serving as a basis to combine and draw insights from all these advanced modeling techniques, thus providing a comprehensive assessment of project value under uncertainty. In this paper, we use an ensemble of 101 realizations of the Egg benchmark reservoir model to estimate the possible outcomes of the oil production. In the following subsections, we present a detailed description of each component employed in this study.
 
 \begin{figure}[H]
 \centering
@@ -286,7 +286,7 @@ In addition to reservoir uncertainty, we address operational and economic uncert
 
 \subsection{The Egg Model}\label{subsec41}
 
-Egg Model, originally introduced by \cite{ref23} and further standardized by \cite{ref18}, is a widely used synthetic benchmark for reservoir simulation studies. The model comprises 25,200 gridblocks, of which 18,533 are active, forming an egg-shaped reservoir by excluding inactive gridblocks. Its reservoir architecture features a set of meandering, high-permeability channels embedded within a low-permeability matrix, thereby representing the geological complexity of fluvial depositional environments. Due to the high degree of vertical correlation among the seven layers, the permeability fields can be cosidered almost two dimensional. The standard configuration includes twelve wells, eight injectors and four producers, Figure \ref{fig3}, their locations being well documented in the literature.
+Egg Model, originally introduced by \cite{ref23} and further standardized by \cite{ref18}, is a widely used synthetic benchmark for reservoir simulation studies. The model comprises 25,200 gridblocks, of which 18,533 are active, forming an egg-shaped reservoir by excluding inactive gridblocks. Its reservoir architecture features a set of meandering, high-permeability channels embedded within a low-permeability matrix, thereby representing the geological complexity of fluvial depositional environments. Due to the high degree of vertical correlation among the seven layers, the permeability fields can be cosidered almost two dimensional. The standard configuration comprises twelve wells, with eight injectors and four producers. Figure \ref{fig3} presents the absolute permeability field and the locations of all wells. This benchmark geological model is well documented in the literature. 
 
 \begin{figure}[H]
 \centering
@@ -345,7 +345,7 @@ Oil and water production profiles of the deterministic version (reference model)
 \end{minipage}
 \end{figure}
 
-In this study, it is assumed that the vertical oil production well is fully penetrating. Accordingly, since there are 3,600 gridblocks in the first layer, of which 2,491 are active cells, this assumption yields 2,491 feasible well placement scenarios, corresponding to the number of active gridblocks in the top layer of the reservoir model. Figure \ref{fig5} illustrates the spatial distribuition of permeability in the top layer for 16 realizations of the Egg model. These realizations were randomly selected from the original set of 101, which consists of one reference field and one hundred initial stochastic models. The models exhibit high-permeability channels within a low-permeability background, with each realization presenting a distinct channel pattern.
+In this study, it is assumed that the vertical oil production well is fully penetrating. Accordingly, since there are 3,600 gridblocks in the first layer, of which 2,491 are active cells, this assumption yields 2,491 feasible well placement scenarios, corresponding to the number of active gridblocks in the top layer of the reservoir model. Figure \ref{fig5} illustrates the spatial distribuition of permeability in the top layer for 16 realizations of the Egg model. These realizations were randomly selected from the original set of 101, which consists of one reference field and one hundred initial stochastic models. The models exhibit high-permeability channels within a low-permeability background, with each realization presenting a distinct channel pattern, showing alternative fluvial structures.
 
 \begin{figure}[H]
 \centering
@@ -362,7 +362,7 @@ Monte Carlo Simulation is a robust and flexible approach for uncertainty analysi
 
 \begin{figure}[H]
 \centering
-\begin{minipage}{0.85\textwidth}
+\begin{minipage}{0.75\textwidth}
   \includegraphics[width=\textwidth]{schematic_MCS.eps}
   \caption{Schematic of the Monte Carlo Simulation procedure. Source: Adapted from \cite{ref24}.}
   \label{fig6}
@@ -373,7 +373,7 @@ One practical application of this method is the estimation of technical reserves
 
 \begin{figure}[H]
 \centering
-\begin{minipage}{0.85\textwidth}
+\begin{minipage}{0.75\textwidth}
   \includegraphics[width=\textwidth]{pdf_cdf.eps}
   \caption{PDF and CDF of technical reserves. Source: Adapted from \cite{ref24}.}
   \label{fig7}
