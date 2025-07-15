@@ -244,7 +244,7 @@ The discrepancy between the two NPV stems from fundamental differences in how fu
 
 \cite{ref13} discusses how to determine an optimal exercise policy for ROA by evaluating the expected continuation value of each available alternative at each decision point, conditioned on the information available at that time. The continuation value represents the expected NPV of future cash flows if a specific decision is made. The optimal policy is the one that selects the alternative with the highest continuation value given the current state. To implement this in practice, \cite{ref13} adopts the LSM approach proposed by \cite{ref14}, which estimates continuation values through regression analysis based on simulation results.
 
-In the context BDH problem, this method involves simulating the project under the assumption that no options are exercised, for example, continuing operations without divesting or buying out a partner. At the decision point in Year 5, for each simulation run, the NPV of the remaining cash flows (i.e., the realized continuation value) is recorded along with the oil price and variable operating cost in that scenario. A regression is then performed with the continuation value as the dependent variable and the state variables (oil price and cost) as independent variables. Using the fully risk-neutral approach, \cite{ref13} conducts a simulation with 10,000 trials and obtains an estimated regression equation that expresses the continuation value as a function of the observed state variables at the time of the decision. This equation can then be used to support near-optimal decision-making by comparing the estimated continuation value with the value of exercising the option, choosing the alternative with the highest expected value.
+In the context BDH problem, this method involves simulating the project under the assumption that no options are exercised, for example, continuing operations without divesting or buying out a partner. At the decision point in Year 5, for each simulation run, the NPV of the remaining cash flows (e.g., the realized continuation value) is recorded along with the oil price and variable operating cost in that scenario. A regression is then performed with the continuation value as the dependent variable and the state variables (oil price and cost) as independent variables. Using the fully risk-neutral approach, \cite{ref13} conducts a simulation with 10,000 trials and obtains an estimated regression equation that expresses the continuation value as a function of the observed state variables at the time of the decision. This equation can then be used to support near-optimal decision-making by comparing the estimated continuation value with the value of exercising the option, choosing the alternative with the highest expected value.
 
 In \cite{ref15}, the authors analyze the LSM method for ROA, emphasizing the importance of regression function selection and path inclusion strategies. They demonstrate that excluding out-of-the-money paths can undervalue options, while higher-order polynomial regressions show robustness in only in-the-money/out-of-the-money cases. Notably, \cite{ref13}, who applied LSM to the BDH problem, used all simulated paths and a polynomial regression function, reinforcing the method's reliability when capturing full flexibility. He highlights LSM's effectiveness in sequential decision-making under uncertainty.
 
@@ -358,7 +358,7 @@ In this study, it is assumed that the vertical oil production well is fully pene
 
 \subsection{Monte Carlo Simulation}\label{subsec42}
 
-Monte Carlo Simulation is a robust and flexible approach for uncertainty analysis, widely applied in decision-making within petroleum engineering (Bratvold et al.). The central idea of MCS is to propagate uncertainty from input parameters, such as costs, prices, and geological properties, to key output metrics like NPV, reserves, or production forecasts. By constructing probabilistic models for uncertain inputs and performing repeated sampling, MCS enables the generation of output distributions that provide valuable insights for risk-informed decisions. The general workflow of MCS, including input sampling and output analysis, is illustrated in Figure \ref{fig6}.
+Monte Carlo Simulation is a robust and flexible approach for uncertainty analysis, widely applied in decision-making within petroleum engineering \citep{ref24}. The central idea of MCS is to propagate uncertainty from input parameters, such as costs, prices, and geological properties, to key output metrics like NPV, reserves, or production forecasts. By constructing probabilistic models for uncertain inputs and performing repeated sampling, MCS enables the generation of output distributions that provide valuable insights for risk-informed decisions. The general workflow of MCS, including input sampling and output analysis, is illustrated in Figure \ref{fig6}.
 
 \begin{figure}[H]
 \centering
@@ -418,7 +418,7 @@ A positive drift ($\alpha > 0$) implies an upward trend in variable operating co
 \centering
 \begin{minipage}{0.95\textwidth}
   \includegraphics[width=\textwidth]{VOC_profile.eps}
-  \caption{Variable operating costs simulations results, confidence bands and example price paths.}
+  \caption{Variable operating costs simulations (GBM), confidence bands and example price paths.}
   \label{fig10}
 \end{minipage}
 \end{figure}
@@ -520,7 +520,7 @@ In this work, we adopted this approach and employed the calibrated parameters li
 \centering
 \begin{minipage}{0.95\textwidth}
   \includegraphics[width=\textwidth]{Price_profile.eps}
-  \caption{Oil price simulations results, confidence bands and example price paths.}
+  \caption{Oil price simulations (Two-Factor), confidence bands and example price paths.}
   \label{fig12}
 \end{minipage}
 \end{figure}
@@ -562,28 +562,52 @@ F(\omega; t_k) = \mathbb{E}_Q \left[ \sum_{j=k+1}^K \exp \left( -\int_{t_k}^{t_j
 where $r(\omega, t)$ denotes the (potentially stochastic) risk-free discount rate, and the expectation is conditional on the available information set $\mathcal{F}_{t_k}$ at time $t_k$. This approach leads to the standard ROA: at each decision point, the investor should compare the value of immediate exercise with the conditional expectation of continuation \citep{ref14}. The optimal policy is to exercise when the immediate payoff is positive and exceeds the expected value of waiting.
 
 
-\cite{ref13} presented one of the early applications of the LSM method to a simplified oil production project, using the illustrative case study developed by \cite{ref12a, ref12b}. The analysis incorporated both the option to buy out the partnership share at a given cost and the option to divest the project in exchange for a predetermined cash flow. The BDH example, which will be discussed in Subsection \ref{subsec51}, provides a clear and practical decision-making framework for ROA. Its simplicity, combined with relevant managerial flexibility, makes it particularly advantageous for illustrating the solution of optimal policies and project valuation. Furthermore, it is straightforward for readers to replicate and adapt this example for their own analyses \citep{ref15}.
-
-
-
-
-
-
+\cite{ref13} presented one of the early applications of the LSM method to a simplified oil production project, using the illustrative case study developed by \cite{ref12a, ref12b}. The analysis incorporated both the option to buy out the partnership share at a given cost and the option to divest the project in exchange for a predetermined cash flow. BDH problem, which will be discussed in Subsection \ref{subsec51}, provides a clear and practical decision-making framework for ROA. Its simplicity, combined with relevant managerial flexibility, makes it particularly advantageous for illustrating the solution of optimal policies and project valuation. Furthermore, it is straightforward for readers to replicate and adapt this example for their own analyses \citep{ref15}.
 
 \section{Results}\label{sec5}
 
 \subsection{BDH problem}\label{subsec51}
 
-The production profile reported in Table \ref{tab1} is also shown in Figure \ref{fig15}.
+\cite{ref12a} introduces the BDH problem, which evaluates an oil production project whose results are then used to build the binomial decision tree approach that underpins the ROA, as described in Section \ref{sec4}. To model uncertainty, the authors use a MCS for the oil price and operating costs, see Figure \ref{fig10}. After many iterations (e.g., 10,000), and using a 10\% risk-ajusted discount rate, they estimate the present value of expected cash flow at \$404 million, see Table \ref{tab1}. This result is the base value of the original BDH problem, excluding managerial flexibility or options. Figure \ref{fig13} illustrate production profile for BDH problem according to values in Tables \ref{tab1} and \ref{tab2}.
 
 \begin{figure}[H]
 \centering
 \begin{minipage}{0.95\textwidth}
   \includegraphics[width=\textwidth]{prod_profile.eps}
   \caption{Production profile for BDH problem.}
-  \label{fig15}
+  \label{fig13}
 \end{minipage}
 \end{figure}
+
+When revisiting the BDH problem, \cite{ref13} considered a risk-neutral growth rate of 0\% per year for oil prices, modeled as a GBM as shown in Figure \ref{fig14}, and used a risk-free discount rate of 5\%, while keeping all other parameters unchanged. Under these assumptions, the present value of the cash flows without options is \$392 million.
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{0.95\textwidth}
+  \includegraphics[width=\textwidth]{Oil_profile.eps}
+  \caption{Oil price simulations (GBM), confidence bands and example price paths.}
+  \label{fig14}
+\end{minipage}
+\end{figure}
+
+In the BDH problem, the field developer initially owns 75\% of the project. At Year~5, two managerial flexibilities are available: the owner can either divest the project, receiving an additional \$100~million in profit plus the cumulative cash flows up to that point, or buy out the remaining 25\% share for \$40~million, securing full ownership of future project cash flows until expiration. These options can be exercised at a single, specific decision point, or the owner may choose to continue without exercising any option.
+
+At this decision point, the option holder may select among three alternatives: (i) continuation, (ii) buyout, or (iii) divestment. The value of the project at time $t$ and path $j$, denoted $v_{t,j}$, is computed recursively using dynamic programming employed in the LSM, as shown in \citep{ref13, ref15}:
+
+\begin{equation}
+v_{t,j} = 
+\begin{cases}
+    c_{t,j} + \dfrac{v_{t+1,j}}{1+r}, & \text{Continuation} \\[2ex]
+    c_{t,j} + \dfrac{4}{3} \dfrac{v_{t+1,j}}{1+r} - 40, & \text{Buyout} \\[2ex]
+    c_{t,j} + 100, & \text{Divest}
+\end{cases}
+\label{eq:bdh_options}
+\end{equation}
+where $c_{t,j}$ is the cash flow received at time $t$ and path $j$, $v_{t+1,j}$ is the calculated value at the next time step, and $r$ is the risk-free interest rate.
+
+The model incorporates two sources of uncertainty: oil price and variable operating cost, both contributing to valuation risk. The present value of the project with options is calculated to be \$421~million, which was obtained using the LSM method based on simulation combined with linear regression. Given an initial investment of \$180~million, the corresponding option value is \$29~million.
+
+
 
 \subsection{Modified BDH problem}\label{subsec52}
 
