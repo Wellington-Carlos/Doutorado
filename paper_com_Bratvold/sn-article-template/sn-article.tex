@@ -572,7 +572,7 @@ where $r(\omega, t)$ denotes the (potentially stochastic) risk-free discount rat
 
 \subsection{BDH problem}\label{subsec51}
 
-\cite{ref12a} introduces the BDH problem, which evaluates an oil production project whose results are then used to build the binomial decision tree approach that underpins the ROA, as described in Section \ref{sec4}. To model uncertainty, the authors use a MCS for the oil price and operating costs, see Figure \ref{fig10}. After many iterations (e.g., 10,000), and using a 10\% risk-ajusted discount rate, they estimate the present value of expected cash flow at \$404 million, see Table \ref{tab1}. This result is the base value of the original BDH problem, excluding managerial flexibility or options. Figure \ref{fig13} illustrate production profile for BDH problem according to values in Tables \ref{tab1} and \ref{tab2}.
+\cite{ref12a} introduces the BDH problem, which evaluates an oil production project whose results are then used to build the binomial decision tree approach that underpins the ROA, as described in Section \ref{sec4}. To model uncertainty, the authors use a GBM for the oil price and operating costs. After many iterations (e.g., 10,000), and using a 10\% risk-ajusted discount rate, they estimate the present value of expected cash flow at \$404 million, see Table \ref{tab1}. This result is the base value of the original BDH problem, excluding managerial flexibility or options. Figure \ref{fig13} illustrate production profile for BDH problem according to values in Tables \ref{tab1} and \ref{tab2}.
 
 \begin{figure}[H]
 \centering
@@ -601,34 +601,85 @@ At this decision point, the option holder may select among three alternatives: (
 \begin{equation}
 v_{t,j} = 
 \begin{cases}
-    c_{t,j} + \dfrac{v_{t+1,j}}{1+r}, & \text{Continuation} \\[2ex]
-    c_{t,j} + \dfrac{4}{3} \dfrac{v_{t+1,j}}{1+r} - 40, & \text{Buyout} \\[2ex]
-    c_{t,j} + 100, & \text{Divest}
+    c_{t,j} + \dfrac{v_{t+1,j}}{1+r}, & \text{continuation} \\[2ex]
+    c_{t,j} + \dfrac{4}{3} \dfrac{v_{t+1,j}}{1+r} - 40, & \text{buyout} \\[2ex]
+    c_{t,j} + 100, & \text{divest}
 \end{cases}
 \label{eq:bdh_options}
 \end{equation}
-where $c_{t,j}$ is the cash flow received at time $t$ and path $j$, $v_{t+1,j}$ is the calculated value at the next time step, and $r$ is the risk-free interest rate.
+where $c_{t,j}$ is the cash flow received at time $t$ and path $j$, $v_{t+1,j}$ is the calculated value at the next time step, and $r$ is the risk-free discount rate.
 
-The model incorporates two sources of uncertainty: oil price and variable operating cost, both contributing to valuation risk. The present value of the project with options is calculated to be \$421~million, which was obtained using the LSM method based on simulation combined with linear regression. Consequently, the value of the option embedded in the project is estimated at \$29~million.
+The model incorporates two sources of uncertainty: oil price and variable operating cost, both contributing to valuation risk. The present value of the project with options is calculated to be \$421~million, which was obtained using the LSM method based on simulation combined with linear regression. Figure \ref{fig15} presents the relative frequency distribution for the project's present value without the option, as well as with the options to divest, buy out, or continue, where managerial flexibility can be exercised in Year~5. Consequently, the expected value of the embedded option in the project is estimated to be \$29~million.
 
 \begin{figure}[H]
 \centering
 \begin{minipage}{0.95\textwidth}
   \includegraphics[width=\textwidth]{density_NPV_1.eps}
-  \caption{Options Year 5.}
+  \caption{PV of the project (a) without options and (b) with options in Year~5.}
   \label{fig15}
 \end{minipage}
 \end{figure}
+
+Value of Flexibility arises from the ability to adapt project decisions as uncertainties are progressively resolved, rather than committing to a single deterministic plan. As highlighted by \cite{ref9}, incorporating managerial flexibility, such as options to defer, expand, buyout or divest a project, enables decision-makers to both mitigate downside risks and capture upside opportunities, thereby increasing the expected value of the project. Through real-world examples, these authors demonstrate that structuring projects with flexible alternatives can add substantial value, especially in contexts where uncertainty is significant and cannot be fully eliminated through information gathering alone. Thus, evaluating and explicitly incorporating flexibility should be a fundamental part of decision analysis in uncertain environments.
+
+In the case of the BDH problem, we consider that the options to continue, buyout, or divest can be exercised at any time from Year~1 to Year~10 of field production, rather than only in Year~5 as initially proposed by \cite{ref12a, ref12b}. The results are presented in Figure \ref{fig16}, where we clearly observe an increase in the project value to \$484~million. In other words, the option value increased from \$29~million to \$92~million, representing an approximate 317\% increase in the option value.
 
 \begin{figure}[H]
 \centering
 \begin{minipage}{0.95\textwidth}
   \includegraphics[width=\textwidth]{density_NPV_2.eps}
-  \caption{Options all years.}
+  \caption{PV of the project (a) without options and (b) with options from Year~1 to Year~10.}
   \label{fig16}
 \end{minipage}
 \end{figure}
 
+Value of Flexibility refers to the benefit of designing projects with the capability to adapt decisions as uncertainties are resolved over time. This analysis, analogous to the VoI, seeks to determine whether the expected advantage of incorporating managerial flexibility justifies its cost. Before allocating resources to acquire additional information based solely on a positive expected monetary value from a VoI analysis, it is crucial for decision-makers focused on value maximization to also evaluate the potential gains from flexible project structures \citep{ref9}.
+
+Flexibility tends to be particularly advantageous under the following conditions \citep{ref24}:
+\begin{enumerate}
+    \item When reducing uncertainty through information acquisition is not feasible.
+    \item When the cost of flexibility is lower than the cost of obtaining information.
+    \item When it is necessary to manage residual uncertainty after information has been collected.
+    \item When flexibility enables the creation of additional value.
+\end{enumerate}
+In general, the first three cases primarily address risk mitigation, while the last one aims to exploit upside potential associated with uncertainty.
+
+Figure \ref{fig17} presents the results generated by the LSM algorithm using an alternative visualization. The diagram illustrates, for each year, the probability associated with each available decision—buyout, continue, or divest—conditioned on the information available at Year 0. This type of representation offers decision makers a clear understanding of the most likely actions throughout the project horizon \citep{ref27}.
+
+As an illustrative example, Figure \ref{fig17} indicates that, in 9,930 out of 10,000 simulated paths, the optimal strategy is to buyout the partner's share right at the start of the project. From the second year onwards, the recommended decision generally shifts towards continuing the project, although the probability of this choice gradually decreases over time. Conversely, the probability of opting for divestment shows a slight upward trend as the project progresses.
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{0.95\textwidth}
+  \includegraphics[width=\textwidth]{options_prob.eps}
+  \caption{Probability of each option for the project in each year.}
+  \label{fig17}
+\end{minipage}
+\end{figure}
+
+Figure \ref{fig18} displays the decision maps corresponding to four distinct time periods. In these maps, goldenrod color regions represent where the divest option is optimal, while teal color regions indicate that the continue alternative is preferred. As time advances, the area where the divest decision is optimal expands, covering a larger portion of the map. These results are consistent with the findings presented in Figure \ref{fig17}.
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{0.95\textwidth}
+  \includegraphics[width=\textwidth]{decision_maps.eps}
+  \caption{Decision maps for different time periods.}
+  \label{fig18}
+\end{minipage}
+\end{figure}
+
+Finally, to highlight the value of flexibility, Figure \ref{fig19} shows the present value of the project when the options can be exercised at different periods. The darkred line represents the project's present value assuming the option can be exercised in Year~1, Year~2, and so on, up to Year~10. It can be observed that the highest values occur at the beginning and at the end of the project, at \$455 and \$454 million, respectively. The lowest project value with the option, \$421 million, is found in Year~5 (and Year~4), which corresponds precisely to the BDH Problem, as also shown in Figure \ref{fig15}.
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{0.75\textwidth}
+  \includegraphics[width=\textwidth]{graph_options.eps}
+  \caption{Present values of the project for options exercised at different times.}
+  \label{fig19}
+\end{minipage}
+\end{figure}
+
+Teal line in Figure \ref{fig19} illustrates the present value of the project with options as the number of years available to exercise the option increases. It starts with the project value when the option can only be exercised in Year~1, then includes Years~1 and 2, then Years~1, 2, and 3, and so on, cumulatively adding each year until reaching the case where the option can be exercised throughout the entire period, from Year~1 to Year~10. In this latter scenario, the present value of the project reaches \$484 million, which is the same value presented in Figure \ref{fig16}. This result confirms that increasing the flexibility to exercise options leads to a higher project value. Additionally, Figure~\ref{fig19} shows that, in any scenario where options are available, the present value of the project is always higher than the present value without options, which is \$392 million (dashed goldenrod line).
 
 \subsection{Modified BDH problem}\label{subsec52}
 
