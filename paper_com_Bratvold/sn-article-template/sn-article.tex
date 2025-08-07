@@ -265,7 +265,7 @@ Based on the previously described BDH problem, we propose a revised formulation 
 \centering
 \begin{minipage}{0.95\textwidth}
   \includegraphics[width=\textwidth]{egg_model_log_3D.eps}
-  \caption{The Egg model: permeability distribution of the deterministic version.}
+  \caption{3D Egg model: permeability distribution of the deterministic version.}
   \label{fig1}
 \end{minipage}
 \end{figure}
@@ -290,13 +290,13 @@ In addition to reservoir uncertainty, we address operational and economic uncert
 
 \subsection{The Egg Model}\label{subsec41}
 
-Egg Model, originally introduced by \cite{ref23} and further standardized by \cite{ref18}, is a widely used synthetic benchmark for reservoir simulation studies. The model comprises 25,200 gridblocks, of which 18,533 are active, forming an egg-shaped reservoir by excluding inactive gridblocks. Its reservoir architecture features a set of meandering, high-permeability channels embedded within a low-permeability matrix, thereby representing the geological complexity of fluvial depositional environments. Due to the high degree of vertical correlation among the seven layers, the permeability fields can be cosidered almost two dimensional. The standard configuration comprises twelve wells, with eight injectors and four producers. Figure \ref{fig3} presents the absolute permeability field and the locations of all wells. This benchmark geological model is well documented in the literature. 
+Egg Model, originally introduced by \cite{ref23} and further standardized by \cite{ref18}, is a widely used synthetic benchmark for reservoir simulation studies. The model comprises 25,200 gridblocks, of which 18,533 are active, forming an egg-shaped reservoir by excluding inactive gridblocks. Each gridblock is 8 by 8m with a height of 4m. The model consists of 8 injectors and 4 producers (see Figure \ref{fig3}). Its reservoir architecture features a set of meandering, high-permeability channels embedded within a low-permeability matrix, thereby representing the geological complexity of fluvial depositional environments with seven vertical layers. Due to the high degree of vertical correlation among the seven layers, the permeability fields can be cosidered almost two dimensional. The standard configuration comprises twelve wells, with eight injectors and four producers. Figure \ref{fig3} presents the absolute permeability field and the locations of all wells. This benchmark geological model is well documented in the literature. 
 
 \begin{figure}[H]
 \centering
 \begin{minipage}{0.95\textwidth}
   \includegraphics[width=\textwidth]{egg_model_log_3D_well.eps}
-  \caption{Egg reservoir model. Blue lines are an indicator of injector wells, and red ones represent the producers.}
+  \caption{3D Egg model. Blue lines are an indicator of injector wells, and red ones represent the producers.}
   \label{fig3}
 \end{minipage}
 \end{figure}
@@ -349,7 +349,7 @@ Oil and water production profiles of the deterministic version (reference model)
 \end{minipage}
 \end{figure}
 
-In this study, it is assumed that the vertical oil production well is fully penetrating. Accordingly, since there are 3,600 gridblocks in the first layer, of which 2,491 are active cells, this assumption yields 2,491 feasible well placement scenarios, corresponding to the number of active gridblocks in the top layer of the reservoir model. Figure \ref{fig5} illustrates the spatial distribuition of permeability in the top layer for 16 realizations of the Egg model. These realizations were randomly selected from the original set of 101, which consists of one reference field and one hundred initial stochastic models. The models exhibit high-permeability channels within a low-permeability background, with each realization presenting a distinct channel pattern, showing alternative fluvial structures.
+In this study, it is assumed that the vertical oil production well is fully penetrating. Accordingly, since there are 3,600 gridblocks in the first layer, of which 2,491 are active cells, this assumption yields 2,491 feasible well placement scenarios, corresponding to the number of active gridblocks in the top layer of the reservoir model. Figure \ref{fig5} illustrates the spatial distribuition of permeability in the top layer for 25 realizations of the Egg model. These realizations were randomly selected from the original set of 101, which consists of one reference field and one hundred initial stochastic models. The models exhibit high-permeability channels within a low-permeability background, with each realization presenting a distinct channel pattern, showing alternative fluvial structures.
 
 \begin{figure}[H]
 \centering
@@ -570,7 +570,7 @@ where $r(\omega, t)$ denotes the (potentially stochastic) risk-free discount rat
 
 \section{Results}\label{sec5}
 
-\subsection{BDH problem}\label{subsec51}
+\subsection{First case: BDH problem}\label{subsec51}
 
 \cite{ref12a} introduces the BDH problem, which evaluates an oil production project whose results are then used to build the binomial decision tree approach that underpins the ROA, as described in Section \ref{sec4}. To model uncertainty, the authors use a GBM for the oil price and operating costs. After many iterations (e.g., 10,000), and using a 10\% risk-ajusted discount rate, they estimate the present value of expected cash flow at \$404 million, see Table \ref{tab1}. This result is the base value of the original BDH problem, excluding managerial flexibility or options. Figure \ref{fig13} illustrate production profile for BDH problem according to values in Tables \ref{tab1} and \ref{tab2}.
 
@@ -681,7 +681,29 @@ Finally, to highlight the value of flexibility, Figure \ref{fig19} shows the pre
 
 Teal line in Figure \ref{fig19} illustrates the present value of the project with options as the number of years available to exercise the option increases. It starts with the project value when the option can only be exercised in Year~1, then includes Years~1 and 2, then Years~1, 2, and 3, and so on, cumulatively adding each year until reaching the case where the option can be exercised throughout the entire period, from Year~1 to Year~10. In this latter scenario, the present value of the project reaches \$484 million, which is the same value presented in Figure \ref{fig16}. This result confirms that increasing the flexibility to exercise options leads to a higher project value. Additionally, Figure~\ref{fig19} shows that, in any scenario where options are available, the present value of the project is always higher than the present value without options, which is \$392 million (dashed goldenrod line).
 
-\subsection{Modified BDH problem}\label{subsec52}
+\subsection{Second case: 3D Egg Model}\label{subsec52}
+
+The methodology and results developed for the BDH problem are now extended to the 3D Egg model. The main distinction lies in the treatment of production profiles: in this case, production curves are explicitly considered as an additional source of uncertainty, since multiple permeability realizations from the Egg model yield different production curves for the producer wells. In contrast, for the BDH problem, the production profile was assumed to be fixed (see Figure \ref{fig13}).
+
+Figure \ref{fig20} shows the oil production rates for the four main producing wells, based on the results of 101 reservoir simulation runs for the 3D Egg model (see Figure \ref{fig3}). Each subplot displays the production curves for all realizations in darkred and highlights the average production curve in goldenrod color for each well. This approach visually illustrates the range of production uncertainty and the expected (mean) production behavior.
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{0.95\textwidth}
+  \includegraphics[width=\textwidth]{production_all_PRODs.eps}
+  \caption{Four production wells over time for each of the 101 realizations.}
+  \label{fig20}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{minipage}{0.95\textwidth}
+  \includegraphics[width=\textwidth]{production_field_pdf_cdf.eps}
+  \caption{Production Egg field and PDF/CDF.}
+  \label{fig21}
+\end{minipage}
+\end{figure}
 
 \section{Conclusion}\label{sec6}
 

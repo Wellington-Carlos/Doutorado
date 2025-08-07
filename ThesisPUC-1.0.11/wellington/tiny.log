@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.2)  2 JUN 2025 21:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.2)  6 AUG 2025 13:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -985,13 +985,20 @@ enddocument/afterlastpage (AED): lastpage setting LastPage.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-29>
  ***********
-Package rerunfilecheck Info: File `tiny.out' has not changed.
-(rerunfilecheck)             Checksum: 9573DF35E36C81097E46EC410F424A08;2136.
+
+
+Package rerunfilecheck Warning: File `tiny.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `tiny.out':
+(rerunfilecheck)             Before: 9573DF35E36C81097E46EC410F424A08;2136
+(rerunfilecheck)             After:  2692C5270B6887B7FBD5400827CDC962;2171.
  ) 
 Here is how much of TeX's memory you used:
  15549 strings out of 469923
- 249276 string characters out of 5469171
- 697093 words of memory out of 5000000
+ 249204 string characters out of 5469171
+ 697099 words of memory out of 5000000
  42032 multiletter control sequences out of 15000+600000
  673259 words of font info for 69 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
@@ -1005,7 +1012,7 @@ C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><
 C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><
 C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb
 >
-Output written on tiny.pdf (17 pages, 665045 bytes).
+Output written on tiny.pdf (17 pages, 663748 bytes).
 PDF statistics:
  207 PDF objects out of 1000 (max. 8388607)
  35 named destinations out of 1000 (max. 500000)
