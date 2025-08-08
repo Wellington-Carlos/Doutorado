@@ -1,17 +1,12 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.2)  9 JUL 2025 19:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.2)  7 AUG 2025 12:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**C:/Users/calva/OneDrive/Documentos/Doutorado_PUC/paper_com_Bratvold/sn-articl
-e-template/sn-article.tex
-
-(C:/Users/calva/OneDrive/Documentos/Doutorado_PUC/paper_com_Bratvold/sn-article
--template/sn-article.tex
+**./sn-article.tex
+(sn-article.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-04-29>
-
-(C:/Users/calva/OneDrive/Documentos/Doutorado_PUC/paper_com_Bratvold/sn-article
--template\sn-jnl.cls
+(sn-jnl.cls
 Document Class: sn-jnl 2019/11/18 v0.1: An authoring template for Springer Jour
 nal articles
 (C:\Users\calva\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -631,9 +626,7 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 tex.def
 File: l3backend-pdftex.def 2025-04-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count354
-)
-(C:/Users/calva/OneDrive/Documentos/Doutorado_PUC/paper_com_Bratvold/sn-article
--template\sn-article.aux)
+) (sn-article.aux)
 \openout1 = `sn-article.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
@@ -723,11 +716,7 @@ LaTeX Font Info:    Overwriting symbol font `AMSa' in version `normal'
 LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
 (Font)                  U/msa/m/n --> U/msa/m/n on input line 95.
 Package hyperref Info: Link coloring ON on input line 95.
-
-(C:/Users/calva/OneDrive/Documentos/Doutorado_PUC/paper_com_Bratvold/sn-article
--template\sn-article.out)
-(C:/Users/calva/OneDrive/Documentos/Doutorado_PUC/paper_com_Bratvold/sn-article
--template\sn-article.out)
+ (sn-article.out) (sn-article.out)
 \@outlinefile=\write3
 \openout3 = `sn-article.out'.
 
@@ -778,10 +767,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 {C:/Users/calva/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
 
-Package natbib Warning: Citation `ref6' on page 2 undefined on input line 167.
+Package natbib Warning: Citation `ref1a' on page 2 undefined on input line 163.
 
-
-Package natbib Warning: Citation `ref7' on page 2 undefined on input line 167.
 
 
 
@@ -790,33 +777,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]
 
-Package natbib Warning: Citation `ref8' on page 3 undefined on input line 169.
+Package natbib Warning: Citation `ref6' on page 3 undefined on input line 169.
 
 
-Package natbib Warning: Citation `ref9' on page 3 undefined on input line 169.
+Package natbib Warning: Citation `ref7' on page 3 undefined on input line 169.
 
 
-Package natbib Warning: Citation `ref10' on page 3 undefined on input line 169.
+Package natbib Warning: Citation `ref8' on page 3 undefined on input line 171.
 
 
-
-Package natbib Warning: Citation `ref11' on page 3 undefined on input line 169.
-
+Package natbib Warning: Citation `ref9' on page 3 undefined on input line 171.
 
 
-Package natbib Warning: Citation `ref12' on page 3 undefined on input line 171.
-
-
-
-Package natbib Warning: Citation `ref13' on page 3 undefined on input line 171.
+Package natbib Warning: Citation `ref10' on page 3 undefined on input line 171.
 
 
 
-Package natbib Warning: Citation `ref12' on page 3 undefined on input line 171.
-
-
-
-Package natbib Warning: Citation `ref14' on page 3 undefined on input line 171.
+Package natbib Warning: Citation `ref11' on page 3 undefined on input line 171.
 
 
 
@@ -826,559 +803,39 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
 
-Package natbib Warning: Citation `ref12' on page 4 undefined on input line 173.
+Package natbib Warning: Citation `ref11a' on page 4 undefined on input line 173
+.
 
 
+Package natbib Warning: Citation `ref12a' on page 4 undefined on input line 175
+.
 
-Package natbib Warning: Citation `ref13' on page 4 undefined on input line 173.
 
+Package natbib Warning: Citation `ref13' on page 4 undefined on input line 175.
 
 
-Package natbib Warning: Citation `ref9' on page 4 undefined on input line 173.
 
+Package natbib Warning: Citation `ref12a' on page 4 undefined on input line 175
+.
 
-Package natbib Warning: Citation `ref12' on page 4 undefined on input line 177.
 
+Package natbib Warning: Citation `ref14' on page 4 undefined on input line 175.
 
 
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 90.0| 
- []
 
+Package natbib Warning: Citation `ref12a' on page 4 undefined on input line 177
+.
 
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 90.0| 
- []
 
+Package natbib Warning: Citation `ref13' on page 4 undefined on input line 177.
 
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 81.0| 
- []
 
 
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 73.4| 
- []
+Package natbib Warning: Citation `ref9' on page 4 undefined on input line 177.
 
 
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 66.8| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 61.3| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 56.6| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 52.6| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 49.2| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 46.3| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 43.9| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 10.0| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 10.2| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 10.4| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 10.6| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 10.8| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 11.0| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 11.3| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 11.5| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 11.7| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 12.0| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 12.2| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 25.0| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 25.8| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 26.5| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 27.3| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 28.1| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 29.0| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 29.9| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 30.7| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 31.7| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 32.6| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 33.6| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 231.8| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 202.9| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 177.6| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 155.5| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 136.2| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 119.2| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 104.4| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 91.4| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 80.0| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 70.0| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (96.8)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (84.6)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (74.0)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (64.8)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (56.9)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (50.0)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (44.0)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (38.8)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (34.3)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (30.4)| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 135.0| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 118.3| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 103.6| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 90.7| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 79.3| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 69.2| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 60.4| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 52.6| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 45.7| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 39.6| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (33.7)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (29.6)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (25.9)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (22.7)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (19.8)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (17.3)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (15.1)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (13.1)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (11.4)| 
- []
-
-
-Overfull \hbox (3.4805pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 (9.9)| 
- []
-
-
-Overfull \hbox (8.34862pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/bx/n/8.03 101.2| 
- []
-
-
-Overfull \hbox (3.4302pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/bx/n/8.03 88.7| 
- []
-
-
-Overfull \hbox (3.4302pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/bx/n/8.03 77.7| 
- []
-
-
-Overfull \hbox (3.4302pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/bx/n/8.03 68.0| 
- []
-
-
-Overfull \hbox (3.4302pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/bx/n/8.03 59.5| 
- []
-
-
-Overfull \hbox (3.4302pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/bx/n/8.03 51.9| 
- []
-
-
-Overfull \hbox (3.4302pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/bx/n/8.03 45.3| 
- []
-
-
-Overfull \hbox (3.4302pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/bx/n/8.03 39.4| 
- []
-
-
-Overfull \hbox (3.4302pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/bx/n/8.03 34.3| 
- []
-
-
-Overfull \hbox (3.4302pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/bx/n/8.03 29.7| 
- []
-
-
-Overfull \hbox (8.34862pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/bx/n/8.03 404.0| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 444.5| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 377.6| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 317.7| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 264.0| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 215.6| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 171.7| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 131.8| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 95.1| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 61.3| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 29.7| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 0.228| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 0.235| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 0.245| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 0.258| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 0.276| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 0.302| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 0.344| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 0.414| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 0.559| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 204--204
- []|\OT1/cmr/m/n/8.03 1.000| 
- []
-
-
-Package natbib Warning: Citation `ref12' on page 4 undefined on input line 205.
-
-
-
-Overfull \hbox (12.1122pt too wide) in paragraph at lines 180--206
- [] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Package natbib Warning: Citation `ref12' on page 4 undefined on input line 210.
-
-
-
-Package natbib Warning: Citation `ref13' on page 4 undefined on input line 212.
-
+Package natbib Warning: Citation `ref12a' on page 4 undefined on input line 181
+.
 
 
 
@@ -1386,476 +843,1013 @@ Package natbib Warning: Citation `ref13' on page 4 undefined on input line 212.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 10.0| 
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 90.0| 
  []
 
 
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 10.2| 
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 90.0| 
  []
 
 
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 10.4| 
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 81.0| 
  []
 
 
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 10.6| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 10.8| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 11.0| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 11.3| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 11.5| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 11.7| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 12.0| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 12.2| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 25.0| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 25.0| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 25.0| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 25.0| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 25.0| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 25.0| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 25.0| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 25.0| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 25.0| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 25.0| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 25.0| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 225.0| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 191.3| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 162.6| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 138.2| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 117.5| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 99.8| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 84.9| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 72.1| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 61.3| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 52.1| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 (96.8)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 (84.6)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 (74.0)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 (64.8)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 (56.9)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 (50.0)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 (44.0)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 (38.8)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 (34.3)| 
- []
-
-
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 (30.4)| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 128.2| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 106.7| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 88.6| 
- []
-
-
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
  []|\OT1/cmr/m/n/8.03 73.4| 
  []
 
 
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 60.6| 
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 66.8| 
  []
 
 
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 49.9| 
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 61.3| 
  []
 
 
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 40.9| 
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 56.6| 
  []
 
 
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 33.3| 
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 52.6| 
  []
 
 
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 27.0| 
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 49.2| 
  []
 
 
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 21.7| 
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 46.3| 
  []
 
 
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 (32.1)| 
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 43.9| 
  []
 
 
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 (26.7)| 
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 10.0| 
  []
 
 
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 (22.1)| 
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 10.2| 
  []
 
 
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 (18.3)| 
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 10.4| 
  []
 
 
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 237--237
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 10.6| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 10.8| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 11.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 11.3| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 11.5| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 11.7| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 12.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 12.2| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 25.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 25.8| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 26.5| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 27.3| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 28.1| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 29.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 29.9| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 30.7| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 31.7| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 32.6| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 33.6| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 231.8| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 202.9| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 177.6| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 155.5| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 136.2| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 119.2| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 104.4| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 91.4| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 80.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 70.0| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 (96.8)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 (84.6)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 (74.0)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 (64.8)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 (56.9)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 (50.0)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 (44.0)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 (38.8)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 (34.3)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 (30.4)| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 135.0| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 118.3| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 103.6| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 90.7| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 79.3| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 69.2| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 60.4| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 52.6| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 45.7| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 39.6| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 (33.7)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 (29.6)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 (25.9)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 (22.7)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 (19.8)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 (17.3)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 208--208
  []|\OT1/cmr/m/n/8.03 (15.1)| 
  []
 
 
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 (12.5)| 
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 (13.1)| 
  []
 
 
-Overfull \hbox (7.74649pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 (10.2)| 
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 (11.4)| 
  []
 
 
-Overfull \hbox (3.4805pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 (8.3)| 
+Overfull \hbox (3.4805pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 (9.9)| 
  []
 
 
-Overfull \hbox (3.4805pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 (6.8)| 
+Overfull \hbox (8.34862pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/bx/n/8.03 101.2| 
  []
 
 
-Overfull \hbox (3.4805pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 (5.4)| 
+Overfull \hbox (3.4302pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/bx/n/8.03 88.7| 
  []
 
 
-Overfull \hbox (3.4302pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/bx/n/8.03 96.2| 
+Overfull \hbox (3.4302pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/bx/n/8.03 77.7| 
  []
 
 
-Overfull \hbox (3.4302pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/bx/n/8.03 80.0| 
+Overfull \hbox (3.4302pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/bx/n/8.03 68.0| 
  []
 
 
-Overfull \hbox (3.4302pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/bx/n/8.03 66.4| 
+Overfull \hbox (3.4302pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/bx/n/8.03 59.5| 
  []
 
 
-Overfull \hbox (3.4302pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/bx/n/8.03 55.0| 
+Overfull \hbox (3.4302pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/bx/n/8.03 51.9| 
  []
 
 
-Overfull \hbox (3.4302pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/bx/n/8.03 45.4| 
+Overfull \hbox (3.4302pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/bx/n/8.03 45.3| 
  []
 
 
-Overfull \hbox (3.4302pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/bx/n/8.03 37.4| 
+Overfull \hbox (3.4302pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/bx/n/8.03 39.4| 
  []
 
 
-Overfull \hbox (3.4302pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/bx/n/8.03 30.7| 
+Overfull \hbox (3.4302pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/bx/n/8.03 34.3| 
  []
 
 
-Overfull \hbox (3.4302pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/bx/n/8.03 25.0| 
+Overfull \hbox (3.4302pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/bx/n/8.03 29.7| 
  []
 
 
-Overfull \hbox (3.4302pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/bx/n/8.03 20.3| 
+Overfull \hbox (8.34862pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/bx/n/8.03 404.0| 
  []
 
 
-Overfull \hbox (3.4302pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/bx/n/8.03 16.3| 
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 444.5| 
  []
 
 
-Overfull \hbox (8.34862pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/bx/n/8.03 392.0| 
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 377.6| 
  []
 
 
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 411.6| 
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 317.7| 
  []
 
 
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 331.2| 
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 264.0| 
  []
 
 
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 263.8| 
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 215.6| 
  []
 
 
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 207.3| 
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 171.7| 
  []
 
 
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 159.9| 
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 131.8| 
  []
 
 
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 120.6| 
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 95.1| 
  []
 
 
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 86.9| 
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 61.3| 
  []
 
 
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 59.0| 
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 29.7| 
  []
 
 
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 35.8| 
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 0.228| 
  []
 
 
-Overfull \hbox (1.1105pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 16.3| 
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 0.235| 
  []
 
 
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 0.233| 
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 0.245| 
  []
 
 
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 0.241| 
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 0.258| 
  []
 
 
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 0.251| 
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 0.276| 
  []
 
 
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 0.265| 
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 0.302| 
  []
 
 
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 0.284| 
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 0.344| 
  []
 
 
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 0.311| 
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 0.414| 
  []
 
 
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 0.352| 
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
+ []|\OT1/cmr/m/n/8.03 0.559| 
  []
 
 
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 0.423| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
- []|\OT1/cmr/m/n/8.03 0.566| 
- []
-
-
-Overfull \hbox (5.3765pt too wide) in paragraph at lines 237--237
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 208--208
  []|\OT1/cmr/m/n/8.03 1.000| 
  []
 
 
-Package natbib Warning: Citation `ref13' on page 5 undefined on input line 238.
+Package natbib Warning: Citation `ref12a' on page 5 undefined on input line 209
+.
+
+
+Overfull \hbox (12.1122pt too wide) in paragraph at lines 184--210
+ [] 
+ []
+
+
+Package natbib Warning: Citation `ref12a' on page 5 undefined on input line 214
+.
+
+
+Package natbib Warning: Citation `ref13' on page 5 undefined on input line 216.
 
 
 
-Overfull \hbox (12.1122pt too wide) in paragraph at lines 214--239
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 10.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 10.2| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 10.4| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 10.6| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 10.8| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 11.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 11.3| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 11.5| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 11.7| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 12.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 12.2| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 25.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 25.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 25.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 25.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 25.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 25.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 25.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 25.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 25.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 25.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 25.0| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 225.0| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 191.3| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 162.6| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 138.2| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 117.5| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 99.8| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 84.9| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 72.1| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 61.3| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 52.1| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (96.8)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (84.6)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (74.0)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (64.8)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (56.9)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (50.0)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (44.0)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (38.8)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (34.3)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (30.4)| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 128.2| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 106.7| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 88.6| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 73.4| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 60.6| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 49.9| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 40.9| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 33.3| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 27.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 21.7| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (32.1)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (26.7)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (22.1)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (18.3)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (15.1)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (12.5)| 
+ []
+
+
+Overfull \hbox (7.74649pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (10.2)| 
+ []
+
+
+Overfull \hbox (3.4805pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (8.3)| 
+ []
+
+
+Overfull \hbox (3.4805pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (6.8)| 
+ []
+
+
+Overfull \hbox (3.4805pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 (5.4)| 
+ []
+
+
+Overfull \hbox (3.4302pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/bx/n/8.03 96.2| 
+ []
+
+
+Overfull \hbox (3.4302pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/bx/n/8.03 80.0| 
+ []
+
+
+Overfull \hbox (3.4302pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/bx/n/8.03 66.4| 
+ []
+
+
+Overfull \hbox (3.4302pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/bx/n/8.03 55.0| 
+ []
+
+
+Overfull \hbox (3.4302pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/bx/n/8.03 45.4| 
+ []
+
+
+Overfull \hbox (3.4302pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/bx/n/8.03 37.4| 
+ []
+
+
+Overfull \hbox (3.4302pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/bx/n/8.03 30.7| 
+ []
+
+
+Overfull \hbox (3.4302pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/bx/n/8.03 25.0| 
+ []
+
+
+Overfull \hbox (3.4302pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/bx/n/8.03 20.3| 
+ []
+
+
+Overfull \hbox (3.4302pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/bx/n/8.03 16.3| 
+ []
+
+
+Overfull \hbox (8.34862pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/bx/n/8.03 392.0| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 411.6| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 331.2| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 263.8| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 207.3| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 159.9| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 120.6| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 86.9| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 59.0| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 35.8| 
+ []
+
+
+Overfull \hbox (1.1105pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 16.3| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 0.233| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 0.241| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 0.251| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 0.265| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 0.284| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 0.311| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 0.352| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 0.423| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 0.566| 
+ []
+
+
+Overfull \hbox (5.3765pt too wide) in paragraph at lines 241--241
+ []|\OT1/cmr/m/n/8.03 1.000| 
+ []
+
+
+Package natbib Warning: Citation `ref13' on page 5 undefined on input line 242.
+
+
+
+Overfull \hbox (12.1122pt too wide) in paragraph at lines 218--243
  [] 
  []
 
@@ -1863,12 +1857,12 @@ Overfull \hbox (12.1122pt too wide) in paragraph at lines 214--239
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Package natbib Warning: Citation `ref12' on page 5 undefined on input line 241.
+Package natbib Warning: Citation `ref13' on page 5 undefined on input line 245.
 
 
 
-Package natbib Warning: Citation `ref12' on page 5 undefined on input line 243.
-
+Package natbib Warning: Citation `ref12a' on page 5 undefined on input line 245
+.
 
 
 
@@ -1877,27 +1871,23 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5]
 
-Package natbib Warning: Citation `ref13' on page 6 undefined on input line 245.
+Package natbib Warning: Citation `ref12a' on page 6 undefined on input line 247
+.
 
 
-
-Package natbib Warning: Citation `ref13' on page 6 undefined on input line 245.
-
-
-
-Package natbib Warning: Citation `ref14' on page 6 undefined on input line 245.
-
-
-
-Package natbib Warning: Citation `ref13' on page 6 undefined on input line 247.
-
-
-
-Package natbib Warning: Citation `ref15' on page 6 undefined on input line 249.
+Package natbib Warning: Citation `ref13' on page 6 undefined on input line 249.
 
 
 
 Package natbib Warning: Citation `ref13' on page 6 undefined on input line 249.
+
+
+
+Package natbib Warning: Citation `ref14' on page 6 undefined on input line 249.
+
+
+
+Package natbib Warning: Citation `ref13' on page 6 undefined on input line 251.
 
 
 
@@ -1907,47 +1897,933 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
 
-Package natbib Warning: Citation `ref16' on page 7 undefined on input line 251.
+Package natbib Warning: Citation `ref15' on page 7 undefined on input line 253.
 
 
 
-Package natbib Warning: Citation `ref17' on page 7 undefined on input line 251.
+Package natbib Warning: Citation `ref13' on page 7 undefined on input line 253.
 
 
 
-Package natbib Warning: Citation `ref18' on page 7 undefined on input line 255.
+Package natbib Warning: Citation `ref16' on page 7 undefined on input line 255.
 
 
 
-Package natbib Warning: Citation `ref19' on page 7 undefined on input line 256.
+Package natbib Warning: Citation `ref17' on page 7 undefined on input line 255.
 
 
 
-Package natbib Warning: Citation `ref20' on page 7 undefined on input line 256.
+Package natbib Warning: Citation `ref18' on page 7 undefined on input line 259.
 
 
 
-Package natbib Warning: Citation `ref21' on page 7 undefined on input line 256.
+Package natbib Warning: Citation `ref19' on page 7 undefined on input line 260.
 
 
 
-Package natbib Warning: Citation `ref17' on page 7 undefined on input line 257.
+Package natbib Warning: Citation `ref20' on page 7 undefined on input line 260.
 
 
-Package epstopdf Info: Source file: <egg_model_log_3D.eps>
+
+Package natbib Warning: Citation `ref21' on page 7 undefined on input line 260.
+
+
+
+Package natbib Warning: Citation `ref17' on page 7 undefined on input line 261.
+
+
+Package epstopdf Info: Source file: <figures/egg_model_log_3D.eps>
 (epstopdf)                    date: 2025-07-01 23:11:14
 (epstopdf)                    size: 2600979 bytes
-(epstopdf)             Output file: <egg_model_log_3D-eps-converted-to.pdf>
-(epstopdf)             Command: <miktex-epstopdf --outfile=egg_model_log_3D-eps
--converted-to.pdf egg_model_log_3D.eps>
-(epstopdf)             \includegraphics on input line 263.
-runsystem(miktex-epstopdf --outfile=egg_model_log_3D-eps-converted-to.pdf egg_m
-odel_log_3D.eps)...executed safely (allowed).
+(epstopdf)             Output file: <figures/egg_model_log_3D-eps-converted-to.
+pdf>
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/egg_model_lo
+g_3D-eps-converted-to.pdf figures/egg_model_log_3D.eps>
+(epstopdf)             \includegraphics on input line 267.
+runsystem(miktex-epstopdf --outfile=figures/egg_model_log_3D-eps-converted-to.p
+df figures/egg_model_log_3D.eps)...executed safely (allowed).
 
-Package epstopdf Info: Result file: <egg_model_log_3D-eps-converted-to.pdf>
-(epstopdf)                    date: 2025-07-09 19:44:38
-(epstopdf)                    size: 159693 bytes.
+Package epstopdf Info: Result file: <figures/egg_model_log_3D-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2025-08-07 12:03:14
+(epstopdf)                    size: 189225 bytes.
+<figures/egg_model_log_3D-eps-converted-to.pdf, id=125, 525.965pt x 503.8825pt>
 
-!pdfTeX error: pdflatex (file ./egg_model_log_3D-eps-converted-to.pdf): xpdf: r
-eading PDF image failed
- ==> Fatal error occurred, no output PDF file produced!
+File: figures/egg_model_log_3D-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/egg_model_log_3D-eps-converted-to.pdf>
+Package pdftex.def Info: figures/egg_model_log_3D-eps-converted-to.pdf  used on
+ input line 267.
+(pdftex.def)             Requested size: 353.39886pt x 338.57597pt.
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+
+Package natbib Warning: Citation `ref12a' on page 8 undefined on input line 273
+.
+
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <./figures/egg_model_log_3D-eps-converted-to.pdf>]
+
+Package natbib Warning: Citation `ref17' on page 9 undefined on input line 280.
+
+
+
+Package natbib Warning: Citation `ref12a' on page 9 undefined on input line 280
+.
+
+Package epstopdf Info: Source file: <figures/valuation.eps>
+(epstopdf)                    date: 2025-07-02 11:30:00
+(epstopdf)                    size: 2365227 bytes
+(epstopdf)             Output file: <figures/valuation-eps-converted-to.pdf>
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/valuation-ep
+s-converted-to.pdf figures/valuation.eps>
+(epstopdf)             \includegraphics on input line 285.
+runsystem(miktex-epstopdf --outfile=figures/valuation-eps-converted-to.pdf figu
+res/valuation.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/valuation-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-08-07 12:03:15
+(epstopdf)                    size: 28627 bytes.
+<figures/valuation-eps-converted-to.pdf, id=173, 934.49126pt x 419.5675pt>
+File: figures/valuation-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/valuation-eps-converted-to.pdf>
+Package pdftex.def Info: figures/valuation-eps-converted-to.pdf  used on input 
+line 285.
+(pdftex.def)             Requested size: 353.39886pt x 158.66905pt.
+
+Package natbib Warning: Citation `ref22' on page 9 undefined on input line 286.
+
+
+
+Package natbib Warning: Citation `ref23' on page 9 undefined on input line 293.
+
+
+
+Package natbib Warning: Citation `ref18' on page 9 undefined on input line 293.
+
+
+Package epstopdf Info: Source file: <figures/egg_model_log_3D_well.eps>
+(epstopdf)                    date: 2025-07-01 23:05:11
+(epstopdf)                    size: 2553992 bytes
+(epstopdf)             Output file: <figures/egg_model_log_3D_well-eps-converte
+d-to.pdf>
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/egg_model_lo
+g_3D_well-eps-converted-to.pdf figures/egg_model_log_3D_well.eps>
+(epstopdf)             \includegraphics on input line 298.
+runsystem(miktex-epstopdf --outfile=figures/egg_model_log_3D_well-eps-converted
+-to.pdf figures/egg_model_log_3D_well.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/egg_model_log_3D_well-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2025-08-07 12:03:17
+(epstopdf)                    size: 197503 bytes.
+<figures/egg_model_log_3D_well-eps-converted-to.pdf, id=176, 475.7775pt x 497.8
+6pt>
+File: figures/egg_model_log_3D_well-eps-converted-to.pdf Graphic file (type pdf
+)
+<use figures/egg_model_log_3D_well-eps-converted-to.pdf>
+Package pdftex.def Info: figures/egg_model_log_3D_well-eps-converted-to.pdf  us
+ed on input line 298.
+(pdftex.def)             Requested size: 353.39886pt x 369.81602pt.
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./figures/valuation-eps-converted-to.pdf>]
+
+Package natbib Warning: Citation `ref18' on page 10 undefined on input line 338
+.
+
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10 <./figures/egg_model_log_3D_well-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/production_plot.eps>
+(epstopdf)                    date: 2025-07-01 22:00:44
+(epstopdf)                    size: 89177 bytes
+(epstopdf)             Output file: <figures/production_plot-eps-converted-to.p
+df>
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/production_p
+lot-eps-converted-to.pdf figures/production_plot.eps>
+(epstopdf)             \includegraphics on input line 346.
+runsystem(miktex-epstopdf --outfile=figures/production_plot-eps-converted-to.pd
+f figures/production_plot.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/production_plot-eps-converted-to.p
+df>
+(epstopdf)                    date: 2025-08-07 12:03:18
+(epstopdf)                    size: 24867 bytes.
+<figures/production_plot-eps-converted-to.pdf, id=248, 715.67375pt x 497.86pt>
+File: figures/production_plot-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/production_plot-eps-converted-to.pdf>
+Package pdftex.def Info: figures/production_plot-eps-converted-to.pdf  used on 
+input line 346.
+(pdftex.def)             Requested size: 353.39886pt x 245.84511pt.
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+
+LaTeX Warning: Reference `fig5' on page 12 undefined on input line 352.
+
+Package epstopdf Info: Source file: <figures/egg_model_log_2D_grid.eps>
+(epstopdf)                    date: 2025-07-02 10:55:28
+(epstopdf)                    size: 24641217 bytes
+(epstopdf)             Output file: <figures/egg_model_log_2D_grid-eps-converte
+d-to.pdf>
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/egg_model_lo
+g_2D_grid-eps-converted-to.pdf figures/egg_model_log_2D_grid.eps>
+(epstopdf)             \includegraphics on input line 357.
+runsystem(miktex-epstopdf --outfile=figures/egg_model_log_2D_grid-eps-converted
+-to.pdf figures/egg_model_log_2D_grid.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/egg_model_log_2D_grid-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2025-08-07 12:03:25
+(epstopdf)                    size: 370576 bytes.
+<figures/egg_model_log_2D_grid-eps-converted-to.pdf, id=259, 580.1675pt x 632.3
+625pt>
+File: figures/egg_model_log_2D_grid-eps-converted-to.pdf Graphic file (type pdf
+)
+<use figures/egg_model_log_2D_grid-eps-converted-to.pdf>
+Package pdftex.def Info: figures/egg_model_log_2D_grid-eps-converted-to.pdf  us
+ed on input line 357.
+(pdftex.def)             Requested size: 353.39886pt x 385.19057pt.
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12 <./figures/production_plot-eps-converted-to.pdf>]
+
+Package natbib Warning: Citation `ref24' on page 13 undefined on input line 365
+.
+
+Package epstopdf Info: Source file: <figures/schematic_MCS.eps>
+(epstopdf)                    date: 2025-07-02 11:30:00
+(epstopdf)                    size: 3094117 bytes
+(epstopdf)             Output file: <figures/schematic_MCS-eps-converted-to.pdf
+>
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/schematic_MC
+S-eps-converted-to.pdf figures/schematic_MCS.eps>
+(epstopdf)             \includegraphics on input line 370.
+runsystem(miktex-epstopdf --outfile=figures/schematic_MCS-eps-converted-to.pdf 
+figures/schematic_MCS.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/schematic_MCS-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2025-08-07 12:03:27
+(epstopdf)                    size: 62686 bytes.
+<figures/schematic_MCS-eps-converted-to.pdf, id=305, 806.01125pt x 636.3775pt>
+File: figures/schematic_MCS-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/schematic_MCS-eps-converted-to.pdf>
+Package pdftex.def Info: figures/schematic_MCS-eps-converted-to.pdf  used on in
+put line 370.
+(pdftex.def)             Requested size: 279.0pt x 220.27875pt.
+
+Package natbib Warning: Citation `ref24' on page 13 undefined on input line 371
+.
+
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 <./figures/egg_model_log_2D_grid-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <figures/pdf_cdf.eps>
+(epstopdf)                    date: 2025-07-02 11:30:00
+(epstopdf)                    size: 4909080 bytes
+(epstopdf)             Output file: <figures/pdf_cdf-eps-converted-to.pdf>
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/pdf_cdf-eps-
+converted-to.pdf figures/pdf_cdf.eps>
+(epstopdf)             \includegraphics on input line 381.
+runsystem(miktex-epstopdf --outfile=figures/pdf_cdf-eps-converted-to.pdf figure
+s/pdf_cdf.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/pdf_cdf-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-08-07 12:03:29
+(epstopdf)                    size: 195659 bytes.
+<figures/pdf_cdf-eps-converted-to.pdf, id=373, 1106.1325pt x 735.74875pt>
+File: figures/pdf_cdf-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/pdf_cdf-eps-converted-to.pdf>
+Package pdftex.def Info: figures/pdf_cdf-eps-converted-to.pdf  used on input li
+ne 381.
+(pdftex.def)             Requested size: 279.0pt x 185.57582pt.
+
+
+Package natbib Warning: Citation `ref24' on page 14 undefined on input line 382
+.
+
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14 <./figures/schematic_MCS-eps-converted-to.pdf>]
+
+Package natbib Warning: Citation `ref24' on page 15 undefined on input line 387
+.
+
+
+Package natbib Warning: Citation `ref25' on page 15 undefined on input line 391
+.
+
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15 <./figures/pdf_cdf-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `eq1' on page 16 undefined on input line 413.
+
+
+LaTeX Warning: Reference `fig10' on page 16 undefined on input line 419.
+
+
+Package natbib Warning: Citation `ref12a' on page 16 undefined on input line 41
+9.
+
+Package epstopdf Info: Source file: <figures/VOC_profile.eps>
+(epstopdf)                    date: 2025-08-06 21:11:10
+(epstopdf)                    size: 45270 bytes
+(epstopdf)             Output file: <figures/VOC_profile-eps-converted-to.pdf>
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/VOC_profile-
+eps-converted-to.pdf figures/VOC_profile.eps>
+(epstopdf)             \includegraphics on input line 424.
+runsystem(miktex-epstopdf --outfile=figures/VOC_profile-eps-converted-to.pdf fi
+gures/VOC_profile.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/VOC_profile-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-08-07 12:03:30
+(epstopdf)                    size: 19701 bytes.
+<figures/VOC_profile-eps-converted-to.pdf, id=396, 496.85625pt x 268.00125pt>
+File: figures/VOC_profile-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/VOC_profile-eps-converted-to.pdf>
+Package pdftex.def Info: figures/VOC_profile-eps-converted-to.pdf  used on inpu
+t line 424.
+(pdftex.def)             Requested size: 353.39886pt x 190.62163pt.
+
+Package natbib Warning: Citation `ref17' on page 16 undefined on input line 433
+.
+
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16 <./figures/VOC_profile-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `eq:short_term' on page 17 undefined on input line 468
+.
+
+
+LaTeX Warning: Reference `eq:long_term' on page 17 undefined on input line 468.
+
+
+
+Package natbib Warning: Citation `ref16' on page 17 undefined on input line 468
+.
+
+
+Package natbib Warning: Citation `ref21' on page 17 undefined on input line 468
+.
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 468--469
+[]\OT1/cmr/m/n/10 For numer-i-cal imple-men-ta-tion, the continuous-time stocha
+s-tic dif-fer-en-tial
+ []
+
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
+
+Package natbib Warning: Citation `ref26' on page 18 undefined on input line 481
+.
+
+
+LaTeX Warning: Reference `fig11' on page 18 undefined on input line 483.
+
+
+LaTeX Warning: Reference `tab4' on page 18 undefined on input line 483.
+
+Package epstopdf Info: Source file: <figures/Price_Calibration.eps>
+(epstopdf)                    date: 2025-08-06 19:31:03
+(epstopdf)                    size: 77330 bytes
+(epstopdf)             Output file: <figures/Price_Calibration-eps-converted-to
+.pdf>
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/Price_Calibr
+ation-eps-converted-to.pdf figures/Price_Calibration.eps>
+(epstopdf)             \includegraphics on input line 488.
+runsystem(miktex-epstopdf --outfile=figures/Price_Calibration-eps-converted-to.
+pdf figures/Price_Calibration.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/Price_Calibration-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2025-08-07 12:03:31
+(epstopdf)                    size: 40719 bytes.
+<figures/Price_Calibration-eps-converted-to.pdf, id=459, 975.645pt x 546.04pt>
+File: figures/Price_Calibration-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/Price_Calibration-eps-converted-to.pdf>
+Package pdftex.def Info: figures/Price_Calibration-eps-converted-to.pdf  used o
+n input line 488.
+(pdftex.def)             Requested size: 353.39886pt x 197.78236pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package natbib Warning: Citation `ref17' on page 18 undefined on input line 510
+.
+
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18 <./figures/Price_Calibration-eps-converted-to.pdf>]
+Overfull \hbox (19.5745pt too wide) detected at line 518
+[][][]\OMS/cmsy/m/n/10.03749 A\OT1/cmr/m/n/10 (\OML/cmm/m/it/10.03749 T\OT1/cmr
+/m/n/10 ) = [] \OML/cmm/m/it/10.03749 T \OMS/cmsy/m/n/10.03749 ^^@ [] [] \OT1/c
+mr/m/n/10 + [] []
+ []
+
+
+LaTeX Warning: Reference `tab4' on page 19 undefined on input line 520.
+
+
+LaTeX Warning: Reference `fig12' on page 19 undefined on input line 520.
+
+
+Package natbib Warning: Citation `ref21' on page 19 undefined on input line 520
+.
+
+Package epstopdf Info: Source file: <figures/Price_profile.eps>
+(epstopdf)                    date: 2025-08-06 19:30:54
+(epstopdf)                    size: 43091 bytes
+(epstopdf)             Output file: <figures/Price_profile-eps-converted-to.pdf
+>
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/Price_profil
+e-eps-converted-to.pdf figures/Price_profile.eps>
+(epstopdf)             \includegraphics on input line 526.
+runsystem(miktex-epstopdf --outfile=figures/Price_profile-eps-converted-to.pdf 
+figures/Price_profile.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/Price_profile-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2025-08-07 12:03:32
+(epstopdf)                    size: 18277 bytes.
+<figures/Price_profile-eps-converted-to.pdf, id=503, 502.87875pt x 268.00125pt>
+
+File: figures/Price_profile-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/Price_profile-eps-converted-to.pdf>
+Package pdftex.def Info: figures/Price_profile-eps-converted-to.pdf  used on in
+put line 526.
+(pdftex.def)             Requested size: 353.39886pt x 188.33566pt.
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19]
+
+Package natbib Warning: Citation `ref14' on page 20 undefined on input line 534
+.
+
+
+Package natbib Warning: Citation `ref16' on page 20 undefined on input line 534
+.
+
+
+Package natbib Warning: Citation `ref15' on page 20 undefined on input line 534
+.
+
+
+Package natbib Warning: Citation `ref14' on page 20 undefined on input line 536
+.
+
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20 <./figures/Price_profile-eps-converted-to.pdf>]
+
+Package natbib Warning: Citation `ref14' on page 21 undefined on input line 538
+.
+
+
+Package natbib Warning: Citation `ref15' on page 21 undefined on input line 538
+.
+
+
+Package natbib Warning: Citation `ref14' on page 21 undefined on input line 560
+.
+
+
+Package natbib Warning: Citation `ref15' on page 21 undefined on input line 560
+.
+
+
+Package natbib Warning: Citation `ref14' on page 21 undefined on input line 562
+.
+
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+
+Package natbib Warning: Citation `ref14' on page 22 undefined on input line 566
+.
+
+
+Package natbib Warning: Citation `ref13' on page 22 undefined on input line 569
+.
+
+
+Package natbib Warning: Citation `ref12a' on page 22 undefined on input line 56
+9.
+
+
+Package natbib Warning: Citation `ref12b' on page 22 undefined on input line 56
+9.
+
+
+Package natbib Warning: Citation `ref15' on page 22 undefined on input line 569
+.
+
+
+Package natbib Warning: Citation `ref12a' on page 22 undefined on input line 57
+5.
+
+
+LaTeX Warning: Reference `fig13' on page 22 undefined on input line 575.
+
+Package epstopdf Info: Source file: <figures/prod_profile.eps>
+(epstopdf)                    date: 2025-08-06 21:11:01
+(epstopdf)                    size: 24075 bytes
+(epstopdf)             Output file: <figures/prod_profile-eps-converted-to.pdf>
+
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/prod_profile
+-eps-converted-to.pdf figures/prod_profile.eps>
+(epstopdf)             \includegraphics on input line 580.
+runsystem(miktex-epstopdf --outfile=figures/prod_profile-eps-converted-to.pdf f
+igures/prod_profile.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/prod_profile-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2025-08-07 12:03:33
+(epstopdf)                    size: 14681 bytes.
+<figures/prod_profile-eps-converted-to.pdf, id=572, 602.25pt x 268.00125pt>
+File: figures/prod_profile-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/prod_profile-eps-converted-to.pdf>
+Package pdftex.def Info: figures/prod_profile-eps-converted-to.pdf  used on inp
+ut line 580.
+(pdftex.def)             Requested size: 353.39886pt x 157.26877pt.
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+
+Package natbib Warning: Citation `ref13' on page 23 undefined on input line 586
+.
+
+
+LaTeX Warning: Reference `fig14' on page 23 undefined on input line 586.
+
+Package epstopdf Info: Source file: <figures/Oil_profile.eps>
+(epstopdf)                    date: 2025-08-06 21:11:10
+(epstopdf)                    size: 43069 bytes
+(epstopdf)             Output file: <figures/Oil_profile-eps-converted-to.pdf>
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/Oil_profile-
+eps-converted-to.pdf figures/Oil_profile.eps>
+(epstopdf)             \includegraphics on input line 591.
+runsystem(miktex-epstopdf --outfile=figures/Oil_profile-eps-converted-to.pdf fi
+gures/Oil_profile.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/Oil_profile-eps-converted-to.pdf>
+(epstopdf)                    date: 2025-08-07 12:03:33
+(epstopdf)                    size: 18090 bytes.
+<figures/Oil_profile-eps-converted-to.pdf, id=579, 496.85625pt x 268.00125pt>
+File: figures/Oil_profile-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/Oil_profile-eps-converted-to.pdf>
+Package pdftex.def Info: figures/Oil_profile-eps-converted-to.pdf  used on inpu
+t line 591.
+(pdftex.def)             Requested size: 353.39886pt x 190.62163pt.
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23 <./figures/prod_profile-eps-converted-to.pdf> <./figures/Oil_profile-eps-c
+onverted-to.pdf>]
+
+Package natbib Warning: Citation `ref13' on page 24 undefined on input line 599
+.
+
+
+Package natbib Warning: Citation `ref15' on page 24 undefined on input line 599
+.
+
+
+LaTeX Warning: Reference `fig15' on page 24 undefined on input line 612.
+
+Package epstopdf Info: Source file: <figures/density_NPV_1.eps>
+(epstopdf)                    date: 2025-08-06 21:16:38
+(epstopdf)                    size: 62509 bytes
+(epstopdf)             Output file: <figures/density_NPV_1-eps-converted-to.pdf
+>
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/density_NPV_
+1-eps-converted-to.pdf figures/density_NPV_1.eps>
+(epstopdf)             \includegraphics on input line 617.
+runsystem(miktex-epstopdf --outfile=figures/density_NPV_1-eps-converted-to.pdf 
+figures/density_NPV_1.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/density_NPV_1-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2025-08-07 12:03:35
+(epstopdf)                    size: 18535 bytes.
+<figures/density_NPV_1-eps-converted-to.pdf, id=652, 746.79pt x 293.095pt>
+File: figures/density_NPV_1-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/density_NPV_1-eps-converted-to.pdf>
+Package pdftex.def Info: figures/density_NPV_1-eps-converted-to.pdf  used on in
+put line 617.
+(pdftex.def)             Requested size: 353.39886pt x 138.6983pt.
+
+Package natbib Warning: Citation `ref9' on page 24 undefined on input line 623.
+
+
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24 <./figures/density_NPV_1-eps-converted-to.pdf>]
+
+Package natbib Warning: Citation `ref12a' on page 25 undefined on input line 62
+5.
+
+
+Package natbib Warning: Citation `ref12b' on page 25 undefined on input line 62
+5.
+
+
+LaTeX Warning: Reference `fig16' on page 25 undefined on input line 625.
+
+Package epstopdf Info: Source file: <figures/density_NPV_2.eps>
+(epstopdf)                    date: 2025-08-06 21:20:17
+(epstopdf)                    size: 62502 bytes
+(epstopdf)             Output file: <figures/density_NPV_2-eps-converted-to.pdf
+>
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/density_NPV_
+2-eps-converted-to.pdf figures/density_NPV_2.eps>
+(epstopdf)             \includegraphics on input line 630.
+runsystem(miktex-epstopdf --outfile=figures/density_NPV_2-eps-converted-to.pdf 
+figures/density_NPV_2.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/density_NPV_2-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2025-08-07 12:03:36
+(epstopdf)                    size: 18456 bytes.
+<figures/density_NPV_2-eps-converted-to.pdf, id=702, 746.79pt x 293.095pt>
+File: figures/density_NPV_2-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/density_NPV_2-eps-converted-to.pdf>
+Package pdftex.def Info: figures/density_NPV_2-eps-converted-to.pdf  used on in
+put line 630.
+(pdftex.def)             Requested size: 353.39886pt x 138.6983pt.
+
+Package natbib Warning: Citation `ref9' on page 25 undefined on input line 636.
+
+
+
+Package natbib Warning: Citation `ref24' on page 25 undefined on input line 638
+.
+
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25 <./figures/density_NPV_2-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `fig17' on page 26 undefined on input line 647.
+
+
+Package natbib Warning: Citation `ref27' on page 26 undefined on input line 647
+.
+
+
+LaTeX Warning: Reference `fig17' on page 26 undefined on input line 649.
+
+Package epstopdf Info: Source file: <figures/options_prob.eps>
+(epstopdf)                    date: 2025-08-06 21:27:45
+(epstopdf)                    size: 32817 bytes
+(epstopdf)             Output file: <figures/options_prob-eps-converted-to.pdf>
+
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/options_prob
+-eps-converted-to.pdf figures/options_prob.eps>
+(epstopdf)             \includegraphics on input line 654.
+runsystem(miktex-epstopdf --outfile=figures/options_prob-eps-converted-to.pdf f
+igures/options_prob.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/options_prob-eps-converted-to.pdf>
+
+(epstopdf)                    date: 2025-08-07 12:03:37
+(epstopdf)                    size: 14676 bytes.
+<figures/options_prob-eps-converted-to.pdf, id=756, 611.28375pt x 268.00125pt>
+File: figures/options_prob-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/options_prob-eps-converted-to.pdf>
+Package pdftex.def Info: figures/options_prob-eps-converted-to.pdf  used on inp
+ut line 654.
+(pdftex.def)             Requested size: 353.39886pt x 154.93782pt.
+
+LaTeX Warning: Reference `fig18' on page 26 undefined on input line 660.
+
+
+LaTeX Warning: Reference `fig17' on page 26 undefined on input line 660.
+
+Package epstopdf Info: Source file: <figures/decision_maps.eps>
+(epstopdf)                    date: 2025-08-06 21:28:44
+(epstopdf)                    size: 76569425 bytes
+(epstopdf)             Output file: <figures/decision_maps-eps-converted-to.pdf
+>
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/decision_map
+s-eps-converted-to.pdf figures/decision_maps.eps>
+(epstopdf)             \includegraphics on input line 665.
+runsystem(miktex-epstopdf --outfile=figures/decision_maps-eps-converted-to.pdf 
+figures/decision_maps.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/decision_maps-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2025-08-07 12:04:09
+(epstopdf)                    size: 1235840 bytes.
+<figures/decision_maps-eps-converted-to.pdf, id=757, 1077.02374pt x 310.15875pt
+>
+File: figures/decision_maps-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/decision_maps-eps-converted-to.pdf>
+Package pdftex.def Info: figures/decision_maps-eps-converted-to.pdf  used on in
+put line 665.
+(pdftex.def)             Requested size: 353.39886pt x 101.77058pt.
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26 <./figures/options_prob-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `fig19' on page 27 undefined on input line 671.
+
+
+LaTeX Warning: Reference `fig15' on page 27 undefined on input line 671.
+
+Package epstopdf Info: Source file: <figures/graph_options.eps>
+(epstopdf)                    date: 2025-08-06 21:27:50
+(epstopdf)                    size: 33166 bytes
+(epstopdf)             Output file: <figures/graph_options-eps-converted-to.pdf
+>
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/graph_option
+s-eps-converted-to.pdf figures/graph_options.eps>
+(epstopdf)             \includegraphics on input line 676.
+runsystem(miktex-epstopdf --outfile=figures/graph_options-eps-converted-to.pdf 
+figures/graph_options.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/graph_options-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2025-08-07 12:04:10
+(epstopdf)                    size: 19519 bytes.
+<figures/graph_options-eps-converted-to.pdf, id=797, 446.66875pt x 323.2075pt>
+File: figures/graph_options-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/graph_options-eps-converted-to.pdf>
+Package pdftex.def Info: figures/graph_options-eps-converted-to.pdf  used on in
+put line 676.
+(pdftex.def)             Requested size: 279.0pt x 201.88582pt.
+
+LaTeX Warning: Reference `fig19' on page 27 undefined on input line 682.
+
+
+LaTeX Warning: Reference `fig16' on page 27 undefined on input line 682.
+
+
+LaTeX Warning: Reference `fig19' on page 27 undefined on input line 682.
+
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27 <./figures/decision_maps-eps-converted-to.pdf> <./figures/graph_options-ep
+s-converted-to.pdf>]
+
+LaTeX Warning: Reference `fig13' on page 28 undefined on input line 686.
+
+
+LaTeX Warning: Reference `fig20' on page 28 undefined on input line 688.
+
+Package epstopdf Info: Source file: <figures/production_all_PRODs.eps>
+(epstopdf)                    date: 2025-08-06 21:34:10
+(epstopdf)                    size: 1276634 bytes
+(epstopdf)             Output file: <figures/production_all_PRODs-eps-converted
+-to.pdf>
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/production_a
+ll_PRODs-eps-converted-to.pdf figures/production_all_PRODs.eps>
+(epstopdf)             \includegraphics on input line 693.
+runsystem(miktex-epstopdf --outfile=figures/production_all_PRODs-eps-converted-
+to.pdf figures/production_all_PRODs.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/production_all_PRODs-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2025-08-07 12:04:11
+(epstopdf)                    size: 260387 bytes.
+<figures/production_all_PRODs-eps-converted-to.pdf, id=888, 715.67375pt x 497.8
+6pt>
+File: figures/production_all_PRODs-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/production_all_PRODs-eps-converted-to.pdf>
+Package pdftex.def Info: figures/production_all_PRODs-eps-converted-to.pdf  use
+d on input line 693.
+(pdftex.def)             Requested size: 353.39886pt x 245.84511pt.
+Package epstopdf Info: Source file: <figures/production_field_pdf_cdf.eps>
+(epstopdf)                    date: 2025-08-06 21:41:16
+(epstopdf)                    size: 93117 bytes
+(epstopdf)             Output file: <figures/production_field_pdf_cdf-eps-conve
+rted-to.pdf>
+(epstopdf)             Command: <miktex-epstopdf --outfile=figures/production_f
+ield_pdf_cdf-eps-converted-to.pdf figures/production_field_pdf_cdf.eps>
+(epstopdf)             \includegraphics on input line 702.
+runsystem(miktex-epstopdf --outfile=figures/production_field_pdf_cdf-eps-conver
+ted-to.pdf figures/production_field_pdf_cdf.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/production_field_pdf_cdf-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2025-08-07 12:04:12
+(epstopdf)                    size: 26672 bytes.
+<figures/production_field_pdf_cdf-eps-converted-to.pdf, id=889, 722.7pt x 578.1
+6pt>
+File: figures/production_field_pdf_cdf-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use figures/production_field_pdf_cdf-eps-converted-to.pdf>
+Package pdftex.def Info: figures/production_field_pdf_cdf-eps-converted-to.pdf 
+ used on input line 702.
+(pdftex.def)             Requested size: 353.39886pt x 282.71863pt.
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28 <./figures/production_all_PRODs-eps-converted-to.pdf>]
+
+Package hyperref Warning: Difference (4) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 713.
+
+(sn-article.bbl
+Underfull \hbox (badness 1087) in paragraph at lines 10--14
+[]\OT1/cmr/m/n/10 Abbott TMC, et al (2019) Dark Energy Sur-vey Year 1 Results: 
+Con-straints
+ []
+
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29 <./figures/production_field_pdf_cdf-eps-converted-to.pdf>])
+
+Package natbib Warning: There were undefined citations.
+
+
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30]
+(sn-article.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-04-29>
+ ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.985pt have occurred.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `sn-article.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `sn-article.out':
+(rerunfilecheck)             Before: 0A09DE395ED817FECEAEE0D9C17101DB;1905
+(rerunfilecheck)             After:  D6533F4D9B08651EDD59803F22059299;2048.
+ ) 
+Here is how much of TeX's memory you used:
+ 16584 strings out of 469923
+ 266545 string characters out of 5469171
+ 693571 words of memory out of 5000000
+ 43032 multiletter control sequences out of 15000+600000
+ 653646 words of font info for 145 fonts, out of 8000000 for 9000
+ 1151 hyphenation exceptions out of 8191
+ 90i,13n,93p,2458b,626s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{section*.14} has been referenced but does not exist
+, replaced by a fixed one
+
+ <C:\Users\calva\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi602\tcrm10
+00.pk><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmbx12.pfb><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmbx8.pfb><C:/Users/calva/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/calva/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/calva/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/calva/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/cal
+va/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/U
+sers/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.p
+fb><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmmi9.pfb><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr10.pfb><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr12.pfb><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmr17.pfb><C:/Users/calva/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/calva/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/calva/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/calva/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/calva/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Use
+rs/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb
+><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+msy7.pfb><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmsy8.pfb><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmsy9.pfb><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmti10.pfb><C:/Users/calva/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Users/calva/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on sn-article.pdf (30 pages, 3169915 bytes).
+PDF statistics:
+ 1146 PDF objects out of 1200 (max. 8388607)
+ 120 named destinations out of 1000 (max. 500000)
+ 208 words of extra memory for PDF output out of 10000 (max. 10000000)
+

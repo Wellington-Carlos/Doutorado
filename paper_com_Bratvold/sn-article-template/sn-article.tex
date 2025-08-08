@@ -140,7 +140,7 @@
 % 
 % \textbf{Conclusion:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.}
 
-\keywords{keyword1, Keyword2, Keyword3, Keyword4}
+\keywords{Real options, Geological uncertainty, Price uncertainty, BDH problem, Least Squares Monte Carlo, Uncertainty analysis}
 
 %%\pacs[JEL Classification]{D8, H51}
 
@@ -150,17 +150,19 @@
 
 \section{Introduction}\label{sec1}
 
-The Introduction section, of referenced text \cite{bib1} expands on the background of the work (some overlap with the Abstract is acceptable). The introduction should not include subheadings.
+Oil and gas exploration and production (E\&P) is a multi-stage process that begins with the investigation of sedimentary basins to identify potential hydrocarbon reservoirs, progresses through the development and operation of production facilities, and concludes with site decommissioning after resource depletion. This sector is characterized by substantial capital requirements, with financial investments commonly measured in millions of US dollars and individual project budgets often exceeding one billion dollars. Despite facing a wide range of technical and economic risks, the industry offers significant opportunities for high returns on investment.
 
-Springer Nature does not impose a strict layout as standard however authors are advised to check the individual requirements for the journal they are planning to submit to as there may be journal-level preferences. When preparing your text please also be aware that some stylistic choices are not supported in full text XML (publication version), including coloured font. These will not be replicated in the typeset article if it is accepted. 
+Investment opportunities characterized by substantial uncertainty are typically designated as high-risk within corporate portfolios. While elevated uncertainty is associated with greater downside potential, it also presents the possibility of achieving outcomes that exceed expectations. Although excluding high-risk projects may help avoid capital losses, such an approach can also eliminate the chance to invest in ventures with favorable expected values. Overlooking the impact of uncertainty in project evaluation can therefore result in portfolio choices that fail to maximize stakeholder value. As highlighted by \cite{ref9} and other authors, the conventional deterministic Discounted Cash Flow (DCF) approach does not adequately account for uncertainty, implicitly treating investment as a now-or-never proposition. This assumption neglects the inherent flexibility available to managers, who can adjust their decisions in response to information that emerges as the project progresses.
 
-The remainder of the paper is organized as follows. A literature review is presented in Section \ref{sec2}, followed by a detailed description of the problem in Section \ref{sec23}. Section \ref{sec4} outlines the methodology, which includes the assumption of the Geometric Brownian Motion (GBM) for variable operating costs, Two-Factor model for oil prices, a geological benchmark model (Egg model), Monte Carlo Simulation (MCS) and Least Squares Monte Carlo (LSM) to estimate the project's value with options. The results and related discussions are presented in Section \ref{sec5}. Finally, Section \ref{sec6} concludes the paper with suggestions for potential future research.
+Value generation in investment projects arises from the interplay between uncertainty and managerial flexibility. The assessment of the value attributable to such flexibility, often described as option-like behavior, is commonly undertaken through Real Options Approach (ROA) techniques. In this study, we employ one of the most flexible and robust methodologies for option valuation: the Least Squares Monte Carlo (LSM) method. The analysis explicitly considers three sources of uncertainty: variable operating costs, oil price, and production rate. For modeling oil prices, the two-factor stochastic process introduced by \cite{ref17} was selected, as it offers an effective balance between capturing market dynamics and maintaining interpretability for decision-makers. Variable operating costs are represented using a Geometric Brownian Motion (GBM) process. The uncertainty in the production rate will be accounted for through the multiple realizations of the permeability model of the geological benchmark Egg model.
+
+The remainder of the paper is organized as follows. A literature review is presented in Section~\ref{sec2}, followed by a detailed description of the problem in Section~\ref{sec23}. Section~\ref{sec4} outlines the methodology, which includes the assumption of the GBM for variable operating costs, Two-Factor model for oil prices, a geological benchmark model (Egg model), Monte Carlo Simulation (MCS) and LSM to estimate the project's value with options. The results and related discussions are presented in Section~\ref{sec5}. Finally, Section~\ref{sec6} concludes the paper with suggestions for potential future research.
 
 \section{Literature Review}\label{sec2}
 
-Theory of investment under uncertainty, as developed by \cite{ref1}, provides the real options approach (ROA) for evaluating irreversible investment decisions in uncertain environments. In the context of petroleum exploration and production (E\&P) industry, this approach emphasizes the value of managerial flexibility in timing investments, accounting for volatility in prices, geological information, and regulatory factors. Unlike traditional Discounted Cash Flow (DCF) method, the ROA captures the strategic value of waiting and learning before committing capital.
+Theory of investment under uncertainty, as developed by \cite{ref1}, provides the ROA for evaluating irreversible investment decisions in uncertain environments. In the context of E\&P industry, this approach emphasizes the value of managerial flexibility in timing investments, accounting for volatility in prices, geological information, and regulatory factors. Unlike traditional DCF method, the ROA captures the strategic value of waiting and learning before committing capital.
 
-DCF method determines the present value of each future cash flow (CF) by applying a discount rate that reflects the time value of money. Net Present Value (NPV) is then calculated as the sum of all discounted future cash flows, including both inflows and outflows. NPV method remains the primary approach for evaluating investment projects in the E\&P industry, despite well-known limitations related to market assumptions, project flexibility, and discount rate selection \citep{ref1a}. Given these constraints, there is a growing need for alternative approaches, such as the ROA, to more accurately assess investment opportunities under uncertainty.
+DCF method determines the present value of each future cash flow (CF) by applying a discount rate that reflects the time value of money. Net Present Value (NPV) is then calculated as the sum of all discounted future cash flows, including both inflows and outflows. NPV method remains the primary approach for evaluating investment projects in the E\&P industry, despite well-known limitations related to market assumptions, project flexibility, and discount rate selection \citep{ref1a}. DCF method adopts a static perspective, assuming that future decisions rely solely on the information currently available, disregarding any additional insights that may emerge at the actual decision point. This assumption overlooks managerial flexibility and the incremental value generated by the capacity to adjust decisions as the project unfolds. In light of these limitations, there is an increasing demand for alternative methodologies that enable a more rigorous and accurate assessment of investment opportunities under uncertainty. Capturing this value necessitates the application ROA.
 
 \cite{ref2} advances the ROA by integrating financial option pricing with strategic investment analysis, providing a comprehensive approach for valuing flexibility in corporate decision-making. In relation to E\&P projects, \cite{ref2} highlights how embedded options, such as the option to defer, expand, or abandon projects, can significantly alter investment valuation under uncertainty, particularly in capital-intensive and high-risk environments like oil and gas industry.
 
@@ -256,7 +258,7 @@ Another interesting result was obtained by \cite{ref16}, who developed an approa
 
 Based on the previously described BDH problem, we propose a revised formulation that enhances generality and realism through improved treatment of key parameters:
 \begin{itemize}
-    \item \textbf{Production level}: uncertainty in the production profile will be incorporated by employing the Egg model, Figure \ref{fig1}, a synthetic reservoir model comprising one deterministic and 100 stochastic permeability realizations, totaling 101 equiprobable scenarios \citep{ref18} and thereby capturing geological uncertainties;
+    \item \textbf{Production rate}: uncertainty in the production profile will be incorporated by employing the Egg model, Figure \ref{fig1}, a synthetic reservoir model comprising one deterministic and 100 stochastic permeability realizations, totaling 101 equiprobable scenarios \citep{ref18} and thereby capturing geological uncertainties;
     \item \textbf{Variable operational cost}: this parameter will be modeled as a stochastic process following a GBM, similar to the approaches in \cite{ref19}, \cite{ref20} and \cite{ref21};
     \item \textbf{Oil price}: the oil price dynamics will be captured using the two-factor model proposed by \cite{ref17}.
 \end{itemize}
@@ -408,7 +410,7 @@ A stochastic process $C(t)$ is said to follow a Geometric Brownian Motion (GBM) 
 dC(t) = \alpha C(t)\,dt + \sigma C(t)\,dB(t),
 \label{eq1}
 \end{equation}
-\end{theorem} 
+\end{theorem}
 \noindent
 where $B(t)$ is a Brownian Motion, $\alpha$ is the constant drift, and $\sigma$ is the constant volatility. $C(t)$ represents the current variable operating costs, $dC(t)$ change in price, $dt$ change in time, and $dB(t)=\epsilon \sqrt{dt}$, $\epsilon$ a Wiener process, which is normally distributed with a mean of zero and a standard deviation of $1$, $\mathcal{N}(0, 1)$. The solution for the stochastic differential equation \ref{eq1} for any arbitrary initial value $C(0)$ is given by:
 \begin{equation}
@@ -467,14 +469,20 @@ and the spot price itself can be recovered as:
 
 For numerical implementation, the continuous-time stochastic differential equations \eqref{eq:short_term} and \eqref{eq:long_term} are discretized as follows \citep{ref16, ref21}:
 \begin{equation}
+    \chi_{t+1} = \chi_t e^{-\kappa \Delta t} - \left(1 - e^{-\kappa \Delta t}\right) \frac{\lambda_\chi}{\kappa} + \sigma_\chi \varepsilon_\chi \sqrt{\frac{1-e^{-2\kappa\Delta t}}{2\kappa}},
+    \label{eq:short_term_discrete}
+\end{equation}
+\begin{equation}
     \xi_{t+1} = \xi_t + (\mu_\xi - \lambda_\xi)\Delta t + \sigma_\xi \varepsilon_\xi \sqrt{\Delta t},
     \label{eq:long_term_discrete}
 \end{equation}
-\begin{equation}
-    \chi_{t+1} = \chi_t e^{-\kappa \Delta t} + \left(1 - e^{-\kappa \Delta t}\right) \frac{\lambda_\chi}{\kappa} + \sigma_\chi \sqrt{\frac{1-e^{-2\kappa\Delta t}}{2\kappa}} \varepsilon_\chi,
-    \label{eq:short_term_discrete}
-\end{equation}
 where $\varepsilon_\xi$ and $\varepsilon_\chi$ are standard normal random variables, and $\Delta t$ is the time increment.
+
+According to \cite{ref28}, if $\varepsilon_{\xi}$ and $\varepsilon$ are two independent standard normal random variables, it is possible to introduce correlation between the price processes described in equations \eqref{eq:short_term_discrete} and \eqref{eq:long_term_discrete}. This can be achieved by defining the random variable of the second process as:
+\begin{equation}
+	\varepsilon_{\chi} = \varepsilon_{\xi} \rho_{\chi\xi} + \varepsilon \sqrt{1 - \rho_{\chi\xi}^{2}},
+\end{equation}
+where $\rho_{\chi\xi}$ denotes the correlation coefficient between the two processes.
 
 This modeling approach allows us to jointly capture both the short-term volatility and long-term trends observed in oil price dynamics. By adopting the two-factor model, the analysis can more accurately reflect the stochastic behavior of oil prices seen in historical data, thereby enabling more robust valuation, forecasting, and risk assessment for oil and gas investments.
 
@@ -685,7 +693,7 @@ Teal line in Figure \ref{fig19} illustrates the present value of the project wit
 
 The methodology and results developed for the BDH problem are now extended to the 3D Egg model. The main distinction lies in the treatment of production profiles: in this case, production curves are explicitly considered as an additional source of uncertainty, since multiple permeability realizations from the Egg model yield different production curves for the producer wells. In contrast, for the BDH problem, the production profile was assumed to be fixed (see Figure \ref{fig13}).
 
-Figure \ref{fig20} shows the oil production rates for the four main producing wells, based on the results of 101 reservoir simulation runs for the 3D Egg model (see Figure \ref{fig3}). Each subplot displays the production curves for all realizations in darkred and highlights the average production curve in goldenrod color for each well. This approach visually illustrates the range of production uncertainty and the expected (mean) production behavior.
+Figure \ref{fig20} shows the oil production rates for the four main producing wells, based on the results of 101 reservoir simulation runs for the 3D Egg model (see Figure \ref{fig3}). Each subplot displays the production curves for all realizations in teal color and highlights the average production curve in darkred color for each well. This approach visually illustrates the range of production uncertainty and the expected (mean) production behavior.
 
 \begin{figure}[H]
 \centering
