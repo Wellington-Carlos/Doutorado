@@ -116,17 +116,20 @@
 \author[1]{\fnm{Marco} \sur{Pacheco}}\email{marco@ele.puc-rio.br}
 %\equalcont{These authors contributed equally to this work.}
 
-\affil[1]{\orgdiv{Department of Electrical Engineering}, \orgname{PUC-Rio}, \orgaddress{\street{Rua Mq. de São Vicente, 225}, \city{Rio de Janeiro}, \postcode{22451-900}, \state{RJ}, \country{Brazil}}}
+%\affil[1]{\orgdiv{Department of Electrical Engineering}, \orgname{PUC-Rio}, \orgaddress{\street{Rua Mq. de São Vicente, 225}, \city{Rio de Janeiro}, \postcode{22451-900}, \state{RJ}, \country{Brazil}}}
+\affil[1]{\orgdiv{Department of Electrical Engineering}, \orgname{PUC-Rio}, \city{Rio de Janeiro},\country{Brazil}}
 
-\affil[2]{\orgdiv{Department of Energy Resources}, \orgname{University of Stavanger}, \orgaddress{\street{Rennebergstien 30}, \city{Stavanger}, \postcode{4021}, \state{Rogaland}, \country{Norway}}}
+%\affil[2]{\orgdiv{Department of Energy Resources}, \orgname{University of Stavanger}, \orgaddress{\street{Rennebergstien 30}, \city{Stavanger}, \postcode{4021}, \state{Rogaland}, \country{Norway}}}
+\affil[2]{\orgdiv{Department of Energy Resources}, \orgname{UiS}, \city{Stavanger}, \country{Norway}}
 
-\affil[3]{\orgdiv{Petrobras}, \orgaddress{\street{Av. Henq. Valadares, 28}, \city{Rio de Janeiro}, \postcode{20231-030}, \state{RJ}, \country{Brazil}}}
+%\affil[3]{\orgdiv{Petrobras}, \orgaddress{\street{Av. Henq. Valadares, 28}, \city{Rio de Janeiro}, \postcode{20231-030}, \state{RJ}, \country{Brazil}}}
+\affil[3]{\orgdiv{Petrobras}, \city{Rio de Janeiro}, \country{Brazil}}
 
 %%==================================%%
 %% Sample for unstructured abstract %%
 %%==================================%%
 
-\abstract{The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. Authors are advised to check the author instructions for the journal they are submitting to for word limits and if structural elements like subheadings, citations, or equations are permitted.}
+\abstract{This paper presents an integrated framework for valuing oil and gas exploration and production (E\&P) projects under geological and market uncertainties using the Real Options Approach (ROA). Building on the BDH problem, the analysis introduces enhanced managerial flexibility, allowing the options to continue, buyout, or divest to be exercised at any time during the project’s lifetime. Geological uncertainty is represented through the Egg benchmark reservoir with 101 stochastic permeability realizations, while market uncertainties are modeled using the Schwartz–Smith two-factor model for oil prices and a Geometric Brownian Motion (GBM) for variable operating costs. Monte Carlo Simulation (MCS) propagates these uncertainties, and the Least Squares Monte Carlo (LSM) method determines optimal decision strategies and quantifies option values. Results indicate that expanding the exercise window for options can increase the option value by over 300\% relative to the original BDH problem. The proposed methodology provides a robust and realistic decision-support tool, enabling more informed investment choices in uncertain E\&P environment, combining advanced stochastic modeling with dynamic optimization techniques.}
 
 %%================================%%
 %% Sample for structured abstract %%
@@ -140,7 +143,7 @@
 % 
 % \textbf{Conclusion:} The abstract serves both as a general introduction to the topic and as a brief, non-technical summary of the main results and their implications. The abstract must not include subheadings (unless expressly permitted in the journal's Instructions to Authors), equations or citations. As a guide the abstract should not exceed 200 words. Most journals do not set a hard limit however authors are advised to check the author instructions for the journal they are submitting to.}
 
-\keywords{Real options, Geological uncertainty, Price uncertainty, BDH problem, Least Squares Monte Carlo, Uncertainty analysis}
+\keywords{Real options, Geological uncertainty, Price uncertainty, BDH problem, Least Squares Monte Carlo, Uncertainty analysis.}
 
 %%\pacs[JEL Classification]{D8, H51}
 
@@ -154,7 +157,7 @@ Oil and gas exploration and production (E\&P) is a multi-stage process that begi
 
 Investment opportunities characterized by substantial uncertainty are typically designated as high-risk within corporate portfolios. While elevated uncertainty is associated with greater downside potential, it also presents the possibility of achieving outcomes that exceed expectations. Although excluding high-risk projects may help avoid capital losses, such an approach can also eliminate the chance to invest in ventures with favorable expected values. Overlooking the impact of uncertainty in project evaluation can therefore result in portfolio choices that fail to maximize stakeholder value. As highlighted by \cite{ref9} and other authors, the conventional deterministic Discounted Cash Flow (DCF) approach does not adequately account for uncertainty, implicitly treating investment as a now-or-never proposition. This assumption neglects the inherent flexibility available to managers, who can adjust their decisions in response to information that emerges as the project progresses.
 
-Value generation in investment projects arises from the interplay between uncertainty and managerial flexibility. The assessment of the value attributable to such flexibility, often described as option-like behavior, is commonly undertaken through Real Options Approach (ROA) techniques. In this study, we employ one of the most flexible and robust methodologies for option valuation: the Least Squares Monte Carlo (LSM) method. The analysis explicitly considers three sources of uncertainty: variable operating costs, oil price, and production rate. For modeling oil prices, the two-factor stochastic process introduced by \cite{ref17} was selected, as it offers an effective balance between capturing market dynamics and maintaining interpretability for decision-makers. Variable operating costs are represented using a Geometric Brownian Motion (GBM) process. The uncertainty in the production rate will be accounted for through the multiple realizations of the permeability model of the geological benchmark Egg model.
+Value generation in investment projects arises from the interplay between uncertainty and managerial flexibility. The assessment of the value attributable to such flexibility, often described as option-like behavior, is commonly undertaken through Real Options Approach (ROA) techniques. In this study, we employ one of the most flexible and robust methodologies for option valuation: the Least Squares Monte Carlo (LSM) method. The analysis explicitly considers three sources of uncertainty: variable operating costs, oil price, and production rate. For modeling oil prices, the two-factor stochastic process introduced by \cite{ref17} was selected, as it offers an effective balance between capturing market dynamics and maintaining interpretability for decision-makers. Variable operating costs are represented using a Geometric Brownian Motion (GBM) process. The uncertainty in the production rate will be accounted for through the multiple realizations of the permeability model of the geological benchmark Egg model. Thus, this study will focus on applying the ROA to the economic evaluation of E\&P projects under geological and market uncertainties.
 
 The remainder of the paper is organized as follows. A literature review is presented in Section~\ref{sec2}, followed by a detailed description of the problem in Section~\ref{sec23}. Section~\ref{sec4} outlines the methodology, which includes the assumption of the GBM for variable operating costs, Two-Factor model for oil prices, a geological benchmark model (Egg model), Monte Carlo Simulation (MCS) and LSM to estimate the project's value with options. The results and related discussions are presented in Section~\ref{sec5}. Finally, Section~\ref{sec6} concludes the paper with suggestions for potential future research.
 
@@ -355,7 +358,7 @@ In this study, it is assumed that the vertical oil production well is fully pene
 
 \begin{figure}[H]
 \centering
-\begin{minipage}{0.95\textwidth}
+\begin{minipage}{0.85\textwidth}
   \includegraphics[width=\textwidth]{egg_model_log_2D_grid.eps}
   \caption{Permeability distribution maps for top layers of 25 realizations of the Egg model.}
   \label{fig5}
@@ -525,7 +528,7 @@ where the adjustment term $\mathcal{A}(T)$ is defined by:
     + \frac{1}{2} \left[ \left(1 - e^{-2\kappa T}\right) \frac{\sigma_{\chi}^2}{2\kappa} + \sigma_{\xi}^2 T + 2 \left(1 - e^{-\kappa T}\right) \frac{\rho_{\chi\xi} \sigma_{\chi} \sigma_{\xi}}{\kappa} \right]
 \end{equation}
 
-In this work, we adopted this approach and employed the calibrated parameters listed in Table \ref{tab4} to compute the expected futures oil prices. Figure \ref{fig12} illustrates examples of the simulated oil price paths and confidence bands based on 10,000 simulated cases. \cite{ref21} concluded that the Schwartz-Smith two-factor model provides a more realistic representation of oil price risk and the likely dynamics of future oil prices, especially when compared to the classical GBM and Mean-Reverting models. According to his findings, two-factor model more accurately captures both the uncertainties and the probable paths of future prices, making it preferable for modeling oil price evolution.
+In this work, we adopted this approach and employed the calibrated parameters listed in Table \ref{tab4} to compute the expected futures oil prices. Figure \ref{fig12} illustrates examples of the simulated oil price paths and confidence bands based on 10,000 simulated cases. These simulated paths in Figure \ref{fig12} will be used in the evaluation of the Egg model, which will be discussed in Subsection~\ref{subsec52}. \cite{ref21} concluded that the Schwartz-Smith two-factor model provides a more realistic representation of oil price risk and the likely dynamics of future oil prices, especially when compared to the classical GBM and Mean-Reverting models. According to his findings, two-factor model more accurately captures both the uncertainties and the probable paths of future prices, making it preferable for modeling oil price evolution.
 
 
  \begin{figure}[H]
@@ -665,7 +668,11 @@ As an illustrative example, Figure \ref{fig17} indicates that, in 9,930 out of 1
 \end{minipage}
 \end{figure}
 
-Figure \ref{fig18} displays the decision maps corresponding to four distinct time periods. In these maps, goldenrod color regions represent where the divest option is optimal, while teal color regions indicate that the continue alternative is preferred. As time advances, the area where the divest decision is optimal expands, covering a larger portion of the map. These results are consistent with the findings presented in Figure \ref{fig17}.
+Figure~\ref{fig18} presents the decision maps for four selected time periods ($t = 3, 5, 7, 9$). These maps were generated from the simulation outputs of oil price and variable operating costs, together with the optimal decisions obtained from the real options analysis. Only the alternatives \textit{continue} and \textit{divest} are represented, as the \textit{buyout} option is not available in these specific periods (see Figure \ref{fig17}). The teal regions correspond to states where the \textit{continue} alternative yields the highest project value, while the goldenrod regions indicate conditions where \textit{divest} becomes optimal.
+
+To construct these maps, oil price (US\$/bbl) and variable operating cost (US\$/bbl) data were extracted for each selected period from the simulated paths. The optimal decision in each state was encoded numerically using mapping: \texttt{continue} = 0, \texttt{divest} = 1. A mask excluded any states corresponding to non-relevant options. The resulting state--decision pairs were used to train a \texttt{KNeighborsClassifier} ($k=1$), which predicts the optimal decision for any given combination of oil price and operating cost.
+
+A regular grid was defined over the range of possible oil prices (10--80~US\$/bbl) and variable operating costs (3--20~US\$/bbl), using 300 subdivisions in each dimension. The trained classifier was applied to all grid points, generating a matrix of predicted decisions. This classification map was then visualized with a two-color colormap (\texttt{teal} for \textit{continue} and \texttt{goldenrod} for \textit{divest}), producing a clear separation between decision regions.
 
 \begin{figure}[H]
 \centering
@@ -676,7 +683,9 @@ Figure \ref{fig18} displays the decision maps corresponding to four distinct tim
 \end{minipage}
 \end{figure}
 
-Finally, to highlight the value of flexibility, Figure \ref{fig19} shows the present value of the project when the options can be exercised at different periods. The darkred line represents the project's present value assuming the option can be exercised in Year~1, Year~2, and so on, up to Year~10. It can be observed that the highest values occur at the beginning and at the end of the project, at \$455 and \$454 million, respectively. The lowest project value with the option, \$421 million, is found in Year~5 (and Year~4), which corresponds precisely to the BDH Problem, as also shown in Figure \ref{fig15}.
+The results of Figure~\ref{fig18} reveal the progressive expansion of the \textit{divest} region over time, in agreement with the probability trends shown in Figure~\ref{fig17}. At early stages ($t=3$), \textit{continue} dominates almost the entire decision space, while at later stages ($t=9$), the \textit{divest} alternative covers most scenarios, reflecting the decreasing attractiveness of project continuation under uncertainty.
+
+Proceeding with the analysis, to highlight the value of flexibility, Figure \ref{fig19} shows the present value of the project when the options can be exercised at different periods. The darkred line represents the project's present value assuming the option can be exercised in Year~1, Year~2, and so on, up to Year~10. It can be observed that the highest values occur at the beginning and at the end of the project, at \$455 and \$454 million, respectively. The lowest project value with the option, \$421 million, is found in Year~5 (and Year~4), which corresponds precisely to the BDH Problem, as also shown in Figure \ref{fig15}.
 
 \begin{figure}[H]
 \centering
@@ -693,25 +702,61 @@ Teal line in Figure \ref{fig19} illustrates the present value of the project wit
 
 The methodology and results developed for the BDH problem are now extended to the 3D Egg model. The main distinction lies in the treatment of production profiles: in this case, production curves are explicitly considered as an additional source of uncertainty, since multiple permeability realizations from the Egg model yield different production curves for the producer wells. In contrast, for the BDH problem, the production profile was assumed to be fixed (see Figure \ref{fig13}).
 
-Figure \ref{fig20} shows the oil production rates for the four main producing wells, based on the results of 101 reservoir simulation runs for the 3D Egg model (see Figure \ref{fig3}). Each subplot displays the production curves for all realizations in teal color and highlights the average production curve in darkred color for each well. This approach visually illustrates the range of production uncertainty and the expected (mean) production behavior.
+Figure \ref{fig20} shows the production rates profiles for the four producing wells (PROD1-PROD4) over a 10-year period, based on the results of 101 reservoir simulation runs for the 3D Egg model (see Figure \ref{fig3}). The thin teal curves represent the outcomes of multiple simulation realizations, capturing the variability in production behavior due to geological uncertainty. The thick darkred line denotes the mean production rate across all realizations for each well.
 
 \begin{figure}[H]
 \centering
-\begin{minipage}{0.95\textwidth}
+\begin{minipage}{0.85\textwidth}
   \includegraphics[width=\textwidth]{production_all_PRODs.eps}
   \caption{Four production wells over time for each of the 101 realizations.}
   \label{fig20}
 \end{minipage}
 \end{figure}
 
+All wells exhibit the typical decline pattern observed in reservoir production: high initial rates during the early years, followed by a sharp decrease, and a subsequent stabilization at low production levels toward the end of the simulated period. The spread of the individual curves around the mean highlights the variability in production performance, which is more pronounced during the initial years and tends to converge as production rates diminish. These results provide valuable insights for quantifying uncertainty in field development planning and for comparing the relative performance of each producing well under uncertain reservoir conditions.
+
+Figure \ref{fig21}(a) shows the field-level oil production profile for the benchmark Egg model, obtained by aggregating the production from the four producing wells (PROD1–PROD4). Production rates are expressed in million barrels (MMbbl). Thin teal curves represent the results of all simulation realizations, while the thick darkred line corresponds to the mean production profile across all realizations. Similar to the individual well behavior, the aggregated field production exhibits a sharp initial decline followed by a gradual stabilization, reflecting the combined reservoir dynamics under geological uncertainty.
+
 \begin{figure}[H]
 \centering
-\begin{minipage}{0.95\textwidth}
+\begin{minipage}{0.85\textwidth}
   \includegraphics[width=\textwidth]{production_field_pdf_cdf.eps}
-  \caption{Production Egg field and PDF/CDF.}
+  \caption{(a) Field production for the benchmark Egg model and (b) Probability Density Function (PDF) and Cumulative Distribution Function (CDF).}
   \label{fig21}
 \end{minipage}
 \end{figure}
+
+Figure \ref{fig21}(b) presents the statistical characterization of cumulative oil production at the end of the simulation period. The histogram represents the frequency distribution of the simulated cumulative production values. Probability density function (PDF), estimated using a kernel density estimation (KDE) method, provides a smooth representation of the underlying probability distribution, allowing for a clearer visualization of the most probable production outcomes. Cumulative distribution function (CDF), plotted in darkred, indicates the probability that the cumulative oil production will be less than or equal to a given value, thus enabling the direct estimation of percentile-based production metrics (e.g., P10, P50, P90). Together, these representations quantify the uncertainty in total field production and provide probabilistic insights for decision-making.
+
+\begin{table}[h] 
+\centering 
+\caption{Base Case Expected Cash Flows for the 3D Egg model}
+\label{tab5}
+\begin{tabularx}{14.5cm}{l *{12}{>{\centering\arraybackslash}X}} 
+\toprule 
+\textbf{Year} &  & \textbf{0} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} & \textbf{9} & \textbf{10} \\ 
+\midrule 
+Production Level              &  &     & 9.0 & 7.7 & 6.5 & 5.5 & 4.7 & 4.0 & 3.4 & 2.9 & 2.5 & 2.1 \\ 
+Variable Op Cost Rate         &  &  10.0   & 10.2 & 10.4 & 10.6 & 10.8 & 11.0 & 11.3 & 11.5 & 11.7 & 12.0 & 12.2 \\ 
+Oil Price                     &  & 25.0  & 25.0 & 25.0 & 25.0 & 25.0 & 25.0 & 25.0 & 25.0 & 25.0 & 25.0 & 25.0 \\ 
+\addlinespace 
+Revenues                      &  &     & 225.0 & 191.3 & 162.6 & 138.2 & 117.5 & 99.8 & 84.9 & 72.1 & 61.3 & 52.1 \\ 
+Production Cost               &  &     & (96.8) & (84.6) & (74.0) & (64.8) & (56.9) & (50.0) & (44.0) & (38.8) & (34.3) & (30.4) \\ 
+\cmidrule{4-13} 
+Cash Flow                     &  &     & 128.2 & 106.7 & 88.6 & 73.4 & 60.6 & 49.9 & 40.9 & 33.3 & 27.0 & 21.7 \\ 
+Profit Sharing                &  &     & (32.1) & (26.7) & (22.1) & (18.3) & (15.1) & (12.5) & (10.2) & (8.3) & (6.8) & (5.4) \\ 
+\cmidrule{4-13} 
+\addlinespace 
+\textbf{Net Cash Flows}       &  &  & \textbf{96.2} & \textbf{80.0} & \textbf{66.4} & \textbf{55.0} & \textbf{45.4} & \textbf{37.4} & \textbf{30.7} & \textbf{25.0} & \textbf{20.3} & \textbf{16.3} \\ 
+\addlinespace 
+PV of Cash Flows              &  & \textbf{392.0} & 411.6 & 331.2 & 263.8 & 207.3 & 159.9 & 120.6 & 86.9 & 59.0 & 35.8 & 16.3 \\ 
+Cash Flow Ratios              &  &    & 0.233 & 0.241 & 0.251 & 0.265 & 0.284 & 0.311 & 0.352 & 0.423 & 0.566 & 1.000  \\ 
+\bottomrule 
+\end{tabularx} 
+\end{table}
+
+
+
 
 \section{Conclusion}\label{sec6}
 
