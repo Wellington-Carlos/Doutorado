@@ -728,6 +728,10 @@ Figure \ref{fig21}(a) shows the field-level oil production profile for the bench
 
 Figure \ref{fig21}(b) presents the statistical characterization of cumulative oil production at the end of the simulation period. The histogram represents the frequency distribution of the simulated cumulative production values. Probability density function (PDF), estimated using a kernel density estimation (KDE) method, provides a smooth representation of the underlying probability distribution, allowing for a clearer visualization of the most probable production outcomes. Cumulative distribution function (CDF), plotted in darkred, indicates the probability that the cumulative oil production will be less than or equal to a given value, thus enabling the direct estimation of percentile-based production metrics (e.g., P10, P50, P90). Together, these representations quantify the uncertainty in total field production and provide probabilistic insights for decision-making.
 
+Table \ref{tab5} presents the base case expected cash flows for the 3D Egg model. The parameters Production Level, Variable Operating Cost Rate, and Oil Price are considered the main sources of uncertainty. However, the values reported in the table correspond to mean values across realizations. Under this base case, the project value, represented by the present value of expected cash flows, amounts to approximately \$134 million. This figure represents the project’s value without considering managerial flexibility or the inclusion of real options.
+
+The values shown in the table for the Egg model are consistent with the characteristics of a small onshore oil field with relatively modest production. Moreover, the geological features of the Egg model, characterized by high-permeability channels embedded in a low-permeability background, resemble typical meandering river patterns commonly encountered in fluvial environments \citep{ref18}. These features reinforce the interpretation that the Egg model can be regarded as a representative analog for onshore field production.
+
 \begin{table}[h] 
 \centering 
 \caption{Base Case Expected Cash Flows for the 3D Egg model}
@@ -754,6 +758,8 @@ PV of Cash Flows              & \textbf{134.41} & 103.35 & 45.61 & 23.35 & 14.84
 \end{tabularx} 
 \end{table}
 
+Initial oil price is set at \$70.62 per barrel, based on the parameter values obtained for the Schwartz–Smith two-factor model as presented in Table \ref{tab4}. After 10,000 Monte Carlo iterations, which account for production uncertainty as illustrated in Figure \ref{fig21}, the Variable Operating Cost Rate modeled as a MGB, and the Oil Price following the Schwartz–Smith two-factor model, the project value with real options is obtained. By incorporating the managerial flexibilities of continuation, buyout, and divest options between Year~1 and Year~10, the present value of the project increases to approximately \$148 million, as shown in Figure~\ref{fig22}. This corresponds to an absolute gain of \$14 million, or approximately 10.5\% relative to the base case. Such an increase highlights the economic importance of managerial flexibility under uncertainty.
+
 \begin{figure}[H]
 \centering
 \begin{minipage}{0.95\textwidth}
@@ -762,6 +768,8 @@ PV of Cash Flows              & \textbf{134.41} & 103.35 & 45.61 & 23.35 & 14.84
   \label{fig22}
 \end{minipage}
 \end{figure}
+
+Figure \ref{fig23} presents the probability of exercising each option for the Egg model across the decision horizon from Year~1 to Year~10. At the initial stage (Year~1), the buyout option has probability equal to one, reflecting the starting point of the project investment. From Year 1 onward, the continue option dominates, with high probability values in the early years, indicating that continuation is the preferred managerial strategy under most realizations.
 
 \begin{figure}[H]
 \centering
@@ -772,6 +780,10 @@ PV of Cash Flows              & \textbf{134.41} & 103.35 & 45.61 & 23.35 & 14.84
 \end{minipage}
 \end{figure}
 
+As time progresses, the probability of divest gradually increases, especially after Year~5, reaching significant levels between Years~7 and 9. This pattern reflects the decline in production and revenues observed in the base case, which makes divestment economically attractive in later stages. Figure~\ref{fig23} therefore illustrates the dynamic trade-off between continuation and divestment, where early continuation maximizes project value under uncertainty, while divestment becomes more relevant as production declines.
+
+Figure~\ref{fig24} shows the present values of the Egg model when options are exercised at different times. Teal line represents the case in which options can be exercised cumulatively over the decision horizon. In this case, the option value does not increase substantially when compared with the results obtained for the BDH problem (see Figure~\ref{fig19}). This is mainly due to the relatively small production volumes of the Egg model and its rapid production decline, which limit the incremental value of flexibility.
+
 \begin{figure}[H]
 \centering
 \begin{minipage}{0.75\textwidth}
@@ -781,9 +793,17 @@ PV of Cash Flows              & \textbf{134.41} & 103.35 & 45.61 & 23.35 & 14.84
 \end{minipage}
 \end{figure}
 
+Darkred line in the Figure~\ref{fig24}  illustrates the case where the option is available in just one year (Year~1, Year~2, …, Year~10). In this setting, the option value is higher in the initial years of production, but it decreases steadily as time progresses, reflecting the diminishing economic potential of late-stage decisions. Nevertheless, the project value with options remains consistently higher than the base case without options, represented by the dashed goldenrod line at \$134 million. Results presented are consistent with the expected behavior of petroleum projects under uncertainty and clearly demonstrate the economic value of managerial flexibility. By explicitly considering alternative decision paths, the analysis highlights the importance of ROA as a complement to traditional DCF methods. These findings reinforce that incorporating real options into project evaluation provides a more realistic and robust approach for assessing the value of petroleum E\&P investments.
+
 \section{Conclusion}\label{sec6}
 
+This work developed and applied an integrated framework for the valuation of petroleum E\&P projects under geological and market uncertainties using ROA. Building on the BDH problem and extending it to the 3D Egg model, the analysis incorporated multiple layers of uncertainty through stochastic modeling of oil prices, operating costs, and production profiles. The use of MCS and the LSM method allowed the determination of optimal decision strategies and the quantification of option values across a wide range of scenarios.
 
+The results show that the incorporation of managerial flexibility consistently enhances project value relative to the traditional DCF approach. In the Egg model case, although production volumes are relatively small and decline rapidly, the availability of continuation, buyout, and divest options increased the project value from \$134 million (base case without options) to \$148 million when real options were considered. This improvement, amounting to an additional \$14 million or approximately 10.5\%, underscores the economic significance of flexibility even for onshore fields with modest production.
+
+Furthermore, the probability maps, value trajectories, and decision strategies obtained reinforce the dynamic nature of project management under uncertainty. They highlight that continuation tends to dominate in early years when production levels are higher, while divestment becomes increasingly attractive in later years as production declines. These results are consistent with the theoretical principles of real options, illustrating how flexibility can be exercised at different stages of a project to both mitigate downside risks and capture upside opportunities.
+
+Overall, the study demonstrates that ROA provides a more realistic and robust approach for project evaluation compared to static valuation methods. By explicitly accounting for uncertainty and flexibility, ROA equips decision-makers with better tools to navigate the inherent risks of petroleum projects, supporting strategies that maximize value creation. These insights are not only relevant for academic research but also for practical decision-making in the oil and gas industry, where uncertainty is pervasive and flexibility often determines the success of investment decisions.
 
 \bmhead{Acknowledgements}
 This study was financed in part by the Coordenação de Aperfeiçoamento de Pessoal de Nível Superior - Brasil (CAPES) - Process N° 88881.980521/2024-01. The corresponding author acknowledges the financial support provided by Petrobras.
@@ -798,7 +818,7 @@ This study was financed in part by the Coordenação de Aperfeiçoamento de Pess
 %% by copying the reference list from your .bbl file, paste it into the main manuscript .tex %%
 %% file, and delete the associated \verb+\bibliography+ commands.                            %%
 %%===========================================================================================%%
-
+\newpage
 \bibliography{sn-bibliography}% common bib file
 %% if required, the content of .bbl file can be included here once bbl is generated
 %%\input sn-article.bbl
