@@ -1,0 +1,176 @@
+% -*- coding: utf-8; -*-
+
+\documentclass[
+  phd,
+  %% master
+  brazilian
+  %%american
+]{ThesisPUC}
+
+
+%%%
+%%% Additional Packages
+%%%
+
+%%  \usepackage[brazilian]{babel}      %% in ThesisPUC.cls
+  %% \usepackage[utf8]{inputenc}        %% .
+  %% \usepackage[T1]{fontenc}           %% .
+  %% \usepackage{lmodern}               %% .
+  %% \usepackage[pdftex]{graphicx}	%% .
+
+  \usepackage{tabularx}
+  \usepackage{multirow}
+  \usepackage{multicol}
+  \usepackage{colortbl}
+  \usepackage[%
+    dvipsnames,
+    svgnames,
+    x11names,
+    fixpdftex
+  ]{xcolor}
+  \usepackage{numprint}
+  \usepackage{textcomp}
+  \usepackage{booktabs}
+  \usepackage{amsmath}
+  \usepackage{enumitem}
+  \usepackage{amssymb}
+  \usepackage{textcomp}
+% \usepackage{etoolbox}
+
+%% numprint 
+\npthousandsep{.}
+\npdecimalsign{,}
+
+%% ThesisPUC option
+%\tablesmode{figtab} %% [nada, fig, tab ou figtab]
+%\abreviationsmode{none} %% [none ou use] %% Default is [use]
+
+
+%%%
+%%% Counters
+%%%
+
+%% uncomment and change for other depth values
+%% \setcounter{tocdepth}{3}
+%% \setcounter{lofdepth}{3}
+%% \setcounter{lotdepth}{3}
+%% \setcounter{secnumdepth}{3}
+
+
+%%%
+%%% New commands and other global definitions
+%%%
+
+\input{defs}
+
+%%%
+%%% Misc.
+%%%
+
+\usecolour{true}
+
+%%%
+%%% Titulos
+%%%
+
+\author{Wellington Carlos da Rosa Nascimento}
+\authorR{Nascimento, Wellington Carlos da Rosa}
+
+\advisor{Marco Aurélio C. Pacheco}{Prof.}
+\advisorR{Pacheco, Marco Aurélio C.}
+% If the advisor's department is different from author's department, uncomment the next line and type the correct name and acronym of advisor's institution.
+%\advisorInst{institution name}{acronym}
+
+\coadvisor{Marco Antonio G. Dias}{Prof.}
+\coadvisorR{Dias, Marco Antonio G.}
+\coadvisorInst{Departamento de Engenharia Elétrica}{PUC-Rio}
+
+%% \title{Desenvolvimento de um sistema de microscopia digital para
+%%  classificação automática de tipos de hematita em minério de ferro}
+
+\title{Aplicação de Aprendizado de Máquina e Inteligência Artificial na Indústria de Petróleo: Uma Abordagem Baseada em Valor da Informação e Opções Reais}
+
+\day{22}
+\month{Agosto}
+\year{2025}
+
+\city{Rio de Janeiro}
+\CDD{620.11}
+\department{Engenharia Elétrica}
+\program{Engenharia Elétrica}
+\school{Centro Técnico Científico}
+\university{Pontifícia Universidade Católica do Rio de Janeiro}
+\uni{PUC-Rio}
+
+%%%
+%%% Jury
+%%%
+
+
+%%%
+%%% Resume
+%%%
+
+\resume{%
+  Bacharel e Mestre em Física pela Universidade Federal de Alagoas. Trabalha desde de 2010 na Petrobras como Geofísico Senior atuando na Análise Econômica de Projetos Exploratórios.}
+
+%%%
+%%% Acknowledgment (REMINDER TO SCHOLARSHIP STUDENTS. Do not forget to thank the agencies that supported your work.)
+%%%
+
+
+%%%
+%%% Catalog prekeywords
+%%%
+
+
+%%%
+%%% Keywords
+%%%
+
+
+%%%
+%%% Abstract
+%%%
+
+\abstract{%
+  O minério de ferro é um material policristalino oriundo de processos
+  naturais complexos durante tempos geológicos, que dão origem ...
+    O minério de ferro é um material policristalino oriundo de processos
+  naturais complexos durante tempos geológicos, que dão origem ...
+    O minério de ferro é um material policristalino oriundo de processos
+  naturais complexos durante tempos geológicos, que dão origem ...
+}
+
+
+%%%
+%%% Dedication
+%%%
+
+%%%
+%%% Epigraph
+%%%
+
+
+%%%
+%%% Hyphenation
+%%%
+
+\hyphenation{PON-TI-FÍ-CIA}
+
+%%%
+%%% 
+%%%
+
+\begin{document}
+
+  \input{chapter-1}
+  \input{chapter-2}
+  \input{conclusions}
+  %% ...
+  \arial
+  \bibliography{wellington}
+  \normalfont
+  \input{appendix}
+
+\end{document}
