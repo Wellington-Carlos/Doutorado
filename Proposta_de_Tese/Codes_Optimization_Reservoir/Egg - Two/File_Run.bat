@@ -1,0 +1,1 @@
+wsl flow "/mnt/c/Users/calva/OneDrive/Documentos/WellingtonCodesOptimizationReservoirModels/Egg - Two/EGG.DATA"

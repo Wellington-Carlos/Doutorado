@@ -1359,7 +1359,7 @@
      \renewcommand{\puc@advisorlabellc}{orientador}%
      \renewcommand{\puc@coadvisorlabel}{Coorientador}%
      \renewcommand{\puc@coadvisorlabellc}{coorientador}%
-     \addto\captionsbrazilian{\renewcommand{\bibname}{Referências bibliográficas}}%
+     \addto\captionsbrazilian{\renewcommand{\bibname}{Referências Bibliográficas}}%
    }{%
      \renewcommand{\puc@bibliographicdatalabel}{Bibliographic data}%
      \renewcommand{\puc@advisorlabel}{Advisor}%
@@ -1370,6 +1370,7 @@
    }%
    \makeatletter\puc@showfrontmatter\makeatother%
  }
+
 
 
 %% Local Variables:
