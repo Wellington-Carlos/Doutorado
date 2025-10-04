@@ -16,13 +16,13 @@ O risco envolvido na fase de desenvolvimento pode ser reduzido se informações 
 
 \section{Valor da Informação}
 
-A prática profissional em engenharia de petróleo e geociências está fortemente associada à aquisição de informações, obtidas sob diversas formas e em múltiplos contextos. O termo \textbf{informação} é usado aqui em um sentido amplo, incluindo coleta de dados, realização de estudos técnicos, contratação de consultores, execução de testes diagnósticos, etc. A expectativa é que a redução da incerteza aumente a chance de que nossas decisões resultem no desfecho desejado. De fato, a única outra razão válida para coletar informação ou realizar análises técnicas é o cumprimento de exigências regulatórias.
+A prática profissional em engenharia de petróleo e geociências está fortemente associada à aquisição de informações, obtidas sob diversas formas e em múltiplos contextos. O termo informação é usado aqui em um sentido amplo, incluindo coleta de dados, realização de estudos técnicos, contratação de consultores, execução de testes diagnósticos, etc. A expectativa é que a redução da incerteza aumente a chance de que nossas decisões resultem no desfecho desejado. De fato, a única outra razão válida para coletar informação ou realizar análises técnicas é o cumprimento de exigências regulatórias.
 
-A questão fundamental em qualquer processo de coleta de informação é se a redução esperada da incerteza compensa o custo de se obter a informação. A técnica de \textit{Value of Information} (VOI), em português Valor da Informação, é projetada justamente para responder a essa questão \cite{01}.
+A questão fundamental em qualquer processo de coleta de informação é se a redução esperada da incerteza compensa o custo de se obter a informação. A técnica de \textit{Value of Information} (VOI), em português \textbf{Valor da Informação}, é projetada justamente para responder a essa questão \cite{01}.
 
-\subsection{Princípios da Aquisição de Informação}
+\subsection{Quantificando a Informação}
 
-O objetivo de um cálculo de VOI é estimar o valor de um exercício proposto de coleta de informações, de modo que a decisão de implementá-lo ou não seja feita em bases econômicas. Para que a informação seja valiosa, deve existir uma dependência probabilística entre a informação e os resultados do evento incerto de interesse (relevância). Além disso, o evento de interesse deve impactar suficientemente uma métrica de decisão a ponto de podermos alterar nossa decisão (materialidade). Finalmente, seu valor deve exceder o seu custo, caso em que a regra implícita de investimento recomenda adquirir a informação (valor maior que o custo). O custo de aquisição da informação depende da natureza da informação. O cálculo dos custos inclui salários da equipe, custos de oportunidade e custos diretos óbvios.  
+O objetivo do VOI é estimar o valor de um exercício proposto de coleta de informações, de modo que a decisão de implementá-lo ou não seja feita em bases econômicas. Para que a informação seja valiosa, deve existir uma dependência probabilística entre a informação e os resultados do evento incerto de interesse (relevância). Além disso, o evento de interesse deve impactar suficientemente uma métrica de decisão a ponto de podermos alterar nossa decisão (materialidade). Finalmente, seu valor deve exceder o seu custo, caso em que a regra implícita de investimento recomenda adquirir a informação (valor maior que o custo). O custo de aquisição da informação depende da natureza da informação. O cálculo dos custos inclui salários da equipe, custos de oportunidade e custos diretos óbvios.  
 
 O VOI pode ser entendido como o valor atribuído às probabilidades atualizadas. Para calcular esse valor, são necessárias as seguintes informações:  
 
@@ -33,9 +33,6 @@ O VOI pode ser entendido como o valor atribuído às probabilidades atualizadas.
 \end{enumerate}
 
 Embora os valores de projeto possam ser derivados por meio de análise determinística, recomenda-se o uso do Valor Presente Líquido (VPL, do inglês \textit{Net Present Value -- NPV}) esperado, obtido via simulação de Monte Carlo de outras incertezas, devido às complexas inter-relações frequentemente envolvidas.
-
-
-\subsection{Valor Esperado da Informação}
 
 O cálculo do VOI costuma ser representado em árvores de decisão, pois elas trazem clareza ao processo. O procedimento envolve comparar duas árvores:  
 
@@ -48,10 +45,10 @@ A diferença entre os dois valores fornece o \textbf{VOI esperado}. Utilizamos o
 
 \begin{itemize}
     \item \textbf{Limite inferior}: Se a informação não altera a decisão, seu valor esperado é zero, independentemente do custo.  
-    \item \textbf{Limite superior}: A informação perfeita (sem erro) fornece o valor máximo possível, denominado \textit{Valor Esperado da Informação Perfeita} (EVPI). Este limite superior serve como referência: nenhum processo de aquisição de informação pode exceder o EVPI.  
+    \item \textbf{Limite superior}: A informação perfeita (sem erro) fornece o valor máximo possível, denominado \textbf{Valor Esperado da Informação Perfeita} (EVPI). Este limite superior serve como referência: nenhum processo de aquisição de informação pode exceder o EVPI.  
 \end{itemize}
 
-O cálculo do EVPI não depende da existência de métodos perfeitos de aquisição de informação, mas sim de fornecer um \textit{benchmark} para avaliar qualquer processo de coleta de informação. Se o custo do processo excede o EVPI, não há motivo para prosseguir com a proposta. Se o EVPI indicar que vale a pena avançar, procede-se ao cálculo do valor esperado da informação imperfeita (EVII), que leva em conta a confiabilidade da informação obtida.
+O cálculo do EVPI não depende da existência de métodos perfeitos de aquisição de informação, mas sim de fornecer um \textit{benchmark} para avaliar qualquer processo de coleta de informação. Se o custo do processo excede o EVPI, não há motivo para prosseguir com a proposta. Se o EVPI indicar que vale a pena avançar, procede-se ao cálculo do \textbf{Valor Esperado da Informação Imperfeita} (EVII), que leva em conta a confiabilidade da informação obtida.
 
 \subsection{Etapas no Cálculo do VOI}
 
@@ -93,6 +90,7 @@ A soma das probabilidades dos possíveis resultados da aquisição de informaç�
 
 \begin{equation}
 P(B_{i} \mid A) = \frac{P(A \mid B_{i}) \, P(B_{i})}{\sum_{j=1}^{n} P(A \mid B_{j}) \, P(B_{j})}.
+\label{eq:2-1}
 \end{equation}
 \par\medskip % força fim de parágrafo + espaço
 No caso específico do exemplo acima, obtemos as seguintes probabilidades atualizadas:
@@ -103,13 +101,13 @@ P(B_{1} \mid A_{2}) &= \frac{P(A_{2}\mid B_{1}) P(B_{1})}{P(A_{2}\mid B_{1}) P(B
 P(B_{2} \mid A_{2}) &= \frac{P(A_{2}\mid B_{2}) P(B_{2})}{P(A_{2}\mid B_{1}) P(B_{1}) + P(A_{2}\mid B_{2}) P(B_{2})}
 \end{align}
 
-Uma questão central na análise de VoI é a origem das probabilidades a priori e de verossimilhança. Em geral, tais probabilidades derivam de \textit{avaliações subjetivas}, baseadas no conhecimento dos especialistas sobre a situação ou dados disponíveis. A subjetividade é inerente à análise de decisão: os modelos são aproximações da realidade e frequentemente dependem de julgamentos sem dados empíricos diretos.
+Uma questão central na análise de VOI é a origem das probabilidades a priori e de verossimilhança. Em geral, tais probabilidades derivam de avaliações subjetivas, baseadas no conhecimento dos especialistas sobre a situação ou dados disponíveis. A subjetividade é inerente à análise de decisão: os modelos são aproximações da realidade e frequentemente dependem de julgamentos sem dados empíricos diretos.
 
 \textbf{Priors:} As distribuições a priori descrevem o estado de conhecimento sobre o evento incerto antes da obtenção de novas informações. Essa interpretação como "grau de crença" é amplamente aceita e permite o uso de qualquer fonte de conhecimento ou experiência relevante. Ser capaz de avaliar corretamente distribuições a priori é uma habilidade essencial para engenheiros e geocientistas.
 
 \textbf{Likelihood:} A função de verossimilhança representa a probabilidade condicional da informação observada, dado o evento de interesse. Na prática, pode estar relacionada à qualidade ou à confiabilidade da informação adquirida (por exemplo, sísmica, perfis, testes de pressão). A construção da verossimilhança envolve considerar tanto a acurácia dos dados quanto o viés de interpretação. Quando disponíveis, dados históricos podem apoiar a estimação dessas probabilidades, embora sejam raramente formalizados. Em muitos casos, utilizam-se bandas de confiabilidade e análises de sensibilidade para avaliar a robustez das decisões.
 
-Quatro critérios principais determinam se a aquisição de informação é valiosa em um estudo de VoI (\cite{02}, \cite{03}):
+Quatro critérios principais determinam se a aquisição de informação é valiosa em um estudo de VOI (\cite{02}, \cite{03}):
 
 \begin{itemize}
     \item \textbf{Observável:} Os resultados da coleta de informação devem ser conhecidos antes da decisão.
@@ -118,27 +116,29 @@ Quatro critérios principais determinam se a aquisição de informação é vali
     \item \textbf{Econômica:} O valor esperado da informação deve exceder o custo de adquiri-la.
 \end{itemize}
 
-O método de VoI garante que esses critérios sejam satisfeitos e pode ser aplicado a decisões de qualquer complexidade. Entretanto, modelos mais sofisticados podem ser necessários quando múltiplas incertezas ou distribuições contínuas estão envolvidas.
+O método de VOI garante que esses critérios sejam satisfeitos e pode ser aplicado a decisões de qualquer complexidade. Entretanto, modelos mais sofisticados podem ser necessários quando múltiplas incertezas ou distribuições contínuas estão envolvidas.
 
-\subsection{Cálculo do Valor da Informação}
+\subsection{VOI e o Problema TALL-N}
 
 O VOI é definido como o valor máximo que o tomador de decisão deveria pagar por informação adicional relevante. Sob a hipótese de neutralidade ao risco, o VOI é dado por \cite{03}:
 \begin{equation}
 VOI = \mathbb{E}[\text{valor com informação}] - \mathbb{E}[\text{valor sem informação}].
+\label{eq:2-6}
 \end{equation}
 
-Se a informação adicional for perfeita, essa quantidade é denominada \textit{Valor da Informação Perfeita} (VOPI) que representa o limite superior de qualquer atividade de coleta de informação. Conforme a terminologia usada na subseção 2.1.2 temos EVPI (Valor Esperado da Informação Perfeita) ou EVII (Valor Esperado da Informação Imperfeita). O valor esperado com informação só pode ser maior do que o valor sem informação se a decisão puder ser alterada em função da informação revelada. Caso o tomador de decisão adote a mesma ação independentemente do resultado do teste, então $VOI = 0$, tornando a coleta de informação inútil para o problema decisório.
+Se a informação adicional for perfeita, essa quantidade é denominada \textbf{Valor da Informação Perfeita} (VOPI) que representa o limite superior de qualquer atividade de coleta de informação. Conforme a terminologia usada na subseção (2.1.1) temos EVPI (Valor Esperado da Informação Perfeita) ou EVII (Valor Esperado da Informação Imperfeita). O valor esperado com informação só pode ser maior do que o valor sem informação se a decisão puder ser alterada em função da informação revelada. Caso o tomador de decisão adote a mesma ação independentemente do resultado do teste, então $VOI = 0$, tornando a coleta de informação inútil para o problema decisório.
 
 Um problema interessante na análise do VOI é o \textbf{problema TALL-N} (\textit{Two-Action Linear-Loss with Normal priors}) que considera um tomador de decisão diante de duas alternativas:
 \begin{itemize}
-    \item $a_{0}$: alternativa segura, com payoff constante $v$;
-    \item $a_{1}$: alternativa arriscada, com payoff incerto descrito por uma variável aleatória $\tilde{x}$ com média $\mu$ e desvio-padrão $\sigma$.
+    \item[\textbullet] $a_{0}$: alternativa segura, com payoff constante $v$;
+    \item[\textbullet] $a_{1}$: alternativa arriscada, com payoff incerto descrito por uma variável aleatória $\tilde{x}$ com média $\mu$ e desvio-padrão $\sigma$.
 \end{itemize}
 
 Se $\mu < v$, o decisor escolhe $a_{0}$; se $\mu \geq v$, escolhe $a_{1}$; e se $\mu = v$, encontra-se indiferente. 
 O valor esperado sem informação adicional é dado por:
 \begin{equation}
 \mathbb{E}[\text{valor sem informação}] = \max(v, \mu).
+\label{eq:2-7}
 \end{equation}
 
 A Figura~\ref{fig:2.3} ilustra o problema TALL-N, em que $\tilde{x}$ é assumida como normalmente distribuída. A padronização $z = \frac{x-\mu}{\sigma}$ permite definir o coeficiente de divergência:
@@ -209,7 +209,7 @@ RVOI_{\eta}^{*} = \frac{EVII}{EVPI} = \eta^2.
 
 Portanto, o RVOI expressa diretamente a fração do valor da informação imperfeita em relação ao valor da informação perfeita, sendo determinado pelo quadrado do coeficiente de correlação, isto é, \(\eta^{2}\) \cite{04}. Na referência \cite{05} temos também a demonstração que $RVOI=\eta^2$ no contexto de perda quadrática e função de regressão linear.
 
-Dado um valor específico de $c$, o RVOI atinge seu valor máximo quando $c = \frac{\sigma}{2R}$, onde $R$ representa a \textit{risk tolerance} do tomador de decisão e $\sigma$ o desvio-padrão.  Nessa condição, a informação imperfeita possui o maior valor relativo em comparação com a informação perfeita, correspondendo ao caso em que o tomador de decisão está indiferente. Assim, o valor máximo do RVOI é expresso por:
+Dado um valor específico de $c$, o RVOI atinge seu valor máximo quando $c = \sigma/2R$, onde $R$ representa a \textit{risk tolerance} do tomador de decisão e $\sigma$ o desvio-padrão.  Nessa condição, a informação imperfeita possui o maior valor relativo em comparação com a informação perfeita, correspondendo ao caso em que o tomador de decisão está indiferente. Assim, o valor máximo do RVOI é expresso por:
 \begin{equation}
 RVOI_{\eta}^{*} = \frac{\ln \big[2\Phi(-\eta c)\big]}{\ln \big[2\Phi(-c)\big]},
 \label{eq:2-16}
@@ -240,7 +240,7 @@ Antes, vamos analisar o RVOI no caso geral para o problema TALL-N, razão entre 
 \end{cases}
 \label{eq:2-18}
 \end{equation}
-Assim, observa-se que RVOI depende do coeficiente de correlação \( \eta \) e do coeficiente de divergência \( c \). No caso em que \(\mu = v\), o valor relativo da informação imperfeita em relação à informação perfeita é simplesmente \(\eta\). Já quando \(\mu > v\) ou \(\mu < v\), a relação passa a depender da interação entre \( \eta \) e \( c \).  A Figura~\ref{fig:2.5} mostra o comportamento de RVOI em relação ao coeficiente de divergência \( c \), dado pela Equação~\eqref{eq:2-18}
+Assim, observa-se que RVOI depende do coeficiente de correlação \( \eta \) e do coeficiente de divergência \( c \). No caso em que \(\mu = v\), o valor relativo da informação imperfeita em relação à informação perfeita é simplesmente \(\eta\). Já quando \(\mu > v\) ou \(\mu < v\), a relação passa a depender da interação entre \( \eta \) e \( c \).  A Figura~\ref{fig:2.5} mostra o comportamento de RVOI em relação ao coeficiente de divergência \( c \), dado pela Equação~\eqref{eq:2-18}:
 
 \begin{figure} [h]
   \begin{center}
@@ -262,11 +262,11 @@ Sejam duas variáveis aleatórias $X$ e $S$, ambas com médias e variâncias fin
 \label{eq:2-19}
 \end{equation}
 
-A Equação~\eqref{eq:2-19} expressa a redução percentual da variância de $X$ proporcionada pela informação $S$, em relação à variância original sem informação adicional. Em outras palavras, mede o quanto a incerteza é reduzida em termos esperados após a obtenção da nova informação. O valor de $\eta^{2}$ varia entre 0 e 1. Quando $\eta^{2} = 0$, a informação é totalmente não informativa, não reduzindo a incerteza; nesse caso, o VOI tende a zero. Por outro lado, quando $\eta^{2} = 1$, toda a incerteza é eliminada, o que corresponde ao caso de \textbf{informação perfeita}, em que $VOI = EVPI$. 
+A Equação~\eqref{eq:2-19} expressa a redução percentual da variância de $X$ proporcionada pela informação $S$, em relação à variância original sem informação adicional. Em outras palavras, mede o quanto a incerteza é reduzida em termos esperados após a obtenção da nova informação. O valor de $\eta^{2}$ varia entre 0 e 1. Quando $\eta^{2} = 0$, a informação é totalmente não informativa, não reduzindo a incerteza; nesse caso, o VOI tende a zero. Por outro lado, quando $\eta^{2} = 1$, toda a incerteza é eliminada, o que corresponde ao caso de informação perfeita, em que $VOI = EVPI$. 
 
 Na prática, o cálculo exato de $\eta^{2}$ pode ser complexo, pois depende tanto da distribuição de probabilidade da variável $X$ quanto da probabilidade condicional $X|S$. Contudo, sua interpretação é intuitiva: trata-se de uma métrica que indica o ganho esperado de informação em termos de redução da incerteza, permitindo avaliar a relevância e a efetividade da aquisição de novos dados no contexto da tomada de decisão.
 
-Com base no exposto até aqui, podemos considerar que o VOI é equivalente ao EVII, o qual deve ser uma função de $\eta^2$ e do EVPI, conforme estabelecido na Equação~\eqref{eq:2-17}. Dessa forma, é possível obter o gráfico do VOI em função de $\eta^2$ para diferentes valores de $\mu$ (média da variável aleatória). Quando $\mu < v$, a escolha ótima do tomador de decisão é $a_{0}$ (alternativa segura, com \textit{payoff} constante $v$). Quando $\mu \geq v$, a escolha ótima é $a_{1}$ (alternativa arriscada, com payoff incerto). Finalmente, quando $\mu = v$, o tomador de decisão encontra-se indiferente entre as duas alternativas. Vale ressaltar que o valor esperado do tomador de decisão sem informação adicional é dado por $\max(v, \mu)$.
+Com base no exposto até aqui, podemos considerar que o VOI é equivalente ao EVII, o qual deve ser uma função de $\eta^2$ e do EVPI, conforme estabelecido na Equação~\eqref{eq:2-17}. Dessa forma, é possível obter o gráfico do VOI em função de $\eta^2$ para diferentes valores de $\mu$ (média da variável aleatória): \textbf{i)}~$\mu < v$, a escolha ótima do tomador de decisão é $a_{0}$ (alternativa segura, com \textit{payoff} constante $v$); \textbf{ii)}~$\mu \geq v$, a escolha ótima é $a_{1}$ (alternativa arriscada, com payoff incerto); \textbf{iii)}~$\mu = v$, o tomador de decisão encontra-se indiferente entre as duas alternativas. Vale ressaltar que o valor esperado do tomador de decisão sem informação adicional é dado por $\max(v, \mu)$, conforme Equação~\eqref{eq:2-7} .
 
 A Figura~\ref{fig:2.6} apresenta a relação entre VOI e $\eta^2$, ilustrando o como o valor da informação depende da redução esperada da variância da variável de interesse em cada um dos cenários decisórios.
 
@@ -284,19 +284,198 @@ VOI \equiv VOII =
 VOPI \left[ a + (1-a)\eta^{2} \right], & \text{para } \eta^{2} \geq \dfrac{-a}{1-a}, \\[8pt]
 0, & \text{para } \eta^{2} < \dfrac{-a}{1-a},
 \end{cases}
+\label{eq:2-20}
 \end{equation}
 onde $a$ é um parâmetro linear do modelo (consideraram $a=-0.1$), VOII o valor da informação imperfeita, VOPI o valor da informação perfeita e $\eta^2$ o fator de transferência de valor.
 
 
+\subsection{Valor da Informação Sequencial}
 
+A exploração e produção de petróleo envolvem elevados níveis de incerteza geológica, operacional e econômica. Decisões inadequadas na fase de delimitação (\textit{appraisal}) podem levar a investimentos em poços de alto custo com baixo retorno, ou ainda à subexploração de reservas economicamente viáveis. Nesse contexto, o Valor da Informação, conforme visto na seção anterior, surge como uma ferramenta quantitativa essencial para avaliar se a aquisição de novos dados, por meio de poços de avaliação, testes de formação ou métodos geofísicos adicionais, justifica o investimento em função do impacto que tais informações podem ter sobre decisões futuras.
 
+O \textbf{Valor da Informação Sequencial} (VOSI,  \textit{Value of Sequential Information}) expande o conceito clássico de VOI ao considerar que a informação é adquirida em diferentes estágios, e que as decisões subsequentes podem ser ajustadas de acordo com os resultados parciais já observados. Diferentemente de um VOI estático, que assume um único ponto de coleta de dados antes da decisão final, o VOSI modela um processo dinâmico, no qual o tomador de decisão pode:
+\begin{itemize}
+    \item[\textbullet] optar por perfurar um poço adicional se os resultados iniciais forem promissores;
+    \item[\textbullet] redirecionar o programa de avaliação caso os dados revelem incertezas críticas não previstas;
+    \item[\textbullet] abandonar ou postergar o desenvolvimento se os sinais forem negativos.
+\end{itemize}
+Essa flexibilidade gera valor adicional, pois permite incorporar \textbf{aprendizado progressivo} ao processo de delimitação do campo. A formulação básica do VOI, conforme Equação~\eqref{eq:2-6}, pode ser expressa por:
+\begin{equation}
+    VOI = \mathbb{E}[X\mid S] - \mathbb{E}[X],
+    \label{eq:2-21}
+\end{equation}
+onde $\mathbb{E}[X\mid S]$ representa o valor esperado do projeto com informação adicional~$S$, isto é, o valor esperado posterior e, $\mathbb{E}[X]$, represente o valor esperado sem informação, ou seja, valor esperado a priori, que para um problema de decisão, pode ser obtido com \cite{09}:
+\begin{equation}
+    \mathbb{E}[X] = \sum_{i=1}^{n} \max_{a_i \in A_i} \left\{ \mathbb{E} \big[ v(x_i,a_i) \big] \right\},
+    \label{eq:2-22}
+\end{equation}
+onde $x_i$ representa os estados da natureza, $a_i \in A_i$ as alternativas disponíveis e $v(x_i,a_i)$ o valor associado à decisão $a_i$ sob o estado $x_i$.
 
+Por razões didáticas, vejamos um exemplo retirado de \cite{09}: considere a perfuração de dois poços $S_1$ e $S_2$. Suponha que o tomador de decisão opte pela aquisição da primeira perfuração $S_1$, com a possibilidade de posteriormente realizar também a perfuração $S_2$. Para alguns resultados obtidos a partir da perfuração do poço $S_1$, o decisor pode não considerar necessária a realização da segunda perfuração. Para outros resultados, ele ou ela pode, de fato, optar por realizar a perfuração do poço $S_2$. Assim, o valor de um esquema de perfuração sequencial não pode ser inferior ao valor obtido ao realizar ambas as perfurações de uma só vez, isto é, uma estratégia estática de perfuração. Um decisor neutro ao risco pode determinar a melhor sequência de perfuração ao maximizar o valor esperado. No caso de dois poços, o tomador de decisão possui as seguintes quatro alternativas: 
+
+\begin{enumerate}
+    \item[\textbullet] perfurar apenas o poço $S_1$ e encerrar o programa;
+    \item[\textbullet] perfurar o poço $S_1$ e, em seguida, realizar a perfuração do poço $S_2$;
+    \item[\textbullet] perfurar apenas o poço $S_2$ e encerrar o programa;
+    \item[\textbullet] perfurar o poço $S_2$ e, em seguida, realizar a perfuração do poço $S_1$.
+\end{enumerate}
+
+Supondo que o poço $S_1$ tenha sido perfurado primeiro, com $p(S_1)$ a probabilidade de ser observado um resultado favorável, o valor esperado posterior (estático) é dado por \cite{09}:
+\begin{equation}
+    \mathbb{E}[X\mid S_1] = \int \sum_{i=1}^{n} \max_{a_i \in A_i} \left\{ \mathbb{E}[ v(x_i,a_i) \mid S_1 ] \right\} p(S_1) \, dS_1.
+    \label{eq:2-23}
+\end{equation}
+O cálculo do valor esperado posterior requer a determinação do valor esperado condicional $\mathbb{E}\!\left( v(x_i,a_i) \mid S_1 \right)$, bem como da função densidade de probabilidade marginal $p(S_1)$, a qual pode ser obtida a partir da distribuição a priori $p(X)$ e da verossimilhança $p(S_1\mid X)$ por meio do Teorema de Bayes, Equação~\eqref{eq:2-1}. 
+
+Nos testes sequenciais, o integrando da solução torna-se mais complexo, pois é necessário considerar todas as possíveis sequências de aquisição de informação. O tomador de decisão somente irá realizar a perfuração do segundo poço se o valor adicional, descontado o custo do segundo poço $P_2$, for maior do que o valor do primeiro poço isolado, isto é, temos a seguinte condição:
+\begin{equation}
+\begin{aligned}
+    \int_{S_2} \sum_{i=1}^{n} \max_{a_i \in A_i} 
+    \left\{ \mathbb{E}\!\left( v(x_i,a_i) \mid S_1,S_2 \right) \right\}
+    p(S_2 \mid S_1)\, dS_2 - P_2 
+    > \sum_{i=1}^{n} \max_{a_i \in A_i} 
+    \left\{ \mathbb{E}\!\left( v(x_i,a_i) \mid S_1 \right) \right\}.
+\end{aligned}
+\label{eq:2-24}
+\end{equation}
+O lado esquerdo da Equação~\eqref{eq:2-24} é denominado \textit{teste continuado}, enquanto o lado direito está associado à decisão do agente em interromper o programa de perfuração após perfurar o primeiro poço. Dessa maneira, o valor esperado posterior à perfuração do primeiro poço, tendo a opção de continuar com a perfuração do segundo poço, torna-se:
+\begin{equation}
+\begin{aligned}
+\mathbb{E}[X\mid S_2,S_1] 
+= \int \max \Biggl\{ &
+    \int_{S_2} \sum_{i=1}^{n} \max_{a_i} 
+    \Bigl\{ \mathbb{E}[v(x_i,a_i)\mid S_1,S_2] \Bigr\}
+    p(S_2 \mid S_1)\, dS_2 - P_2, \\[6pt]
+& \sum_{i=1}^{n} \max_{a_i} 
+    \Bigl\{ \mathbb{E}[v(x_i,a_i)\mid S_1] \Bigr\}
+\Biggr\} \, p(S_1)\, dS_1.
+\end{aligned}
+\label{eq:2-25}
+\end{equation}
+e, sendo o tomador de decisão neutro ao risco, o VOI é definido como a diferença entre os valores a posteriori e a priori, conforme a Equação~\eqref{eq:2-21}. Este VOI deve ser comparado ao custo $P_1$ do poço $S_1$. Se o VOI for maior do que esse custo, torna-se justificável realizar a perfuração sequencial iniciando pelo poço $S_1$. O esquema ótimo de perfuração sequencial pode, entretanto, indicar que a melhor estratégia seja iniciar pela perfuração do poço $S_2$ e, em seguida, executar a perfuração do poço $S_1$. Os valores a posteriori de todas as estratégias devem ser avaliados e comparados após a incorporação dos custos das perfurações.
+
+De forma mais geral, para perfurações sequenciais $S_j$, $j = 1, \ldots, m$, o VOI pode ser escrito como uma sequência de integrais e maximizações intercaladas, de forma. As integrais (ou somas, no caso de espaço amostral discreto) são realizadas sobre os resultados observados das perfurações. As maximizações, por sua vez, são realizadas sobre as alternativas de continuar ou interromper o processo de perfuração. A situação pode ser ilustrada por meio de uma árvore de decisão parcialmente desenhada, apresentada na Figura~\ref{fig:2.7}. Em cada ramo da árvore, o tomador de decisão pode optar por continuar a perfuração ou interromper.
+\begin{figure} [h]
+  \begin{center}
+    \includegraphics[height=240pt,width=350pt]{images/seq_tree.png}
+    \caption{Ilustração parcial de uma campanha de perfuração sequencial. Fonte \cite{10}.} \label{fig:2.7}
+  \end{center}
+\end{figure}
+
+O valor posterior de VOSI iniciando pela perfuração do poço $S_{j1}$ é dado por:
+\begin{equation}
+\begin{split}
+\mathbb{E}[\boldsymbol{\cdot} \mid S_{j1}]
+= \int \max \Biggl\{ &
+    \max_{j2 \neq j1} \left\{ ContVal_{j2}(S_{j1}) \right\}, \\
+& \sum_{i=1}^{n} \max_{a_i} 
+    \left\{ \mathbb{E}\!\left[ v(x_i,a_i) \mid S_{j1} \right] \right\}
+\Biggr\} \, p(S_{j1}) \, dS_{j1}
+\end{split}
+\label{eq:2-26}
+\end{equation}
+onde o valor de continuação ($ContVal$), no caso de mais perfurações sequenciais, é definido como:
+\begin{equation}
+\begin{aligned}
+ContVal_{j2}(S_{j1}) 
+&= \int_{S_{j2}} \max \Biggl\{ \,
+    \max_{j3 \neq j1, j2} \left\{ ContVal_{j3}(S_{j1}, S_{j2}) \right\}, \\[6pt]
+& \qquad \sum_{i=1}^{n} \max_{a_i} 
+    \left\{ \mathbb{E}\!\left[ v(x_i,a_i) \mid S_{j1}, S_{j2} \right] \right\}
+\Biggr\} \, p(S_{j2} \mid S_{j1}) \, dS_{j2} - P_{j2}.
+\end{aligned}
+\label{eq:2-27}
+\end{equation}
+
+Devido ao encadeamento associado aos valores de continuação, a obtenção computacional do valor a posteriori e do VOI revela-se, em geral, altamente complexa. A solução para a formulação geral é fornecida pela programação dinâmica. Para modelos pequenos e problemas simplificados, essa solução pode ser obtida exatamente. Entretanto, para modelos de maior porte, estratégias heurísticas são necessárias na prática.
+
+Na delimitação de campos de petróleo, os custos de perfuração e aquisição de dados são elevados, mas seu potencial de impacto estratégico também é significativo. A análise do VOSI permite:
+\begin{enumerate}
+    \item[\textbullet] Priorizar locais de perfuração que maximizem o aprendizado geológico, não apenas a produção imediata;
+    \item[\textbullet] Reduzir riscos de sobrecapitalização, evitando investimentos antecipados em poços ou plataformas antes da confirmação do potencial econômico;
+    \item[\textbullet] Otimizar a sequência de perfuração, de forma que poços de menor custo e maior capacidade de aprendizado sejam executados primeiro, servindo como filtros para decisões futuras;
+    \item[\textbullet] Integrar incertezas múltiplas (volume, qualidade do reservatório, custos de operação e preço do petróleo) em uma estrutura unificada de apoio à decisão.
+\end{enumerate}
+
+O uso do VOSI fortalece o processo decisório em três dimensões principais. Na dimensão econômica, contribui para a maximização do VPL esperado do campo, ao considerar diferentes caminhos de informação. Na dimensão operacional, permite um planejamento mais eficiente da alocação de recursos de perfuração e aquisição de dados. Por fim, na dimensão estratégica, aumenta a robustez das decisões, possibilitando que as companhias mantenham flexibilidade diante da incerteza e ajustem os planos de desenvolvimento conforme novos dados surgem. Dessa forma, a aplicação do VOSI na delimitação de campos de petróleo não apenas reduz a probabilidade de erros críticos, mas também aumenta a chance de capturar valor em longo prazo, equilibrando risco, custo e aprendizado.
+
+\subsection{Modelo de Decisão Sequencial}
+
+O \textbf{Modelo de Decisão Sequencial} (SDM, do inglês \textit{Sequential Decision Model}) é um arcabouço fundamental para problemas em que decisões devem ser tomadas em estágios sucessivos, sob incerteza e com aprendizado ao longo do processo. No contexto da exploração e avaliação de poços de petróleo o SDM permite representar a sequência de escolhas de perfuração, incorporando o fato de que os resultados observados em estágios anteriores influenciam as decisões futuras. A representação gráfica de um SDM pode ser feita de várias maneiras, vamos salientar três principais. Uma forma compacta é ilustrada na Figura~\ref{fig:2.8}, em que quadrados representam decisões (escolha das possíveis alternativas) e círculos representam os possíveis resultados incertos da alternativa escolhida \cite{11}. O tempo avança da esquerda para a direita, sendo que o aumento do índice indica os estágios de tomada de decisão, também chamados de épocas de decisão. Do estágio de decisão anterior para o próximo, o resultado incerto da alternativa escolhida é revelado, o que significa que o tomador de decisão adquire aprendizado entre os estágios. Esse aprendizado tem o potencial de alterar o valor esperado das alternativas do estágio seguinte. A mudança no valor esperado das alternativas pode levar a uma escolha diferente em função do conhecimento adquirido previamente.
+\begin{figure} [h]
+  \begin{center}
+    \includegraphics[height=80pt,width=350pt]{images/SDM_schematic1.png}
+    \caption{Representação esquemática do SDM. Fonte \cite{11}.} \label{fig:2.8}
+  \end{center}
+\end{figure}
+
+Outra forma de representação do SDM é ilustrada na Figura~\ref{fig:2.9}, onde cada alternativa tem um certo número de resultados e cada resultado é a entrada para a próxima decisão. Esse encadeamento explicita o caráter sequencial e probabilístico do problema, mas também revela sua complexidade combinatória, conhecida como maldição da dimensionalidade (\textit{curse of dimensionality}).
+
+\begin{figure} [h]
+  \begin{center}
+    \includegraphics[height=60pt,width=370pt]{images/SDM_schematic2.png}
+    \caption{Representação esquemática alternativa do SDM. Fonte \cite{12}.} \label{fig:2.9}
+  \end{center}
+\end{figure}
+
+O objetivo central do SDM é determinar a \textbf{política ótima}, ou seja, a sequência de escolhas que maximiza o valor esperado da campanha de perfuração. Para resolver esse problema, utiliza-se a Programação Dinâmica Estocástica (SDP, do inglês \textit{Stochastic Dynamic Programming}), formalizada originalmente por Bellman em \cite{13}. A solução se baseia na equação de Bellman, que define o valor ótimo em cada nó de decisão como o máximo valor esperado dentre as alternativas possíveis, levando em conta tanto a recompensa imediata quanto o valor futuro associado às escolhas subsequentes. A equação de Bellman é dada matematicamente por \cite{12}:
+\begin{equation}
+V_i(\omega_i) = \max_{a \in A(i)} \left( \sum_{x \in X(a)} \left[ P(x|\omega_i) \left( r_a^x + \delta V(\omega_i^{a,x}) \right) \right] \right),
+\label{eq:2-28}
+\end{equation}
+onde $V_i(\omega_i)$ é o valor esperado ótimo no nó de decisão $i$, condicionado ao estado de conhecimento $\omega_i$. Cada alternativa $a$ possui um conjunto de possíveis resultados $X(a)$, cada um com probabilidade de ocorrência $P(x|\omega_i)$ e recompensa imediata $r_a^x$. O termo $V(\omega_i^{a,x})$ representa o valor esperado futuro (valor de continuação) quando a sequência de decisão segue o caminho $a, x$, corregido pelo fator de desconto $\delta=(1+r)^{-1}$, sendo $r$ a taxa de desconto. Embora o SDP garanta a solução ótima, sua aplicação direta é limitada a problemas de pequeno porte, devido ao crescimento exponencial do espaço de estados, alternativas e desfechos. Para problemas maiores, heurísticas e métodos aproximativos são necessários, mas o SDM e a equação de Bellman continuam sendo a base conceitual que estrutura a formulação do problema.
+
+A terceira forma de representação gráfica do SDM é a já conhecida árvore de decisão. Esse tipo de representação é mais detalhado e facilita a visualização da mecânica de cada decisão individual, mostrando de forma explícita como alternativas e resultados se encadeiam ao longo dos estágios. No entanto, a complexidade do modelo cresce rapidamente com o número de alternativas disponíveis, o conjunto de possíveis resultados e o número de estágios considerados.  A Figura~\ref{fig:2.10} mostra um simples SDM com dois estágios (decisões). Cada decisão possui duas alternativas, e cada alternativa se desdobra em dois possíveis resultados. Esse exemplo ilustra de forma compacta como a árvore de decisão explicita o encadeamento das escolhas e incertezas, destacando, ao mesmo tempo, o desafio do crescimento combinatório à medida que o problema se torna mais realista.  
+\begin{figure} [H]
+  \begin{center}
+    \includegraphics[height=430pt,width=280pt]{images/SDM_two_stages.png}
+    \caption{Árvore de decisão representando um simples SDM. Fonte \cite{11}.} \label{fig:2.10}
+  \end{center}
+\end{figure}
+
+Em cada estágio, o número de nós de decisão aumenta, e estes podem ser identificados por $D_{s,j}$, onde $s$ representa o número do estágio e $j$ a posição relativa dentro do estágio. O conjunto de alternativas possíveis em cada nó, denotado por $A(D_{s,j})$, pode variar conforme o contexto da decisão. De forma análoga, cada resultado incerto $x$ pertence ao conjunto de possíveis resultados $X(a)$, que depende da alternativa escolhida $a$, a qual, por sua vez, está associada ao nó de decisão $D_{s,j}$.  
+
+A Equação~\eqref{eq:2-28} é aplicada recursivamente em todos os nós de decisão, iniciando no último estágio e sendo progressivamente utilizada em direção ao primeiro estágio via processo SDP. A utilização do SDP no modelo de decisão apresentado na Figura~\ref{fig:2.10} pode ser exemplificada conforme ilustrado na Figura~\ref{fig:2.11}.
+\begin{figure} [h]
+  \begin{center}
+    \includegraphics[height=300pt,width=310pt]{images/SDM_exemple.png}
+    \caption{Exemplo do processo SDP. Fonte \cite{11}.} \label{fig:2.11}
+  \end{center}
+\end{figure}
+
+A Figura~\ref{fig:2.12} mostra um nó de decisão genérico tal como os nós apresentados nas Figuras~\ref{fig:2.10} e \ref{fig:2.11}. Este nó não está no último estágio, o que significa que novos nós de decisão continuam a partir de cada um dos ramos de resultado.  
+\begin{figure} [H]
+  \begin{center}
+    \includegraphics[height=110pt,width=310pt]{images/generic_decision_node.png}
+    \caption{Nó de decisão genérico. Fonte \cite{11}.} \label{fig:2.12}
+  \end{center}
+\end{figure}
+
+A principal diferença de um nó de decisão genérico para um nó de decisão genérico no último estágio é que, para obter o valor esperado de cada alternativa, utiliza-se a média ponderada pelas probabilidades de ocorrência, considerando tanto as recompensas imediatas $r_a^x$ quanto o termo adicional $\delta V(\omega_i^{a,x})$, que representa o valor esperado futuro. O estado de conhecimento posterior $\omega_{i+1} = \omega_i^{a,x}$ é atualizado de acordo com a informação revelada pelo resultado $x$, quando a alternativa $a$ é escolhida. A Equação~\eqref{eq:2-28}, equação de Bellman, sintetiza o método e permite a aplicação recursiva do processo SDP.  
+
+O valor mais importante da política ótima é o valor esperado da campanha antes do início da perfuração. Isso significa que, com base no conhecimento prévio $\omega_0$, espera-se obter $V_0(\omega_0)$ a partir da sequência ótima de perfuração, aproveitando a informação geológica espacial disponível antes de cada decisão. Todas as probabilidades e valores esperados $V_i(\omega_i)$, calculados ao longo do processo da programação dinâmica, são armazenados juntamente com as regras de decisão e são considerados parte integrante da política ótima. \cite{14} apresenta uma política ótima contendo todas essas informações em um caso hipotético com três poços candidatos ($A, B, C$), cada um com quatro possíveis resultados categóricos (\#0, \#1, \#2, \#3), associados à função de valor $r = [-10, -5, 5, 10]$, conforme ilustrado na Figura~\ref{fig:2.13}.
+\begin{figure} [H]
+  \begin{center}
+    \includegraphics[height=400pt,width=400pt]{images/optimal_policy.png}
+    \caption{Análise simples da política ótima para três poços. Fonte \cite{11}.} \label{fig:2.13}
+  \end{center}
+\end{figure}
+
+É importante observar que, em algumas situações, a sequência de perfuração pode ser interrompida precocemente devido aos resultados observados. Além disso, algumas sequências de perfuração podem se repetir para diferentes combinações de resultados. Uma alternativa para representar a política ótima é listá-la em termos de eventos conjuntos associados a probabilidades conjuntas, como mostrado no lado direito da Figura~\ref{fig:2.13}.  
+
+Existe, portanto, um grande potencial em extrair percepções decisórias e agregar valor aplicando o processamento heurístico dos métodos à política ótima, especialmente em modelos de grande porte, nos quais a representação gráfica direta da política ótima torna-se inviável.  
 
 
 \section{Valor da Flexibilidade}
 
 A flexibilidade em projetos de exploração e produção (E\&P) pode ser entendida como a capacidade de ajustar decisões à medida que novas informações surgem ou que incertezas se resolvem ao longo do tempo. Esse conceito está intimamente ligado à teoria das Opções Reais, na qual o gestor preserva o direito — mas não a obrigação — de modificar o curso de ação de acordo com as condições futuras. Assim, o Valor da Flexibilidade (VoF) corresponde ao benefício econômico de manter abertas alternativas de decisão diante da incerteza.
 
+\begin{figure} [h]
+  \begin{center}
+    \includegraphics[height=380pt,width=400pt]{images/valor_flexibilidade.png}
+    \caption{Valor da flexibilidade. Fonte \cite{11}.} \label{fig:2.14}
+  \end{center}
+\end{figure}
 
 
 \section{Incertezas Técnicas}

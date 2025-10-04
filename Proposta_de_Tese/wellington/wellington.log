@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.2)  30 SEP 2025 10:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.2)  2 OCT 2025 10:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -918,14 +918,203 @@ Cap\'{\i }tulo 1.
 ]
 Cap\'{\i }tulo 2.
 
-LaTeX Warning: Citation `Begg2002' on page 8 undefined on input line 5.
+
+[8
+
+]
+
+LaTeX Warning: Citation `01' on page 9 undefined on input line 21.
 
 
-LaTeX Warning: Citation `Demirmen2001' on page 8 undefined on input line 7.
+
+Package babel Info: 'brazilian' activates 'portuges' shorthands.
+(babel)             Reported  on input line 33.
+[9]
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+[]\T1/lmr/m/n/12 Estimar as pro-ba-bi-li-da-des de ve-ros-si-mi-lhança, isto é,
+
+ []
 
 
-LaTeX Warning: Citation `Mian2002' on page 8 undefined on input line 14.
+LaTeX Warning: Reference `fig:2.1' on page 11 undefined on input line 74.
 
+<images/generic_VOI.png, id=163, 324.0105pt x 248.127pt>
+File: images/generic_VOI.png Graphic file (type png)
+<use images/generic_VOI.png>
+Package pdftex.def Info: images/generic_VOI.png  used on input line 78.
+(pdftex.def)             Requested size: 380.01033pt x 219.99937pt.
+
+LaTeX Warning: Citation `01' on page 11 undefined on input line 79.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `fig:2.2' on page 11 undefined on input line 83.
+
+
+
+[11{C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{
+C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
+
+
+[12 <./images/generic_VOI.png>]
+<images/tree_flipping.png, id=187, 359.54324pt x 175.25475pt>
+File: images/tree_flipping.png Graphic file (type png)
+<use images/tree_flipping.png>
+Package pdftex.def Info: images/tree_flipping.png  used on input line 87.
+(pdftex.def)             Requested size: 380.01129pt x 220.00383pt.
+
+
+LaTeX Warning: Citation `01' on page 13 undefined on input line 88.
+
+
+
+[13{C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.e
+nc} <./images/tree_flipping.png>]
+
+LaTeX Warning: Citation `02' on page 14 undefined on input line 112.
+
+
+LaTeX Warning: Citation `03' on page 14 undefined on input line 112.
+
+
+LaTeX Warning: Citation `03' on page 14 undefined on input line 125.
+
+
+
+[14]
+
+LaTeX Warning: Reference `fig:2.3' on page 15 undefined on input line 146.
+
+<images/tall_problem.png, id=208, 418.56375pt x 139.722pt>
+File: images/tall_problem.png Graphic file (type png)
+<use images/tall_problem.png>
+Package pdftex.def Info: images/tall_problem.png  used on input line 155.
+(pdftex.def)             Requested size: 359.99611pt x 130.00194pt.
+
+LaTeX Warning: Citation `04' on page 15 undefined on input line 156.
+
+
+
+[15 <./images/tall_problem.png>]
+
+LaTeX Warning: Citation `04' on page 16 undefined on input line 166.
+
+
+LaTeX Warning: Citation `04' on page 16 undefined on input line 184.
+
+
+LaTeX Warning: Reference `eq:2-8' on page 16 undefined on input line 199.
+
+
+LaTeX Warning: Citation `04' on page 16 undefined on input line 201.
+
+
+LaTeX Warning: Citation `04' on page 16 undefined on input line 212.
+
+
+LaTeX Warning: Citation `05' on page 16 undefined on input line 212.
+
+
+
+[16]
+
+LaTeX Warning: Reference `fig:2.4' on page 17 undefined on input line 220.
+
+<images/max_RVOI_plot.png, id=230, 499.6266pt x 268.6035pt>
+File: images/max_RVOI_plot.png Graphic file (type png)
+<use images/max_RVOI_plot.png>
+Package pdftex.def Info: images/max_RVOI_plot.png  used on input line 224.
+(pdftex.def)             Requested size: 379.99461pt x 200.00534pt.
+
+LaTeX Warning: Reference `fig:2.4' on page 17 undefined on input line 229.
+
+
+LaTeX Warning: Reference `eq:2-15' on page 17 undefined on input line 229.
+
+
+
+[17 <./images/max_RVOI_plot.png>]
+
+LaTeX Warning: Reference `eq:2-12' on page 18 undefined on input line 235.
+
+
+LaTeX Warning: Reference `eq:2-10' on page 18 undefined on input line 235.
+
+
+LaTeX Warning: Citation `04' on page 18 undefined on input line 235.
+
+
+LaTeX Warning: Reference `fig:2.5' on page 18 undefined on input line 245.
+
+
+LaTeX Warning: Reference `eq:2-18' on page 18 undefined on input line 245.
+
+<images/RVOI_plot.png, id=237, 499.6266pt x 268.6035pt>
+File: images/RVOI_plot.png Graphic file (type png)
+<use images/RVOI_plot.png>
+Package pdftex.def Info: images/RVOI_plot.png  used on input line 249.
+(pdftex.def)             Requested size: 379.99461pt x 200.00534pt.
+
+LaTeX Warning: Reference `fig:2.5' on page 18 undefined on input line 254.
+
+
+LaTeX Warning: Citation `06' on page 18 undefined on input line 258.
+
+
+LaTeX Warning: Citation `07' on page 18 undefined on input line 258.
+
+
+
+[18 <./images/RVOI_plot.png>]
+
+LaTeX Warning: Citation `06' on page 19 undefined on input line 260.
+
+
+LaTeX Warning: Citation `07' on page 19 undefined on input line 260.
+
+
+LaTeX Warning: Citation `08' on page 19 undefined on input line 260.
+
+
+LaTeX Warning: Reference `eq:2-19' on page 19 undefined on input line 267.
+
+
+LaTeX Warning: Reference `eq:2-17' on page 19 undefined on input line 271.
+
+
+LaTeX Warning: Reference `eq:2-7' on page 19 undefined on input line 271.
+
+
+LaTeX Warning: Reference `fig:2.6' on page 19 undefined on input line 273.
+
+
+
+[19]
+<images/VOI_eta2_plot.png, id=253, 387.6081pt x 270.5307pt>
+File: images/VOI_eta2_plot.png Graphic file (type png)
+<use images/VOI_eta2_plot.png>
+Package pdftex.def Info: images/VOI_eta2_plot.png  used on input line 277.
+(pdftex.def)             Requested size: 360.01048pt x 200.00793pt.
+
+
+LaTeX Warning: Reference `fig:2.6' on page 20 undefined on input line 281.
+
+
+LaTeX Warning: Citation `06' on page 20 undefined on input line 281.
+
+
+LaTeX Warning: Citation `07' on page 20 undefined on input line 281.
+
+
+LaTeX Warning: Citation `07' on page 20 undefined on input line 281.
+
+
+
+[20 <./images/VOI_eta2_plot.png>]
 Package epstopdf Info: Source file: <images/egg_model_log_3D.eps>
 (epstopdf)                    date: 2025-08-27 16:41:49
 (epstopdf)                    size: 1470681 bytes
@@ -935,64 +1124,25 @@ df>
 (epstopdf)                    size: 702603 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=images/egg_model_log
 _3D-eps-converted-to.pdf images/egg_model_log_3D.eps>
-(epstopdf)             \includegraphics on input line 18.
+(epstopdf)             \includegraphics on input line 314.
 Package epstopdf Info: Output file is already uptodate.
-<images/egg_model_log_3D-eps-converted-to.pdf, id=141, 525.965pt x 340.27126pt>
+<images/egg_model_log_3D-eps-converted-to.pdf, id=261, 525.965pt x 340.27126pt>
 
 File: images/egg_model_log_3D-eps-converted-to.pdf Graphic file (type pdf)
 <use images/egg_model_log_3D-eps-converted-to.pdf>
 Package pdftex.def Info: images/egg_model_log_3D-eps-converted-to.pdf  used on 
-input line 18.
+input line 314.
 (pdftex.def)             Requested size: 400.01843pt x 243.00134pt.
 
-Overfull \hbox (1.67984pt too wide) in paragraph at lines 18--19
+Overfull \hbox (1.67984pt too wide) in paragraph at lines 314--315
  [] 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
+[21 <./images/egg_model_log_3D-eps-converted-to.pdf>]) (chapter-3.tex
 
-
-[8
-
-]
-
-Package babel Info: 'brazilian' activates 'portuges' shorthands.
-(babel)             Reported  on input line 29.
-[9 <./images/egg_model_log_3D-eps-converted-to.pdf>]
-
-[10]
-
-LaTeX Warning: Citation `30' on page 11 undefined on input line 45.
-
-
-LaTeX Warning: Citation `31' on page 11 undefined on input line 48.
-
-
-LaTeX Warning: Citation `30' on page 11 undefined on input line 53.
-
-
-LaTeX Warning: Citation `31' on page 11 undefined on input line 56.
-
-
-LaTeX Warning: Citation `30' on page 11 undefined on input line 61.
-
-
-LaTeX Warning: Citation `31' on page 11 undefined on input line 64.
-
-
-LaTeX Warning: Citation `30' on page 11 undefined on input line 69.
-
-
-LaTeX Warning: Citation `31' on page 11 undefined on input line 72.
-
-) (chapter-3.tex
-
-[11{C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
-
-
-[12]
+[22]
 Cap\'{\i }tulo 3.
 (tables/table-2-4.tex
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1006,7 +1156,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 Package hyperref Warning: Ignoring empty anchor on input line 25.
 
 
-LaTeX Warning: Citation `ref13' on page 13 undefined on input line 25.
+LaTeX Warning: Citation `ref13' on page 23 undefined on input line 25.
 
 
 Overfull \hbox (28.46579pt too wide) in paragraph at lines 3--26
@@ -1537,15 +1687,15 @@ Overfull \hbox (15.63747pt too wide) in paragraph at lines 26--26
 Package hyperref Warning: Ignoring empty anchor on input line 27.
 
 
-LaTeX Warning: Citation `ref13' on page 13 undefined on input line 27.
+LaTeX Warning: Citation `ref13' on page 23 undefined on input line 27.
 
 )) (chapter-4.tex
 
-[13
+[23
 
 ]
 Cap\'{\i }tulo 4.
-<images/CNN_ANN.png, id=175, 657.657pt x 275.8305pt>
+<images/CNN_ANN.png, id=278, 657.657pt x 275.8305pt>
 File: images/CNN_ANN.png Graphic file (type png)
 <use images/CNN_ANN.png>
 Package pdftex.def Info: images/CNN_ANN.png  used on input line 7.
@@ -1557,13 +1707,13 @@ Overfull \hbox (1.67757pt too wide) in paragraph at lines 7--8
 
 ) (chapter-5.tex
 
-[14
+[24
 
  <./images/CNN_ANN.png>]
 Cap\'{\i }tulo 5.
 ) (conclusions.tex
 
-[15
+[25
 
 ]
 Cap\'{\i }tulo 6.
@@ -1571,13 +1721,13 @@ Cap\'{\i }tulo 6.
 No file wellington.bbl.
 (appendix.tex
 
-[16
+[26
 
 ]
 Ap\^endice A.
 )
 
-[17
+[27
 
 ] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
@@ -1593,29 +1743,40 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `wellington.out' has not changed.
-(rerunfilecheck)             Checksum: ED99AFEDD62449D993D32801B14CCBC2;2970.
+
+Package rerunfilecheck Warning: File `wellington.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `wellington.out':
+(rerunfilecheck)             Before: ED99AFEDD62449D993D32801B14CCBC2;2970
+(rerunfilecheck)             After:  5814BE650E7CF63A8F8E259A84E8217B;4050.
  ) 
 Here is how much of TeX's memory you used:
- 15643 strings out of 469923
- 251469 string characters out of 5469171
- 733412 words of memory out of 5000000
- 42090 multiletter control sequences out of 15000+600000
- 688331 words of font info for 85 fonts, out of 8000000 for 9000
+ 15796 strings out of 469923
+ 254079 string characters out of 5469171
+ 733405 words of memory out of 5000000
+ 42186 multiletter control sequences out of 15000+600000
+ 694311 words of font info for 87 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 90i,16n,93p,1560b,466s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,16n,93p,2178b,599s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
+b><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pf
 b><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pf
-b><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb
-><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><
-C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><
-C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><
-C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb
-><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso12.pf
-b>
-Output written on wellington.pdf (17 pages, 1491506 bytes).
+b><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb
+><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb>
+<C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C
+:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C
+:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C
+:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb>
+<C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsso12.pfb
+><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb
+><C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
+<C:/Users/calva/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbo
+ls/msbm10.pfb>
+Output written on wellington.pdf (27 pages, 2123097 bytes).
 PDF statistics:
- 243 PDF objects out of 1000 (max. 8388607)
- 44 named destinations out of 1000 (max. 500000)
- 168 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 383 PDF objects out of 1000 (max. 8388607)
+ 97 named destinations out of 1000 (max. 500000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 
