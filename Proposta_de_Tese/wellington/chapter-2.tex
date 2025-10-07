@@ -134,19 +134,19 @@ Um problema interessante na análise do VOI é o \textbf{problema TALL-N} (\text
     \item[\textbullet] $a_{1}$: alternativa arriscada, com payoff incerto descrito por uma variável aleatória $\tilde{x}$ com média $\mu$ e desvio-padrão $\sigma$.
 \end{itemize}
 
-Se $\mu < v$, o decisor escolhe $a_{0}$; se $\mu \geq v$, escolhe $a_{1}$; e se $\mu = v$, encontra-se indiferente. 
+Se $\mu < v$, o decisor escolhe $a_{0}$; se $\mu > v$, escolhe $a_{1}$; e se $\mu = v$, encontra-se indiferente. 
 O valor esperado sem informação adicional é dado por:
 \begin{equation}
 \mathbb{E}[\text{valor sem informação}] = \max(v, \mu).
 \label{eq:2-7}
 \end{equation}
 
-A Figura~\ref{fig:2.3} ilustra o problema TALL-N, em que $\tilde{x}$ é assumida como normalmente distribuída. A padronização $z = \frac{x-\mu}{\sigma}$ permite definir o coeficiente de divergência:
+A Figura~\ref{fig:2.3} ilustra o problema TALL-N, onde a variável aleatória $\tilde{x}$ é assumida como normalmente distribuída. A padronização $z = \frac{x-\mu}{\sigma}$ permite definir o coeficiente de divergência:
 \begin{equation}
 c = \frac{\mu - v}{\sigma},
 \label{eq:2-8}
 \end{equation}
-o qual representa a distância entre as duas alternativas em unidades de desvio-padrão.
+que representa a distância entre as duas alternativas em unidades de desvio-padrão.
 
 \begin{figure} [h]
   \begin{center}
@@ -172,8 +172,8 @@ EVPI =
 \end{equation}
 em que $\phi(\cdot)$ é a densidade da normal padrão e $\Phi(\cdot)$ sua função de distribuição acumulada.
 
-Quando a \textbf{informação é imperfeita}, mas correlacionada com o payoff incerto, utilizamos o EVII. Considere um sistema de informação $\Theta_{\eta}$, cujo sinal $\theta$ é normalmente distribuído e correlacionado com $\tilde{x}$ por um coeficiente de correlação $\eta > 0$. 
-Nesse caso, a média condicional é dada por $E[\tilde{x} \mid \theta] = \mu + \eta \sigma \theta$. Portanto, o EVII é definido por:
+Quando a \textbf{informação é imperfeita}, mas correlacionada com o payoff incerto, utilizamos o EVII. Considere um sistema de informação $\Theta_{\rho}$, cujo sinal $\theta$ é normalmente distribuído e correlacionado com $\tilde{x}$ por um coeficiente de correlação $\rho > 0$. 
+Nesse caso, a média condicional é dada por $E[\tilde{x} \mid \theta] = \mu + \rho \sigma \theta$ que será maior que $v$ enquanto $\theta > (v - \mu)/(\rho \sigma)=-\rho^{-1}c$. Portanto, o EVII é definido por:
 
 \begin{equation}
 EVII = E[\max(v, E[\tilde{x} \mid \theta])] - \max(v, \mu),
@@ -183,39 +183,39 @@ e pode ser escrito na forma fechada como \cite{04}:
 \begin{equation}
 EVII =
 \begin{cases}
-\eta \sigma \, [\phi(\eta^{-1}c) - \eta^{-1}c \, \Phi(-\eta^{-1}c)], & \mu \geq v, \\[6pt]
-\eta \sigma \, [\phi(\eta^{-1}c) + \eta^{-1}c \, \Phi(\eta^{-1}c)], & \mu < v.
+\rho \sigma \, [\phi(\rho^{-1}c) - \rho^{-1}c \, \Phi(-\rho^{-1}c)], & \mu \geq v, \\[6pt]
+\rho \sigma \, [\phi(\rho^{-1}c) + \rho^{-1}c \, \Phi(\rho^{-1}c)], & \mu < v.
 \end{cases}
 \label{eq:2-12}
 \end{equation}
 
-Quando a correlação é perfeita ($\eta=1$), temos o caso de informação perfeita, cujos resultados são equivalentes ao EVPI. Por outro lado, a informação imperfeita, com correlação $\eta$, pode ser interpretada como equivalente ao valor da informação perfeita, mas com um desvio-padrão ajustado $\sigma_{\text{ajustado}} = \eta \sigma$, ou seja:
+O valor de EVII dado pela Equação \eqref{eq:2-12} é o valor esperado da distribuição que descreve a incerteza no VOI \cite{15}. Quando a correlação é perfeita ($\rho=1$), temos o caso de informação perfeita, cujos resultados são equivalentes ao EVPI. Por outro lado, a informação imperfeita, com correlação $\rho$, pode ser interpretada como equivalente ao valor da informação perfeita, mas com um desvio-padrão ajustado $\sigma_{\text{ajustado}} = \rho \sigma$, ou seja:
 \begin{equation}
-    \eta^{-1}c = \frac{\mu - v}{\eta \sigma}
+    \rho^{-1}c = \frac{\mu - v}{\rho \sigma}
     \label{eq:2-13}
 \end{equation}
-comparar com a Equação \eqref{eq:2-8}. Isso significa que a qualidade da informação imperfeita pode ser vista como se fosse informação perfeita, porém mais ``difusa'', já que a incerteza é reduzida proporcionalmente a $\eta$.
+comparar com a Equação \eqref{eq:2-8}. Isso significa que a qualidade da informação imperfeita pode ser vista como se fosse informação perfeita, porém mais ``difusa'', já que a incerteza é reduzida proporcionalmente a $\rho$.
 
-O EVII é sempre limitado superiormente pelo EVPI, aproximando-se dele quando $\eta \to 1$ e tendendo a zero quando $\eta \to 0$. No limite, quando $c \to \infty$, obtém-se \cite{04}:
+O valor do EVII é sempre limitado superiormente pelo EVPI, aproximando-se dele quando $\rho \to 1$ e tendendo a zero quando $\rho \to 0$. No limite, quando $c \to \infty$, obtém-se \cite{04}:
 \begin{equation}
-\lim_{c \to \infty} RVOI^{*}_{\eta} = \eta^2,
+\lim_{c \to \infty} RVOI^{*}_{\rho} = \rho^2,
 \label{eq:2-14}
 \end{equation}
 onde o sobrescrito $^{*}$ indica que este é o valor máximo do RVOI para um determinado $c$. Assim, define-se o \textit{Relative Value of Information} (RVOI) como a razão entre EVII e EVPI:
 \begin{equation}
-RVOI_{\eta}^{*} = \frac{EVII}{EVPI} = \eta^2.
+RVOI_{\rho}^{*} = \frac{EVII}{EVPI} = \rho^2.
 \label{eq:2-15}
 \end{equation}
 
-Portanto, o RVOI expressa diretamente a fração do valor da informação imperfeita em relação ao valor da informação perfeita, sendo determinado pelo quadrado do coeficiente de correlação, isto é, \(\eta^{2}\) \cite{04}. Na referência \cite{05} temos também a demonstração que $RVOI=\eta^2$ no contexto de perda quadrática e função de regressão linear.
+Portanto, o RVOI expressa diretamente a fração do valor da informação imperfeita em relação ao valor da informação perfeita, sendo determinado pelo quadrado do coeficiente de correlação, isto é, \(\rho^{2}\) \cite{04}. Na referência \cite{05} temos também a demonstração que $RVOI=\rho^2$ no contexto de perda quadrática e função de regressão linear.
 
 Dado um valor específico de $c$, o RVOI atinge seu valor máximo quando $c = \sigma/2R$, onde $R$ representa a \textit{risk tolerance} do tomador de decisão e $\sigma$ o desvio-padrão.  Nessa condição, a informação imperfeita possui o maior valor relativo em comparação com a informação perfeita, correspondendo ao caso em que o tomador de decisão está indiferente. Assim, o valor máximo do RVOI é expresso por:
 \begin{equation}
-RVOI_{\eta}^{*} = \frac{\ln \big[2\Phi(-\eta c)\big]}{\ln \big[2\Phi(-c)\big]},
+RVOI_{\rho}^{*} = \frac{\ln \big[2\Phi(-\rho c)\big]}{\ln \big[2\Phi(-c)\big]},
 \label{eq:2-16}
 \end{equation}
 
-Na Figura~\ref{fig:2.4} é apresentado o gráfico do valor máximo de RVOI* em função do coeficiente de divergência $c$. Observa-se que, para diferentes valores do coeficiente de correlação $\eta$, o comportamento de RVOI* evidencia a importância relativa da informação imperfeita em comparação à informação perfeita. Além disso, a figura permite analisar os valores-limite que fornecem interpretações intuitivas sobre o valor da informação em diferentes cenários de risco e preferência do tomador de decisão.
+Na Figura~\ref{fig:2.4} é apresentado o gráfico do valor máximo de RVOI* em função do coeficiente de divergência $c$. Observa-se que, para diferentes valores do coeficiente de correlação $\rho$, o comportamento de RVOI* evidencia a importância relativa da informação imperfeita em comparação à informação perfeita. Além disso, a figura permite analisar os valores-limite que fornecem interpretações intuitivas sobre o valor da informação em diferentes cenários de risco e preferência do tomador de decisão.
 
 \begin{figure} [h]
   \begin{center}
@@ -224,23 +224,23 @@ Na Figura~\ref{fig:2.4} é apresentado o gráfico do valor máximo de RVOI* em f
   \end{center}
 \end{figure}
 
-Importante resssaltar que é possível calcular outros dois limites para \( RVOI^{*} \), os quais podem ser visualizados na Figura~\ref{fig:2.4}. Quando \( c \to 0 \), temos que \( RVOI^{*}_{\eta} \to \eta \), conforme o problema TALL-N, onde \( RVOI_{\eta} = \eta \). Por outro lado, quando \( c \to -\infty \), obtém-se \( RVOI^{*}_{\eta} \to 1 \), o que indica que um tomador de decisão avesso ao risco pode valorizar a informação imperfeita quase tanto quanto a informação perfeita, caso a alternativa de \textit{status quo} seja significativamente melhor que a alternativa arriscada. No entanto, o limite que nos interessa é o expresso pela Equação~\eqref{eq:2-15}, pois este fornece uma interpretação interessante para o resultado:
+Importante resssaltar que é possível calcular outros dois limites para \( RVOI^{*} \), os quais podem ser visualizados na Figura~\ref{fig:2.4}. Quando \( c \to 0 \), temos que \( RVOI^{*}_{\rho} \to \rho \), conforme o problema TALL-N, onde \( RVOI_{\rho} = \rho \). Por outro lado, quando \( c \to -\infty \), obtém-se \( RVOI^{*}_{\rho} \to 1 \), o que indica que um tomador de decisão avesso ao risco pode valorizar a informação imperfeita quase tanto quanto a informação perfeita, caso a alternativa de \textit{status quo} seja significativamente melhor que a alternativa arriscada. No entanto, o limite que nos interessa é o expresso pela Equação~\eqref{eq:2-15}, pois fornece uma interpretação interessante para o seguinte resultado:
 \begin{equation}
 EVII = \eta^2\cdot EVPI
 \label{eq:2-17}
 \end{equation}
 
-Antes, vamos analisar o RVOI no caso geral para o problema TALL-N, razão entre as Equações~\eqref{eq:2-12} e \eqref{eq:2-10}, que é dado por \cite{04}:
+Abordaremos essa relação na subseção seguinte, antes, vamos analisar o RVOI no caso geral para o problema TALL-N, razão entre as Equações~\eqref{eq:2-12} e \eqref{eq:2-10}, que é dado por \cite{04}:
 \begin{equation}
 \frac{EVII}{EVPI} =
 \begin{cases}
-\eta, & \mu = v \\[8pt]
-\dfrac{\eta \, \phi(\eta^{-1}c) - c \, \Phi(-\eta^{-1}c)}{\phi(c) - c \, \Phi(-c)}, & \mu > v \\[12pt]
-\dfrac{\eta \, \phi(\eta^{-1}c) + c \, \Phi(\eta^{-1}c)}{\phi(c) + c \, \Phi(c)}, & \mu < v
+\rho, & \mu = v \\[8pt]
+\dfrac{\rho \, \phi(\rho^{-1}c) - c \, \Phi(-\rho^{-1}c)}{\phi(c) - c \, \Phi(-c)}, & \mu > v \\[12pt]
+\dfrac{\rho \, \phi(\rho^{-1}c) + c \, \Phi(\rho^{-1}c)}{\phi(c) + c \, \Phi(c)}, & \mu < v
 \end{cases}
 \label{eq:2-18}
 \end{equation}
-Assim, observa-se que RVOI depende do coeficiente de correlação \( \eta \) e do coeficiente de divergência \( c \). No caso em que \(\mu = v\), o valor relativo da informação imperfeita em relação à informação perfeita é simplesmente \(\eta\). Já quando \(\mu > v\) ou \(\mu < v\), a relação passa a depender da interação entre \( \eta \) e \( c \).  A Figura~\ref{fig:2.5} mostra o comportamento de RVOI em relação ao coeficiente de divergência \( c \), dado pela Equação~\eqref{eq:2-18}:
+Assim, observa-se que RVOI depende do coeficiente de correlação \( \rho \) e do coeficiente de divergência \( c \). No caso em que \(\mu = v\), o valor relativo da informação imperfeita em relação à informação perfeita é simplesmente \(\rho\). Já quando \(\mu > v\) ou \(\mu < v\), a relação passa a depender da interação entre \( \rho \) e \( c \).  A Figura~\ref{fig:2.5} mostra o comportamento de RVOI em relação ao coeficiente de divergência \( c \), dado pela Equação~\eqref{eq:2-18}:
 
 \begin{figure} [h]
   \begin{center}
@@ -266,7 +266,7 @@ A Equação~\eqref{eq:2-19} expressa a redução percentual da variância de $X$
 
 Na prática, o cálculo exato de $\eta^{2}$ pode ser complexo, pois depende tanto da distribuição de probabilidade da variável $X$ quanto da probabilidade condicional $X|S$. Contudo, sua interpretação é intuitiva: trata-se de uma métrica que indica o ganho esperado de informação em termos de redução da incerteza, permitindo avaliar a relevância e a efetividade da aquisição de novos dados no contexto da tomada de decisão.
 
-Com base no exposto até aqui, podemos considerar que o VOI é equivalente ao EVII, o qual deve ser uma função de $\eta^2$ e do EVPI, conforme estabelecido na Equação~\eqref{eq:2-17}. Dessa forma, é possível obter o gráfico do VOI em função de $\eta^2$ para diferentes valores de $\mu$ (média da variável aleatória): \textbf{i)}~$\mu < v$, a escolha ótima do tomador de decisão é $a_{0}$ (alternativa segura, com \textit{payoff} constante $v$); \textbf{ii)}~$\mu \geq v$, a escolha ótima é $a_{1}$ (alternativa arriscada, com payoff incerto); \textbf{iii)}~$\mu = v$, o tomador de decisão encontra-se indiferente entre as duas alternativas. Vale ressaltar que o valor esperado do tomador de decisão sem informação adicional é dado por $\max(v, \mu)$, conforme Equação~\eqref{eq:2-7} .
+Com base no exposto até aqui, podemos considerar que o VOI é equivalente ao EVII, o qual deve ser uma função de $\eta^2$ e do EVPI, conforme estabelecido na Equação~\eqref{eq:2-17}. Dessa forma, é possível obter o gráfico do VOI em função de $\eta^2$ para diferentes valores de $\mu$ (média da variável aleatória): \textbf{i)}~$\mu < v$, a escolha ótima do tomador de decisão é $a_{0}$ (alternativa segura, com \textit{payoff} constante $v$); \textbf{ii)}~$\mu > v$, a escolha ótima é $a_{1}$ (alternativa arriscada, com payoff incerto); \textbf{iii)}~$\mu = v$, o tomador de decisão encontra-se indiferente entre as duas alternativas. Vale ressaltar que o valor esperado do tomador de decisão sem informação adicional é dado por $\max(v, \mu)$, conforme Equação~\eqref{eq:2-7} .
 
 A Figura~\ref{fig:2.6} apresenta a relação entre VOI e $\eta^2$, ilustrando o como o valor da informação depende da redução esperada da variância da variável de interesse em cada um dos cenários decisórios.
 
@@ -276,7 +276,7 @@ A Figura~\ref{fig:2.6} apresenta a relação entre VOI e $\eta^2$, ilustrando o 
     \caption{VOI em função de $\eta^2$.} \label{fig:2.6}
   \end{center}
 \end{figure}
-Ressalta-se que o comportamento observado no gráfico da Figura~\ref{fig:2.6} é semelhante ao encontrado em \cite{06} e \cite{07}. É sabido também que a curva muda o comportamento, sem alterar a concavidade, para diferentes valores do \textit{payoff}. Em particular, em \cite{07} é apresentada uma função VOI cujo comportamento linear em relação a $\eta^2$ é dado por:
+Ressalta-se que o comportamento observado no gráfico da Figura~\ref{fig:2.6} é semelhante ao encontrado em \cite{06}, \cite{07} e \cite{15}. É sabido também que a curva muda o comportamento, sem alterar a concavidade, para diferentes valores do \textit{payoff}. Em particular, em \cite{07} é apresentada uma função VOI cujo comportamento linear em relação a $\eta^2$ é dado por:
 
 \begin{equation}
 VOI \equiv VOII =
@@ -286,7 +286,145 @@ VOPI \left[ a + (1-a)\eta^{2} \right], & \text{para } \eta^{2} \geq \dfrac{-a}{1
 \end{cases}
 \label{eq:2-20}
 \end{equation}
-onde $a$ é um parâmetro linear do modelo (consideraram $a=-0.1$), VOII o valor da informação imperfeita, VOPI o valor da informação perfeita e $\eta^2$ o fator de transferência de valor.
+onde $a$ é um parâmetro linear do modelo (consideraram $a=-0.1$), VOII o valor da informação imperfeita, VOPI o valor da informação perfeita e $\eta^2$ a medidade de aprendizagem.
+
+A medida de aprendizagem $\eta^2$ é uma medida fundamental também em um contexto bayesiano. Ela expressa a fração da variância total de uma variável aleatória $X$ (estado verdadeiro) que é reduzida (ou explicada) após a observação de uma variável informativa $S$. Formalmente, sua definição geral é dada pela Equação~\eqref{eq:2-19}, que pode ser reescrita como:
+
+\begin{equation}
+\eta^2(X|S) = 
+\frac{\mathrm{Var}[X] - \mathbb{E}[\mathrm{Var}(X|S)]}{\mathrm{Var}[X]}
+= 
+\frac{\mathrm{Var}(\mathbb{E}[X|S])}{\mathrm{Var}[X]}.
+\label{eq:eta2-def}
+\end{equation}
+
+A Equação~\ref{eq:eta2-def} deriva diretamente da \textit{lei da variância total}:
+
+\begin{equation}
+\mathrm{Var}[X] = 
+\mathbb{E}[\mathrm{Var}(X|S)] + \mathrm{Var}(\mathbb{E}[X|S]),
+\label{eq:total-variance}
+\end{equation}
+a qual separa a variância total em duas componentes:  
+(i) a variância média residual que representa a incerteza remanescente após observar $S$; e  (ii) a variância explicada pela informação contida em $S$.
+
+Suponha que $X$ e $S$ sejam variáveis aleatórias normais padronizadas e correlacionadas, tal que:
+
+\begin{equation}
+\begin{pmatrix} X \\ S \end{pmatrix}
+\sim
+\mathcal{N}\!\left(
+\begin{pmatrix} 0 \\ 0 \end{pmatrix},
+\begin{pmatrix}
+1 & \rho \\
+\rho & 1
+\end{pmatrix}
+\right),
+\label{eq:bivariate-normal}
+\end{equation}
+onde $\rho$ é o coeficiente de correlação linear entre $X$ e $S$.  Assim, para o caso normal bivariado, a distribuição condicional de $X$ dado $S=s$ é também normal:
+
+\begin{equation}
+X|S=s \sim \mathcal{N}(\rho s,\, 1 - \rho^2).
+\label{eq:conditional}
+\end{equation}
+
+As propriedades de esperança e variância condicionais são dadas por:
+
+\begin{equation}
+\mathbb{E}[X|S] = \rho S, 
+\quad
+\mathrm{Var}(X|S) = 1 - \rho^2.
+\label{eq:cond-mean-var}
+\end{equation}
+Sabendo que $\mathrm{Var}[X] = \mathrm{Var}[S] = 1$, podemos calcular:
+
+\begin{equation}
+\mathrm{Var}(\mathbb{E}[X|S]) = \mathrm{Var}(\rho S) = \rho^2\mathrm{Var}[S]=\rho^2,
+\label{eq:explained-var}
+\end{equation}
+e portanto:
+
+\begin{equation}
+\eta^2(X|S) = 
+\frac{\mathrm{Var}(\mathbb{E}[X|S])}{\mathrm{Var}[X]} 
+= 
+\frac{\rho^2}{1}
+= 
+\rho^2.
+\label{eq:eta2-rho2}
+\end{equation}
+Logo, no caso normal bivariado, a medidade de aprendizagem é igual ao quadrado da correlação entre a variável verdadeira $X$ e a informação adquirida $S$.  Essa relação é intuitiva: quanto mais correlacionada a informação $S$ estiver com o estado verdadeiro $X$, maior será a fração da variância total explicada, e consequentemente, maior o valor potencial da informação.
+
+No modelo TALL-N, analisado na subseção anterior e amplamente utilizado em análise de decisão sob incerteza, a variável de interesse $X$ segue uma distribuição normal a priori:
+
+\begin{equation}
+X \sim \mathcal{N}(\mu_0, \sigma_0^2),
+\label{eq:talln-prior}
+\end{equation}
+e a informação observada é modelada como uma variável $S$ (por exemplo, um teste sísmico) e afetada por ruído aditivo gaussiano (ruído da observação):
+
+\begin{equation}
+S = X + \varepsilon, 
+\quad 
+\varepsilon \sim \mathcal{N}(0, \sigma_\varepsilon^2).
+\label{eq:talln-observation}
+\end{equation}
+
+Nesse contexto, o fator de transferência de valor é dado por:
+
+\begin{equation}
+\eta^2 = 
+\frac{\sigma_0^2}{\sigma_0^2 + \sigma_\varepsilon^2},
+\label{eq:eta2-talln}
+\end{equation}
+onde $\sigma_0^2$ é a incerteza inicial (a priori), $\sigma_\varepsilon^2$ é a incerteza da medição (ruído), portanto $\eta^2$ mede quanto da incerteza inicial é resolvida pela informação $S$. Temos também que a correlação linear entre o valor verdadeiro $X$ e a informação observada $S$ é:
+
+\begin{equation}
+\rho = 
+\frac{\sigma_0}{\sqrt{\sigma_0^2 + \sigma_\varepsilon^2}}.
+\label{eq:rho-talln}
+\end{equation}
+
+Assim, das Equações \eqref{eq:eta2-talln} e \eqref{eq:rho-talln}, obtemos a relação direta:
+
+\begin{equation}
+\eta^2 = \rho^2.
+\label{eq:eta2-equals-rho2}
+\end{equation}
+
+Portanto, no contexto do modelo TALL-N, a qualidade da informação é determinada pela correlação entre o valor verdadeiro $X$ e a informação adquirida $S$. Quanto maior $\rho$, maior é $\eta^2$ e, consequentemente, maior é o Valor da Informação.
+
+A Figura~\ref{fig:eta2_empirical} apresenta o resultado de uma simulação empírica comparando o valor teórico e o valor estimado de $\eta^2(X|S)$ para diferentes níveis de correlação $\rho$. O código \textit{Python} gera amostras bivariadas normais com correlação controlada e calcula, para cada valor de $\rho$, a fração da variância total de $X$ explicada por $S$, utilizando a definição da Equação~\ref{eq:eta2-def}. 
+\begin{itemize}
+  \item Os pontos vermelhos representam os valores empíricos de $\eta^2$, calculados a partir de amostras simuladas.
+  \item A linha azul tracejada mostra os valores teóricos, baseados na relação analítica conforme a Equação~\ref{eq:eta2-equals-rho2}.
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/eta2_empirical.png}
+    \caption{Valor empírico e teórico de $\eta^2(X|S)$ para diferentes níveis de correlação $\rho$.}
+    \label{fig:eta2_empirical}
+\end{figure}
+
+Os resultados empíricos coincidem quase perfeitamente com a curva teórica, confirmando que, para variáveis gaussianas correlacionadas, a proporção da variância explicada pela informação é exatamente o quadrado da correlação.  
+Isso reforça a interpretação de $\eta^2$ como uma medida da qualidade da informação: quanto mais forte a correlação, maior a fração de incerteza eliminada.
+
+A Figura~\ref{fig:var_decomp} ilustra graficamente a decomposição da variância total de $X$ em duas componentes: a parcela explicada pela informação ($\mathrm{Var}(\mathbb{E}[X|S])$) e a parcela residual ($\mathbb{E}[\mathrm{Var}(X|S)]$). O eixo horizontal representa a correlação $\rho$, enquanto o eixo vertical mostra a fração da variância total (normalizada, $\mathrm{Var}[X] = 1$).
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/variance_decomposition.png}
+    \caption{Decomposição da variância total em função da correlação $\rho$.}
+    \label{fig:var_decomp}
+\end{figure}
+\begin{itemize}
+  \item A curva verde representa a variância explicada pela informação, proporcional a $\rho^2$.
+  \item A curva azul representa a variância residual, proporcional a $(1 - \rho^2)$.
+  \item A linha vermelha tracejada indica a variância total normalizada ($\mathrm{Var}[X] = 1$).
+\end{itemize}
+À medida que a correlação $\rho$ aumenta, a fração de variância explicada (curva verde) cresce, enquanto a variância residual (curva azul) diminui. Quando $\rho = 0$, toda a incerteza permanece; quando $\rho = 1$, toda a incerteza é eliminada. Essa decomposição ilustra de maneira clara a essência do fator $\eta^2$, representando a proporção da incerteza inicial que é resolvida pela informação disponível.
+
 
 
 \subsection{Valor da Informação Sequencial}
