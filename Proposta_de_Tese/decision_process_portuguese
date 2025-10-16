@@ -1,0 +1,51 @@
+digraph EandP_Decision_Process {
+	fontname=Helvetica rankdir=LR size="12,6" splines=ortho
+	node [color="#d9534f" fillcolor=white fontname=Helvetica shape=box style="rounded,filled"]
+	exploration [label="Exploração
+(Sim / Não)"]
+	well_loc [label="Localização do Poço
+(Up-dip / Down-dip)"]
+	appraisal [label="Delimitação
+(Sim / Não)"]
+	further_app [label="Nova Delimitação
+(Sim / Não)"]
+	develop_concept [label="Desenvolvimento
+(Alternativas de Conceito)"]
+	develop_drain [label="Desenvolvimento
+(Estratégias de Drenagem)"]
+	node [color="#5bc0de" fillcolor="#e6f3f8" shape=ellipse]
+	exploration_rep [label="Relatório de Exploração"]
+	appraisal_rep [label="Relatório de Delimitação"]
+	further_app_rep [label="Relatório de Nova Delimitação"]
+	production_prof [label="Perfil de Produção"]
+	exploration_ind [label="Indicador de Exploração"]
+	appraisal_ind [label="Indicador de Delimitação"]
+	further_app_ind [label="Indicador de Nova Delimitação"]
+	physical_res [label="Realidade Física
+(Reservatório)"]
+	capex_opex [label="CAPEX / OPEX" color="#f0ad4e" fillcolor="#fff7e6" shape=ellipse]
+	revenues [label=Receitas color="#f0ad4e" fillcolor="#fff7e6" shape=ellipse]
+	oil_price [label="Preço do Óleo/Gás" color="#f0ad4e" fillcolor="#fff7e6" shape=ellipse]
+	eco_value [label="Valor Econômico" color="#5cb85c" fillcolor="#e9f9e9" shape=hexagon]
+	exploration -> well_loc
+	well_loc -> appraisal
+	appraisal -> further_app
+	further_app -> develop_concept
+	develop_concept -> develop_drain
+	exploration -> exploration_rep
+	appraisal -> appraisal_rep
+	further_app -> further_app_rep
+	develop_drain -> production_prof
+	exploration_ind -> exploration_rep
+	appraisal_ind -> appraisal_rep
+	further_app_ind -> further_app_rep
+	physical_res -> exploration_ind
+	physical_res -> appraisal_ind
+	physical_res -> further_app_ind
+	develop_concept -> capex_opex
+	develop_drain -> capex_opex
+	production_prof -> revenues
+	oil_price -> revenues
+	revenues -> eco_value
+	capex_opex -> eco_value
+}

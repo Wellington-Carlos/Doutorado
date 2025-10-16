@@ -11,7 +11,7 @@ Três tipos de riscos no desenvolvimento de campos de petróleo devem ser consid
     \item \textbf{desenvolvimento subótimo}: um campo é desenvolvido, mas gera retorno inferior ao máximo possível, que poderia ser obtido se o modelo de reservatório correto tivesse sido considerado.
 \end{enumerate}
 
-O risco envolvido na fase de desenvolvimento pode ser reduzido se informações adicionais forem obtidas para diminuir ou até eliminar uma determinada incerteza. Entretanto, a aquisição de informação está diretamente associada a custos. Por isso, antes de decidir pela obtenção de informação,  sugere analisar dois aspectos: se vale a pena adquirir informação adicional e se tal informação é de fato capaz de melhorar o processo decisório. Uma ferramenta consistente que pode ser utilizada como critério no processo de decisão é o \textit{Valor da Informação (VOI)}, que combina incertezas do reservatório com suas potenciais consequências econômicas. 
+O risco envolvido na fase de desenvolvimento pode ser reduzido se informações adicionais forem obtidas para diminuir ou até eliminar uma determinada incerteza. Entretanto, a aquisição de informação está diretamente associada a custos. Por isso, antes de decidir pela obtenção de informação,  sugere analisar dois aspectos: se vale a pena adquirir informação adicional e se tal informação é de fato capaz de melhorar o processo decisório. Uma ferramenta consistente que pode ser utilizada como critério no processo de decisão é o Valor da Informação, que combina incertezas do reservatório com suas potenciais consequências econômicas. 
 
 
 \section{Valor da Informação}
@@ -26,22 +26,20 @@ O objetivo do VOI é estimar o valor de um exercício proposto de coleta de info
 
 O VOI pode ser entendido como o valor atribuído às probabilidades atualizadas. Para calcular esse valor, são necessárias as seguintes informações:  
 
-\begin{enumerate}
+\begin{enumerate}[label=\textbf{\roman*)}]
     \item \textbf{Probabilidade atuais}, ou \textit{a priori}, dos possíveis resultados que a variável pode assumir (por exemplo, 30\% de chance de o fator de recuperação ser baixo e 70\% de chance de ser alto).  
     \item \textbf{Estimativas de confiabilidade (verossimilhança)} da eficácia da informação em predizer os resultados (por exemplo, quando o fator de recuperação é conhecido como alto, estudos de simulação de reservatórios 3D indicam corretamente ``alto'' em 80\% dos casos).  
     \item \textbf{Valores de projeto em termos monetários} para cada uma das possíveis combinações de resultados (por exemplo, VPL de +600 milhões de USD se o fator de recuperação for alto e  -100 milhões de USD se for baixo).  
 \end{enumerate}
 
-Embora os valores de projeto possam ser derivados por meio de análise determinística, recomenda-se o uso do Valor Presente Líquido (VPL, do inglês \textit{Net Present Value -- NPV}) esperado, obtido via simulação de Monte Carlo de outras incertezas, devido às complexas inter-relações frequentemente envolvidas.
-
-O cálculo do VOI costuma ser representado em árvores de decisão, pois elas trazem clareza ao processo. O procedimento envolve comparar duas árvores:  
+Embora os valores de projeto possam ser derivados por meio de análise determinística, recomenda-se o uso do Valor Presente Líquido (VPL, do inglês \textit{Net Present Value -- NPV}) esperado, obtido via simulação de Monte Carlo de outras incertezas, devido às complexas inter-relações frequentemente envolvidas. O cálculo do VOI costuma ser representado em árvores de decisão, pois elas trazem clareza ao processo. O procedimento envolve comparar duas árvores:  
 
 \begin{itemize}
     \item A primeira árvore representa o valor esperado do projeto com as probabilidades atuais.  
     \item A segunda árvore representa o valor esperado do projeto com as probabilidades atualizadas, resultantes da aquisição da informação.  
 \end{itemize}
 
-A diferença entre os dois valores fornece o \textbf{VOI esperado}. Utilizamos o termo \textbf{esperado} em seu sentido matemático estrito — o valor obtido ao aplicar repetidamente a metodologia do VoI em diversas decisões. Antes de detalhar o procedimento de cálculo, consideremos primeiro alguns limites intuitivos do VoI:
+A diferença entre os dois valores fornece o \textbf{VOI esperado}. Utilizamos o termo \textbf{esperado} em seu sentido matemático estrito — o valor obtido ao aplicar repetidamente a metodologia do VOI em diversas decisões. Antes de detalhar o procedimento de cálculo, consideremos primeiro alguns limites intuitivos do VOI:
 
 \begin{itemize}
     \item \textbf{Limite inferior}: Se a informação não altera a decisão, seu valor esperado é zero, independentemente do custo.  
@@ -395,7 +393,7 @@ Assim, das Equações \eqref{eq:eta2-talln} e \eqref{eq:rho-talln}, obtemos a re
 
 Portanto, no contexto do modelo TALL-N, a qualidade da informação é determinada pela correlação entre o valor verdadeiro $X$ e a informação adquirida $S$. Quanto maior $\rho$, maior é $\eta^2$ e, consequentemente, maior é o Valor da Informação.
 
-A Figura~\ref{fig:eta2_empirical} apresenta o resultado de uma simulação empírica comparando o valor teórico e o valor estimado de $\eta^2(X|S)$ para diferentes níveis de correlação $\rho$. O código \textit{Python} gera amostras bivariadas normais com correlação controlada e calcula, para cada valor de $\rho$, a fração da variância total de $X$ explicada por $S$, utilizando a definição da Equação~\ref{eq:eta2-def}. 
+A Figura~\ref{fig:eta2_empirical} apresenta o resultado de uma simulação empírica comparando o valor teórico e o valor estimado de $\eta^2(X|S)$ para diferentes níveis de correlação $\rho$. Foram geradas amostras bivariadas normais com correlação controlada e calculado, para cada valor de $\rho$, a fração da variância total de $X$ explicada por $S$, utilizando a definição da Equação~\ref{eq:eta2-def}: 
 \begin{itemize}
   \item Os pontos vermelhos representam os valores empíricos de $\eta^2$, calculados a partir de amostras simuladas.
   \item A linha azul tracejada mostra os valores teóricos, baseados na relação analítica conforme a Equação~\ref{eq:eta2-equals-rho2}.
@@ -411,7 +409,7 @@ A Figura~\ref{fig:eta2_empirical} apresenta o resultado de uma simulação empí
 Os resultados empíricos coincidem quase perfeitamente com a curva teórica, confirmando que, para variáveis gaussianas correlacionadas, a proporção da variância explicada pela informação é exatamente o quadrado da correlação.  
 Isso reforça a interpretação de $\eta^2$ como uma medida da qualidade da informação: quanto mais forte a correlação, maior a fração de incerteza eliminada.
 
-A Figura~\ref{fig:var_decomp} ilustra graficamente a decomposição da variância total de $X$ em duas componentes: a parcela explicada pela informação ($\mathrm{Var}(\mathbb{E}[X|S])$) e a parcela residual ($\mathbb{E}[\mathrm{Var}(X|S)]$). O eixo horizontal representa a correlação $\rho$, enquanto o eixo vertical mostra a fração da variância total (normalizada, $\mathrm{Var}[X] = 1$).
+A Figura~\ref{fig:var_decomp} ilustra graficamente a decomposição da variância total de $X$ em duas componentes: a parcela explicada pela informação ($\mathrm{Var}(\mathbb{E}[X|S])$) e a parcela residual ($\mathbb{E}[\mathrm{Var}(X|S)]$). O eixo horizontal representa a correlação $\rho$, enquanto o eixo vertical mostra a fração da variância total (normalizada, $\mathrm{Var}[X] = 1$):
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{images/variance_decomposition.png}
@@ -463,16 +461,16 @@ Supondo que o poço $S_1$ tenha sido perfurado primeiro, com $p(S_1)$ a probabil
     \mathbb{E}[X\mid S_1] = \int \sum_{i=1}^{n} \max_{a_i \in A_i} \left\{ \mathbb{E}[ v(x_i,a_i) \mid S_1 ] \right\} p(S_1) \, dS_1.
     \label{eq:2-23}
 \end{equation}
-O cálculo do valor esperado posterior requer a determinação do valor esperado condicional $\mathbb{E}\!\left( v(x_i,a_i) \mid S_1 \right)$, bem como da função densidade de probabilidade marginal $p(S_1)$, a qual pode ser obtida a partir da distribuição a priori $p(X)$ e da verossimilhança $p(S_1\mid X)$ por meio do Teorema de Bayes, Equação~\eqref{eq:2-1}. 
+O cálculo do valor esperado posterior requer a determinação do valor esperado condicional $\mathbb{E}\!\left[ v(x_i,a_i) \mid S_1 \right]$, bem como da função densidade de probabilidade marginal $p(S_1)$, a qual pode ser obtida a partir da distribuição a priori $p(X)$ e da verossimilhança $p(S_1\mid X)$ por meio do Teorema de Bayes, Equação~\eqref{eq:2-1}. 
 
 Nos testes sequenciais, o integrando da solução torna-se mais complexo, pois é necessário considerar todas as possíveis sequências de aquisição de informação. O tomador de decisão somente irá realizar a perfuração do segundo poço se o valor adicional, descontado o custo do segundo poço $P_2$, for maior do que o valor do primeiro poço isolado, isto é, temos a seguinte condição:
 \begin{equation}
 \begin{aligned}
     \int_{S_2} \sum_{i=1}^{n} \max_{a_i \in A_i} 
-    \left\{ \mathbb{E}\!\left( v(x_i,a_i) \mid S_1,S_2 \right) \right\}
+    \left\{ \mathbb{E}\!\left[ v(x_i,a_i) \mid S_1,S_2 \right] \right\}
     p(S_2 \mid S_1)\, dS_2 - P_2 
     > \sum_{i=1}^{n} \max_{a_i \in A_i} 
-    \left\{ \mathbb{E}\!\left( v(x_i,a_i) \mid S_1 \right) \right\}.
+    \left\{ \mathbb{E}\!\left[ v(x_i,a_i) \mid S_1 \right] \right\}.
 \end{aligned}
 \label{eq:2-24}
 \end{equation}
@@ -492,7 +490,7 @@ O lado esquerdo da Equação~\eqref{eq:2-24} é denominado \textit{teste continu
 \end{equation}
 e, sendo o tomador de decisão neutro ao risco, o VOI é definido como a diferença entre os valores a posteriori e a priori, conforme a Equação~\eqref{eq:2-21}. Este VOI deve ser comparado ao custo $P_1$ do poço $S_1$. Se o VOI for maior do que esse custo, torna-se justificável realizar a perfuração sequencial iniciando pelo poço $S_1$. O esquema ótimo de perfuração sequencial pode, entretanto, indicar que a melhor estratégia seja iniciar pela perfuração do poço $S_2$ e, em seguida, executar a perfuração do poço $S_1$. Os valores a posteriori de todas as estratégias devem ser avaliados e comparados após a incorporação dos custos das perfurações.
 
-De forma mais geral, para perfurações sequenciais $S_j$, $j = 1, \ldots, m$, o VOI pode ser escrito como uma sequência de integrais e maximizações intercaladas, de forma. As integrais (ou somas, no caso de espaço amostral discreto) são realizadas sobre os resultados observados das perfurações. As maximizações, por sua vez, são realizadas sobre as alternativas de continuar ou interromper o processo de perfuração. A situação pode ser ilustrada por meio de uma árvore de decisão parcialmente desenhada, apresentada na Figura~\ref{fig:2.7}. Em cada ramo da árvore, o tomador de decisão pode optar por continuar a perfuração ou interromper.
+De forma mais geral, para perfurações sequenciais $S_j$, $j = 1, \ldots, m$, o VOI pode ser escrito como uma sequência de integrais e maximizações intercaladas. As integrais (ou somas, no caso de espaço amostral discreto) são realizadas sobre os resultados observados das perfurações. As maximizações, por sua vez, são realizadas sobre as alternativas de continuar ou interromper o processo de perfuração. A situação pode ser ilustrada por meio de uma árvore de decisão parcialmente desenhada, apresentada na Figura~\ref{fig:2.7}. Em cada ramo da árvore, o tomador de decisão pode optar por continuar a perfuração ou interromper.
 \begin{figure} [h]
   \begin{center}
     \includegraphics[height=240pt,width=350pt]{images/seq_tree.png}
@@ -537,9 +535,11 @@ Na delimitação de campos de petróleo, os custos de perfuração e aquisição
 
 O uso do VOSI fortalece o processo decisório em três dimensões principais. Na dimensão econômica, contribui para a maximização do VPL esperado do campo, ao considerar diferentes caminhos de informação. Na dimensão operacional, permite um planejamento mais eficiente da alocação de recursos de perfuração e aquisição de dados. Por fim, na dimensão estratégica, aumenta a robustez das decisões, possibilitando que as companhias mantenham flexibilidade diante da incerteza e ajustem os planos de desenvolvimento conforme novos dados surgem. Dessa forma, a aplicação do VOSI na delimitação de campos de petróleo não apenas reduz a probabilidade de erros críticos, mas também aumenta a chance de capturar valor em longo prazo, equilibrando risco, custo e aprendizado.
 
+Se nenhuma informação geológica for obtida após a perfuração de cada poço, as distribuições das propriedades geológicas da região de perfuração permanecem inalteradas, assim como o valor esperado de cada poço. Nesse caso, apenas os poços com valor esperado positivo a priori serão perfurados, e a sequência de perfuração deixa de ter importância. Ao conhecer as propriedades geológicas de uma determinada área, as distribuições geológicas das demais regiões são atualizadas, o que pode modificar seus respectivos valores esperados. Alguns poços podem ter seu valor esperado alterado de negativo para positivo (ou vice-versa). Selecionar o próximo poço a ser perfurado com base nesses valores esperados atualizados adiciona valor ao processo de decisão da campanha de perfuração. Nesse contexto, conforme já discutido anteriormente, a informação somente tem valor se contribuir para a escolha do próximo poço ou para a decisão de interromper a campanha de perfuração. Para gerar valor, a informação precisa estar disponível antes da decisão (ser observável), deve ser relevante para o problema em questão e deve possuir a capacidade de alterar a decisão de acordo com seu conteúdo (ser material), conforme discutido em \cite{01} e \cite{03}.
+
 \subsection{Modelo de Decisão Sequencial}
 
-O \textbf{Modelo de Decisão Sequencial} (SDM, do inglês \textit{Sequential Decision Model}) é um arcabouço fundamental para problemas em que decisões devem ser tomadas em estágios sucessivos, sob incerteza e com aprendizado ao longo do processo. No contexto da exploração e avaliação de poços de petróleo o SDM permite representar a sequência de escolhas de perfuração, incorporando o fato de que os resultados observados em estágios anteriores influenciam as decisões futuras. A representação gráfica de um SDM pode ser feita de várias maneiras, vamos salientar três principais. Uma forma compacta é ilustrada na Figura~\ref{fig:2.8}, em que quadrados representam decisões (escolha das possíveis alternativas) e círculos representam os possíveis resultados incertos da alternativa escolhida \cite{11}. O tempo avança da esquerda para a direita, sendo que o aumento do índice indica os estágios de tomada de decisão, também chamados de épocas de decisão. Do estágio de decisão anterior para o próximo, o resultado incerto da alternativa escolhida é revelado, o que significa que o tomador de decisão adquire aprendizado entre os estágios. Esse aprendizado tem o potencial de alterar o valor esperado das alternativas do estágio seguinte. A mudança no valor esperado das alternativas pode levar a uma escolha diferente em função do conhecimento adquirido previamente.
+O \textbf{Modelo de Decisão Sequencial} (SDM, do inglês \textit{Sequential Decision Model}) é um arcabouço fundamental para problemas em que decisões devem ser tomadas em estágios sucessivos, sob incerteza e com aprendizado ao longo do processo. No contexto da exploração e avaliação de poços de petróleo o SDM permite representar a sequência de escolhas de perfuração, incorporando o fato de que os resultados observados em estágios anteriores influenciam as decisões futuras. A representação gráfica de um SDM pode ser feita de várias maneiras, vamos salientar as três principais. Uma forma compacta é ilustrada na Figura~\ref{fig:2.8}, em que quadrados representam decisões (escolha das possíveis alternativas) e círculos representam os possíveis resultados incertos da alternativa escolhida \cite{11}. O tempo avança da esquerda para a direita, sendo que o aumento do índice indica os estágios de tomada de decisão, também chamados de épocas de decisão. Do estágio de decisão anterior para o próximo, o resultado incerto da alternativa escolhida é revelado, o que significa que o tomador de decisão adquire aprendizado entre os estágios. Esse aprendizado tem o potencial de alterar o valor esperado das alternativas do estágio seguinte. A mudança no valor esperado das alternativas pode levar a uma escolha diferente em função do conhecimento adquirido previamente.
 \begin{figure} [h]
   \begin{center}
     \includegraphics[height=80pt,width=350pt]{images/SDM_schematic1.png}
@@ -606,30 +606,87 @@ Existe, portanto, um grande potencial em extrair percepções decisórias e agre
 
 \section{Valor da Flexibilidade}
 
-A flexibilidade em projetos de exploração e produção (E\&P) pode ser entendida como a capacidade de ajustar decisões à medida que novas informações surgem ou que incertezas se resolvem ao longo do tempo. Esse conceito está intimamente ligado à teoria das Opções Reais, na qual o gestor preserva o direito — mas não a obrigação — de modificar o curso de ação de acordo com as condições futuras. Assim, o Valor da Flexibilidade (VoF) corresponde ao benefício econômico de manter abertas alternativas de decisão diante da incerteza.
+A flexibilidade em projetos de E\&P pode ser entendida como a capacidade de ajustar decisões à medida que novas informações surgem ou que incertezas se resolvem ao longo do tempo. Esse conceito está intimamente ligado à teoria das Opções Reais, na qual o gestor preserva o direito, mas não a obrigação, de modificar o curso de ação de acordo com as condições futuras. Assim, o Valor da Flexibilidade (VoF) corresponde ao benefício econômico de manter abertas alternativas de decisão diante da incerteza.
 
+Antes de decidir pela aquisição de informação é importante avaliar o valor da flexibilidade, ou seja, a capacidade de responder adequadamente às incertezas à medida que elas são resolvidas. A análise do VoF, análoga ao VOI, tem como objetivo determinar se o benefício esperado da flexibilidade supera seu custo. De forma geral, a flexibilidade pode gerar valor em quatro circunstâncias \cite{16}:
+\begin{enumerate}[label=\textbf{\roman*)}]
+    \item Quando não é possível adquirir informação para reduzir a incerteza;
+    \item Quando é mais barata do que obter informação;
+    \item Para lidar com a incerteza residual após a obtenção de informação;
+    \item Quando ela própria cria valor.
+\end{enumerate}
+
+Nas três primeiras situações, o objetivo principal é mitigar riscos (impactos negativos) associados à incerteza; na última, busca-se explorá-la para gerar ganhos.
+
+O ganho de valor por meio da flexibilidade depende da capacidade de pensar criativamente sobre como dividir decisões e planos de projeto em etapas, permitindo aprendizado e adaptação entre elas. Por exemplo, pode-se dividir os investimentos em duas fases, permitindo a opção de avançar para a segunda fase apenas se os resultados iniciais forem promissores. A ideia é ilustrada na Figura~\ref{fig:now_defer}. 
 \begin{figure} [h]
   \begin{center}
-    \includegraphics[height=380pt,width=400pt]{images/valor_flexibilidade.png}
-    \caption{Valor da flexibilidade. Fonte \cite{11}.} \label{fig:2.14}
+    \includegraphics[height=80pt,width=350pt]{images/decisao_now_defer.png}
+    \caption{Divisão de decisões para aprender antes de avançar. Fonte \cite{01}.} \label{fig:now_defer}
   \end{center}
 \end{figure}
 
+O benefício dessa abordagem deve superar os custos envolvidos, tanto o custo da flexibilidade em si quanto eventuais atrasos e perdas associadas ao valor do dinheiro no tempo \cite{16}. Como exemplo, o risco de superestimar o volume original de óleo no reservatório pode ser reduzido ao adiar a decisão de expandir a capacidade de processamento até que alguns poços de desenvolvimento tenham sido perfurados. Por outro lado, o potencial positivo pode ser explorado planejando \textit{slots} adicionais na plataforma, a serem utilizados apenas se o reservatório for maior que o esperado \cite{16}.
+
+O VoF não é apenas uma técnica de cálculo de valor, mas também uma forma de pensar sobre como lidar com a incerteza. Seus cálculos são, em geral, mais simples do que os do VOI. Pode ser considerada uma versão mais formal de uma abordagem em que as decisões são estruturadas com base em uma análise quantitativa das incertezas e de seus impactos econômicos. Embora muitas aplicações do VoF ainda se concentrem na mitigação de riscos, seu verdadeiro potencial está em servir como uma ferramenta para maximizar o valor de projetos sob incerteza.
+
+Um exemplo didático encontrado em \cite{16}, apresenta todo o potencial da flexibilidade para gerar valor e mostra, de forma um tanto contraintuitiva, que quanto maior a incerteza, maior o valor. A ideia é determinar o valor de uma unidade de processamento e exportação que permita acelerar a produção quando o preço do petróleo estiver alto e reduzi-la quando o preço estiver baixo. O autor pede para suspender o julgamento sobre a (im)praticabilidade de tal sistema e focar no potencial da flexibilidade.
+
+A Figura 2.17a mostra o perfil de produção esperado para o desenvolvimento sem qualquer relação entre o preço do petróleo e a taxa de produção. Para esta ilustração, todas as incertezas, exceto o preço, foram removidas. O VPL deste caso é de US\$~282 milhões.
+
+\begin{figure} [H]
+  \begin{center}
+    \includegraphics[height=380pt,width=400pt]{images/valor_flexibilidade.png}
+    \caption{Valor da flexibilidade: a) curva de produção, b) Redução da produção em períodos de preço baixo, c) Produção reduzida (acelerada) com preço baixo (alto), d) Uma previsão de preço com reversão à média, e) Valor do projeto com a magnitude da incerteza, f) Valor esperado do projeto em função da incerteza no preço. Fonte \cite{11}.} \label{fig:2.17}
+  \end{center}
+\end{figure}
+
+A Figura 2.17d apresenta uma realização de um modelo estocástico de preço com reversão à média e sem tendência de longo prazo. Já a Figura 2.17b mostra o perfil no caso em que a única capacidade é desacelerar a produção quando o preço do petróleo está baixo. O VPL neste cenário é de US\$~303 milhões, mesmo considerando o impacto da postergação de receita devido ao desconto temporal. Se também houver a capacidade de acelerar a produção quando o preço do petróleo estiver alto, obtém-se o perfil mostrado na Figura 2.17c. O VPL neste caso sobe para US\$~486 milhões, o que representa um aumento de US\$~204 milhões em relação ao caso sem flexibilidade.
+
+Os resultados acima correspondem a um preço do petróleo com desvio padrão de US\$~3,6. Variando o desvio padrão, observa-se, conforme mostrado na Figura 2.17e, que o VPL aumenta à medida que cresce a magnitude da incerteza no preço do petróleo. Para obter uma visão mais precisa do valor esperado desse esquema, é necessário eliminar o efeito de uma realização específica. A Figura 2.17f apresenta os resultados das simulações em múltiplas realizações, calculando-se o VPL médio para cada nível de desvio padrão.
+
+Retornando à questão da praticidade, \cite{16} observa que pode não ser viável projetar um sistema exatamente assim. Entretanto, seu potencial valor, aliado a uma mentalidade baseada em Opções Reais, pode inspirar soluções factíveis, como contratar uma opção sobre capacidade adicional de armazenamento e uma planta de processamento escalável. Além disso, com base na estimativa da variabilidade do preço do petróleo, é possível definir um limite sobre quanto pagar por essa flexibilidade. Vale notar que, se a única incerteza considerada no preço do petróleo fosse em torno de sua média de longo prazo, tal esquema não geraria valor. Contudo, ao reconhecer e modelar variações de curto prazo em torno dessa média, revela-se uma fonte de criação de valor. Além disso, quando são utilizadas estratégias de proteção financeira para gerenciar a incerteza do preço, o resultado é apenas a redução da volatilidade da receita, e não a criação de valor \cite{16}.
+
+Quando aplicados por meio de técnicas usuais de árvores de decisão e simulação, o VOI e o VoF oferecem meios práticos e amplamente aplicáveis de obter muitos dos benefícios associados à abordagem de Opções Reais. Assim, o pensamento fundamentado em Opções Reais amplia seu escopo de aplicação, evoluindo da simples avaliação de valor para a geração efetiva de valor.
 
 \section{Incertezas Técnicas}
 
-A hematita é o mineral de ferro mais importante devido a sua alta
-ocorrência em vários tipos de rochas e suas origens diversas.
-A composição química deste mineral é Fe$_{2}$O$_{3}$, com uma fração
-mássica em ferro de 69,9\% e uma fração mássica em oxigênio de
+A incerteza geológica, também chamada de incerteza técnica, refere-se à falta de conhecimento completo sobre as características físicas da subsuperfície, como estrutura, propriedades petrofísicas, continuidade dos reservatórios, contatos de fluidos e permeabilidade. Essa incerteza decorre do fato de que os volumes rochosos não podem ser observados diretamente, sendo inferidos a partir de dados limitados, como perfis de poço, sísmica e amostras de testemunhos. Na indústria de petróleo e gás, essa incerteza é uma das principais fontes de variabilidade técnica, pois influencia diretamente nas estimativas de volume recuperável, curvas de produção, desempenho de poços e viabilidade econômica de projetos. Por isso, é comum utilizar o termo incerteza técnica para distingui-la de outras formas de incerteza, como as incertezas de mercado (preço do petróleo, custos, taxas de câmbio) e políticas (regulação, tributos, licenciamento).
 
+A incerteza geológica é usualmente representada por modelos geológicos alternativos ou realizações estocásticas, geradas por métodos geoestatísticos que reproduzem a variabilidade espacial das propriedades do reservatório. Cada realização representa uma possível configuração do reservatório, permitindo avaliar a sensibilidade das decisões de engenharia, como posicionamento de poços e estratégias de injeção, frente à variabilidade geológica. Sendo assim, compreender e quantificar a incerteza geológica é essencial para a tomada de decisão sob incerteza, o planejamento robusto e uma avaliação econômica realista dos projetos de E\&P.
 
-\begin{figure} [h]
+Neste projeto de tese, o \textbf{modelo Eggl} será empregado nas simulações preliminares para incorporar a incerteza geológica nos perfis de produção, conforme ilustrado na Figura~\ref{fig:2.18}. O modelo Egg é um \textit{benchmark} sintético amplamente utilizado em estudos de simulação de reservatórios, introduzido originalmente por \cite{17} e posteriormente padronizado por \cite{18}. O modelo é composto por $25.200$ células, das quais $18.533$ estão ativas, formando um reservatório com formato de “ovo” (\textit{egg-shaped}) após a exclusão das células inativas. Cada bloco possui dimensões de 8m~x~8m~x~4m, resultando em um reservatório de aproximadamente 480m~x~480m~x~28m, discretizado em sete camadas verticais. A configuração padrão inclui oito poços injetores e quatro produtores verticais e totalmente penetrantes.
+\begin{figure} [H]
   \begin{center}
-    \includegraphics[height=243pt,width=400pt]{images/egg_model_log_3D.eps}
-    \caption{3D Egg model}\label{fig:2}
+    \includegraphics[height=243pt,width=400pt]{images/3D_egg_model.png}
+    \caption{Modelo Egg 3D: distribuição de permeabilidade.}\label{fig:2.18}
   \end{center}
 \end{figure}
+
+A arquitetura do reservatório apresenta canais sinuosos de alta permeabilidade, embutidos em uma matriz de baixa permeabilidade, representando a complexidade geológica típica de ambientes deposicionais fluviais. As sete camadas exibem forte correlação vertical, tornando o campo de permeabilidade praticamente bidimensional. O modelo não possui aquífero nem capa de gás, resultando em produção primária desprezível e tornando a injeção de água o principal mecanismo de recuperação. A Tabela~\ref{tab:egg_general} apresenta as propriedades gerais para o modelo Egg.
+\input{tables/table_2.1}
+
+O conjunto padrão do modelo Egg consiste em 101 realizações equiprováveis de permeabilidade, uma determinística e cem estocásticas, geradas no intuito de imitar padrões meandrantes de rios. Cada realização representa uma estrutura fluvial distinta, permitindo avaliar algoritmos sob incerteza geológica. Por isso, o modelo Egg é amplamente utilizado como base de testes para métodos de otimização de produção, ajuste histórico e gestão de reservatórios em malha fechada. Como a camada superior contém $3.60$0 blocos de grade, dos quais $2.491$ são ativos, o número de possíveis localizações de poços produtores é igual a $2.491$. As diferentes realizações de permeabilidade exibem padrões distintos de canais, com variações de sinuosidade e orientação, fornecendo um campo de incerteza representativo. A Figura Figura~\ref{fig:2.19} ilustra a distribuição espacial da permeabilidade na camada superior para 25 realizações do modelo Egg. Essas realizações foram selecionadas aleatoriamente a partir do conjunto original de 101 realizações.
+\begin{figure} [H]
+  \begin{center}
+    \includegraphics[height=350pt,width=360pt]{images/25_realizations.png}
+    \caption{Mapas de permeabilidade da camada superior para 25 realizações.}\label{fig:2.19}
+  \end{center}
+\end{figure}
+Detalhes das propriedades de geologia, fluido e operacional estão sumarizadas na Tabela \ref{tab:egg_fluid}. Notadamente, o modelo de Corey é adotado para o cálculo das permeabilidades relativas do óleo e da água, com expoentes de Corey e valores limites específicos listados conforme indicado \cite{18}.
+\input{tables/table_2.2}
+
+Os perfis de produção de óleo e água da versão determinística (modelo de referência), ao longo de um período de simulação de $3.600$ dias ($10$ anos), são apresentados na Figura~\ref{fig:2.20}.
+\begin{figure} [H]
+  \begin{center}
+    \includegraphics[height=300pt,width=350pt]{images/producao_pocos_egg.png}
+    \caption{Taxas de produção de óleo e água para os quatro poços produtores.}\label{fig:2.20}
+  \end{center}
+\end{figure}
+
+Durante a fase inicial de produção, não é observada produção de água, pois a saturação inicial de água é definida como $0,1$, correspondente à saturação irredutível. Após o início da produção de água, a taxa de produção de óleo apresenta uma queda acentuada, indicando a ocorrência do avanço de água (water breakthrough). O tempo de avanço varia entre os poços produtores, evidenciando a heterogeneidade do reservatório. Portanto, a previsão confiável do tempo de avanço de água para cada poço produtor é essencial para um gerenciamento eficiente do reservatório e otimização da produção. Assim, o modelo Egg oferece uma plataforma controlada e realista para a avaliação de métodos de tomada de decisão, estratégias de otimização e técnicas de quantificação de incertezas em engenharia de reservatórios.
+
+
 
 \section{Incertezas do Mercado}
 
