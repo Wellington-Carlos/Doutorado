@@ -490,11 +490,12 @@ O lado esquerdo da Equação~\eqref{eq:2-24} é denominado \textit{teste continu
 \end{equation}
 e, sendo o tomador de decisão neutro ao risco, o VOI é definido como a diferença entre os valores a posteriori e a priori, conforme a Equação~\eqref{eq:2-21}. Este VOI deve ser comparado ao custo $P_1$ do poço $S_1$. Se o VOI for maior do que esse custo, torna-se justificável realizar a perfuração sequencial iniciando pelo poço $S_1$. O esquema ótimo de perfuração sequencial pode, entretanto, indicar que a melhor estratégia seja iniciar pela perfuração do poço $S_2$ e, em seguida, executar a perfuração do poço $S_1$. Os valores a posteriori de todas as estratégias devem ser avaliados e comparados após a incorporação dos custos das perfurações.
 
-De forma mais geral, para perfurações sequenciais $S_j$, $j = 1, \ldots, m$, o VOI pode ser escrito como uma sequência de integrais e maximizações intercaladas. As integrais (ou somas, no caso de espaço amostral discreto) são realizadas sobre os resultados observados das perfurações. As maximizações, por sua vez, são realizadas sobre as alternativas de continuar ou interromper o processo de perfuração. A situação pode ser ilustrada por meio de uma árvore de decisão parcialmente desenhada, apresentada na Figura~\ref{fig:2.7}. Em cada ramo da árvore, o tomador de decisão pode optar por continuar a perfuração ou interromper.
+De forma mais geral, para perfurações sequenciais $S_j$, $j = 1, \ldots, m$, o VOI pode ser escrito como uma sequência de integrais e maximizações intercaladas. As integrais (ou somas, no caso de espaço amostral discreto) são realizadas sobre os resultados observados das perfurações. As maximizações, por sua vez, são realizadas sobre as alternativas de continuar ou interromper o processo de perfuração. A situação pode ser ilustrada por meio de uma árvore de decisão parcialmente desenhada, apresentada na Figura~\ref{fig:2.9}. Em cada ramo da árvore, o tomador de decisão pode optar por continuar a perfuração ou interromper.
 \begin{figure} [h]
   \begin{center}
     \includegraphics[height=240pt,width=350pt]{images/seq_tree.png}
-    \caption{Ilustração parcial de uma campanha de perfuração sequencial. Fonte \cite{10}.} \label{fig:2.7}
+    \caption{Ilustração parcial de uma campanha de perfuração sequencial. Fonte \cite{10}.} 
+    \label{fig:2.9}
   \end{center}
 \end{figure}
 
@@ -539,20 +540,22 @@ Se nenhuma informação geológica for obtida após a perfuração de cada poço
 
 \subsection{Modelo de Decisão Sequencial}
 
-O \textbf{Modelo de Decisão Sequencial} (SDM, do inglês \textit{Sequential Decision Model}) é um arcabouço fundamental para problemas em que decisões devem ser tomadas em estágios sucessivos, sob incerteza e com aprendizado ao longo do processo. No contexto da exploração e avaliação de poços de petróleo o SDM permite representar a sequência de escolhas de perfuração, incorporando o fato de que os resultados observados em estágios anteriores influenciam as decisões futuras. A representação gráfica de um SDM pode ser feita de várias maneiras, vamos salientar as três principais. Uma forma compacta é ilustrada na Figura~\ref{fig:2.8}, em que quadrados representam decisões (escolha das possíveis alternativas) e círculos representam os possíveis resultados incertos da alternativa escolhida \cite{11}. O tempo avança da esquerda para a direita, sendo que o aumento do índice indica os estágios de tomada de decisão, também chamados de épocas de decisão. Do estágio de decisão anterior para o próximo, o resultado incerto da alternativa escolhida é revelado, o que significa que o tomador de decisão adquire aprendizado entre os estágios. Esse aprendizado tem o potencial de alterar o valor esperado das alternativas do estágio seguinte. A mudança no valor esperado das alternativas pode levar a uma escolha diferente em função do conhecimento adquirido previamente.
+O \textbf{Modelo de Decisão Sequencial} (SDM, do inglês \textit{Sequential Decision Model}) é um arcabouço fundamental para problemas em que decisões devem ser tomadas em estágios sucessivos, sob incerteza e com aprendizado ao longo do processo. No contexto da exploração e avaliação de poços de petróleo o SDM permite representar a sequência de escolhas de perfuração, incorporando o fato de que os resultados observados em estágios anteriores influenciam as decisões futuras. A representação gráfica de um SDM pode ser feita de várias maneiras, vamos salientar as três principais. Uma forma compacta é ilustrada na Figura~\ref{fig:2.10}, em que quadrados representam decisões (escolha das possíveis alternativas) e círculos representam os possíveis resultados incertos da alternativa escolhida \cite{11}. O tempo avança da esquerda para a direita, sendo que o aumento do índice indica os estágios de tomada de decisão, também chamados de épocas de decisão. Do estágio de decisão anterior para o próximo, o resultado incerto da alternativa escolhida é revelado, o que significa que o tomador de decisão adquire aprendizado entre os estágios. Esse aprendizado tem o potencial de alterar o valor esperado das alternativas do estágio seguinte. A mudança no valor esperado das alternativas pode levar a uma escolha diferente em função do conhecimento adquirido previamente.
 \begin{figure} [h]
   \begin{center}
     \includegraphics[height=80pt,width=350pt]{images/SDM_schematic1.png}
-    \caption{Representação esquemática do SDM. Fonte \cite{11}.} \label{fig:2.8}
+    \caption{Representação esquemática do SDM. Fonte \cite{11}.} 
+    \label{fig:2.10}
   \end{center}
 \end{figure}
 
-Outra forma de representação do SDM é ilustrada na Figura~\ref{fig:2.9}, onde cada alternativa tem um certo número de resultados e cada resultado é a entrada para a próxima decisão. Esse encadeamento explicita o caráter sequencial e probabilístico do problema, mas também revela sua complexidade combinatória, conhecida como maldição da dimensionalidade (\textit{curse of dimensionality}).
+Outra forma de representação do SDM é ilustrada na Figura~\ref{fig:2.11}, onde cada alternativa tem um certo número de resultados e cada resultado é a entrada para a próxima decisão. Esse encadeamento explicita o caráter sequencial e probabilístico do problema, mas também revela sua complexidade combinatória, conhecida como maldição da dimensionalidade (\textit{curse of dimensionality}).
 
 \begin{figure} [h]
   \begin{center}
     \includegraphics[height=60pt,width=370pt]{images/SDM_schematic2.png}
-    \caption{Representação esquemática alternativa do SDM. Fonte \cite{12}.} \label{fig:2.9}
+    \caption{Representação esquemática alternativa do SDM. Fonte \cite{12}.} 
+    \label{fig:2.11}
   \end{center}
 \end{figure}
 
@@ -563,50 +566,54 @@ V_i(\omega_i) = \max_{a \in A(i)} \left( \sum_{x \in X(a)} \left[ P(x|\omega_i) 
 \end{equation}
 onde $V_i(\omega_i)$ é o valor esperado ótimo no nó de decisão $i$, condicionado ao estado de conhecimento $\omega_i$. Cada alternativa $a$ possui um conjunto de possíveis resultados $X(a)$, cada um com probabilidade de ocorrência $P(x|\omega_i)$ e recompensa imediata $r_a^x$. O termo $V(\omega_i^{a,x})$ representa o valor esperado futuro (valor de continuação) quando a sequência de decisão segue o caminho $a, x$, corregido pelo fator de desconto $\delta=(1+r)^{-1}$, sendo $r$ a taxa de desconto. Embora o SDP garanta a solução ótima, sua aplicação direta é limitada a problemas de pequeno porte, devido ao crescimento exponencial do espaço de estados, alternativas e desfechos. Para problemas maiores, heurísticas e métodos aproximativos são necessários, mas o SDM e a equação de Bellman continuam sendo a base conceitual que estrutura a formulação do problema.
 
-A terceira forma de representação gráfica do SDM é a já conhecida árvore de decisão. Esse tipo de representação é mais detalhado e facilita a visualização da mecânica de cada decisão individual, mostrando de forma explícita como alternativas e resultados se encadeiam ao longo dos estágios. No entanto, a complexidade do modelo cresce rapidamente com o número de alternativas disponíveis, o conjunto de possíveis resultados e o número de estágios considerados.  A Figura~\ref{fig:2.10} mostra um simples SDM com dois estágios (decisões). Cada decisão possui duas alternativas, e cada alternativa se desdobra em dois possíveis resultados. Esse exemplo ilustra de forma compacta como a árvore de decisão explicita o encadeamento das escolhas e incertezas, destacando, ao mesmo tempo, o desafio do crescimento combinatório à medida que o problema se torna mais realista.  
+A terceira forma de representação gráfica do SDM é a já conhecida árvore de decisão. Esse tipo de representação é mais detalhado e facilita a visualização da mecânica de cada decisão individual, mostrando de forma explícita como alternativas e resultados se encadeiam ao longo dos estágios. No entanto, a complexidade do modelo cresce rapidamente com o número de alternativas disponíveis, o conjunto de possíveis resultados e o número de estágios considerados.  A Figura~\ref{fig:2.12} mostra um simples SDM com dois estágios (decisões). Cada decisão possui duas alternativas, e cada alternativa se desdobra em dois possíveis resultados. Esse exemplo ilustra de forma compacta como a árvore de decisão explicita o encadeamento das escolhas e incertezas, destacando, ao mesmo tempo, o desafio do crescimento combinatório à medida que o problema se torna mais realista.  
 \begin{figure} [H]
   \begin{center}
     \includegraphics[height=430pt,width=280pt]{images/SDM_two_stages.png}
-    \caption{Árvore de decisão representando um simples SDM. Fonte \cite{11}.} \label{fig:2.10}
+    \caption{Árvore de decisão representando um simples SDM. Fonte \cite{11}.} 
+    \label{fig:2.12}
   \end{center}
 \end{figure}
 
 Em cada estágio, o número de nós de decisão aumenta, e estes podem ser identificados por $D_{s,j}$, onde $s$ representa o número do estágio e $j$ a posição relativa dentro do estágio. O conjunto de alternativas possíveis em cada nó, denotado por $A(D_{s,j})$, pode variar conforme o contexto da decisão. De forma análoga, cada resultado incerto $x$ pertence ao conjunto de possíveis resultados $X(a)$, que depende da alternativa escolhida $a$, a qual, por sua vez, está associada ao nó de decisão $D_{s,j}$.  
 
-A Equação~\eqref{eq:2-28} é aplicada recursivamente em todos os nós de decisão, iniciando no último estágio e sendo progressivamente utilizada em direção ao primeiro estágio via processo SDP. A utilização do SDP no modelo de decisão apresentado na Figura~\ref{fig:2.10} pode ser exemplificada conforme ilustrado na Figura~\ref{fig:2.11}.
+A Equação~\eqref{eq:2-28} é aplicada recursivamente em todos os nós de decisão, iniciando no último estágio e sendo progressivamente utilizada em direção ao primeiro estágio via processo SDP. A utilização do SDP no modelo de decisão apresentado na Figura~\ref{fig:2.12} pode ser exemplificada conforme ilustrado na Figura~\ref{fig:2.13}.
 \begin{figure} [h]
   \begin{center}
     \includegraphics[height=300pt,width=310pt]{images/SDM_exemple.png}
-    \caption{Exemplo do processo SDP. Fonte \cite{11}.} \label{fig:2.11}
+    \caption{Exemplo do processo SDP. Fonte \cite{11}.} 
+    \label{fig:2.13}
   \end{center}
 \end{figure}
 
-A Figura~\ref{fig:2.12} mostra um nó de decisão genérico tal como os nós apresentados nas Figuras~\ref{fig:2.10} e \ref{fig:2.11}. Este nó não está no último estágio, o que significa que novos nós de decisão continuam a partir de cada um dos ramos de resultado.  
+A Figura~\ref{fig:2.14} mostra um nó de decisão genérico tal como os nós apresentados nas Figuras~\ref{fig:2.12} e \ref{fig:2.13}. Este nó não está no último estágio, o que significa que novos nós de decisão continuam a partir de cada um dos ramos de resultado.  
 \begin{figure} [H]
   \begin{center}
     \includegraphics[height=110pt,width=310pt]{images/generic_decision_node.png}
-    \caption{Nó de decisão genérico. Fonte \cite{11}.} \label{fig:2.12}
+    \caption{Nó de decisão genérico. Fonte \cite{11}.} 
+    \label{fig:2.14}
   \end{center}
 \end{figure}
 
 A principal diferença de um nó de decisão genérico para um nó de decisão genérico no último estágio é que, para obter o valor esperado de cada alternativa, utiliza-se a média ponderada pelas probabilidades de ocorrência, considerando tanto as recompensas imediatas $r_a^x$ quanto o termo adicional $\delta V(\omega_i^{a,x})$, que representa o valor esperado futuro. O estado de conhecimento posterior $\omega_{i+1} = \omega_i^{a,x}$ é atualizado de acordo com a informação revelada pelo resultado $x$, quando a alternativa $a$ é escolhida. A Equação~\eqref{eq:2-28}, equação de Bellman, sintetiza o método e permite a aplicação recursiva do processo SDP.  
 
-O valor mais importante da política ótima é o valor esperado da campanha antes do início da perfuração. Isso significa que, com base no conhecimento prévio $\omega_0$, espera-se obter $V_0(\omega_0)$ a partir da sequência ótima de perfuração, aproveitando a informação geológica espacial disponível antes de cada decisão. Todas as probabilidades e valores esperados $V_i(\omega_i)$, calculados ao longo do processo da programação dinâmica, são armazenados juntamente com as regras de decisão e são considerados parte integrante da política ótima. \cite{14} apresenta uma política ótima contendo todas essas informações em um caso hipotético com três poços candidatos ($A, B, C$), cada um com quatro possíveis resultados categóricos (\#0, \#1, \#2, \#3), associados à função de valor $r = [-10, -5, 5, 10]$, conforme ilustrado na Figura~\ref{fig:2.13}.
+O valor mais importante da política ótima é o valor esperado da campanha antes do início da perfuração. Isso significa que, com base no conhecimento prévio $\omega_0$, espera-se obter $V_0(\omega_0)$ a partir da sequência ótima de perfuração, aproveitando a informação geológica espacial disponível antes de cada decisão. Todas as probabilidades e valores esperados $V_i(\omega_i)$, calculados ao longo do processo da programação dinâmica, são armazenados juntamente com as regras de decisão e são considerados parte integrante da política ótima. \cite{14} apresenta uma política ótima contendo todas essas informações em um caso hipotético com três poços candidatos ($A, B, C$), cada um com quatro possíveis resultados categóricos (\#0, \#1, \#2, \#3), associados à função de valor $r = [-10, -5, 5, 10]$, conforme ilustrado na Figura~\ref{fig:2.15}.
 \begin{figure} [H]
   \begin{center}
     \includegraphics[height=400pt,width=400pt]{images/optimal_policy.png}
-    \caption{Análise simples da política ótima para três poços. Fonte \cite{11}.} \label{fig:2.13}
+    \caption{Análise simples da política ótima para três poços. Fonte \cite{11}.} 
+    \label{fig:2.15}
   \end{center}
 \end{figure}
 
-É importante observar que, em algumas situações, a sequência de perfuração pode ser interrompida precocemente devido aos resultados observados. Além disso, algumas sequências de perfuração podem se repetir para diferentes combinações de resultados. Uma alternativa para representar a política ótima é listá-la em termos de eventos conjuntos associados a probabilidades conjuntas, como mostrado no lado direito da Figura~\ref{fig:2.13}.  
+É importante observar que, em algumas situações, a sequência de perfuração pode ser interrompida precocemente devido aos resultados observados. Além disso, algumas sequências de perfuração podem se repetir para diferentes combinações de resultados. Uma alternativa para representar a política ótima é listá-la em termos de eventos conjuntos associados a probabilidades conjuntas, como mostrado no lado direito da Figura~\ref{fig:2.15}.  
 
 Existe, portanto, um grande potencial em extrair percepções decisórias e agregar valor aplicando o processamento heurístico dos métodos à política ótima, especialmente em modelos de grande porte, nos quais a representação gráfica direta da política ótima torna-se inviável.  
 
 
 \section{Valor da Flexibilidade}
 
-A flexibilidade em projetos de E\&P pode ser entendida como a capacidade de ajustar decisões à medida que novas informações surgem ou que incertezas se resolvem ao longo do tempo. Esse conceito está intimamente ligado à teoria das Opções Reais, na qual o gestor preserva o direito, mas não a obrigação, de modificar o curso de ação de acordo com as condições futuras. Assim, o Valor da Flexibilidade (VoF) corresponde ao benefício econômico de manter abertas alternativas de decisão diante da incerteza.
+A flexibilidade em projetos de E\&P pode ser entendida como a capacidade de ajustar decisões à medida que novas informações surgem ou que incertezas se resolvem ao longo do tempo. Esse conceito está intimamente ligado à teoria das Opções Reais, na qual o gestor preserva o direito, mas não a obrigação, de modificar o curso de ação de acordo com as condições futuras. Assim, o \textbf{Valor da Flexibilidade} (VoF) corresponde ao benefício econômico de manter abertas alternativas de decisão diante da incerteza.
 
 Antes de decidir pela aquisição de informação é importante avaliar o valor da flexibilidade, ou seja, a capacidade de responder adequadamente às incertezas à medida que elas são resolvidas. A análise do VoF, análoga ao VOI, tem como objetivo determinar se o benefício esperado da flexibilidade supera seu custo. De forma geral, a flexibilidade pode gerar valor em quatro circunstâncias \cite{16}:
 \begin{enumerate}[label=\textbf{\roman*)}]
@@ -618,11 +625,12 @@ Antes de decidir pela aquisição de informação é importante avaliar o valor 
 
 Nas três primeiras situações, o objetivo principal é mitigar riscos (impactos negativos) associados à incerteza; na última, busca-se explorá-la para gerar ganhos.
 
-O ganho de valor por meio da flexibilidade depende da capacidade de pensar criativamente sobre como dividir decisões e planos de projeto em etapas, permitindo aprendizado e adaptação entre elas. Por exemplo, pode-se dividir os investimentos em duas fases, permitindo a opção de avançar para a segunda fase apenas se os resultados iniciais forem promissores. A ideia é ilustrada na Figura~\ref{fig:now_defer}. 
+O ganho de valor por meio da flexibilidade depende da capacidade de pensar criativamente sobre como dividir decisões e planos de projeto em etapas, permitindo aprendizado e adaptação entre elas. Por exemplo, pode-se dividir os investimentos em duas fases, permitindo a opção de avançar para a segunda fase apenas se os resultados iniciais forem promissores. A ideia é ilustrada na Figura~\ref{fig:2.16}. 
 \begin{figure} [h]
   \begin{center}
     \includegraphics[height=80pt,width=350pt]{images/decisao_now_defer.png}
-    \caption{Divisão de decisões para aprender antes de avançar. Fonte \cite{01}.} \label{fig:now_defer}
+    \caption{Divisão de decisões para aprender antes de avançar. Fonte \cite{01}.} 
+    \label{fig:2.16}
   \end{center}
 \end{figure}
 
@@ -637,7 +645,8 @@ A Figura 2.17a mostra o perfil de produção esperado para o desenvolvimento sem
 \begin{figure} [H]
   \begin{center}
     \includegraphics[height=380pt,width=400pt]{images/valor_flexibilidade.png}
-    \caption{Valor da flexibilidade: a) curva de produção, b) Redução da produção em períodos de preço baixo, c) Produção reduzida (acelerada) com preço baixo (alto), d) Uma previsão de preço com reversão à média, e) Valor do projeto com a magnitude da incerteza, f) Valor esperado do projeto em função da incerteza no preço. Fonte \cite{11}.} \label{fig:2.17}
+    \caption{Valor da flexibilidade: a) curva de produção, b) Redução da produção em períodos de preço baixo, c) Produção reduzida (acelerada) com preço baixo (alto), d) Uma previsão de preço com reversão à média, e) Valor do projeto com a magnitude da incerteza, f) Valor esperado do projeto em função da incerteza no preço. Fonte \cite{11}.} 
+    \label{fig:2.17}
   \end{center}
 \end{figure}
 
@@ -651,49 +660,220 @@ Quando aplicados por meio de técnicas usuais de árvores de decisão e simulaç
 
 \section{Incertezas Técnicas}
 
-A incerteza geológica, também chamada de incerteza técnica, refere-se à falta de conhecimento completo sobre as características físicas da subsuperfície, como estrutura, propriedades petrofísicas, continuidade dos reservatórios, contatos de fluidos e permeabilidade. Essa incerteza decorre do fato de que os volumes rochosos não podem ser observados diretamente, sendo inferidos a partir de dados limitados, como perfis de poço, sísmica e amostras de testemunhos. Na indústria de petróleo e gás, essa incerteza é uma das principais fontes de variabilidade técnica, pois influencia diretamente nas estimativas de volume recuperável, curvas de produção, desempenho de poços e viabilidade econômica de projetos. Por isso, é comum utilizar o termo incerteza técnica para distingui-la de outras formas de incerteza, como as incertezas de mercado (preço do petróleo, custos, taxas de câmbio) e políticas (regulação, tributos, licenciamento).
+A \textbf{incerteza geológica}, também chamada de \textbf{incerteza técnica}, refere-se à falta de conhecimento completo sobre as características físicas da subsuperfície, como estrutura, propriedades petrofísicas, continuidade dos reservatórios, contatos de fluidos e permeabilidade. Essa incerteza decorre do fato de que os volumes rochosos não podem ser observados diretamente, sendo inferidos a partir de dados limitados, como perfis de poço, sísmica e amostras de testemunhos. Na indústria de petróleo e gás, essa incerteza é uma das principais fontes de variabilidade técnica, pois influencia diretamente nas estimativas de volume recuperável, curvas de produção, desempenho de poços e viabilidade econômica de projetos. Por isso, é comum utilizar o termo incerteza técnica para distingui-la de outras formas de incerteza, como as incertezas de mercado (preço do petróleo, custos, taxas de câmbio) e políticas (regulação, tributos, licenciamento).
 
 A incerteza geológica é usualmente representada por modelos geológicos alternativos ou realizações estocásticas, geradas por métodos geoestatísticos que reproduzem a variabilidade espacial das propriedades do reservatório. Cada realização representa uma possível configuração do reservatório, permitindo avaliar a sensibilidade das decisões de engenharia, como posicionamento de poços e estratégias de injeção, frente à variabilidade geológica. Sendo assim, compreender e quantificar a incerteza geológica é essencial para a tomada de decisão sob incerteza, o planejamento robusto e uma avaliação econômica realista dos projetos de E\&P.
 
-Neste projeto de tese, o \textbf{modelo Eggl} será empregado nas simulações preliminares para incorporar a incerteza geológica nos perfis de produção, conforme ilustrado na Figura~\ref{fig:2.18}. O modelo Egg é um \textit{benchmark} sintético amplamente utilizado em estudos de simulação de reservatórios, introduzido originalmente por \cite{17} e posteriormente padronizado por \cite{18}. O modelo é composto por $25.200$ células, das quais $18.533$ estão ativas, formando um reservatório com formato de “ovo” (\textit{egg-shaped}) após a exclusão das células inativas. Cada bloco possui dimensões de 8m~x~8m~x~4m, resultando em um reservatório de aproximadamente 480m~x~480m~x~28m, discretizado em sete camadas verticais. A configuração padrão inclui oito poços injetores e quatro produtores verticais e totalmente penetrantes.
+Neste projeto de tese, o \textbf{modelo Egg} será empregado nas simulações preliminares para incorporar a incerteza geológica nos perfis de produção, conforme ilustrado na Figura~\ref{fig:2.18}. O modelo Egg é um \textit{benchmark} sintético utilizado em estudos de simulação de reservatórios, introduzido originalmente por \cite{17} e posteriormente padronizado por \cite{18}. O modelo é composto por $25.200$ células, das quais $18.533$ estão ativas, formando um reservatório com formato de “ovo” (\textit{egg-shaped}) após a exclusão das células inativas. Cada bloco possui dimensões de 8m~x~8m~x~4m, resultando em um reservatório de aproximadamente 480m~x~480m~x~28m, discretizado em sete camadas verticais. A configuração padrão inclui oito poços injetores e quatro produtores verticais e totalmente penetrantes.
 \begin{figure} [H]
   \begin{center}
     \includegraphics[height=243pt,width=400pt]{images/3D_egg_model.png}
-    \caption{Modelo Egg 3D: distribuição de permeabilidade.}\label{fig:2.18}
+    \caption{Modelo Egg 3D: distribuição de permeabilidade.}
+    \label{fig:2.18}
   \end{center}
 \end{figure}
 
-A arquitetura do reservatório apresenta canais sinuosos de alta permeabilidade, embutidos em uma matriz de baixa permeabilidade, representando a complexidade geológica típica de ambientes deposicionais fluviais. As sete camadas exibem forte correlação vertical, tornando o campo de permeabilidade praticamente bidimensional. O modelo não possui aquífero nem capa de gás, resultando em produção primária desprezível e tornando a injeção de água o principal mecanismo de recuperação. A Tabela~\ref{tab:egg_general} apresenta as propriedades gerais para o modelo Egg.
+A arquitetura do reservatório apresenta canais sinuosos de alta permeabilidade, embutidos em uma matriz de baixa permeabilidade, representando a complexidade geológica típica de ambientes deposicionais fluviais. As sete camadas exibem forte correlação vertical, tornando o campo de permeabilidade praticamente bidimensional. O modelo não possui aquífero nem capa de gás, resultando em produção primária desprezível e tornando a injeção de água o principal mecanismo de recuperação. A Tabela~\ref{tab:2.1} apresenta as propriedades gerais para o modelo Egg.
 \input{tables/table_2.1}
 
-O conjunto padrão do modelo Egg consiste em 101 realizações equiprováveis de permeabilidade, uma determinística e cem estocásticas, geradas no intuito de imitar padrões meandrantes de rios. Cada realização representa uma estrutura fluvial distinta, permitindo avaliar algoritmos sob incerteza geológica. Por isso, o modelo Egg é amplamente utilizado como base de testes para métodos de otimização de produção, ajuste histórico e gestão de reservatórios em malha fechada. Como a camada superior contém $3.60$0 blocos de grade, dos quais $2.491$ são ativos, o número de possíveis localizações de poços produtores é igual a $2.491$. As diferentes realizações de permeabilidade exibem padrões distintos de canais, com variações de sinuosidade e orientação, fornecendo um campo de incerteza representativo. A Figura Figura~\ref{fig:2.19} ilustra a distribuição espacial da permeabilidade na camada superior para 25 realizações do modelo Egg. Essas realizações foram selecionadas aleatoriamente a partir do conjunto original de 101 realizações.
+O conjunto padrão do modelo Egg consiste em 101 realizações equiprováveis de permeabilidade, uma determinística e cem estocásticas, geradas no intuito de imitar padrões meandrantes de rios. Cada realização representa uma estrutura fluvial distinta, permitindo avaliar algoritmos sob incerteza geológica. Por isso, o modelo Egg é amplamente utilizado como base de testes para métodos de otimização de produção, ajuste histórico e gestão de reservatórios em malha fechada. Como a camada superior contém $3.60$0 blocos de grade, dos quais $2.491$ são ativos, o número de possíveis localizações de poços produtores é igual a $2.491$. As diferentes realizações de permeabilidade exibem padrões distintos de canais, com variações de sinuosidade e orientação, fornecendo um campo de incerteza representativo. A Figura~\ref{fig:2.19} ilustra a distribuição espacial da permeabilidade na camada superior para 25 realizações do modelo Egg. Essas realizações foram selecionadas aleatoriamente a partir do conjunto original de 101 realizações.
 \begin{figure} [H]
   \begin{center}
     \includegraphics[height=350pt,width=360pt]{images/25_realizations.png}
-    \caption{Mapas de permeabilidade da camada superior para 25 realizações.}\label{fig:2.19}
+    \caption{Mapas de permeabilidade da camada superior para 25 realizações.}
+    \label{fig:2.19}
   \end{center}
 \end{figure}
-Detalhes das propriedades de geologia, fluido e operacional estão sumarizadas na Tabela \ref{tab:egg_fluid}. Notadamente, o modelo de Corey é adotado para o cálculo das permeabilidades relativas do óleo e da água, com expoentes de Corey e valores limites específicos listados conforme indicado \cite{18}.
+Detalhes das propriedades de geologia, fluido e operacional estão sumarizadas na Tabela \ref{tab:2.2}. Notadamente, o modelo de Corey é adotado para o cálculo das permeabilidades relativas do óleo e da água, com expoentes de Corey e valores limites específicos listados conforme indicado \cite{18}.
 \input{tables/table_2.2}
 
 Os perfis de produção de óleo e água da versão determinística (modelo de referência), ao longo de um período de simulação de $3.600$ dias ($10$ anos), são apresentados na Figura~\ref{fig:2.20}.
 \begin{figure} [H]
   \begin{center}
     \includegraphics[height=300pt,width=350pt]{images/producao_pocos_egg.png}
-    \caption{Taxas de produção de óleo e água para os quatro poços produtores.}\label{fig:2.20}
+    \caption{Taxas de produção de óleo e água para os quatro poços produtores.}
+    \label{fig:2.20}
   \end{center}
 \end{figure}
 
 Durante a fase inicial de produção, não é observada produção de água, pois a saturação inicial de água é definida como $0,1$, correspondente à saturação irredutível. Após o início da produção de água, a taxa de produção de óleo apresenta uma queda acentuada, indicando a ocorrência do avanço de água (water breakthrough). O tempo de avanço varia entre os poços produtores, evidenciando a heterogeneidade do reservatório. Portanto, a previsão confiável do tempo de avanço de água para cada poço produtor é essencial para um gerenciamento eficiente do reservatório e otimização da produção. Assim, o modelo Egg oferece uma plataforma controlada e realista para a avaliação de métodos de tomada de decisão, estratégias de otimização e técnicas de quantificação de incertezas em engenharia de reservatórios.
 
-
-
 \section{Incertezas do Mercado}
 
-A hematita é o mineral de ferro mais importante devido a sua alta
-ocorrência em vários tipos de rochas e suas origens diversas.
-A composição química deste mineral é Fe$_{2}$O$_{3}$, com uma fração
-mássica em ferro de 69,9\% e uma fração mássica em oxigênio de
+Na seção anterior, foi discutida a incerteza técnica, associada à caracterização do modelo geológico e às limitações inerentes à representação do reservatório. Nesta seção, o foco recai sobre as incertezas de natureza econômica, com ênfase nas variáveis de mercado que influenciam diretamente o desempenho financeiro dos projetos de exploração e produção.
+
+Entre as principais incertezas de mercado, nesse estudo vamos considerar duas fontes: o \textbf{custo operacional variável} e o \textbf{preço do petróleo}, ambas com papel determinante na avaliação econômica de projetos na indústria de petróleo. A volatilidade dessas variáveis impacta de forma significativa a atratividade e o risco dos investimentos, tornando essencial a utilização de modelos estocásticos capazes de representar adequadamente sua dinâmica temporal e a incerteza inerente ao processo decisório. O custo operacional variável ($C_t$), responsável por refletir os gastos anuais de operação e manutenção do sistema de produção, e o preço do petróleo ($P_t$) representa a receita obtida pela comercialização do produto no mercado internacional. A dinâmica do custo operacional é modelada a partir de um \textbf{Movimento Geométrico Browniano} (MGB), enquanto o preço do petróleo será descrito pelo \textbf{modelo de dois fatores de Schwartz e Smith}, amplamente utilizado na literatura para representar a evolução estocástica dos preços de commodities.
+
+\subsection{Modelagem do Custo Operacional}
+
+O MGB é amplamente empregado na literatura financeira e em estudos de avaliação de projetos para representar a evolução temporal de variáveis econômicas sujeitas à incerteza, devido à sua simplicidade e robustez. O MGB permite capturar tanto a tendência média de crescimento ou decaimento de uma variável quanto sua dispersão ao longo do tempo, com um número reduzido de parâmetros. Matematicamente, um processo estocástico $C(t)$ é dito seguir um MGB se satisfaz a seguinte equação diferencial estocástica:
+\begin{equation}
+dC(t) = \alpha C(t)\,dt + \sigma C(t)\,dB(t),
+\label{eq:2-41}
+\end{equation}
+onde $\alpha$ representa o termo de deriva (taxa média de crescimento do custo), $\sigma$ é o parâmetro de volatilidade (medida de incerteza) e $dB(t)$ é um Movimento Browniano Padrão, também denominado processo de Wiener, com média zero e variância unitária, $\mathcal{N}(0, 1)$. A solução analítica da Equação~\ref{eq:2-41} é dada por:
+\begin{equation}
+C(t) = C(0)\exp\left[\alpha t - \frac{1}{2}\sigma^2 t + \sigma B(t)\right],
+\label{eq:2-42}
+\end{equation}
+onde $C(0)$ é o custo operacional inicial. Essa expressão mostra que o custo evolui de forma lognormal, incorporando uma tendência determinística (termo $\alpha$) e uma componente aleatória (termo $B(t)$).
+
+O parâmetro de \textit{drift} $\alpha$ indica a tendência média de variação do custo ao longo do tempo. Quando $\alpha > 0$, o processo apresenta uma trajetória ascendente, refletindo um aumento esperado dos custos operacionais, por exemplo, devido à depleção do reservatório, elevação de custos de manutenção ou inflação setorial. Por outro lado, valores de $\alpha < 0$ representam uma tendência de redução dos custos, possivelmente associada a ganhos de eficiência operacional ou adoção de novas tecnologias. O parâmetro de volatilidade $\sigma$ mede o grau de incerteza do processo: valores mais altos de $\sigma$ indicam maior dispersão nas trajetórias possíveis de $C(t)$ e, consequentemente, maior risco na estimativa de custos futuros.
+
+A Figura~\ref{fig:2.21} ilustra o comportamento do custo operacional variável ao longo de um horizonte de 10 anos, obtido a partir de simulações de Monte Carlo com 10.000 trajetórias estocásticas. Observa-se que, apesar da tendência média de crescimento moderado ($\alpha = 0{,}02$), volatilidade moderada ($\sigma = 0{,}1$) e $C(0)=\$10$ por barril, como sugerido por \cite{19}, há significativa dispersão entre as trajetórias. As curvas P10, média e P90 evidenciam a faixa de variação esperada dos custos operacionais, demonstrando a capacidade do MGB de capturar o risco associado à incerteza dessa variável econômica.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{images/gbm_costs.png}
+\caption{Evolução dos custos operacionais ao longo de 10 anos.}
+\label{fig:2.21}
+\end{figure}
+
+\subsection{Modelagem do Preço do Petróleo}
+
+A incerteza nos preços do petróleo é uma fonte fundamental de risco na avaliação econômica de projetos de exploração e produção. Modelos determinísticos tradicionais, modelos estocásticos de fator único e até mesmo, o amplamente utilizado MGB, frequentemente, não conseguem capturar toda a riqueza e complexidade do comportamento do preço real do petróleo, caracterizado por flutuações de curto prazo e tendências estruturais de longo prazo. Para representar melhor essas dinâmicas, emprega-se o modelo de dois fatores introduzido por \cite{20}, que decompõe o logaritmo do preço do petróleo em componentes de curto e longo prazo.
+
+No modelo de dois fatores de Schwartz e Smith \cite{20}, o componente de equilíbrio de longo prazo, denotado por $\xi_t$, é modelado como um MGB. Esse fator representa a tendência persistente para a qual os preços do petróleo convergem, capturando fatores estruturais como inovação tecnológica, esgotamento das reservas, inflação e evolução das expectativas de mercado. O componente de curto prazo, denotado por $\chi_t$, é modelado como um processo de Ornstein–Uhlenbeck com reversão à média, refletindo desvios temporários do equilíbrio causados por choques de mercado, eventos geopolíticos e desequilíbrios entre oferta e demanda. Sob a medida neutra ao risco, as dinâmicas do modelo de dois fatores são descritas pelo seguinte sistema de equações diferenciais estocásticas:
+
+\begin{equation}
+d\chi_t = (-\kappa \chi_t - \lambda_\chi) \, dt + \sigma_\chi \, dz_\chi,
+\label{eq:2-42}
+\end{equation}
+
+\begin{equation}
+d\xi_t = (\mu_\xi - \lambda_\xi) \, dt + \sigma_\xi \, dz_\xi,
+\label{eq:2-43}
+\end{equation}
+onde:
+\begin{itemize}
+    \item $\chi_t$ é o desvio de curto prazo em relação ao equilíbrio;
+    \item $\xi_t$ é o componente de equilíbrio de longo prazo;
+    \item $\mu_\xi$ é o \textit{drift} do fator de longo prazo;
+    \item $\kappa$ é a velocidade de reversão à média do fator de curto prazo;
+    \item $\lambda_\chi$ e $\lambda_\xi$ são os prêmios de risco associados aos fatores de curto e longo prazo, respectivamente;
+    \item $\sigma_\chi$ e $\sigma_\xi$ são as volatilidades dos fatores de curto e longo prazo, respectivamente;
+    \item $dz_\chi$ e $dz_\xi$ são incrementos correlacionados de processos de MGB, com $dz_\chi dz_\xi = \rho_{\chi\xi} dt$.
+\end{itemize}
+
+O logaritmo do preço do petróleo no tempo $t$ é dado por:
+\begin{equation}
+\ln(P_t) = \chi_t + \xi_t,
+\label{eq:2-44}
+\end{equation}
+e o preço à vista (\textit{spot price}) é recuperado como:
+\begin{equation}
+P_t = \exp(\chi_t + \xi_t).
+\label{eq:2-45}
+\end{equation}
+
+Para implementação numérica, as Equações diferenciais estocásticas contínuas \eqref{eq:2-42} e \eqref{eq:2-43} são discretizadas da seguinte forma (\cite{21}, \cite{22}):
+
+\begin{equation}
+\chi_{t+1} = \chi_t e^{-\kappa \Delta t} - (1 - e^{-\kappa \Delta t}) \frac{\lambda_\chi}{\kappa} + 
+\sigma_\chi \varepsilon_\chi \sqrt{\frac{1 - e^{-2\kappa \Delta t}}{2\kappa}},
+\label{eq:2-46}
+\end{equation}
+
+\begin{equation}
+\xi_{t+1} = \xi_t + (\mu_\xi - \lambda_\xi)\Delta t + \sigma_\xi \varepsilon_\xi \sqrt{\Delta t},
+\label{eq:2-47}
+\end{equation}
+onde $\varepsilon_\xi$ e $\varepsilon_\chi$ são variáveis aleatórias normais padrão e $\Delta t$ é o incremento de tempo. Conforme \cite{23}, se $\varepsilon_{\xi}$ e $\varepsilon$ são duas variáveis aleatórias padrão independentes, é possível introduzir uma correlação entre os processos de preço descritos pelas Equações \eqref{eq:2-46} e \eqref{eq:2-47}. Isso pode ser feito definindo a variável aleatória do segundo processo como:
+\begin{equation}
+\varepsilon_\chi = \varepsilon_\xi \rho_{\chi\xi} + \varepsilon \sqrt{1 - \rho_{\chi\xi}^2},
+\label{eq:2-48}
+\end{equation}
+onde $\rho_{\chi\xi}$ representa o coeficiente de correlação entre os dois processos.
+
+Esse modelo permite capturar simultaneamente as volatilidades de curto prazo e as tendências de longo prazo observadas na dinâmica dos preços do petróleo. Ao adotar o modelo de dois fatores, a análise reproduz de forma mais precisa o comportamento estocástico dos preços históricos do petróleo, resultando em uma avaliação mais robusta para projetos de investimento em óleo e gás.
+
+O modelo de preço do petróleo é caracterizado por sete parâmetros $(\kappa, \sigma_\xi, \sigma_\chi, \mu_\xi, \lambda_\chi, \lambda_\xi, \rho_{\chi\xi})$, além dos estados iniciais $\xi_0$ e $\chi_0$, que precisam ser estimados. Como esses parâmetros não são diretamente observáveis nos mercados de commodities, adota-se o procedimento de calibração proposto por \cite{24}, que utiliza o filtro de Kalman em conjunto com o método de máxima verossimilhança. O filtro de Kalman fornece estimativas recursivas dos parâmetros não observados ao gerar uma distribuição condicional posterior, considerando uma série temporal de preços à vista e futuros e a matriz de covariância de medição correspondente.
+
+Para a calibração foram utilizados os preços médios anuais dos contratos futuros de petróleo Brent no período de 3 de janeiro de 2000 a 7 de março de 2025. Especificamente, para cada ano, foram observados seis contratos futuros com vencimento em 1, 3, 5, 7, 9 e 13 meses. A Figura~\ref{fig:2.22} apresenta os preços observados e os valores esperados simulados usando os parâmetros calibrados, e a Tabela~\ref{tab:2.3}, lista os parâmetros resultantes da calibração.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/SS_model_calibration.png}
+    \caption{Calibração do modelo de SS para os preços do petróleo.}
+    \label{fig:2.22}
+\end{figure}
+
+\input{tables/table_2.3}
+
+Segundo \cite{20}, contratos futuros de longo prazo fornecem informações sobre o fator de longo prazo, enquanto contratos à vista e de curto prazo informam o fator de curto prazo. Usando o modelo de dois fatores, obtém-se uma solução analítica para o valor de um contrato futuro como:
+\begin{equation}
+\ln(F_{T,0}) = e^{-\kappa T}\chi_0 + \xi_0 + \mathcal{A}(T),
+\label{eq:2-49}
+\end{equation}
+em que o termo de ajuste $\mathcal{A}(T)$ é definido como:
+\begin{equation}
+\mathcal{A}(T) = (\mu_\xi - \lambda_\xi)T - (1 - e^{-\kappa T})\frac{\lambda_\chi}{\kappa}
++ \frac{1}{2}\left[ (1 - e^{-2\kappa T})\frac{\sigma_\chi^2}{2\kappa}
++ \sigma_\xi^2 T + 2(1 - e^{-\kappa T})\frac{\rho_{\chi\xi}\sigma_\chi\sigma_\xi}{\kappa} \right].
+\label{eq:2-50}
+\end{equation}
+
+Nesta pesquisa, empregou-se essa formulação juntamente com os parâmetros calibrados da Tabela~\ref{tab:2.3} para calcular os preços futuros esperados do petróleo. A Figura~\ref{fig:2.23} ilustra exemplos de trajetórias simuladas do preço do petróleo e respectivas faixas de confiança baseados em 10\,000 simulações com preço inicial de $\$70.62$ por barril. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{images/two_factor_oil_simulations.png}
+    \caption{Simulações do preços do petróleo, intervalos de confiança e exemplos de trajetórias.}
+    \label{fig:2.23}
+\end{figure}
+De acordo com \cite{22}, o modelo de dois fatores de Schwartz–Smith fornece uma representação mais realista do risco de preço do petróleo e da dinâmica esperada dos preços futuros, capturando com maior precisão tanto as incertezas quanto os caminhos prováveis dos preços. Por isso, é preferível para a modelagem da evolução dos preços do petróleo em comparação aos clássicos modelos MGB e de reversão à média.
+
+\subsection{Least Squares Monte Carlo}
+
+O método dos \textbf{Mínimos Quadrados de Monte Carlo} (em inglês, \textit{Least Squares Monte Carlo} - LSM) é uma alternativa promissora em relação às abordagens tradicionais, como as técnicas de diferenças finitas e os modelos de árvores binomiais, na avaliação de projetos envolvendo opções reais. Entre suas principais vantagens destacam-se a flexibilidade para avaliação de projetos, a capacidade de gerenciamento de risco e a determinação eficiente do momento ótimo de exercício em opções do tipo americana. De forma geral, o LSM oferece uma estrutura unificada para capturar o valor da flexibilidade gerencial em ambientes incertos e dinâmicos. Entre as aplicações típicas do método LSM, podemos citar:
+\begin{itemize}
+    \item a avaliação de opções que dependem de múltiplos fatores de incerteza;
+    \item a precificação de derivativos com características de opções americanas e dependentes do caminho;
+    \item a valoração de opções cujas variáveis de estado seguem processos estocásticos gerais ou até mesmo processos não markovianos.
+\end{itemize}
+
+A ideia fundamental por trás do LSM está relacionada aos princípios da programação dinâmica. Em cada instante anterior ao vencimento de uma opção americana, o tomador da decisão compara o \textit{payoff} obtido com o exercício antecipado com o valor esperado de continuação do projeto, de modo a escolher a alternativa que maximize o valor esperado. Assim, a estratégia ótima de exercício é determinada pela expectativa condicional do valor futuro da opção. Longstaff e Schwartz em \cite{25} demonstraram que essa expectativa condicional pode ser estimada de maneira eficiente a partir de informações obtidas em simulações de Monte Carlo, utilizando uma regressão por mínimos quadrados. O método combina a flexibilidade das simulações estocásticas com a robustez estatística da regressão linear, permitindo aproximar a solução da programação dinâmica de forma prática e computacionalmente viável.
+
+Em termos gerais, o método LSM é amplamente utilizado na avaliação de opções reais e financeiras com possibilidade de exercício antecipado. Conforme apresentado por \cite{25}, essa abordagem é atualmente considerada uma das mais eficientes para lidar com situações em que há múltiplas fontes de incerteza e dependência de caminho do ativo subjacente (\cite{21}, \cite{26}). O objetivo do LSM é aproximar, trajetória a trajetória, a regra ótima de parada que maximiza o valor esperado de uma opção americana. Para ilustrar o procedimento, considere o caso em que o exercício é permitido apenas em um conjunto discreto de tempos $K$, $0 < t_1 \leq t_2 \leq \dots \leq t_K = T$. Determina-se, então, a decisão ótima de exercício em cada uma dessas datas. Embora as opções americanas possam ser exercidas a qualquer instante antes do vencimento, essa característica contínua pode ser representada de forma adequada escolhendo uma discretização temporal suficientemente fina (ou seja, um $K$ grande), o que aproxima do problema contínuo. O método LSM consiste em comparar o \textit{payoff} imediato com o valor estimado de continuação. A decisão de exercer ocorre sempre que o valor de exercício antecipado supera o valor esperado de manter a opção. O cerne da técnica está na estimação da expectativa condicional dos fluxos de caixa futuros através de regressões por mínimos quadrados, utilizando dados obtidos nas simulações de Monte Carlo. Em cada data potencial de exercício, é realizada uma regressão relacionando os valores simulados de continuação com funções das variáveis de estado, o que permite aproximar a expectativa condicional nesse determinado instante.
+
+O procedimento pode ser resumido nas seguintes etapas (\cite{25}, \cite{26}):
+\begin{enumerate}[label=(\roman*)]
+    \item Gera-se um número suficientemente grande de trajetórias das variáveis incertas por meio de simulações de Monte Carlo;
+    \item Em cada data de exercício, para as trajetórias nas quais a opção está \textit{in the money}, realiza-se uma regressão dos valores de continuação futuros em função das variáveis de estado;
+    \item As funções base do espaço de Hilbert das possíveis funções de continuação são escolhidas como polinômios ortogonais em $L^2$;
+    \item O valor ajustado pela regressão é tomado como estimativa da expectativa condicional do valor de continuação, sendo comparado ao \textit{payoff} imediato para decidir o exercício;
+    \item O procedimento é repetido recursivamente, de trás para frente, até o instante inicial.
+\end{enumerate}
+
+O espaço das funções quadrado-integráveis $L^2$, utilizado na regressão do LSM, constitui um espaço de Hilbert que admite uma base ortonormal. Neste trabalho utilizamos os polinômios de Laguerre como funções base, que são definidos por:
+\begin{align}
+L_0(x) &= \exp\left(-\frac{x}{2}\right), \\
+L_1(x) &= \exp\left(-\frac{x}{2}\right)(1-x), \\
+L_2(x) &= \exp\left(-\frac{x}{2}\right)\left(1 - 2x + \frac{x^2}{2}\right), \\
+L_n(x) &= \exp\left(-\frac{x}{2}\right)\frac{e^x}{n!}\frac{d^n}{dx^n}\left(x^n e^{-x}\right).
+\end{align}
+
+Com esses polinômios como base, a função valor de continuação $F(\omega; t_{k-1})$ pode ser aproximada por uma combinação linear dos mesmos:
+\begin{equation}
+F(\omega, t_{k-1}) = \sum_{j=0}^{\infty} a_j L_j(x),
+\end{equation}
+em que $a_j$ são coeficientes constantes. Outras famílias de polinômios ortogonais, como Hermite, Legendre, Jacobi ou Chebyshev, também podem ser utilizadas (\cite{25}).
+
+O método LSM apresenta vantagens relevantes em relação a outras técnicas, pois não é sensível à dimensionalidade do problema (número de fontes de incerteza) e tem sido amplamente utilizado na avaliação de opções reais na indústria de petróleo e gás, especialmente por sua capacidade de aproximar a programação dinâmica em problemas com múltiplas oportunidades de exercício (\cite{26}).
+
+Em cada instante de decisão $t_k$, o investidor pode exercer a opção e realizar o fluxo de caixa imediato conhecido, cujo valor é igual ao \textit{payoff} correspondente. Já o valor de continuação envolve fluxos de caixa futuros incertos, não observáveis no instante da decisão. Sob o princípio da neutralidade ao risco, o valor de continuação é expresso pela expectativa do valor presente dos fluxos de caixa futuros descontados sob a medida neutra ao risco $Q$:
+\begin{equation}
+F(\omega; t_k) =
+\mathbb{E}_Q \left[
+\sum_{j=k+1}^{K}
+\exp\left(-\int_{t_k}^{t_j} r(\omega,s) ds\right)
+C(\omega, t_j; t_k, T)
+\; \middle| \;
+\mathcal{F}_{t_k}
+\right],
+\end{equation}
+onde $r(\omega,t)$ é a taxa de desconto livre de risco (possivelmente estocástica), e a expectativa é condicional ao conjunto de informações $\mathcal{F}_{t_k}$ disponíveis em $t_k$. Essa abordagem conduz à formulação padrão da avaliação de opções reais: em cada ponto de decisão, o agente compara o valor de exercício imediato com o valor esperado da continuação. A política ótima consiste em exercer a opção sempre que o \textit{payoff} imediato for positivo e exceder o valor esperado de esperar. \cite{27} apresentou uma das primeiras aplicações do método LSM em um projeto de produção de petróleo simplificado, utilizando o estudo de caso desenvolvido por \cite{19} e \cite{28}. A análise incorporou tanto a opção de compra da participação do parceiro (\textit{buyout}) quanto a opção de desinvestimento (\textit{divest}) mediante um fluxo de caixa predeterminado. Esse problema, conhecido como \textit{BDH problem}, foi revisitado e expandido por Nascimento et al em \cite{29} demonstrando o valor da flexibilidade em projetos de exploração e produção de petróleo com opções reais utilizando LSM.
+
+A simplicidade do método LSM, aliada à flexibilidade gerencial, torna-o particularmente adequado para ilustrar políticas ótimas e avaliar projetos sob incertezas, além de permitir fácil replicação e adaptação a outros contextos \cite{26}.
+
 
 \section{Redes Neurais}
 
