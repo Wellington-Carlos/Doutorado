@@ -875,12 +875,65 @@ onde $r(\omega,t)$ é a taxa de desconto livre de risco (possivelmente estocást
 A simplicidade do método LSM, aliada à flexibilidade gerencial, torna-o particularmente adequado para ilustrar políticas ótimas e avaliar projetos sob incertezas, além de permitir fácil replicação e adaptação a outros contextos \cite{26}.
 
 
-\section{Redes Neurais}
+\section{Redes Neurais Artificiais}
 
-A hematita é o mineral de ferro mais importante devido a sua alta
-ocorrência em vários tipos de rochas e suas origens diversas.
-A composição química deste mineral é Fe$_{2}$O$_{3}$, com uma fração
-mássica em ferro de 69,9\% e uma fração mássica em oxigênio de
+O cérebro humano é uma estrutura altamente complexa e eficiente, capaz de processar uma enorme quantidade de informações em tempo mínimo. Suas principais unidades de processamento são os neurônios, responsáveis pela recepção, transmissão e integração dos sinais que originam as funções cognitivas. A habilidade do cérebro em reconhecer padrões, tomar decisões e aprender com experiências passadas inspirou o desenvolvimento dos chamados sistemas inteligentes, entre eles as \textbf{Redes Neurais Artificiais}, conhecidas em inglês como \textit{Artificial Neural Networks} (ANNs).
+
+Diversos estudos em neurociência demonstram que o cérebro aprende por meio de experiências acumuladas ao longo da vida, ajustando suas conexões sinápticas conforme estímulos externos (\cite{30}). Inspirados por esse mecanismo, pesquisadores da área de computação buscaram modelar matematicamente o funcionamento dos neurônios e de suas interconexões, criando sistemas artificiais capazes de aprender e generalizar informações.
+
+O neurônio biológico é a célula fundamental do sistema nervoso e possui a função de transmitir informações entre diferentes regiões do corpo. De acordo com \cite{31}, essa célula é composta por três partes principais: o soma (ou corpo celular), que contém o núcleo; os dendritos, que recebem os estímulos provenientes de outros neurônios; e o axônio, responsável por conduzir os impulsos elétricos até as terminações sinápticas. A comunicação entre neurônios ocorre nas sinapses, onde sinais elétricos e químicos são convertidos e transmitidos. Esses sinais elétricos representam a mensagem que percorre os neurônios, sendo a base da transmissão de informações no cérebro. Essa propagação é desencadeada pela ação de estímulos externos ou internos que modificam o potencial elétrico da membrana neuronal. A estrutura típica de um neurônio biológico pode ser observada na Figura~\ref{fig:2.24} (\cite{32}).
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/neuronio_bio.png}
+    \caption{Modelo do neurônio biológico. Fonte \cite{32}.}
+    \label{fig:2.24}
+\end{figure}
+
+A partir da estrutura e do comportamento dos neurônios biológicos, \cite{33} propuseram o primeiro modelo matemático simplificado, conhecido como \textit{Perceptron}, conforme Figura~\ref{fig:2.25}. Esse modelo descreve o neurônio artificial como uma unidade de processamento capaz de combinar sinais de entrada, ponderá-los e gerar uma saída de acordo com uma função de ativação. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/neuronio_art.png}
+    \caption{Modelo do neurônio artificial. Fonte \cite{33}.}
+    \label{fig:2.25}
+\end{figure}
+
+Matematicamente, um neurônio artificial $k$ pode ser descrito pelo conjunto de equações:
+\begin{align}
+    u_k =  b_k + \sum_{j=1}^{m} w_{kj} x_j, \\
+    y_k = \varphi(u_k)
+\end{align}
+onde $x_j$ representa os sinais de entrada, $w_{kj}$ os pesos sinápticos associados a cada conexão, $b_k$ é o termo de \textit{bias} (responsável por deslocar o ponto de ativação) e $\varphi(\cdot)$ é a função de ativação que define a resposta do neurônio. O termo $u_k$ é denominado \textit{campo local induzido} e corresponde à soma ponderada das entradas. A função de ativação $\varphi(\cdot)$ é responsável por limitar ou transformar o valor do campo induzido, determinando se o neurônio será ativado ou não. Segundo \cite{30}, esse processo é análogo ao comportamento “tudo ou nada” observado nos neurônios biológicos.
+
+As funções de ativação desempenham papel essencial na modelagem de redes neurais, pois introduzem não linearidades que permitem ao sistema aprender relações complexas entre as variáveis de entrada e saída. As formas mais comuns são:
+\begin{itemize}
+    \item \textbf{Função Degrau:}
+    \begin{equation}
+        \varphi(u) = 
+        \begin{cases}
+        1, & \text{se } u \geq 0 \\
+        0, & \text{se } u < 0
+        \end{cases}
+    \end{equation}
+    Representa o modelo binário de ativação, em que a saída assume apenas dois estados possíveis, ativado ou inativo.
+
+    \item \textbf{Função Sigmoide:}
+    \begin{equation}
+        \varphi(u) = \frac{1}{1 + e^{-a u}}
+    \end{equation}
+    Essa função contínua e diferenciável permite uma transição suave entre 0 e 1, sendo amplamente utilizada em modelos de aprendizado supervisionado. A função sigmoide apresenta uma característica “S-shaped” e é ajustada pelo parâmetro $a$, que controla a inclinação da curva. Quando $a$ tende a valores muito altos, o comportamento da sigmoide aproxima-se do modelo degrau.
+    
+    \item \textbf{Função ReLU:}
+    \begin{equation}
+        \varphi(u) = \max(0, u)
+    \end{equation}
+    A função ReLU (Rectified Linear Unit) é uma das mais utilizadas em redes neurais profundas, pois introduz não linearidade mantendo simplicidade computacional. Ela anula valores negativos e mantém os positivos, o que reduz o problema de gradientes pequenos em camadas profundas, acelerando o treinamento.
+
+    \item \textbf{Função Softmax:}
+    \begin{equation}
+        \varphi(u_i) = \frac{e^{u_i}}{\sum_{j=1}^{n} e^{u_j}}
+    \end{equation}
+    A função Softmax é aplicada principalmente na camada de saída de classificadores multiclasse. Ela converte o vetor de entradas $u_i$ em uma distribuição de probabilidades, onde a soma das saídas é igual a 1. Assim, cada saída pode ser interpretada como a probabilidade de pertencimento de uma amostra a uma classe específica.
+\end{itemize}
 
 \section{Redes Neurais Convolucionais}
 

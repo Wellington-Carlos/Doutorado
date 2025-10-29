@@ -5,8 +5,6 @@ import time
 import subprocess
 from ecl.summary import EclSum
 
-# MAINDIR = r"your\working\directory"
-# MAINDIR = "C:/Users/calva/OneDrive/Documentos/WellingtonCodesOptimizationReservoirModels"
 MAINDIR = "/mnt/c/Users/calva/OneDrive/Documentos/Doutorado/Proposta_de_Tese/Codes_Optimization_Reservoir"
 
 TempFolder = os.path.join(MAINDIR, "Temp")
