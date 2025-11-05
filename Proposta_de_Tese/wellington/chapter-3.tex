@@ -1,5 +1,96 @@
 % -*- coding: utf-8; -*-
 
-\chapter{Resultados Preliminares}
+\chapter{Aplicação de AI e ML na E\&P}
 
+Nos últimos anos, a indústria de petróleo e gás tem passado por uma profunda transformação impulsionada pelos avanços em \textbf{Inteligência Artificial} (em inglês, Artificial Intelligence - AI) e \textbf{Aprendizado de Máquina} (em inglês, Machine Learning - ML). Tais ferramentas têm se mostrado promissoras para lidar com os desafios inerentes às grandes quantidades de dados gerados durante as etapas de exploração, avaliação e desenvolvimento de campos petrolíferos. O uso adequado dessas ferramentas possibilita uma interpretação mais robusta dos dados geológicos, geofísicos e de engenharia, contribuindo para a redução de incertezas e para a tomada de decisão orientada por dados.
+
+Durante as campanhas de perfuração de poços exploratórios, o principal objetivo é reduzir a incerteza sobre o volume recuperável e a conectividade entre zonas produtoras. A aplicação de técnicas de ML permite correlacionar dados sísmicos, propriedades geológicas e resultados de poços já perfurados, criando modelos preditivos capazes de identificar as regiões mais promissoras para a perfuração de novos poços. Redes Neurais Profundas bem como algoritmos supervisionados (\textit{Random Forests}, \textit{Support Vector Machines, etc...}) têm sido empregados para classificar litofácies, prever propriedades de reservatório (porosidade, permeabilidade e saturação de água) e inferir a distribuição espacial de incertezas geológicas. Já métodos não supervisionados, como \textit{K-Means} e \textit{Self-Organizing Maps} (SOM), são amplamente utilizados para agrupar padrões de resposta sísmica e identificar zonas com comportamento geológico semelhante. Esses avanços contribuem para um melhor planejamento das etapas de avaliação, permitindo selecionar os poços que maximizam o valor esperado da informação.
+
+Além da caracterização, o aprendizado de máquina desempenha papel central na otimização na locação de poços. Modelos baseados em ML e técnicas de \textbf{Aprendizado Profundo} (em inglês, Deep Learning - DL) são capazes de integrar múltiplas fontes de dados (por exemplo, mapas de permeabilidade, pressão e porosidade), para identificar automaticamente as posições que maximizam a produtividade esperada e reduzem os custos de perfuração. Técnicas como \textbf{Aprendizado por Reforço} (em inglês, Reinforcement Learning - RL) e \textbf{Algoritmos Genéticos} têm sido aplicadas para explorar o espaço de decisão de forma adaptativa, buscando configurações ótimas de poços produtores e injetores sob múltiplas restrições operacionais e econômicas. Em ambientes com alta incerteza, esses modelos permitem simular diversos cenários de perfuração e desenvolvimento no intuito de maximizar o valor esperado da produção.
+
+O uso de AI em campanhas de delimitação e locação de poços representa um avanço significativo rumo à redução de riscos na indústria de E\&P. A integração de ML com sistemas de gerenciamento de dados e modelos de simulação numérica oferece ganhos expressivos em eficiência, precisão e velocidade de processamento. Estudos recentes indicam que o número de publicações e aplicações de AI na indústria petrolífera cresceu, em média, 15\% ao ano entre 2015 e 2024, refletindo o crescente interesse do setor (\cite{34}). Esse avanço é particularmente evidente em conferências da \textit{Society of Petroleum Engineers} (SPE), onde cerca de 40\% dos trabalhos recentes abordam aplicações de AI e ML em problemas de caracterização, modelagem e otimização da produção.
+
+No contexto de campanhas de avaliação, as técnicas de ML têm se mostrado fundamentais para priorizar poços, otimizar o planejamento de perfurações e reduzir o risco exploratório. Assim, a combinação entre AI e Métodos de Apoio à Decisão oferece um caminho promissor para o desenvolvimento de estratégias de avaliação mais eficientes, inteligentes e economicamente sustentáveis nos projetos de E\&P (\cite{35}).
+
+
+
+\section{Redes Neurais Artificiais}
+
+O cérebro humano é uma estrutura altamente complexa e eficiente, capaz de processar uma enorme quantidade de informações em tempo mínimo. Suas principais unidades de processamento são os neurônios, responsáveis pela recepção, transmissão e integração dos sinais que originam as funções cognitivas. A habilidade do cérebro em reconhecer padrões, tomar decisões e aprender com experiências passadas inspirou o desenvolvimento dos chamados sistemas inteligentes, entre eles as \textbf{Redes Neurais Artificiais} (em inglês, \textit{Artificial Neural Networks} - ANN).
+
+Diversos estudos em neurociência demonstram que o cérebro aprende por meio de experiências acumuladas ao longo da vida, ajustando suas conexões sinápticas conforme estímulos externos (\cite{30}). Inspirados por esse mecanismo, pesquisadores da área de computação buscaram modelar matematicamente o funcionamento dos neurônios e de suas interconexões, criando sistemas artificiais capazes de aprender e generalizar informações.
+
+O neurônio biológico é a célula fundamental do sistema nervoso e possui a função de transmitir informações entre diferentes regiões do corpo. De acordo com \cite{31}, essa célula é composta por três partes principais: o soma (ou corpo celular), que contém o núcleo; os dendritos, que recebem os estímulos provenientes de outros neurônios; e o axônio, responsável por conduzir os impulsos elétricos até as terminações sinápticas. A comunicação entre neurônios ocorre nas sinapses, onde sinais elétricos e químicos são convertidos e transmitidos. Esses sinais elétricos representam a mensagem que percorre os neurônios, sendo a base da transmissão de informações no cérebro. Essa propagação é desencadeada pela ação de estímulos externos ou internos que modificam o potencial elétrico da membrana neuronal. A estrutura típica de um neurônio biológico pode ser observada na Figura~\ref{fig:3.01} (\cite{32}).
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/neuronio_bio.png}
+    \caption{Modelo do neurônio biológico. Fonte \cite{32}.}
+    \label{fig:3.01}
+\end{figure}
+
+A partir da estrutura e do comportamento dos neurônios biológicos, \cite{33} propuseram o primeiro modelo matemático simplificado, conhecido como \textit{Perceptron}, conforme Figura~\ref{fig:3.02}. Esse modelo descreve o neurônio artificial como uma unidade de processamento capaz de combinar sinais de entrada, ponderá-los e gerar uma saída de acordo com uma função de ativação. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/neuronio_art.png}
+    \caption{Modelo do neurônio artificial. Fonte \cite{33}.}
+    \label{fig:3.02}
+\end{figure}
+
+Matematicamente, um neurônio artificial $k$ pode ser descrito pelo conjunto de equações:
+\begin{align}
+    u_k =  \sum_{j=1}^{m} w_{kj} x_j, \\
+    v_k = u_k + b_k, \\
+    y_k = \varphi(v_k)
+\end{align}
+onde $x_j$ representa os sinais de entrada, $w_{kj}$ os pesos sinápticos associados a cada conexão, $b_k$ é o termo de \textit{bias} (responsável por deslocar o ponto de ativação) e $\varphi(\cdot)$ é a função de ativação que define a resposta do neurônio. O termo $v_k$ é denominado \textit{campo local induzido} e corresponde à soma ponderada das entradas mais o \textit{bias}. A função de ativação $\varphi(\cdot)$ é responsável por limitar ou transformar o valor do campo induzido, determinando se o neurônio será ativado ou não. Segundo \cite{30}, esse processo é análogo ao comportamento “tudo ou nada” observado nos neurônios biológicos.
+
+As funções de ativação desempenham papel essencial na modelagem de redes neurais, pois introduzem não linearidades que permitem ao sistema aprender relações complexas entre as variáveis de entrada e saída. As formas mais comuns são:
+\begin{itemize}
+    \item \textbf{Função Degrau:}
+    \begin{equation}
+        \varphi(v) = 
+        \begin{cases}
+        1, & \text{se } v \geq 0 \\
+        0, & \text{se } v < 0
+        \end{cases}
+    \end{equation}
+    Representa o modelo binário de ativação, em que a saída assume apenas dois estados possíveis, ativado ou inativo.
+
+    \item \textbf{Função Sigmoide:}
+    \begin{equation}
+        \varphi(v) = \frac{1}{1 + e^{-a v}}
+    \end{equation}
+    Essa função contínua e diferenciável permite uma transição suave entre 0 e 1, sendo amplamente utilizada em modelos de aprendizado supervisionado. A função sigmoide apresenta uma característica “S-shaped” e é ajustada pelo parâmetro $a$, que controla a inclinação da curva. Quando $a$ tende a valores muito altos, o comportamento da sigmoide aproxima-se da função degrau.
+    
+    \item \textbf{Função ReLU:}
+    \begin{equation}
+        \varphi(v) = \max(0, v)
+    \end{equation}
+    A função ReLU (Rectified Linear Unit) é uma das mais utilizadas em redes neurais profundas, pois introduz não linearidade mantendo simplicidade computacional. Ela anula valores negativos e mantém os positivos, o que reduz o problema de gradientes pequenos em camadas profundas, acelerando o treinamento.
+
+    \item \textbf{Função Softmax:}
+    \begin{equation}
+        \varphi(v_i) = \frac{e^{v_i}}{\sum_{j=1}^{n} e^{v_j}}
+    \end{equation}
+    A função Softmax é aplicada principalmente na camada de saída de classificadores multiclasse. Ela converte o vetor de entradas $v_i$ em uma distribuição de probabilidades, onde a soma das saídas é igual a 1. Assim, cada saída pode ser interpretada como a probabilidade de pertencimento de uma amostra a uma classe específica.
+\end{itemize}
+
+A Figura~\ref{fig:3.03} ilustra as curvas das funções de ativação definidas acima, evidenciando como cada uma das funções introduz diferentes graus de não linearidade na rede neural. Essas funções desempenham papel fundamental no mapeamento das entradas para as saídas e no comportamento do aprendizado da rede, influenciando sua capacidade de generalização e convergência numérica.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/funcoes_ativacao.png}
+    \caption{Funções de ativação: (a) Degrau, (b) Sigmoide, (c) ReLU e (d) Softmax.}
+    \label{fig:3.03}
+\end{figure}
+A semelhança observada entre as curvas das funções sigmoide e softmax pode ser explicada por sua relação matemática. A sigmoide é uma função univariada, ou seja, transforma um único valor real em um número entre 0 e 1, sendo utilizada em neurônios com saída binária, onde o objetivo é estimar a probabilidade de ocorrência de um evento. Já a softmax é uma função multivariada, que recebe um vetor de valores e os converte em uma distribuição de probabilidades cuja soma é igual a 1, sendo empregada em problemas de classificação multiclasse. Quando a softmax é aplicada em apenas duas classes, ela se reduz a uma forma equivalente à sigmoide, o que explica a semelhança visual entre seus gráficos no caso binário.
+
+Uma ANN é uma estrutura de camadas onde vários \textit{Perceptrons} são interconectados.
+
+\section{Redes Neurais Convolucionais}
+
+Uma rede neural profunda (deep neural network, DNN) [Goodfellow et al., 2016] pode ser entendida como uma MLP (multilayer perceptron) de múltiplas camadas ocultas, configurada em uma estrutura feedforward. Inspiradas na organização do córtex visual humano, essas redes processam os sinais de entrada de forma hierárquica, passando por diversas camadas responsáveis por extrair representações progressivamente mais abstratas dos dados.
+
+Com os avanços tecnológicos, especialmente o uso de unidades de processamento gráfico (GPUs), tornou-se possível treinar redes com dezenas ou até centenas de camadas, graças à execução paralela de um grande número de operações matriciais. Exemplos notáveis incluem a AlexNet [Krizhevsky et al., 2012], composta por 8 camadas; a VGGNet [Simonyan e Zisserman, 2014], com versões de 16 e 19 camadas; e a ResNet [He et al., 2016], que pode atingir até 152 camadas.
+
+Entretanto, o aspecto mais relevante das redes neurais profundas não é apenas a profundidade em termos de número de camadas, mas também a introdução de novos operadores que não eram utilizados nas MLPs tradicionais. Entre esses operadores destacam-se a convolução, o pooling e o flattening, discutidos nas seções seguintes. Em virtude da presença das camadas de convolução, essas arquiteturas são conhecidas como redes neurais convolucionais (CNNs, convolutional neural networks).
 

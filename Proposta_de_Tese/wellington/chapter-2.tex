@@ -2,21 +2,21 @@
 
 \chapter{Fundamentação Teórica}
 
-O desenvolvimento de campos de petróleo ocorre sob condições de incerteza associadas à caracterização geológica do reservatório, bem como a parâmetros econômicos e tecnológicos. Essas incertezas influenciam diretamente o valor do projeto. O baixo desempenho de algumas empresas de petróleo é consequência do reduzido investimento aplicado em ferramentas de suporte à decisão e da ausência de investimentos suficientes para estimar corretamente o retorno do projeto, o que pode levar tanto à superestimação dos ganhos quanto à subestimação das perdas.
+Nesse capítulo será apresentado os fundamentos teóricos necessários para a compreensão desta proposta de tese. Iniciando com os conceitos básicos de Valor da Informação, seguido por sua quantificação, a importância do Valor da Informação Sequencial, bem como sua relação com a Medida de Aprendizagem. Em seguida apresentamos o Valor da Flexibilidade e as técnicas utilizadas para quantificar as incertezas técnicas e de mercado. Por fim definimos o que é Least Squares Monte Carlo e sua importância na valoração dos projetos e como as incertezas influenciam na tomada de decisão.
 
-Três tipos de riscos no desenvolvimento de campos de petróleo devem ser considerados no processo de tomada de decisão:
+Sabe-se que o baixo desempenho de algumas empresas de petróleo decorre do reduzido investimento em ferramentas de suporte à decisão e da falta de recursos adequados para estimar com precisão o retorno dos projetos, o que pode resultar tanto na superestimação dos ganhos quanto na subestimação das perdas. Desta maneira, os riscos inerentes ao processo podem passar despercebidos. Três tipos de riscos no desenvolvimento de campos de petróleo devem ser considerados no processo de tomada de decisão:
 \begin{enumerate}
     \item \textbf{perda de oportunidade}: um prospecto é considerado não econômico e abandonado, quando na verdade seria viável economicamente;
     \item \textbf{desenvolvimento não econômico}: um campo inviável é desenvolvido por ter sido erroneamente considerado econômico;
     \item \textbf{desenvolvimento subótimo}: um campo é desenvolvido, mas gera retorno inferior ao máximo possível, que poderia ser obtido se o modelo de reservatório correto tivesse sido considerado.
 \end{enumerate}
 
-O risco envolvido na fase de desenvolvimento pode ser reduzido se informações adicionais forem obtidas para diminuir ou até eliminar uma determinada incerteza. Entretanto, a aquisição de informação está diretamente associada a custos. Por isso, antes de decidir pela obtenção de informação,  sugere analisar dois aspectos: se vale a pena adquirir informação adicional e se tal informação é de fato capaz de melhorar o processo decisório. Uma ferramenta consistente que pode ser utilizada como critério no processo de decisão é o Valor da Informação, que combina incertezas do reservatório com suas potenciais consequências econômicas. 
+O risco envolvido na fase de desenvolvimento pode ser reduzido se informações adicionais forem obtidas para diminuir ou até eliminar uma determinada incerteza. Entretanto, a aquisição de informação está diretamente associada a custos. Por isso, antes de decidir pela obtenção de informação,  é sugerido analisar dois aspectos: se vale a pena adquirir informação adicional e se tal informação é de fato capaz de melhorar o processo decisório. Uma ferramenta consistente que pode ser utilizada como critério no processo de decisão é o Valor da Informação, que combina incertezas do reservatório com suas potenciais consequências econômicas. 
 
 
 \section{Valor da Informação}
 
-A prática profissional em engenharia de petróleo e geociências está fortemente associada à aquisição de informações, obtidas sob diversas formas e em múltiplos contextos. O termo informação é usado aqui em um sentido amplo, incluindo coleta de dados, realização de estudos técnicos, contratação de consultores, execução de testes diagnósticos, etc. A expectativa é que a redução da incerteza aumente a chance de que nossas decisões resultem no desfecho desejado. De fato, a única outra razão válida para coletar informação ou realizar análises técnicas é o cumprimento de exigências regulatórias.
+A prática profissional em engenharia de petróleo e geociências está fortemente associada à aquisição de informações, obtidas sob diversas formas e em múltiplos contextos. O termo informação é usado aqui em um sentido amplo, incluindo coleta de dados, realização de estudos técnicos, contratação de consultores, execução de testes diagnósticos, etc. A expectativa é que a redução da incerteza aumente a chance de que as decisões resultem no desfecho desejado. Sendo assim, a única outra razão válida para coletar informação ou realizar análises técnicas é o cumprimento de exigências pelos órgãos reguladores.
 
 A questão fundamental em qualquer processo de coleta de informação é se a redução esperada da incerteza compensa o custo de se obter a informação. A técnica de \textit{Value of Information} (VOI), em português \textbf{Valor da Informação}, é projetada justamente para responder a essa questão \cite{01}.
 
@@ -27,23 +27,23 @@ O objetivo do VOI é estimar o valor de um exercício proposto de coleta de info
 O VOI pode ser entendido como o valor atribuído às probabilidades atualizadas. Para calcular esse valor, são necessárias as seguintes informações:  
 
 \begin{enumerate}[label=\textbf{\roman*)}]
-    \item \textbf{Probabilidade atuais}, ou \textit{a priori}, dos possíveis resultados que a variável pode assumir (por exemplo, 30\% de chance de o fator de recuperação ser baixo e 70\% de chance de ser alto).  
-    \item \textbf{Estimativas de confiabilidade (verossimilhança)} da eficácia da informação em predizer os resultados (por exemplo, quando o fator de recuperação é conhecido como alto, estudos de simulação de reservatórios 3D indicam corretamente ``alto'' em 80\% dos casos).  
+    \item \textbf{Probabilidade atuais}, ou \textit{a priori}, dos possíveis resultados que a variável pode assumir (por exemplo, 30\% de chance do fator de recuperação ser baixo e 70\% de chance de ser alto).  
+    \item \textbf{Estimativas de confiabilidade (verossimilhança)} da eficácia da informação em predizer os resultados (por exemplo, quando o fator de recuperação é conhecido como ``alto'', estudos de simulação de reservatórios 3D indicam corretamente ``alto'' em 80\% dos casos).  
     \item \textbf{Valores de projeto em termos monetários} para cada uma das possíveis combinações de resultados (por exemplo, VPL de +600 milhões de USD se o fator de recuperação for alto e  -100 milhões de USD se for baixo).  
 \end{enumerate}
 
-Embora os valores de projeto possam ser derivados por meio de análise determinística, recomenda-se o uso do Valor Presente Líquido (VPL, do inglês \textit{Net Present Value -- NPV}) esperado, obtido via simulação de Monte Carlo de outras incertezas, devido às complexas inter-relações frequentemente envolvidas. O cálculo do VOI costuma ser representado em árvores de decisão, pois elas trazem clareza ao processo. O procedimento envolve comparar duas árvores:  
+Embora os valores do projeto possam ser derivados por meio de análise determinística, recomenda-se o uso do Valor Presente Líquido (VPL, do inglês \textit{Net Present Value -- NPV}) esperado, obtido via simulação de Monte Carlo de outras incertezas, devido às complexas inter-relações envolvidas. O cálculo do VOI costuma ser representado em árvores de decisão, pois elas trazem clareza ao processo. O procedimento envolve comparar duas árvores de decisão:  
 
 \begin{itemize}
-    \item A primeira árvore representa o valor esperado do projeto com as probabilidades atuais.  
+    \item A primeira árvore representa o valor esperado do projeto com as probabilidades \textit{a priori}.  
     \item A segunda árvore representa o valor esperado do projeto com as probabilidades atualizadas, resultantes da aquisição da informação.  
 \end{itemize}
 
-A diferença entre os dois valores fornece o \textbf{VOI esperado}. Utilizamos o termo \textbf{esperado} em seu sentido matemático estrito — o valor obtido ao aplicar repetidamente a metodologia do VOI em diversas decisões. Antes de detalhar o procedimento de cálculo, consideremos primeiro alguns limites intuitivos do VOI:
+A diferença entre os dois valores fornece o \textbf{VOI esperado}. Utilizamos o termo \textbf{esperado} em seu sentido matemático restrito, ou seja, o valor obtido ao aplicar repetidamente a metodologia do VOI em diversas decisões. Antes de detalhar o procedimento de cálculo, consideremos primeiro alguns limites intuitivos do VOI:
 
 \begin{itemize}
-    \item \textbf{Limite inferior}: Se a informação não altera a decisão, seu valor esperado é zero, independentemente do custo.  
-    \item \textbf{Limite superior}: A informação perfeita (sem erro) fornece o valor máximo possível, denominado \textbf{Valor Esperado da Informação Perfeita} (EVPI). Este limite superior serve como referência: nenhum processo de aquisição de informação pode exceder o EVPI.  
+    \item \underline{Limite inferior}: se a informação não altera a decisão, seu valor esperado é zero, independentemente do custo.  
+    \item \underline{Limite superior}: a informação perfeita fornece o valor máximo possível, denominado \textbf{Valor Esperado da Informação Perfeita} (EVPI). Este limite superior serve como referência: nenhum processo de aquisição de informação pode exceder o EVPI.  
 \end{itemize}
 
 O cálculo do EVPI não depende da existência de métodos perfeitos de aquisição de informação, mas sim de fornecer um \textit{benchmark} para avaliar qualquer processo de coleta de informação. Se o custo do processo excede o EVPI, não há motivo para prosseguir com a proposta. Se o EVPI indicar que vale a pena avançar, procede-se ao cálculo do \textbf{Valor Esperado da Informação Imperfeita} (EVII), que leva em conta a confiabilidade da informação obtida.
@@ -66,7 +66,7 @@ Os principais procedimentos para conduzir um estudo de VOI são descritos a segu
     \item Realizar uma análise de sensibilidade para verificar a robustez da decisão diante de variações nas probabilidades e nos \textit{payoffs}. 
 \end{enumerate}
 
-A parte mais complexa do procedimento anterior é o Passo 2 --- garantir que a formulação da situação de decisão inclua a informação antecipada. Para ilustrar, considere o seguinte exemplo simplificado. Suponha uma decisão binária: realizar uma ação (por exemplo, perfurar um poço) ou não. Denotamos essas alternativas como $D_{1}$ e $D_{2}$, ver Figura~\ref{fig:2.1}.  
+A parte mais complexa do procedimento anterior é o Passo 2 --- garantir que a formulação da situação de decisão inclua a informação antecipada. Para ilustrar, seja o seguinte exemplo simplificado. Suponha uma decisão binária: realizar uma ação (por exemplo, perfurar um poço) ou não. Denotamos essas alternativas como $D_{1}$ e $D_{2}$, ver Figura~\ref{fig:2.1}.  
 
 \begin{figure} [h]
   \begin{center}
@@ -75,7 +75,7 @@ A parte mais complexa do procedimento anterior é o Passo 2 --- garantir que a f
   \end{center}
 \end{figure}
 
-Há um evento incerto $B$ com dois possíveis resultados: $B_{1}$ e $B_{2}$ (por exemplo, o poço é comercial ou não). As probabilidades desses resultados são $P(B_{1})$ e $P(B_{2})$. Se escolhermos $D_{1}$, o valor do projeto é $NPV(B_{1})$ ou $NPV(B_{2})$, dependendo do resultado. Se escolhermos $D_{2}$, assumimos payoff igual a USD 0. Esse caso constitui o \textit{projeto base} (Passo 1). Para incluir a opção de coletar informação adicional, adicionamos uma terceira alternativa $D_{A}$ ao nó inicial da árvore, indicando a decisão de adquirir informação, $A$. Os possíveis resultados dessa informação, $A_{1}$ ou $A_{2}$, são conhecidos por serem dependentes dos resultados de interesse, $B_{1}$ e $B_{2}$. Um exemplo seria um levantamento sísmico 3D, cujos resultados podem ser “Bright Spot” ($A_{1}$) ou “No Bright Spot” ($A_{2}$). Nesse ponto, não conhecemos as probabilidades de $A_{1}$ ou $A_{2}$, mas uma vez conhecidas, retomamos a decisão original. O problema de decisão é então modelado replicando a árvore do projeto base em cada ramo correspondente a $A_{1}$ e $A_{2}$. As probabilidades de $B$, por estarem relacionadas às probabilidades de $A$, são indicadas como probabilidades condicionais. Por exemplo, se o levantamento sísmico ($A_{1}$) indicar “Bright Spot” e decidirmos executar o projeto $D_{1}$, o poço poderá ser comercial com probabilidade $P(\text{Comercial} \mid A_{1})$ ou não comercial com probabilidade $P(\text{Não Comercial} \mid A_{1})$. Dessa forma, a situação de decisão passa a incluir a opção de coletar informação. O próximo passo é calcular as probabilidades necessárias e resolver a árvore normalmente. Supondo que tenhamos dados de confiabilidade sobre a eficácia de “Bright Spots” na previsão de poços comerciais, podemos combiná-los com as probabilidades a priori por meio do processo de \textit{tree-flipping} (inversão da árvore de decisão) que permite combinar probabilidades a priori com informações de confiabilidade, conforme ilustrado na Figura~\ref{fig:2.2}.  
+Há um evento incerto $B$ com dois possíveis resultados: $B_{1}$ e $B_{2}$ (por exemplo, o poço é comercial ou não). As probabilidades desses resultados são $P(B_{1})$ e $P(B_{2})$. Se escolhermos $D_{1}$, o valor do projeto é $NPV(B_{1})$ ou $NPV(B_{2})$, dependendo do resultado. Se escolhermos $D_{2}$, assumimos payoff igual a USD 0. Esse caso constitui o projeto base (Passo 1). Para incluir a opção de coletar informação adicional, adicionamos uma terceira alternativa $D_{A}$ ao nó inicial da árvore de decisão, indicando a decisão de adquirir informação, $A$. Os possíveis resultados dessa informação, $A_{1}$ ou $A_{2}$, são conhecidos por serem dependentes dos resultados de interesse, $B_{1}$ e $B_{2}$. Um exemplo seria um levantamento sísmico 3D, cujos resultados podem ser “Bright Spot” ($A_{1}$) ou “No Bright Spot” ($A_{2}$). Nesse ponto, não conhecemos as probabilidades de $A_{1}$ ou $A_{2}$, mas uma vez conhecidas, retomamos a decisão original. O problema de decisão é então modelado replicando a árvore do projeto base em cada ramo correspondente a $A_{1}$ e $A_{2}$. As probabilidades de $B$, por estarem relacionadas às probabilidades de $A$, são indicadas como probabilidades condicionais. Por exemplo, se o levantamento sísmico ($A_{1}$) indicar “Bright Spot” e decidirmos executar o projeto $D_{1}$, o poço poderá ser comercial com probabilidade $P(\text{Comercial} \mid A_{1})$ ou não comercial com probabilidade $P(\text{Não Comercial} \mid A_{1})$. Dessa forma, a situação de decisão passa a incluir a opção de coletar informação. O próximo passo é calcular as probabilidades necessárias e resolver a árvore normalmente. Supondo que tenhamos dados de confiabilidade sobre a eficácia de “Bright Spots” na previsão de poços comerciais, podemos combiná-los com as probabilidades a priori por meio do processo de \textit{tree-flipping} (inversão da árvore de decisão) que permite combinar probabilidades a priori com informações de confiabilidade, conforme ilustrado na Figura~\ref{fig:2.2}.  
 
 \begin{figure} [h]
   \begin{center}
@@ -103,28 +103,28 @@ Uma questão central na análise de VOI é a origem das probabilidades a priori 
 
 \textbf{Priors:} As distribuições a priori descrevem o estado de conhecimento sobre o evento incerto antes da obtenção de novas informações. Essa interpretação como "grau de crença" é amplamente aceita e permite o uso de qualquer fonte de conhecimento ou experiência relevante. Ser capaz de avaliar corretamente distribuições a priori é uma habilidade essencial para engenheiros e geocientistas.
 
-\textbf{Likelihood:} A função de verossimilhança representa a probabilidade condicional da informação observada, dado o evento de interesse. Na prática, pode estar relacionada à qualidade ou à confiabilidade da informação adquirida (por exemplo, sísmica, perfis, testes de pressão). A construção da verossimilhança envolve considerar tanto a acurácia dos dados quanto o viés de interpretação. Quando disponíveis, dados históricos podem apoiar a estimação dessas probabilidades, embora sejam raramente formalizados. Em muitos casos, utilizam-se bandas de confiabilidade e análises de sensibilidade para avaliar a robustez das decisões.
+\textbf{Likelihood:} A função de verossimilhança representa a probabilidade condicional da informação observada, dado o evento de interesse. Na prática, pode estar relacionada à qualidade ou à confiabilidade da informação adquirida (por exemplo, sísmica, perfis, testes de pressão). A construção da verossimilhança envolve considerar tanto a acurácia dos dados quanto o viés de interpretação. Quando disponíveis, dados históricos podem apoiar a estimativa dessas probabilidades, embora sejam raramente formalizados. Em muitos casos, utilizam-se bandas de confiabilidade e análises de sensibilidade para avaliar a robustez das decisões.
 
 Quatro critérios principais determinam se a aquisição de informação é valiosa em um estudo de VOI (\cite{02}, \cite{03}):
 
 \begin{itemize}
-    \item \textbf{Observável:} Os resultados da coleta de informação devem ser conhecidos antes da decisão.
-    \item \textbf{Relevante:} A informação deve ter o potencial de alterar as crenças sobre a incerteza associada ao problema.
-    \item \textbf{Material:} A informação deve ser capaz de modificar a decisão final.
-    \item \textbf{Econômica:} O valor esperado da informação deve exceder o custo de adquiri-la.
+    \item \textbf{Observável:} os resultados da coleta de informação devem ser conhecidos antes da decisão.
+    \item \textbf{Relevante:} a informação deve ter o potencial de alterar as crenças sobre a incerteza associada ao problema.
+    \item \textbf{Material:} a informação deve ser capaz de modificar a decisão final.
+    \item \textbf{Econômica:} o valor esperado da informação deve exceder o custo de adquiri-la.
 \end{itemize}
 
-O método de VOI garante que esses critérios sejam satisfeitos e pode ser aplicado a decisões de qualquer complexidade. Entretanto, modelos mais sofisticados podem ser necessários quando múltiplas incertezas ou distribuições contínuas estão envolvidas.
+O método de VOI garante que esses critérios sejam satisfeitos e pode ser aplicado nas decisões com diferentes níveis de complexidade. Entretanto, modelos mais sofisticados podem ser necessários quando múltiplas incertezas ou distribuições contínuas estão envolvidas.
 
 \subsection{VOI e o Problema TALL-N}
 
-O VOI é definido como o valor máximo que o tomador de decisão deveria pagar por informação adicional relevante. Sob a hipótese de neutralidade ao risco, o VOI é dado por \cite{03}:
+O VOI é definido como o valor máximo que o tomador de decisão deveria pagar pela informação adicional relevante. Sob a hipótese de neutralidade ao risco, o VOI é dado por \cite{03}:
 \begin{equation}
 VOI = \mathbb{E}[\text{valor com informação}] - \mathbb{E}[\text{valor sem informação}].
 \label{eq:2-6}
 \end{equation}
 
-Se a informação adicional for perfeita, essa quantidade é denominada \textbf{Valor da Informação Perfeita} (VOPI) que representa o limite superior de qualquer atividade de coleta de informação. Conforme a terminologia usada na subseção (2.1.1) temos EVPI (Valor Esperado da Informação Perfeita) ou EVII (Valor Esperado da Informação Imperfeita). O valor esperado com informação só pode ser maior do que o valor sem informação se a decisão puder ser alterada em função da informação revelada. Caso o tomador de decisão adote a mesma ação independentemente do resultado do teste, então $VOI = 0$, tornando a coleta de informação inútil para o problema decisório.
+Se a informação adicional for perfeita, essa quantidade é denominada \textbf{Valor da Informação Perfeita} (VOPI) que representa o limite superior de qualquer atividade de coleta de informação. Conforme a terminologia usada na subseção (2.1.1) temos EVPI (Valor Esperado da Informação Perfeita) ou EVII (Valor Esperado da Informação Imperfeita). O valor esperado com informação só pode ser maior do que o valor sem informação se a decisão puder ser alterada em função da informação revelada. Caso o tomador de decisão adote a mesma ação, independentemente do resultado do teste, então $VOI = 0$, tornando a coleta de informação inútil para o problema decisório.
 
 Um problema interessante na análise do VOI é o \textbf{problema TALL-N} (\textit{Two-Action Linear-Loss with Normal priors}) que considera um tomador de decisão diante de duas alternativas:
 \begin{itemize}
@@ -199,7 +199,7 @@ O valor do EVII é sempre limitado superiormente pelo EVPI, aproximando-se dele 
 \lim_{c \to \infty} RVOI^{*}_{\rho} = \rho^2,
 \label{eq:2-14}
 \end{equation}
-onde o sobrescrito $^{*}$ indica que este é o valor máximo do RVOI para um determinado $c$. Assim, define-se o \textit{Relative Value of Information} (RVOI) como a razão entre EVII e EVPI:
+onde o sobrescrito $^{*}$ indica que este é o valor máximo do RVOI (\textit{Relative Value of Information}) para um determinado $c$. RVOI é definido como a razão entre EVII e EVPI:
 \begin{equation}
 RVOI_{\rho}^{*} = \frac{EVII}{EVPI} = \rho^2.
 \label{eq:2-15}
@@ -228,7 +228,7 @@ EVII = \eta^2\cdot EVPI
 \label{eq:2-17}
 \end{equation}
 
-Abordaremos essa relação na subseção seguinte, antes, vamos analisar o RVOI no caso geral para o problema TALL-N, razão entre as Equações~\eqref{eq:2-12} e \eqref{eq:2-10}, que é dado por \cite{04}:
+Abordaremos a Equação~\eqref{eq:2-17} na subseção seguinte, antes, vamos analisar o RVOI no caso geral para o problema TALL-N, razão entre as Equações~\eqref{eq:2-12} e \eqref{eq:2-10}, que é dado por \cite{04}:
 \begin{equation}
 \frac{EVII}{EVPI} =
 \begin{cases}
@@ -266,7 +266,7 @@ Na prática, o cálculo exato de $\eta^{2}$ pode ser complexo, pois depende tant
 
 Com base no exposto até aqui, podemos considerar que o VOI é equivalente ao EVII, o qual deve ser uma função de $\eta^2$ e do EVPI, conforme estabelecido na Equação~\eqref{eq:2-17}. Dessa forma, é possível obter o gráfico do VOI em função de $\eta^2$ para diferentes valores de $\mu$ (média da variável aleatória): \textbf{i)}~$\mu < v$, a escolha ótima do tomador de decisão é $a_{0}$ (alternativa segura, com \textit{payoff} constante $v$); \textbf{ii)}~$\mu > v$, a escolha ótima é $a_{1}$ (alternativa arriscada, com payoff incerto); \textbf{iii)}~$\mu = v$, o tomador de decisão encontra-se indiferente entre as duas alternativas. Vale ressaltar que o valor esperado do tomador de decisão sem informação adicional é dado por $\max(v, \mu)$, conforme Equação~\eqref{eq:2-7} .
 
-A Figura~\ref{fig:2.6} apresenta a relação entre VOI e $\eta^2$, ilustrando o como o valor da informação depende da redução esperada da variância da variável de interesse em cada um dos cenários decisórios.
+A Figura~\ref{fig:2.6} apresenta a relação entre VOI e $\eta^2$, ilustrando como o valor da informação depende da redução esperada da variância da variável de interesse em cada um dos cenários decisórios.
 
 \begin{figure} [h]
   \begin{center}
@@ -352,7 +352,7 @@ e portanto:
 \rho^2.
 \label{eq:eta2-rho2}
 \end{equation}
-Logo, no caso normal bivariado, a medidade de aprendizagem é igual ao quadrado da correlação entre a variável verdadeira $X$ e a informação adquirida $S$.  Essa relação é intuitiva: quanto mais correlacionada a informação $S$ estiver com o estado verdadeiro $X$, maior será a fração da variância total explicada, e consequentemente, maior o valor potencial da informação.
+Logo, no caso normal bivariado, a medidade de aprendizagem é igual ao quadrado da correlação entre a variável $X$ e a informação adquirida $S$.  Essa relação é intuitiva: quanto mais correlacionada a informação $S$ estiver com o estado $X$, maior será a fração da variância total explicada, e consequentemente, maior o valor potencial da informação.
 
 No modelo TALL-N, analisado na subseção anterior e amplamente utilizado em análise de decisão sob incerteza, a variável de interesse $X$ segue uma distribuição normal a priori:
 
@@ -376,7 +376,7 @@ Nesse contexto, o fator de transferência de valor é dado por:
 \frac{\sigma_0^2}{\sigma_0^2 + \sigma_\varepsilon^2},
 \label{eq:eta2-talln}
 \end{equation}
-onde $\sigma_0^2$ é a incerteza inicial (a priori), $\sigma_\varepsilon^2$ é a incerteza da medição (ruído), portanto $\eta^2$ mede quanto da incerteza inicial é resolvida pela informação $S$. Temos também que a correlação linear entre o valor verdadeiro $X$ e a informação observada $S$ é:
+onde $\sigma_0^2$ é a incerteza inicial (a priori) e $\sigma_\varepsilon^2$ é a incerteza da medição (ruído). Sendo assim, $\eta^2$ mede quanto da incerteza inicial é resolvida pela informação $S$. Temos também que a correlação linear entre o valor de $X$ e a informação observada $S$ é:
 
 \begin{equation}
 \rho = 
@@ -391,7 +391,7 @@ Assim, das Equações \eqref{eq:eta2-talln} e \eqref{eq:rho-talln}, obtemos a re
 \label{eq:eta2-equals-rho2}
 \end{equation}
 
-Portanto, no contexto do modelo TALL-N, a qualidade da informação é determinada pela correlação entre o valor verdadeiro $X$ e a informação adquirida $S$. Quanto maior $\rho$, maior é $\eta^2$ e, consequentemente, maior é o Valor da Informação.
+Portanto, no contexto do modelo TALL-N, a qualidade da informação é determinada pela correlação entre o valor de $X$ e a informação adquirida $S$. Quanto maior $\rho$, maior é $\eta^2$ e, consequentemente, maior é o Valor da Informação.
 
 A Figura~\ref{fig:eta2_empirical} apresenta o resultado de uma simulação empírica comparando o valor teórico e o valor estimado de $\eta^2(X|S)$ para diferentes níveis de correlação $\rho$. Foram geradas amostras bivariadas normais com correlação controlada e calculado, para cada valor de $\rho$, a fração da variância total de $X$ explicada por $S$, utilizando a definição da Equação~\ref{eq:eta2-def}: 
 \begin{itemize}
@@ -421,15 +421,15 @@ A Figura~\ref{fig:var_decomp} ilustra graficamente a decomposição da variânci
   \item A curva azul representa a variância residual, proporcional a $(1 - \rho^2)$.
   \item A linha vermelha tracejada indica a variância total normalizada ($\mathrm{Var}[X] = 1$).
 \end{itemize}
-À medida que a correlação $\rho$ aumenta, a fração de variância explicada (curva verde) cresce, enquanto a variância residual (curva azul) diminui. Quando $\rho = 0$, toda a incerteza permanece; quando $\rho = 1$, toda a incerteza é eliminada. Essa decomposição ilustra de maneira clara a essência do fator $\eta^2$, representando a proporção da incerteza inicial que é resolvida pela informação disponível.
+À medida que a correlação $\rho$ aumenta, a fração de variância explicada (curva verde) cresce, enquanto a variância residual (curva azul) diminui. Quando $\rho = 0$, toda a incerteza permanece; quando $\rho = 1$, toda a incerteza é eliminada. Essa decomposição ilustra de maneira clara a essência da medida de aprendizagem $\eta^2$, representando a proporção da incerteza inicial que é resolvida pela informação adquirida.
 
 
 
 \subsection{Valor da Informação Sequencial}
 
-A exploração e produção de petróleo envolvem elevados níveis de incerteza geológica, operacional e econômica. Decisões inadequadas na fase de delimitação (\textit{appraisal}) podem levar a investimentos em poços de alto custo com baixo retorno, ou ainda à subexploração de reservas economicamente viáveis. Nesse contexto, o Valor da Informação, conforme visto na seção anterior, surge como uma ferramenta quantitativa essencial para avaliar se a aquisição de novos dados, por meio de poços de avaliação, testes de formação ou métodos geofísicos adicionais, justifica o investimento em função do impacto que tais informações podem ter sobre decisões futuras.
+Conforme é sabido, a exploração de petróleo envolve elevados níveis de incerteza geológica, operacional e econômica. Decisões inadequadas na fase de delimitação (\textit{appraisal}) podem levar a investimentos em poços de alto custo com baixo retorno, ou ainda à subexploração de reservas economicamente viáveis. Nesse contexto, o Valor da Informação, conforme visto na seção anterior, surge como uma ferramenta quantitativa essencial para avaliar se a aquisição de novos dados, por meio de poços de avaliação, testes de formação ou métodos geofísicos adicionais, justifica o investimento em função do impacto que tais informações podem ter sobre decisões futuras.
 
-O \textbf{Valor da Informação Sequencial} (VOSI,  \textit{Value of Sequential Information}) expande o conceito clássico de VOI ao considerar que a informação é adquirida em diferentes estágios, e que as decisões subsequentes podem ser ajustadas de acordo com os resultados parciais já observados. Diferentemente de um VOI estático, que assume um único ponto de coleta de dados antes da decisão final, o VOSI modela um processo dinâmico, no qual o tomador de decisão pode:
+O \textbf{Valor da Informação Sequencial} (VOSI,  \textit{Value of Sequential Information}) expande o conceito clássico de VOI ao considerar que a informação é adquirida em diferentes estágios, e que as decisões subsequentes podem ser ajustadas de acordo com os resultados parciais observados. Diferentemente de um VOI estático, que assume um único ponto de coleta de dados antes da decisão final, o VOSI modela um processo dinâmico, no qual o tomador de decisão pode:
 \begin{itemize}
     \item[\textbullet] optar por perfurar um poço adicional se os resultados iniciais forem promissores;
     \item[\textbullet] redirecionar o programa de avaliação caso os dados revelem incertezas críticas não previstas;
@@ -440,14 +440,14 @@ Essa flexibilidade gera valor adicional, pois permite incorporar \textbf{aprendi
     VOI = \mathbb{E}[X\mid S] - \mathbb{E}[X],
     \label{eq:2-21}
 \end{equation}
-onde $\mathbb{E}[X\mid S]$ representa o valor esperado do projeto com informação adicional~$S$, isto é, o valor esperado posterior e, $\mathbb{E}[X]$, represente o valor esperado sem informação, ou seja, valor esperado a priori, que para um problema de decisão, pode ser obtido com \cite{09}:
+onde $\mathbb{E}[X\mid S]$ representa o valor esperado do projeto com informação adicional~$S$, ou seja, o valor esperado posterior e, $\mathbb{E}[X]$, representa o valor esperado sem informação, isto é, o valor esperado a priori, que para um problema de decisão, pode ser obtido com \cite{09}:
 \begin{equation}
     \mathbb{E}[X] = \sum_{i=1}^{n} \max_{a_i \in A_i} \left\{ \mathbb{E} \big[ v(x_i,a_i) \big] \right\},
     \label{eq:2-22}
 \end{equation}
 onde $x_i$ representa os estados da natureza, $a_i \in A_i$ as alternativas disponíveis e $v(x_i,a_i)$ o valor associado à decisão $a_i$ sob o estado $x_i$.
 
-Por razões didáticas, vejamos um exemplo retirado de \cite{09}: considere a perfuração de dois poços $S_1$ e $S_2$. Suponha que o tomador de decisão opte pela aquisição da primeira perfuração $S_1$, com a possibilidade de posteriormente realizar também a perfuração $S_2$. Para alguns resultados obtidos a partir da perfuração do poço $S_1$, o decisor pode não considerar necessária a realização da segunda perfuração. Para outros resultados, ele ou ela pode, de fato, optar por realizar a perfuração do poço $S_2$. Assim, o valor de um esquema de perfuração sequencial não pode ser inferior ao valor obtido ao realizar ambas as perfurações de uma só vez, isto é, uma estratégia estática de perfuração. Um decisor neutro ao risco pode determinar a melhor sequência de perfuração ao maximizar o valor esperado. No caso de dois poços, o tomador de decisão possui as seguintes quatro alternativas: 
+Por razões didáticas, vejamos um exemplo retirado de \cite{09}: considere a perfuração de dois poços $S_1$ e $S_2$. Suponha que o tomador de decisão opte pela aquisição da primeira perfuração $S_1$, com a possibilidade de posteriormente realizar também a perfuração $S_2$. Para alguns resultados obtidos a partir da perfuração do poço $S_1$, o decisor pode não considerar necessária a realização da segunda perfuração. Para outros resultados, ele ou ela pode, de fato, optar por realizar a perfuração do poço $S_2$. Assim, o valor de um esquema de perfuração sequencial não pode ser inferior ao valor obtido ao realizar ambas as perfurações de uma só vez, isto é, uma estratégia estática de perfuração. Um decisor neutro ao risco pode determinar a melhor sequência de perfuração ao maximizar o valor esperado. No caso de dois poços, o tomador de decisão possui as seguintes alternativas: 
 
 \begin{enumerate}
     \item[\textbullet] perfurar apenas o poço $S_1$ e encerrar o programa;
@@ -534,7 +534,7 @@ Na delimitação de campos de petróleo, os custos de perfuração e aquisição
     \item[\textbullet] Integrar incertezas múltiplas (volume, qualidade do reservatório, custos de operação e preço do petróleo) em uma estrutura unificada de apoio à decisão.
 \end{enumerate}
 
-O uso do VOSI fortalece o processo decisório em três dimensões principais. Na dimensão econômica, contribui para a maximização do VPL esperado do campo, ao considerar diferentes caminhos de informação. Na dimensão operacional, permite um planejamento mais eficiente da alocação de recursos de perfuração e aquisição de dados. Por fim, na dimensão estratégica, aumenta a robustez das decisões, possibilitando que as companhias mantenham flexibilidade diante da incerteza e ajustem os planos de desenvolvimento conforme novos dados surgem. Dessa forma, a aplicação do VOSI na delimitação de campos de petróleo não apenas reduz a probabilidade de erros críticos, mas também aumenta a chance de capturar valor em longo prazo, equilibrando risco, custo e aprendizado.
+O uso do VOSI fortalece o processo decisório em três dimensões principais. Na dimensão econômica, contribui para a maximização do VPL esperado do campo, ao considerar diferentes caminhos de informação. Na dimensão operacional, permite um planejamento mais eficiente na alocação de recursos de perfuração e aquisição de dados. Por fim, na dimensão estratégica, aumenta a robustez das decisões, possibilitando que as companhias mantenham flexibilidade diante da incerteza e ajustem os planos de desenvolvimento conforme novos dados são adquiridos. Dessa forma, a aplicação do VOSI na delimitação de campos de petróleo não apenas reduz a probabilidade de erros críticos, mas também aumenta a chance de capturar valor no longo prazo, equilibrando risco, custo e aprendizado.
 
 Se nenhuma informação geológica for obtida após a perfuração de cada poço, as distribuições das propriedades geológicas da região de perfuração permanecem inalteradas, assim como o valor esperado de cada poço. Nesse caso, apenas os poços com valor esperado positivo a priori serão perfurados, e a sequência de perfuração deixa de ter importância. Ao conhecer as propriedades geológicas de uma determinada área, as distribuições geológicas das demais regiões são atualizadas, o que pode modificar seus respectivos valores esperados. Alguns poços podem ter seu valor esperado alterado de negativo para positivo (ou vice-versa). Selecionar o próximo poço a ser perfurado com base nesses valores esperados atualizados adiciona valor ao processo de decisão da campanha de perfuração. Nesse contexto, conforme já discutido anteriormente, a informação somente tem valor se contribuir para a escolha do próximo poço ou para a decisão de interromper a campanha de perfuração. Para gerar valor, a informação precisa estar disponível antes da decisão (ser observável), deve ser relevante para o problema em questão e deve possuir a capacidade de alterar a decisão de acordo com seu conteúdo (ser material), conforme discutido em \cite{01} e \cite{03}.
 
@@ -613,9 +613,9 @@ Existe, portanto, um grande potencial em extrair percepções decisórias e agre
 
 \section{Valor da Flexibilidade}
 
-A flexibilidade em projetos de E\&P pode ser entendida como a capacidade de ajustar decisões à medida que novas informações surgem ou que incertezas se resolvem ao longo do tempo. Esse conceito está intimamente ligado à teoria das Opções Reais, na qual o gestor preserva o direito, mas não a obrigação, de modificar o curso de ação de acordo com as condições futuras. Assim, o \textbf{Valor da Flexibilidade} (VoF) corresponde ao benefício econômico de manter abertas alternativas de decisão diante da incerteza.
+A flexibilidade em projetos de E\&P pode ser entendida como a capacidade de ajustar decisões à medida que novas informações surgem ou que incertezas se resolvem ao longo do tempo. Esse conceito está intimamente ligado à teoria das Opções Reais, na qual o gestor preserva o direito, mas não a obrigação, de modificar o curso de ação de acordo com as condições futuras. Assim, o \textbf{Valor da Flexibilidade} (VoF) corresponde ao benefício econômico de manter abertas as alternativas de decisão diante das incertezas.
 
-Antes de decidir pela aquisição de informação é importante avaliar o valor da flexibilidade, ou seja, a capacidade de responder adequadamente às incertezas à medida que elas são resolvidas. A análise do VoF, análoga ao VOI, tem como objetivo determinar se o benefício esperado da flexibilidade supera seu custo. De forma geral, a flexibilidade pode gerar valor em quatro circunstâncias \cite{16}:
+Antes de decidir pela aquisição de informação é importante avaliar o valor da flexibilidade, ou seja, a capacidade de responder adequadamente às incertezas à medida que elas são resolvidas. A análise do VoF, análoga ao VOI, tem como objetivo determinar se o benefício esperado da flexibilidade supera seu custo. De forma geral, a flexibilidade pode gerar valor nas seguintes circunstâncias \cite{16}:
 \begin{enumerate}[label=\textbf{\roman*)}]
     \item Quando não é possível adquirir informação para reduzir a incerteza;
     \item Quando é mais barata do que obter informação;
@@ -660,11 +660,11 @@ Quando aplicados por meio de técnicas usuais de árvores de decisão e simulaç
 
 \section{Incertezas Técnicas}
 
-A \textbf{incerteza geológica}, também chamada de \textbf{incerteza técnica}, refere-se à falta de conhecimento completo sobre as características físicas da subsuperfície, como estrutura, propriedades petrofísicas, continuidade dos reservatórios, contatos de fluidos e permeabilidade. Essa incerteza decorre do fato de que os volumes rochosos não podem ser observados diretamente, sendo inferidos a partir de dados limitados, como perfis de poço, sísmica e amostras de testemunhos. Na indústria de petróleo e gás, essa incerteza é uma das principais fontes de variabilidade técnica, pois influencia diretamente nas estimativas de volume recuperável, curvas de produção, desempenho de poços e viabilidade econômica de projetos. Por isso, é comum utilizar o termo incerteza técnica para distingui-la de outras formas de incerteza, como as incertezas de mercado (preço do petróleo, custos, taxas de câmbio) e políticas (regulação, tributos, licenciamento).
+A \textbf{incerteza geológica}, também chamada de \textbf{incerteza técnica}, refere-se à falta de conhecimento completo sobre as características físicas da subsuperfície, como estrutura das camadas, propriedades petrofísicas, continuidade dos reservatórios, contatos de fluidos e permeabilidade. Essa incerteza decorre do fato de que os volumes rochosos não podem ser observados diretamente, sendo inferidos a partir de dados limitados, como perfis de poço, sísmica e amostras de testemunhos. Na indústria de petróleo e gás, essa incerteza é uma das principais fontes de variabilidade técnica, pois influencia diretamente nas estimativas de volume recuperável, curvas de produção, desempenho de poços e viabilidade econômica dos projetos. Por isso, é comum utilizar o termo incerteza técnica para distingui-la de outras formas de incerteza, como as incertezas de mercado (preço do petróleo, custos, taxas de câmbio) e incertezas políticas (regulação, tributos, licenciamento).
 
-A incerteza geológica é usualmente representada por modelos geológicos alternativos ou realizações estocásticas, geradas por métodos geoestatísticos que reproduzem a variabilidade espacial das propriedades do reservatório. Cada realização representa uma possível configuração do reservatório, permitindo avaliar a sensibilidade das decisões de engenharia, como posicionamento de poços e estratégias de injeção, frente à variabilidade geológica. Sendo assim, compreender e quantificar a incerteza geológica é essencial para a tomada de decisão sob incerteza, o planejamento robusto e uma avaliação econômica realista dos projetos de E\&P.
+A incerteza geológica é usualmente representada por modelos geológicos alternativos ou realizações estocásticas, geradas por métodos geoestatísticos que reproduzem a variabilidade espacial das propriedades do reservatório. Cada realização representa uma possível configuração do reservatório, permitindo avaliar a sensibilidade das decisões de engenharia, como posicionamento de poços e estratégias de injeção, frente à variabilidade geológica. Sendo assim, compreender e quantificar a incerteza geológica é essencial para a tomada de decisão sob incerteza, um planejamento robusto e uma avaliação econômica realista dos projetos de E\&P.
 
-Neste projeto de tese, o \textbf{modelo Egg} será empregado nas simulações preliminares para incorporar a incerteza geológica nos perfis de produção, conforme ilustrado na Figura~\ref{fig:2.18}. O modelo Egg é um \textit{benchmark} sintético utilizado em estudos de simulação de reservatórios, introduzido originalmente por \cite{17} e posteriormente padronizado por \cite{18}. O modelo é composto por $25.200$ células, das quais $18.533$ estão ativas, formando um reservatório com formato de “ovo” (\textit{egg-shaped}) após a exclusão das células inativas. Cada bloco possui dimensões de 8m~x~8m~x~4m, resultando em um reservatório de aproximadamente 480m~x~480m~x~28m, discretizado em sete camadas verticais. A configuração padrão inclui oito poços injetores e quatro produtores verticais e totalmente penetrantes.
+Nessa proposta de tese, o \textbf{modelo Egg} será utilizado nas simulações preliminares para incorporar a incerteza geológica nos perfis de produção, conforme ilustrado na Figura~\ref{fig:2.18}. O modelo Egg é um \textit{benchmark} sintético utilizado em estudos de simulação de reservatórios, introduzido originalmente por \cite{17} e posteriormente padronizado por \cite{18}. O modelo é composto por $25.200$ células, das quais $18.533$ estão ativas, formando um reservatório com formato de “ovo” (\textit{egg-shaped}) após a exclusão das células inativas. Cada bloco possui dimensões de 8m~x~8m~x~4m, resultando em um reservatório de aproximadamente 480m~x~480m~x~28m, discretizado em sete camadas verticais. A configuração padrão inclui oito poços injetores e quatro produtores verticais e totalmente penetrantes.
 \begin{figure} [H]
   \begin{center}
     \includegraphics[height=243pt,width=400pt]{images/3D_egg_model.png}
@@ -676,7 +676,7 @@ Neste projeto de tese, o \textbf{modelo Egg} será empregado nas simulações pr
 A arquitetura do reservatório apresenta canais sinuosos de alta permeabilidade, embutidos em uma matriz de baixa permeabilidade, representando a complexidade geológica típica de ambientes deposicionais fluviais. As sete camadas exibem forte correlação vertical, tornando o campo de permeabilidade praticamente bidimensional. O modelo não possui aquífero nem capa de gás, resultando em produção primária desprezível e tornando a injeção de água o principal mecanismo de recuperação. A Tabela~\ref{tab:2.1} apresenta as propriedades gerais para o modelo Egg.
 \input{tables/table_2.1}
 
-O conjunto padrão do modelo Egg consiste em 101 realizações equiprováveis de permeabilidade, uma determinística e cem estocásticas, geradas no intuito de imitar padrões meandrantes de rios. Cada realização representa uma estrutura fluvial distinta, permitindo avaliar algoritmos sob incerteza geológica. Por isso, o modelo Egg é amplamente utilizado como base de testes para métodos de otimização de produção, ajuste histórico e gestão de reservatórios em malha fechada. Como a camada superior contém $3.60$0 blocos de grade, dos quais $2.491$ são ativos, o número de possíveis localizações de poços produtores é igual a $2.491$. As diferentes realizações de permeabilidade exibem padrões distintos de canais, com variações de sinuosidade e orientação, fornecendo um campo de incerteza representativo. A Figura~\ref{fig:2.19} ilustra a distribuição espacial da permeabilidade na camada superior para 25 realizações do modelo Egg. Essas realizações foram selecionadas aleatoriamente a partir do conjunto original de 101 realizações.
+O conjunto padrão do modelo Egg consiste em 101 realizações equiprováveis de permeabilidade, uma determinística e cem estocásticas, geradas no intuito de imitar padrões meandrantes de rios. Cada realização representa uma estrutura fluvial distinta, permitindo avaliar algoritmos sob incerteza geológica. Por isso, o modelo Egg é amplamente utilizado como base de testes para métodos de otimização de produção, ajuste histórico e gestão de reservatórios em malha fechada. Como a camada superior contém $3.60$0 blocos de grade, dos quais $2.491$ são ativos, o número de possíveis localizações dos poços produtores é igual a $2.491$. As diferentes realizações de permeabilidade exibem padrões distintos de canais, com variações de sinuosidade e orientação, fornecendo um campo de incerteza representativo. A Figura~\ref{fig:2.19} ilustra a distribuição espacial da permeabilidade na camada superior para 25 realizações do modelo Egg. Essas realizações foram selecionadas aleatoriamente a partir do conjunto original de 101 realizações.
 \begin{figure} [H]
   \begin{center}
     \includegraphics[height=350pt,width=360pt]{images/25_realizations.png}
@@ -684,7 +684,7 @@ O conjunto padrão do modelo Egg consiste em 101 realizações equiprováveis de
     \label{fig:2.19}
   \end{center}
 \end{figure}
-Detalhes das propriedades de geologia, fluido e operacional estão sumarizadas na Tabela \ref{tab:2.2}. Notadamente, o modelo de Corey é adotado para o cálculo das permeabilidades relativas do óleo e da água, com expoentes de Corey e valores limites específicos listados conforme indicado \cite{18}.
+Detalhes das propriedades de geologia, fluido e operacional para o modelo Egg estão sumarizadas na Tabela \ref{tab:2.2}. Notadamente, o modelo de Corey é adotado para o cálculo das permeabilidades relativas do óleo e da água, com expoentes de Corey e valores limites específicos listados conforme indicado em \cite{18}.
 \input{tables/table_2.2}
 
 Os perfis de produção de óleo e água da versão determinística (modelo de referência), ao longo de um período de simulação de $3.600$ dias ($10$ anos), são apresentados na Figura~\ref{fig:2.20}.
@@ -700,13 +700,13 @@ Durante a fase inicial de produção, não é observada produção de água, poi
 
 \section{Incertezas do Mercado}
 
-Na seção anterior, foi discutida a incerteza técnica, associada à caracterização do modelo geológico e às limitações inerentes à representação do reservatório. Nesta seção, o foco recai sobre as incertezas de natureza econômica, com ênfase nas variáveis de mercado que influenciam diretamente o desempenho financeiro dos projetos de exploração e produção.
+Na seção anterior, foi discutida a incerteza técnica, associada à caracterização do modelo geológico e às limitações inerentes à representação do reservatório. Nesta seção, o foco recai sobre as incertezas de natureza econômica, com ênfase nas variáveis de mercado que influenciam diretamente o desempenho financeiro dos projetos de E\&P.
 
-Entre as principais incertezas de mercado, nesse estudo vamos considerar duas fontes: o \textbf{custo operacional variável} e o \textbf{preço do petróleo}, ambas com papel determinante na avaliação econômica de projetos na indústria de petróleo. A volatilidade dessas variáveis impacta de forma significativa a atratividade e o risco dos investimentos, tornando essencial a utilização de modelos estocásticos capazes de representar adequadamente sua dinâmica temporal e a incerteza inerente ao processo decisório. O custo operacional variável ($C_t$), responsável por refletir os gastos anuais de operação e manutenção do sistema de produção, e o preço do petróleo ($P_t$) representa a receita obtida pela comercialização do produto no mercado internacional. A dinâmica do custo operacional é modelada a partir de um \textbf{Movimento Geométrico Browniano} (MGB), enquanto o preço do petróleo será descrito pelo \textbf{modelo de dois fatores de Schwartz e Smith}, amplamente utilizado na literatura para representar a evolução estocástica dos preços de commodities.
+Entre as principais incertezas de mercado, nesse estudo vamos considerar duas fontes: o \textbf{custo operacional variável} e o \textbf{preço do petróleo}, ambas com papel determinante na avaliação econômica de projetos na indústria de petróleo. A volatilidade dessas variáveis impacta de forma significativa a atratividade e o risco dos investimentos, tornando essencial a utilização de modelos estocásticos capazes de representar adequadamente sua dinâmica temporal e a incerteza inerente ao processo decisório. O custo operacional variável ($C_t$) é responsável por refletir os gastos anuais de operação e manutenção do sistema de produção já o preço do petróleo ($P_t$) representa a receita obtida pela comercialização do produto no mercado internacional. A dinâmica do custo operacional será modelada a partir de um \textbf{Movimento Geométrico Browniano} (MGB), enquanto o preço do petróleo será descrito pelo \textbf{modelo de dois fatores de Schwartz e Smith}, amplamente utilizado na literatura para representar a evolução estocástica dos preços de commodities.
 
 \subsection{Modelagem do Custo Operacional}
 
-O MGB é amplamente empregado na literatura financeira e em estudos de avaliação de projetos para representar a evolução temporal de variáveis econômicas sujeitas à incerteza, devido à sua simplicidade e robustez. O MGB permite capturar tanto a tendência média de crescimento ou decaimento de uma variável quanto sua dispersão ao longo do tempo, com um número reduzido de parâmetros. Matematicamente, um processo estocástico $C(t)$ é dito seguir um MGB se satisfaz a seguinte equação diferencial estocástica:
+O MGB é amplamente empregado na literatura financeira e em estudos de avaliação de projetos devido à sua simplicidade e robustez. O MGB permite capturar tanto a tendência média de crescimento ou decaimento de uma variável quanto sua dispersão ao longo do tempo, com um número reduzido de parâmetros. Matematicamente, um processo estocástico $C(t)$ é dito seguir um MGB se satisfaz a seguinte equação diferencial estocástica:
 \begin{equation}
 dC(t) = \alpha C(t)\,dt + \sigma C(t)\,dB(t),
 \label{eq:2-41}
@@ -730,7 +730,7 @@ A Figura~\ref{fig:2.21} ilustra o comportamento do custo operacional variável a
 
 \subsection{Modelagem do Preço do Petróleo}
 
-A incerteza nos preços do petróleo é uma fonte fundamental de risco na avaliação econômica de projetos de exploração e produção. Modelos determinísticos tradicionais, modelos estocásticos de fator único e até mesmo, o amplamente utilizado MGB, frequentemente, não conseguem capturar toda a riqueza e complexidade do comportamento do preço real do petróleo, caracterizado por flutuações de curto prazo e tendências estruturais de longo prazo. Para representar melhor essas dinâmicas, emprega-se o modelo de dois fatores introduzido por \cite{20}, que decompõe o logaritmo do preço do petróleo em componentes de curto e longo prazo.
+A incerteza nos preços do petróleo é uma fonte fundamental de risco na avaliação econômica de projetos de E\&P. Modelos determinísticos tradicionais, modelos estocásticos de fator único e até mesmo, o amplamente utilizado MGB, frequentemente, não conseguem capturar toda a riqueza e complexidade do comportamento do preço real do petróleo, caracterizado por flutuações de curto prazo e tendências estruturais de longo prazo. Para representar melhor essas dinâmicas, temos o modelo de dois fatores introduzido por \cite{20}, que decompõe o logaritmo do preço do petróleo em componentes de curto e longo prazo.
 
 No modelo de dois fatores de Schwartz e Smith \cite{20}, o componente de equilíbrio de longo prazo, denotado por $\xi_t$, é modelado como um MGB. Esse fator representa a tendência persistente para a qual os preços do petróleo convergem, capturando fatores estruturais como inovação tecnológica, esgotamento das reservas, inflação e evolução das expectativas de mercado. O componente de curto prazo, denotado por $\chi_t$, é modelado como um processo de Ornstein–Uhlenbeck com reversão à média, refletindo desvios temporários do equilíbrio causados por choques de mercado, eventos geopolíticos e desequilíbrios entre oferta e demanda. Sob a medida neutra ao risco, as dinâmicas do modelo de dois fatores são descritas pelo seguinte sistema de equações diferenciais estocásticas:
 
@@ -765,7 +765,7 @@ P_t = \exp(\chi_t + \xi_t).
 \label{eq:2-45}
 \end{equation}
 
-Para implementação numérica, as Equações diferenciais estocásticas contínuas \eqref{eq:2-42} e \eqref{eq:2-43} são discretizadas da seguinte forma (\cite{21}, \cite{22}):
+Para implementação numérica, as equações diferenciais estocásticas contínuas \eqref{eq:2-42} e \eqref{eq:2-43} são discretizadas da seguinte forma (\cite{21}, \cite{22}):
 
 \begin{equation}
 \chi_{t+1} = \chi_t e^{-\kappa \Delta t} - (1 - e^{-\kappa \Delta t}) \frac{\lambda_\chi}{\kappa} + 
@@ -786,9 +786,9 @@ onde $\rho_{\chi\xi}$ representa o coeficiente de correlação entre os dois pro
 
 Esse modelo permite capturar simultaneamente as volatilidades de curto prazo e as tendências de longo prazo observadas na dinâmica dos preços do petróleo. Ao adotar o modelo de dois fatores, a análise reproduz de forma mais precisa o comportamento estocástico dos preços históricos do petróleo, resultando em uma avaliação mais robusta para projetos de investimento em óleo e gás.
 
-O modelo de preço do petróleo é caracterizado por sete parâmetros $(\kappa, \sigma_\xi, \sigma_\chi, \mu_\xi, \lambda_\chi, \lambda_\xi, \rho_{\chi\xi})$, além dos estados iniciais $\xi_0$ e $\chi_0$, que precisam ser estimados. Como esses parâmetros não são diretamente observáveis nos mercados de commodities, adota-se o procedimento de calibração proposto por \cite{24}, que utiliza o filtro de Kalman em conjunto com o método de máxima verossimilhança. O filtro de Kalman fornece estimativas recursivas dos parâmetros não observados ao gerar uma distribuição condicional posterior, considerando uma série temporal de preços à vista e futuros e a matriz de covariância de medição correspondente.
+O modelo de preço do petróleo, conforme descrito acima, é caracterizado por sete parâmetros $(\kappa, \sigma_\xi, \sigma_\chi, \mu_\xi, \lambda_\chi, \lambda_\xi, \rho_{\chi\xi})$, além dos estados iniciais $\xi_0$ e $\chi_0$, que precisam ser estimados. Como esses parâmetros não são diretamente observáveis nos mercados de commodities, adota-se o procedimento de calibração proposto por \cite{24}, que utiliza o filtro de Kalman em conjunto com o método de máxima verossimilhança. O filtro de Kalman fornece estimativas recursivas dos parâmetros não observados ao gerar uma distribuição condicional posterior, considerando uma série temporal de preços à vista e futuros e a matriz de covariância de medição correspondente.
 
-Para a calibração foram utilizados os preços médios anuais dos contratos futuros de petróleo Brent no período de 3 de janeiro de 2000 a 7 de março de 2025. Especificamente, para cada ano, foram observados seis contratos futuros com vencimento em 1, 3, 5, 7, 9 e 13 meses. A Figura~\ref{fig:2.22} apresenta os preços observados e os valores esperados simulados usando os parâmetros calibrados, e a Tabela~\ref{tab:2.3}, lista os parâmetros resultantes da calibração.
+Para a calibração foram utilizados os preços médios anuais dos contratos futuros do petróleo tipo Brent no período de 3 de janeiro de 2000 a 7 de março de 2025. Especificamente, para cada ano, foram observados seis contratos futuros com vencimento em 1, 3, 5, 7, 9 e 13 meses. A Figura~\ref{fig:2.22} apresenta os preços observados e os valores esperados simulados usando os parâmetros calibrados, e a Tabela~\ref{tab:2.3}, lista os parâmetros resultantes da calibração.
 
 \begin{figure}[H]
     \centering
@@ -812,18 +812,18 @@ em que o termo de ajuste $\mathcal{A}(T)$ é definido como:
 \label{eq:2-50}
 \end{equation}
 
-Nesta pesquisa, empregou-se essa formulação juntamente com os parâmetros calibrados da Tabela~\ref{tab:2.3} para calcular os preços futuros esperados do petróleo. A Figura~\ref{fig:2.23} ilustra exemplos de trajetórias simuladas do preço do petróleo e respectivas faixas de confiança baseados em 10\,000 simulações com preço inicial de $\$70.62$ por barril. 
+Nessa proposta de tese, empregou-se essa formulação juntamente com os parâmetros calibrados da Tabela~\ref{tab:2.3} para calcular os preços futuros esperados do petróleo. A Figura~\ref{fig:2.23} ilustra exemplos de trajetórias simuladas do preço do petróleo e respectivas faixas de confiança baseados em 10.000 simulações com preço inicial de $\$70,62$ o barril. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{images/two_factor_oil_simulations.png}
     \caption{Simulações do preços do petróleo, intervalos de confiança e exemplos de trajetórias.}
     \label{fig:2.23}
 \end{figure}
-De acordo com \cite{22}, o modelo de dois fatores de Schwartz–Smith fornece uma representação mais realista do risco de preço do petróleo e da dinâmica esperada dos preços futuros, capturando com maior precisão tanto as incertezas quanto os caminhos prováveis dos preços. Por isso, é preferível para a modelagem da evolução dos preços do petróleo em comparação aos clássicos modelos MGB e de reversão à média.
+De acordo com \cite{22}, o modelo de dois fatores de Schwartz–Smith fornece uma representação mais realista do risco do preço do petróleo e da dinâmica esperada dos preços futuros, capturando com maior precisão tanto as incertezas quanto os caminhos prováveis dos preços. Por isso, é preferível para a modelagem da evolução dos preços do petróleo em comparação aos modelos clássicos.
 
 \subsection{Least Squares Monte Carlo}
 
-O método dos \textbf{Mínimos Quadrados de Monte Carlo} (em inglês, \textit{Least Squares Monte Carlo} - LSM) é uma alternativa promissora em relação às abordagens tradicionais, como as técnicas de diferenças finitas e os modelos de árvores binomiais, na avaliação de projetos envolvendo opções reais. Entre suas principais vantagens destacam-se a flexibilidade para avaliação de projetos, a capacidade de gerenciamento de risco e a determinação eficiente do momento ótimo de exercício em opções do tipo americana. De forma geral, o LSM oferece uma estrutura unificada para capturar o valor da flexibilidade gerencial em ambientes incertos e dinâmicos. Entre as aplicações típicas do método LSM, podemos citar:
+O método dos \textbf{Mínimos Quadrados de Monte Carlo} (em inglês, \textit{Least Squares Monte Carlo} - LSM) é uma alternativa promissora na avaliação de projetos envolvendo opções reais em relação às abordagens tradicionais, como as técnicas de diferenças finitas e os modelos de árvores binomiais. Entre suas principais vantagens destacam-se a flexibilidade na avaliaçã, a capacidade de gerenciamento de risco e a determinação eficiente do momento ótimo de exercício em opções do tipo americana. De forma geral, o LSM oferece uma estrutura unificada para capturar o valor da flexibilidade gerencial em ambientes incertos e dinâmicos. Entre as aplicações típicas do método LSM, podemos citar:
 \begin{itemize}
     \item a avaliação de opções que dependem de múltiplos fatores de incerteza;
     \item a precificação de derivativos com características de opções americanas e dependentes do caminho;
@@ -832,7 +832,7 @@ O método dos \textbf{Mínimos Quadrados de Monte Carlo} (em inglês, \textit{Le
 
 A ideia fundamental por trás do LSM está relacionada aos princípios da programação dinâmica. Em cada instante anterior ao vencimento de uma opção americana, o tomador da decisão compara o \textit{payoff} obtido com o exercício antecipado com o valor esperado de continuação do projeto, de modo a escolher a alternativa que maximize o valor esperado. Assim, a estratégia ótima de exercício é determinada pela expectativa condicional do valor futuro da opção. Longstaff e Schwartz em \cite{25} demonstraram que essa expectativa condicional pode ser estimada de maneira eficiente a partir de informações obtidas em simulações de Monte Carlo, utilizando uma regressão por mínimos quadrados. O método combina a flexibilidade das simulações estocásticas com a robustez estatística da regressão linear, permitindo aproximar a solução da programação dinâmica de forma prática e computacionalmente viável.
 
-Em termos gerais, o método LSM é amplamente utilizado na avaliação de opções reais e financeiras com possibilidade de exercício antecipado. Conforme apresentado por \cite{25}, essa abordagem é atualmente considerada uma das mais eficientes para lidar com situações em que há múltiplas fontes de incerteza e dependência de caminho do ativo subjacente (\cite{21}, \cite{26}). O objetivo do LSM é aproximar, trajetória a trajetória, a regra ótima de parada que maximiza o valor esperado de uma opção americana. Para ilustrar o procedimento, considere o caso em que o exercício é permitido apenas em um conjunto discreto de tempos $K$, $0 < t_1 \leq t_2 \leq \dots \leq t_K = T$. Determina-se, então, a decisão ótima de exercício em cada uma dessas datas. Embora as opções americanas possam ser exercidas a qualquer instante antes do vencimento, essa característica contínua pode ser representada de forma adequada escolhendo uma discretização temporal suficientemente fina (ou seja, um $K$ grande), o que aproxima do problema contínuo. O método LSM consiste em comparar o \textit{payoff} imediato com o valor estimado de continuação. A decisão de exercer ocorre sempre que o valor de exercício antecipado supera o valor esperado de manter a opção. O cerne da técnica está na estimação da expectativa condicional dos fluxos de caixa futuros através de regressões por mínimos quadrados, utilizando dados obtidos nas simulações de Monte Carlo. Em cada data potencial de exercício, é realizada uma regressão relacionando os valores simulados de continuação com funções das variáveis de estado, o que permite aproximar a expectativa condicional nesse determinado instante.
+Em termos gerais, o método LSM é amplamente utilizado na avaliação de opções reais e financeiras com possibilidade de exercício antecipado. Conforme apresentado por \cite{25}, essa abordagem é atualmente considerada uma das mais eficientes para lidar com situações em que há múltiplas fontes de incerteza e dependência de caminho do ativo subjacente (\cite{21}, \cite{26}). O objetivo do LSM é aproximar, trajetória a trajetória, a regra ótima de parada que maximiza o valor esperado de uma opção americana. Para ilustrar o procedimento, considere o caso em que o exercício é permitido apenas em um conjunto discreto de tempos $K$, $0 < t_1 \leq t_2 \leq \dots \leq t_K = T$. Determina-se, então, a decisão ótima de exercício em cada uma dessas datas. Embora as opções americanas possam ser exercidas a qualquer instante antes do vencimento, essa característica contínua pode ser representada de forma adequada escolhendo uma discretização temporal suficientemente fina (ou seja, um $K$ grande), o que aproxima do problema contínuo. Em cada data potencial de exercício, é realizada uma regressão relacionando os valores simulados de continuação com funções das variáveis de estado, o que permite aproximar a expectativa condicional nesse determinado instante.
 
 O procedimento pode ser resumido nas seguintes etapas (\cite{25}, \cite{26}):
 \begin{enumerate}[label=(\roman*)]
@@ -870,77 +870,10 @@ C(\omega, t_j; t_k, T)
 \mathcal{F}_{t_k}
 \right],
 \end{equation}
-onde $r(\omega,t)$ é a taxa de desconto livre de risco (possivelmente estocástica), e a expectativa é condicional ao conjunto de informações $\mathcal{F}_{t_k}$ disponíveis em $t_k$. Essa abordagem conduz à formulação padrão da avaliação de opções reais: em cada ponto de decisão, o agente compara o valor de exercício imediato com o valor esperado da continuação. A política ótima consiste em exercer a opção sempre que o \textit{payoff} imediato for positivo e exceder o valor esperado de esperar. \cite{27} apresentou uma das primeiras aplicações do método LSM em um projeto de produção de petróleo simplificado, utilizando o estudo de caso desenvolvido por \cite{19} e \cite{28}. A análise incorporou tanto a opção de compra da participação do parceiro (\textit{buyout}) quanto a opção de desinvestimento (\textit{divest}) mediante um fluxo de caixa predeterminado. Esse problema, conhecido como \textit{BDH problem}, foi revisitado e expandido por Nascimento et al em \cite{29} demonstrando o valor da flexibilidade em projetos de exploração e produção de petróleo com opções reais utilizando LSM.
+onde $r(\omega,t)$ é a taxa de desconto livre de risco (possivelmente estocástica), e a expectativa é condicional ao conjunto de informações $\mathcal{F}_{t_k}$ disponíveis em $t_k$. Essa abordagem conduz à formulação padrão da avaliação de opções reais: em cada ponto de decisão, o agente compara o valor de exercício imediato com o valor esperado da continuação. A política ótima consiste em exercer a opção sempre que o \textit{payoff} imediato for positivo e exceder o valor esperado de esperar. \cite{27} apresentou uma das primeiras aplicações do método LSM em um projeto de produção de petróleo simplificado, utilizando o estudo de caso desenvolvido por \cite{19} e \cite{28}. A análise incorporou tanto a opção de compra da participação do parceiro (\textit{buyout}) quanto a opção de desinvestimento (\textit{divest}) mediante um fluxo de caixa predeterminado. Esse problema, conhecido como \textit{BDH problem}, foi revisitado e expandido por Nascimento et al em \cite{29} demonstrando o valor da flexibilidade em projetos de E\&P com opções reais utilizando LSM.
 
 A simplicidade do método LSM, aliada à flexibilidade gerencial, torna-o particularmente adequado para ilustrar políticas ótimas e avaliar projetos sob incertezas, além de permitir fácil replicação e adaptação a outros contextos \cite{26}.
 
-
-\section{Redes Neurais Artificiais}
-
-O cérebro humano é uma estrutura altamente complexa e eficiente, capaz de processar uma enorme quantidade de informações em tempo mínimo. Suas principais unidades de processamento são os neurônios, responsáveis pela recepção, transmissão e integração dos sinais que originam as funções cognitivas. A habilidade do cérebro em reconhecer padrões, tomar decisões e aprender com experiências passadas inspirou o desenvolvimento dos chamados sistemas inteligentes, entre eles as \textbf{Redes Neurais Artificiais}, conhecidas em inglês como \textit{Artificial Neural Networks} (ANNs).
-
-Diversos estudos em neurociência demonstram que o cérebro aprende por meio de experiências acumuladas ao longo da vida, ajustando suas conexões sinápticas conforme estímulos externos (\cite{30}). Inspirados por esse mecanismo, pesquisadores da área de computação buscaram modelar matematicamente o funcionamento dos neurônios e de suas interconexões, criando sistemas artificiais capazes de aprender e generalizar informações.
-
-O neurônio biológico é a célula fundamental do sistema nervoso e possui a função de transmitir informações entre diferentes regiões do corpo. De acordo com \cite{31}, essa célula é composta por três partes principais: o soma (ou corpo celular), que contém o núcleo; os dendritos, que recebem os estímulos provenientes de outros neurônios; e o axônio, responsável por conduzir os impulsos elétricos até as terminações sinápticas. A comunicação entre neurônios ocorre nas sinapses, onde sinais elétricos e químicos são convertidos e transmitidos. Esses sinais elétricos representam a mensagem que percorre os neurônios, sendo a base da transmissão de informações no cérebro. Essa propagação é desencadeada pela ação de estímulos externos ou internos que modificam o potencial elétrico da membrana neuronal. A estrutura típica de um neurônio biológico pode ser observada na Figura~\ref{fig:2.24} (\cite{32}).
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.75\textwidth]{images/neuronio_bio.png}
-    \caption{Modelo do neurônio biológico. Fonte \cite{32}.}
-    \label{fig:2.24}
-\end{figure}
-
-A partir da estrutura e do comportamento dos neurônios biológicos, \cite{33} propuseram o primeiro modelo matemático simplificado, conhecido como \textit{Perceptron}, conforme Figura~\ref{fig:2.25}. Esse modelo descreve o neurônio artificial como uma unidade de processamento capaz de combinar sinais de entrada, ponderá-los e gerar uma saída de acordo com uma função de ativação. 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.95\textwidth]{images/neuronio_art.png}
-    \caption{Modelo do neurônio artificial. Fonte \cite{33}.}
-    \label{fig:2.25}
-\end{figure}
-
-Matematicamente, um neurônio artificial $k$ pode ser descrito pelo conjunto de equações:
-\begin{align}
-    u_k =  b_k + \sum_{j=1}^{m} w_{kj} x_j, \\
-    y_k = \varphi(u_k)
-\end{align}
-onde $x_j$ representa os sinais de entrada, $w_{kj}$ os pesos sinápticos associados a cada conexão, $b_k$ é o termo de \textit{bias} (responsável por deslocar o ponto de ativação) e $\varphi(\cdot)$ é a função de ativação que define a resposta do neurônio. O termo $u_k$ é denominado \textit{campo local induzido} e corresponde à soma ponderada das entradas. A função de ativação $\varphi(\cdot)$ é responsável por limitar ou transformar o valor do campo induzido, determinando se o neurônio será ativado ou não. Segundo \cite{30}, esse processo é análogo ao comportamento “tudo ou nada” observado nos neurônios biológicos.
-
-As funções de ativação desempenham papel essencial na modelagem de redes neurais, pois introduzem não linearidades que permitem ao sistema aprender relações complexas entre as variáveis de entrada e saída. As formas mais comuns são:
-\begin{itemize}
-    \item \textbf{Função Degrau:}
-    \begin{equation}
-        \varphi(u) = 
-        \begin{cases}
-        1, & \text{se } u \geq 0 \\
-        0, & \text{se } u < 0
-        \end{cases}
-    \end{equation}
-    Representa o modelo binário de ativação, em que a saída assume apenas dois estados possíveis, ativado ou inativo.
-
-    \item \textbf{Função Sigmoide:}
-    \begin{equation}
-        \varphi(u) = \frac{1}{1 + e^{-a u}}
-    \end{equation}
-    Essa função contínua e diferenciável permite uma transição suave entre 0 e 1, sendo amplamente utilizada em modelos de aprendizado supervisionado. A função sigmoide apresenta uma característica “S-shaped” e é ajustada pelo parâmetro $a$, que controla a inclinação da curva. Quando $a$ tende a valores muito altos, o comportamento da sigmoide aproxima-se do modelo degrau.
-    
-    \item \textbf{Função ReLU:}
-    \begin{equation}
-        \varphi(u) = \max(0, u)
-    \end{equation}
-    A função ReLU (Rectified Linear Unit) é uma das mais utilizadas em redes neurais profundas, pois introduz não linearidade mantendo simplicidade computacional. Ela anula valores negativos e mantém os positivos, o que reduz o problema de gradientes pequenos em camadas profundas, acelerando o treinamento.
-
-    \item \textbf{Função Softmax:}
-    \begin{equation}
-        \varphi(u_i) = \frac{e^{u_i}}{\sum_{j=1}^{n} e^{u_j}}
-    \end{equation}
-    A função Softmax é aplicada principalmente na camada de saída de classificadores multiclasse. Ela converte o vetor de entradas $u_i$ em uma distribuição de probabilidades, onde a soma das saídas é igual a 1. Assim, cada saída pode ser interpretada como a probabilidade de pertencimento de uma amostra a uma classe específica.
-\end{itemize}
-
-\section{Redes Neurais Convolucionais}
-
-A hematita é o mineral de ferro mais importante devido a sua alta
-ocorrência em vários tipos de rochas e suas origens diversas.
-A composição química deste mineral é Fe$_{2}$O$_{3}$, com uma fração
-mássica em ferro de 69,9\% e uma fração mássica em oxigênio 
 
 
 
