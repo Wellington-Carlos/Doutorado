@@ -1,17 +1,16 @@
 % -*- coding: utf-8; -*-
 
-\chapter{Aplicação de AI e ML na E\&P}
+\chapter{Aplicação de MLP e CNN na E\&P}
 
 Nos últimos anos, a indústria de petróleo e gás tem passado por uma profunda transformação impulsionada pelos avanços em \textbf{Inteligência Artificial} (em inglês, Artificial Intelligence - AI) e \textbf{Aprendizado de Máquina} (em inglês, Machine Learning - ML). Tais ferramentas têm se mostrado promissoras para lidar com os desafios inerentes às grandes quantidades de dados gerados durante as etapas de exploração, avaliação e desenvolvimento de campos petrolíferos. O uso adequado dessas ferramentas possibilita uma interpretação mais robusta dos dados geológicos, geofísicos e de engenharia, contribuindo para a redução de incertezas e para a tomada de decisão orientada por dados.
 
-Durante as campanhas de perfuração de poços exploratórios, o principal objetivo é reduzir a incerteza sobre o volume recuperável e a conectividade entre zonas produtoras. A aplicação de técnicas de ML permite correlacionar dados sísmicos, propriedades geológicas e resultados de poços já perfurados, criando modelos preditivos capazes de identificar as regiões mais promissoras para a perfuração de novos poços. Redes Neurais Profundas bem como algoritmos supervisionados (\textit{Random Forests}, \textit{Support Vector Machines, etc...}) têm sido empregados para classificar litofácies, prever propriedades de reservatório (porosidade, permeabilidade e saturação de água) e inferir a distribuição espacial de incertezas geológicas. Já métodos não supervisionados, como \textit{K-Means} e \textit{Self-Organizing Maps} (SOM), são amplamente utilizados para agrupar padrões de resposta sísmica e identificar zonas com comportamento geológico semelhante. Esses avanços contribuem para um melhor planejamento das etapas de avaliação, permitindo selecionar os poços que maximizam o valor esperado da informação.
+Durante as campanhas de perfuração de poços exploratórios, o principal objetivo é reduzir a incerteza sobre o volume recuperável e a conectividade entre zonas produtoras. A aplicação de técnicas de ML permite correlacionar dados sísmicos e propriedades geológicas com resultados de poços já perfurados, criando modelos preditivos capazes de identificar as regiões mais promissoras para a perfuração de novos poços. Os algoritmos supervisionados, sendo um tipo de algoritmo de ML que aprende a partir de exemplos rotulados, são empregados para classificar litofácies, prever propriedades de reservatório e inferir a distribuição espacial de incertezas geológicas. Já os algoritmos não supervisionados, que não utiliza rótulos ou saídas conhecidas durante o treinamento, são amplamente utilizados para agrupar padrões de resposta sísmica e identificar zonas com comportamento geológico semelhante. 
 
-Além da caracterização, o aprendizado de máquina desempenha papel central na otimização na locação de poços. Modelos baseados em ML e técnicas de \textbf{Aprendizado Profundo} (em inglês, Deep Learning - DL) são capazes de integrar múltiplas fontes de dados (por exemplo, mapas de permeabilidade, pressão e porosidade), para identificar automaticamente as posições que maximizam a produtividade esperada e reduzem os custos de perfuração. Técnicas como \textbf{Aprendizado por Reforço} (em inglês, Reinforcement Learning - RL) e \textbf{Algoritmos Genéticos} têm sido aplicadas para explorar o espaço de decisão de forma adaptativa, buscando configurações ótimas de poços produtores e injetores sob múltiplas restrições operacionais e econômicas. Em ambientes com alta incerteza, esses modelos permitem simular diversos cenários de perfuração e desenvolvimento no intuito de maximizar o valor esperado da produção.
+Além da caracterização, o aprendizado de máquina desempenha papel central na otimização na locação de poços. Modelos baseados em ML e técnicas de \textbf{Aprendizado Profundo} (em inglês, Deep Learning - DL) são capazes de integrar múltiplas fontes de dados (por exemplo, mapas de permeabilidade, pressão e porosidade), para identificar as posições que maximizam a produtividade e reduzem os custos de perfuração. Técnicas como \textbf{Aprendizado por Reforço} (em inglês, Reinforcement Learning - RL) e \textbf{Algoritmos Genéticos} têm sido aplicadas para explorar o espaço de decisão de forma adaptativa, buscando configurações ótimas de poços produtores e injetores sob múltiplas restrições operacionais e econômicas, sempre com o intuito de maximizar a produção.
 
-O uso de AI em campanhas de delimitação e locação de poços representa um avanço significativo rumo à redução de riscos na indústria de E\&P. A integração de ML com sistemas de gerenciamento de dados e modelos de simulação numérica oferece ganhos expressivos em eficiência, precisão e velocidade de processamento. Estudos recentes indicam que o número de publicações e aplicações de AI na indústria petrolífera cresceu, em média, 15\% ao ano entre 2015 e 2024, refletindo o crescente interesse do setor (\cite{34}). Esse avanço é particularmente evidente em conferências da \textit{Society of Petroleum Engineers} (SPE), onde cerca de 40\% dos trabalhos recentes abordam aplicações de AI e ML em problemas de caracterização, modelagem e otimização da produção.
+O uso de AI em campanhas de delimitação e perfuração de poços representa um avanço significativo rumo à redução de riscos na indústria de E\&P. A integração de ML com sistemas de gerenciamento de dados e modelos de simulação numérica oferece ganhos expressivos em eficiência, precisão e velocidade de processamento. Estudos recentes indicam que o número de publicações e aplicações de AI na indústria petrolífera cresceu, em média, 15\% ao ano entre 2015 e 2024, refletindo o crescente interesse do setor (\cite{34}). Esse avanço é particularmente evidente em conferências da \textit{Society of Petroleum Engineers} (SPE), onde cerca de 40\% dos trabalhos recentes abordam aplicações de AI e ML em problemas de caracterização, modelagem e otimização da produção.
 
-No contexto de campanhas de avaliação, as técnicas de ML têm se mostrado fundamentais para priorizar poços, otimizar o planejamento de perfurações e reduzir o risco exploratório. Assim, a combinação entre AI e Métodos de Apoio à Decisão oferece um caminho promissor para o desenvolvimento de estratégias de avaliação mais eficientes, inteligentes e economicamente sustentáveis nos projetos de E\&P (\cite{35}).
-
+Assim, a combinação entre AI e Métodos de Apoio à Decisão oferece um caminho promissor para o desenvolvimento de estratégias de avaliação mais eficientes, inteligentes e economicamente sustentáveis nos projetos de E\&P (\cite{35}).
 
 
 \section{Redes Neurais Artificiais}
@@ -20,31 +19,33 @@ O cérebro humano é uma estrutura altamente complexa e eficiente, capaz de proc
 
 Diversos estudos em neurociência demonstram que o cérebro aprende por meio de experiências acumuladas ao longo da vida, ajustando suas conexões sinápticas conforme estímulos externos (\cite{30}). Inspirados por esse mecanismo, pesquisadores da área de computação buscaram modelar matematicamente o funcionamento dos neurônios e de suas interconexões, criando sistemas artificiais capazes de aprender e generalizar informações.
 
-O neurônio biológico é a célula fundamental do sistema nervoso e possui a função de transmitir informações entre diferentes regiões do corpo. De acordo com \cite{31}, essa célula é composta por três partes principais: o soma (ou corpo celular), que contém o núcleo; os dendritos, que recebem os estímulos provenientes de outros neurônios; e o axônio, responsável por conduzir os impulsos elétricos até as terminações sinápticas. A comunicação entre neurônios ocorre nas sinapses, onde sinais elétricos e químicos são convertidos e transmitidos. Esses sinais elétricos representam a mensagem que percorre os neurônios, sendo a base da transmissão de informações no cérebro. Essa propagação é desencadeada pela ação de estímulos externos ou internos que modificam o potencial elétrico da membrana neuronal. A estrutura típica de um neurônio biológico pode ser observada na Figura~\ref{fig:3.01} (\cite{32}).
+Uma ANN é formada por um conjunto de neurônios interconectados, que influenciam uns aos outros e atuam de maneira conjunta como um sistema capaz de armazenar conhecimento adquirido a partir de exemplos apresentados. Dessa forma, a rede torna-se apta a realizar inferências e generalizar o aprendizado para novas situações ou exemplos ainda não observados.
+
+O neurônio biológico é a célula fundamental do sistema nervoso e possui a função de transmitir informações entre diferentes regiões do corpo. De acordo com \cite{31}, essa célula é composta por três partes principais: o soma (ou corpo celular), que contém o núcleo; os dendritos, que recebem os estímulos provenientes de outros neurônios; e o axônio, responsável por conduzir os impulsos elétricos até as terminações sinápticas. A comunicação entre neurônios ocorre nas sinapses, onde sinais elétricos e químicos são convertidos e transmitidos. Esses sinais elétricos representam a mensagem que percorre os neurônios, sendo a base da transmissão de informações no cérebro. Essa propagação é desencadeada pela ação de estímulos externos ou internos que modificam o potencial elétrico da membrana neuronal. A estrutura típica de um neurônio biológico pode ser observada na Figura~\ref{fig:3.1} (\cite{32}).
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.75\textwidth]{images/neuronio_bio.png}
     \caption{Modelo do neurônio biológico. Fonte \cite{32}.}
-    \label{fig:3.01}
+    \label{fig:3.1}
 \end{figure}
 
-A partir da estrutura e do comportamento dos neurônios biológicos, \cite{33} propuseram o primeiro modelo matemático simplificado, conhecido como \textit{Perceptron}, conforme Figura~\ref{fig:3.02}. Esse modelo descreve o neurônio artificial como uma unidade de processamento capaz de combinar sinais de entrada, ponderá-los e gerar uma saída de acordo com uma função de ativação. 
+A partir da estrutura e do comportamento dos neurônios biológicos, \cite{33} propuseram o primeiro modelo matemático simplificado, conhecido como \textit{Perceptron}, conforme Figura~\ref{fig:3.2}. Esse modelo descreve o neurônio artificial como uma unidade de processamento capaz de combinar sinais de entrada, ponderá-los e gerar uma saída de acordo com uma função de ativação. 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{images/neuronio_art.png}
-    \caption{Modelo do neurônio artificial. Fonte \cite{33}.}
-    \label{fig:3.02}
+    \caption{Modelo do neurônio artificial. Fonte \cite{30}.}
+    \label{fig:3.2}
 \end{figure}
 
 Matematicamente, um neurônio artificial $k$ pode ser descrito pelo conjunto de equações:
 \begin{align}
-    u_k =  \sum_{j=1}^{m} w_{kj} x_j, \\
-    v_k = u_k + b_k, \\
-    y_k = \varphi(v_k)
+    u_k =  \sum_{j=1}^{m} w_{kj} x_j, \label{eq:3-1}\\
+    v_k = u_k + b_k, \label{eq:3-2}\\
+    y_k = \varphi(v_k) \label{eq:3-3}
 \end{align}
 onde $x_j$ representa os sinais de entrada, $w_{kj}$ os pesos sinápticos associados a cada conexão, $b_k$ é o termo de \textit{bias} (responsável por deslocar o ponto de ativação) e $\varphi(\cdot)$ é a função de ativação que define a resposta do neurônio. O termo $v_k$ é denominado \textit{campo local induzido} e corresponde à soma ponderada das entradas mais o \textit{bias}. A função de ativação $\varphi(\cdot)$ é responsável por limitar ou transformar o valor do campo induzido, determinando se o neurônio será ativado ou não. Segundo \cite{30}, esse processo é análogo ao comportamento “tudo ou nada” observado nos neurônios biológicos.
 
-As funções de ativação desempenham papel essencial na modelagem de redes neurais, pois introduzem não linearidades que permitem ao sistema aprender relações complexas entre as variáveis de entrada e saída. As formas mais comuns são:
+As funções de ativação desempenham papel essencial na modelagem de redes neurais, pois introduzem não linearidades que permitem ao sistema aprender relações complexas entre as variáveis de entrada e saída. As funções mais comuns encontradas na literatura são:
 \begin{itemize}
     \item \textbf{Função Degrau:}
     \begin{equation}
@@ -75,22 +76,125 @@ As funções de ativação desempenham papel essencial na modelagem de redes neu
     A função Softmax é aplicada principalmente na camada de saída de classificadores multiclasse. Ela converte o vetor de entradas $v_i$ em uma distribuição de probabilidades, onde a soma das saídas é igual a 1. Assim, cada saída pode ser interpretada como a probabilidade de pertencimento de uma amostra a uma classe específica.
 \end{itemize}
 
-A Figura~\ref{fig:3.03} ilustra as curvas das funções de ativação definidas acima, evidenciando como cada uma das funções introduz diferentes graus de não linearidade na rede neural. Essas funções desempenham papel fundamental no mapeamento das entradas para as saídas e no comportamento do aprendizado da rede, influenciando sua capacidade de generalização e convergência numérica.
+A Figura~\ref{fig:3.3} ilustra as curvas das funções de ativação definidas acima, evidenciando como cada uma das funções introduz diferentes graus de não linearidade na rede neural. Essas funções desempenham papel fundamental no mapeamento das entradas para as saídas e no comportamento do aprendizado da rede, influenciando na sua capacidade de generalização e convergência numérica.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.95\textwidth]{images/funcoes_ativacao.png}
     \caption{Funções de ativação: (a) Degrau, (b) Sigmoide, (c) ReLU e (d) Softmax.}
-    \label{fig:3.03}
+    \label{fig:3.3}
 \end{figure}
 A semelhança observada entre as curvas das funções sigmoide e softmax pode ser explicada por sua relação matemática. A sigmoide é uma função univariada, ou seja, transforma um único valor real em um número entre 0 e 1, sendo utilizada em neurônios com saída binária, onde o objetivo é estimar a probabilidade de ocorrência de um evento. Já a softmax é uma função multivariada, que recebe um vetor de valores e os converte em uma distribuição de probabilidades cuja soma é igual a 1, sendo empregada em problemas de classificação multiclasse. Quando a softmax é aplicada em apenas duas classes, ela se reduz a uma forma equivalente à sigmoide, o que explica a semelhança visual entre seus gráficos no caso binário.
 
-Uma ANN é uma estrutura de camadas onde vários \textit{Perceptrons} são interconectados.
+Uma ANN é uma estrutura de camadas onde vários \textit{Perceptrons} são interconectados. A estrutura mais utilizada é o perceptron de múltiplas camadas (\textit{Multilayer Perceptron - MLP}) formada por uma camada de entrada (não temos neurônios nessa camada, apenas os dados de entrada), uma ou mais camadas ocultas e uma camada de saída. As MLPs são redes totalmente conectadas, nas quais cada neurônio de uma camada está ligado a todos os neurônios da camada seguinte/anterior. A Figura~\ref{fig:3.4} mostra a arquitetura de uma MLP com duas camadas ocultas e uma camada de saída.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/MLP.png}
+    \caption{Arquitetura de uma MLP com duas camadas ocultas. Fonte \cite{30}.}
+    \label{fig:3.4}
+\end{figure}
+
+Treinar uma ANN requer ajustar os pesos $w_{kj}$ da Equação~\ref{eq:3-1} para minimizar a discrepância entre as saídas obtidas da rede e as saídas desejadas. O treinamento progride por meio da repetição do processo de propagação direta (cálculo das saídas) e da propagação reversa (atualização dos pesos) até que os critérios de treinamento sejam satisfeitos. Esses processos estabelece o que conhecemos como algoritmo de retropropagação (\textit{backpropagation algorithm}) que é baseado na regra de aprendizagem por correção do erro, consistindo basicamente de duas etapas:
+\begin{itemize}
+    \item \underline{\textit{Forward propagation}}: os valores de entrada são propagados para frente, passando pelas camadas ocultas até a camada de saída, onde a rede produz uma resposta.  
+    \item \underline{\textit{Backpropagation}}: nessa etapa faz-se o ajuste dos pesos sinápticos, por meio do cálculo do erro realizado na camada de saída.  
+\end{itemize}
+
+A Figura~\ref{fig:3.5} ilustra uma porção de uma MLP, destacando os sinais presentes nesse tipo de rede. Temos os sinais funcionais (em preto), que se propagam no sentido direto e representam o fluxo normal das informações e os sinais de erro (em azul), que percorrem a rede no sentido oposto e, conforme dito anteriormente, são utilizados para ajustar os pesos sinápticos.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth]{images/error_signal.png}
+    \caption{Direção dos fluxos de sinais em uma MLP. Fonte \cite{30}.}
+    \label{fig:3.5}
+\end{figure}
+
+O algoritmo \textit{backpropagation} utiliza a técnica de busca por gradiente para minimizar a função custo, cuja medida representa o desempenho da aprendizagem. Como mostrado no Algoritmo~\ref{alg:backprop}, o processo de treinamento é iterativo e ajusta os pesos até que a condição de parada seja atingida. Mais detalhes do algoritmo e dos cálculos matemáticos podem ser encontrados na referência \cite{30}.
+
+\begin{algorithm}[H]
+\caption{Algoritmo \textit{Backpropagation}}
+\label{alg:backprop}  % <---- rótulo único
+\begin{algorithmic}[1]
+    \State \textbf{begin}
+    \State Atribuição de valores iniciais aos pesos sinápticos;
+    \Repeat
+        \State Apresentação à rede dos padrões de entrada e as saídas desejadas;
+        \State Cálculo dos valores de saída dos neurônios ocultos;
+        \State Cálculo dos valores de saída dos neurônios de saída (resposta da rede);
+        \State Cálculo do erro (diferença entre a resposta da rede e o valor esperado);
+        \State Ajuste dos pesos sinápticos;
+    \Until{Condição de parada \textit{não satisfeita};}
+    \State \textbf{end}
+\end{algorithmic}
+\end{algorithm}
+
+As relações obtidas para o algoritmo de retropropagação são apresentadas a seguir. A Equação~\ref{eq:3-8} fornece a correção do peso $\Delta w_{ji}(n)$, que é aplicada ao peso sináptico que conecta o neurônio $i$ ao neurônio $j$ \cite{30}:
+
+\begin{equation*}
+\footnotesize
+\left(
+\begin{array}{c}
+\text{Correção} \\
+\text{do peso}
+\end{array}
+\right)
+=
+\left(
+\begin{array}{c}
+\text{Taxa} \\
+\text{de aprendizagem}
+\end{array}
+\right)
+\cdot
+\left(
+\begin{array}{c}
+\text{Gradiente} \\
+\text{local}
+\end{array}
+\right)
+\cdot
+\left(
+\begin{array}{c}
+\text{Sinal de entrada} \\
+\text{do neurônio $j$}
+\end{array}
+\right)
+\end{equation*}
+
+\begin{equation}
+\Delta w_{ji}(n) = \eta \cdot \delta_j(n) \cdot y_i(n)
+\label{eq:3-8}
+\end{equation}
+
+O gradiente local $\delta_j(n)$ depende se o neurônio $j$ é um nó de saída ou se é um nó oculto. Conforme o caso, temos:
+
+\begin{enumerate}[label=(\roman*)]
+    \item Se o neurônio $j$ é um nó de saída, $\delta_j(n)$ é igual ao produto da derivada 
+    $\varphi'_j(v_j(n))$ pelo sinal de erro $e_j(n)=d_j(n)-y_j(n)$, ambos associados ao neurônio $j$:
+\begin{equation}
+\delta_j(n) =  e_j(n)\,\varphi'_j(v_j(n))
+\end{equation}
+
+    \item Se o neurônio $j$ é um nó oculto, $\delta_j(n)$ é igual ao produto da derivada associada 
+    $\varphi'_j(v_j(n))$ pela soma ponderada dos $\delta$s calculados para os neurônios na próxima camada 
+    oculta ou camada de saída que estão conectados ao neurônio $j$:
+\begin{equation}
+\delta_j(n) = \varphi'_j(v_j(n)) \sum_{k} \delta_k(n) w_{kj}(n)
+\end{equation}
+
+\end{enumerate}
+
+Os ajustes dos pesos sinápticos é a parte fundamental do algoritmo \textit{backpropagation}. Em qualquer camada, os valores dos pesos $w_{ji}$ na iteração $n$ serão ajustados da seguinte forma:
+\begin{equation}
+w_{ji}(n)= w_{ji}(n-1) + \Delta w_{ji}(n)
+\end{equation}
+
+Para que uma MLP apresente bom desempenho em aplicações práticas, é fundamental definir uma configuração adequada de seus parâmetros. Essa configuração depende das características específicas do problema, como o tipo dos dados de entrada, a quantidade de amostras disponíveis para treinamento e teste e a dimensionalidade do conjunto de dados. Em geral, a determinação dos valores ideais para os parâmetros da rede é um processo desafiador, visto que esses valores não são diretamente observáveis nem de fácil obtenção.
+
+Segundo \cite{36}, muitos desses parâmetros são ajustados por meio de um processo de tentativa e erro, no qual diferentes combinações são testadas e avaliadas até que se encontre a configuração que produz os melhores resultados. Entre os parâmetros mais sensíveis ao desempenho da MLP destacam-se a taxa de aprendizagem, o número de camadas ocultas e a quantidade de neurônios em cada uma delas, os quais exercem forte influência na capacidade de generalização e na estabilidade do treinamento.
 
 \section{Redes Neurais Convolucionais}
 
-Uma rede neural profunda (deep neural network, DNN) [Goodfellow et al., 2016] pode ser entendida como uma MLP (multilayer perceptron) de múltiplas camadas ocultas, configurada em uma estrutura feedforward. Inspiradas na organização do córtex visual humano, essas redes processam os sinais de entrada de forma hierárquica, passando por diversas camadas responsáveis por extrair representações progressivamente mais abstratas dos dados.
+Uma rede neural profunda (\textit{Deep Neural Network} - DNN) pode ser entendida como uma MLP de múltiplas camadas ocultas, configurada em uma estrutura feedforward. Inspiradas na organização do córtex visual humano, essas redes processam os sinais de entrada de forma hierárquica, passando por diversas camadas responsáveis por extrair representações progressivamente mais abstratas dos dados.
 
-Com os avanços tecnológicos, especialmente o uso de unidades de processamento gráfico (GPUs), tornou-se possível treinar redes com dezenas ou até centenas de camadas, graças à execução paralela de um grande número de operações matriciais. Exemplos notáveis incluem a AlexNet [Krizhevsky et al., 2012], composta por 8 camadas; a VGGNet [Simonyan e Zisserman, 2014], com versões de 16 e 19 camadas; e a ResNet [He et al., 2016], que pode atingir até 152 camadas.
+Com os avanços tecnológicos, especialmente o uso de unidades de processamento gráfico (\textit{Graphics Processing Unit} - GPU), tornou-se possível treinar redes com dezenas ou até centenas de camadas, graças à execução paralela de um grande número de operações matriciais. Exemplos notáveis incluem a AlexNet, composta por 8 camadas; a VGGNet, com versões de 16 e 19 camadas; e a ResNet, que pode atingir até 152 camadas.
 
-Entretanto, o aspecto mais relevante das redes neurais profundas não é apenas a profundidade em termos de número de camadas, mas também a introdução de novos operadores que não eram utilizados nas MLPs tradicionais. Entre esses operadores destacam-se a convolução, o pooling e o flattening, discutidos nas seções seguintes. Em virtude da presença das camadas de convolução, essas arquiteturas são conhecidas como redes neurais convolucionais (CNNs, convolutional neural networks).
-
+Entretanto, o aspecto mais relevante das redes neurais profundas não é apenas a profundidade em termos de número de camadas, mas também a introdução de novos operadores que não eram utilizados nas MLPs tradicionais. Entre esses operadores destacam-se a convolução, o pooling e o flattening, discutidos nessa seção. Em virtude da presença das camadas de convolução, essas arquiteturas são conhecidas como redes neurais convolucionais (\textit{Convolutional Neural Networks} - CNN).

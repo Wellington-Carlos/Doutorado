@@ -8,11 +8,11 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
-os.chdir(r"your\working\directory")
+#os.chdir(r"your\working\directory")
 import glob
 from sklearn.model_selection import train_test_split as tts
 from keras.layers import Dense, Input, Conv2D, Concatenate, Flatten, MaxPool2D
-from keras.metrics import R2Score
+#from keras.metrics import R2Score
 from tensorflow.keras.optimizers import Adam
 from keras.models import Model, load_model
 from scipy import stats
@@ -24,7 +24,9 @@ import seaborn as sns
 
 data = pd.read_csv("First-Period.csv").dropna()
 
-perm_files = glob.glob(r"your\working\directory\Realizations\*.INC")
+#perm_files = glob.glob(r"your\working\directory\Realizations\*.INC")
+perm_files = glob.glob("/mnt/c/Users/calva/OneDrive/Documentos/Doutorado/Proposta_de_Tese/Codes_Optimization_Reservoir/Realizations/*.INC")
+
 perms = np.zeros((7500,60,60,7))
 n=0
 for file in perm_files:
@@ -40,9 +42,18 @@ for file in perm_files:
 
 perms = perms/np.max(perms)
 plt.imshow(perms[4000,...,0], cmap="jet")
+plt.title("Permeability map – Layer 1")
+plt.colorbar()
+
+# Caminho para salvar (Windows via WSL)
+save_dir = "/mnt/c/Users/calva/OneDrive/Documentos/Doutorado/Proposta_de_Tese/Codes_Optimization_Reservoir/codes_Proxy"
+plt.savefig(f"{save_dir}/permeability_layer0_First_Period.png", dpi=300)
+plt.close()
         
 # In[]
 X = data.drop(["COP", "Perm"], axis=1)
+# Coordinates must be integers
+X = X.astype(int)
 y = data["COP"]/data["COP"].max()
 
 zscores = stats.zscore(y, nan_policy="omit")
@@ -55,6 +66,8 @@ plt.xlabel("Z-score")
 plt.yticks([0], labels=["COP"])
 plt.show()
 fig.tight_layout()
+#plt.savefig("Zscore_Boxplot.png", dpi=300, bbox_inches="tight")
+#plt.close()
 
 to_del = np.union1d(np.where(zscores>3)[0], np.where(zscores<-3)[0])
 
@@ -62,12 +75,15 @@ X = X.drop(to_del, axis=0)
 y = y.drop(to_del, axis=0)
 perms = np.delete(perms, to_del, axis=0)
 
-ts = 0.125
-x_train, x_val, y_train, y_val = tts(X,y, test_size=ts, shuffle=True, random_state=40)
-x_train, x_test, y_train, y_test = tts(x_train, y_train, test_size=ts/(1-ts), shuffle=True, random_state=40)
+#ts = 0.125
+#x_train, x_val, y_train, y_val = tts(X,y, test_size=ts, shuffle=True, random_state=40)
+#x_train, x_test, y_train, y_test = tts(x_train, y_train, test_size=ts/(1-ts), shuffle=True, random_state=40)
 
-perm_train, perm_val = tts(perms, test_size=ts, shuffle=True, random_state=40)
-perm_train, perm_test = tts(perm_train, test_size=ts/(1-ts), shuffle=True, random_state=40)
+x_train, x_val, y_train, y_val = tts(X,y, test_size=0.10, shuffle=True, random_state=40)
+x_train, x_test, y_train, y_test = tts(x_train, y_train, test_size=0.20/0.90, shuffle=True, random_state=40)
+
+perm_train, perm_val = tts(perms, test_size=0.10, shuffle=True, random_state=40)
+perm_train, perm_test = tts(perm_train, test_size=0.20/0.90, shuffle=True, random_state=40)
 
 
 scaler = StandardScaler()
@@ -80,18 +96,18 @@ with open("Scaler - First Period", "wb") as file:
 
 
 # In[]
+def MAPE(y_true, y_pred):
+    y_true = np.array(y_true).reshape(-1)
+    y_pred = np.array(y_pred).reshape(-1)
+    return np.mean(np.abs((y_true - y_pred) / y_true)) * 100
 
-def R2(y_true, y_pred):
-    scorer = R2Score()
-    scorer.update_state(y_true, y_pred)
-    return scorer.result()
 
 def scheduler(epoch, lr):
     if (epoch+1)%50 == 0:
         lr *= 0.8
     return lr
 
-early = EarlyStopping(patience = 15, monitor="val_loss", restore_best_weights=True)
+early = EarlyStopping(patience = 10, monitor="val_loss", restore_best_weights=True)
 lr = ReduceLROnPlateau(patience=7, monitor="val_loss", factor=0.5, verbose=1, min_lr=0.00001)
 lr_sched = LearningRateScheduler(scheduler, verbose=1)
 inp1 = Input(shape=(X.shape[1],))
@@ -113,7 +129,7 @@ x = Concatenate()([x1,x2])
 
 out = Dense(1, activation="linear")(x)
 model = Model([inp1, inp2], out)
-model.compile(optimizer=Adam(learning_rate=0.0005), loss="mse", metrics=[R2Score()])
+model.compile(optimizer=Adam(learning_rate=0.0005), loss="mse")
 if os.path.exists("TrainedMLP - First Period.hdf5"):
     model = load_model("TrainedMLP - First Period.hdf5", compile=False)
 else:
@@ -124,39 +140,93 @@ else:
 
 # In[]
 fig = plt.figure(figsize=(5,4))
-plt.semilogy(np.arange(1,len(history.history["loss"])+1), history.history["loss"])
-plt.semilogy(np.arange(1,len(history.history["loss"])+1), history.history["val_loss"])
-plt.xlabel("Epoch", fontsize=14)
-plt.ylabel("Loss", fontsize=14)
-plt.title("Loss vs. Epochs", fontsize=14)
-plt.legend(["Train", "Validation"])
-fig.tight_layout()
-fig.savefig("Loss - Period 1.jpg", dpi=300, format="jpg")
-with open("History - Period 1", "wb") as file:
-    pickle.dump(history.history, file)
-# In[]
-fig = plt.figure(figsize=(5,4))
+
+# PREVISÕES
 y_pred_train = model.predict([x_train, perm_train])
 y_pred_test = model.predict([x_test, perm_test])
-# y_pred_test = np.load("Test Predictions First.npy")
-# y_pred_train = np.load("Train Predictions First.npy")
-y_pred_test = y_pred_test.reshape(-1,1) # 
-y_pred_train = y_pred_train.reshape(-1,1)#
+y_pred_val = model.predict([x_val, perm_val])
+
+y_pred_train = y_pred_train.reshape(-1,1)
+y_pred_test  = y_pred_test.reshape(-1,1)
+y_pred_val = y_pred_val.reshape(-1,1)
+
+# R2
+r2_train = r2_score(y_train, y_pred_train)
+r2_test  = r2_score(y_test, y_pred_test)
+r2_val = r2_score(y_val, y_pred_val)
+
+# MAPE
+mape_train = MAPE(y_train, y_pred_train)
+mape_test  = MAPE(y_test, y_pred_test)
+mape_val = MAPE(y_val, y_pred_val)
+
+# prints R2
+print(f"R2 train: {r2_train:.2f}%")
+print(f"R2 test: {r2_test:.2f}%")
+print(f"R2 validation: {r2_val:.2f}%")
+
+# print MAPE
+print(f"MAPE train: {mape_train:.2f}%")
+print(f"MAPE test: {mape_test:.2f}%")
+print(f"MAPE validation: {mape_val:.2f}%")
+
+
+# ============================
+# === CROSSPLOT DO TREINO ====
+# ============================
+fig_train = plt.figure(figsize=(5,4))
+plt.plot(y_train, y_pred_train, ".", ms=8)
+plt.xlim([np.min(y_train)*0.9, np.max(y_train)*1.05])
+plt.ylim([np.min(y_train)*0.9, np.max(y_train)*1.05])
+plt.plot([np.min(y_train)*0.9, np.max(y_train)*1.05],
+         [np.min(y_train)*0.9, np.max(y_train)*1.05], "--r")
+plt.xlabel("True values")
+plt.ylabel("Predicted values")
+plt.legend([f"$R^2$ = {r2_score(y_train, y_pred_train):.2f}", "Ideal line"])
+plt.text(x=0.4, y=0.9, s="Training data", fontdict=dict(fontsize=12))
+plt.title("True vs. Predicted Values with $R^2$ Score (Train)")
+fig_train.tight_layout()
+fig_train.savefig("Crossplot Train - Period 1.jpg", dpi=300, format="jpg")
+plt.close(fig_train)
+
+# ==========================
+# === CROSSPLOT DO TESTE ===
+# ==========================
+fig_test = plt.figure(figsize=(5,4))
 plt.plot(y_test, y_pred_test, ".", ms=8)
 plt.xlim([np.min(y_test)*0.9, np.max(y_test)*1.05])
 plt.ylim([np.min(y_test)*0.9, np.max(y_test)*1.05])
-plt.plot([np.min(y_test)*0.9, np.max(y_test)*1.05], [np.min(y_test)*0.9, np.max(y_test)*1.05], "--r")
+plt.plot([np.min(y_test)*0.9, np.max(y_test)*1.05],
+         [np.min(y_test)*0.9, np.max(y_test)*1.05], "--r")
 plt.xlabel("True values")
 plt.ylabel("Predicted values")
 plt.legend([f"$R^2$ = {r2_score(y_test, y_pred_test):.2f}", "Ideal line"])
 plt.text(x=0.4, y=0.9, s="Testing data", fontdict=dict(fontsize=12))
-plt.title("True vs. Predicted Values with $R^2$ Score")
-fig.tight_layout()
-plt.show()
-fig.savefig("Crossplot Test - Period 1.jpg", dpi=300, format="jpg")
-print(r2_score(y_train, y_pred_train))
-print(r2_score(y_test, y_pred_test))
+plt.title("True vs. Predicted Values with $R^2$ Score (Test)")
+fig_test.tight_layout()
+fig_test.savefig("Crossplot Test - Period 1.jpg", dpi=300, format="jpg")
+plt.close(fig_test)
+
+# ===========================
+# === LOSS VS EPOCHS PLOT ===
+# ===========================
+fig_val = plt.figure(figsize=(8,6))
+plt.plot(history.history['loss'], label='Train')
+plt.plot(history.history['val_loss'], label='Validation')
+plt.yscale("log")
+plt.xlabel("Epoch")
+plt.ylabel("Loss")
+plt.title("Loss vs. Epochs")
+plt.legend()
+plt.grid(True, which="both", ls="--", linewidth=0.5)
+plt.tight_layout()
+plt.savefig("Loss_vs_Epochs_Period_1.jpg", dpi=300)
+plt.close(fig_val)
+with open("History - Period 1", "wb") as file:
+    pickle.dump(history.history, file)
 
 # In[]
 np.save("Test Predictions - Period 1", y_pred_test)
 np.save("Train Predictions - Period 1", y_pred_train)
+np.save("Validation Predictions - Period 1", y_pred_val)
+

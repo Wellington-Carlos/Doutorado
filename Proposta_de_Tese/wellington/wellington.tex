@@ -38,7 +38,10 @@
   \usepackage{float}
 \usepackage{enumitem} % adiciona no preâmbulo
 % \usepackage{etoolbox}
-
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\floatname{algorithm}{Algoritmo}
+\renewcommand{\listalgorithmname}{Lista de Algoritmos}
 %% numprint 
 \npthousandsep{.}
 \npdecimalsign{,}
@@ -63,7 +66,7 @@
 %%% New commands and other global definitions
 %%%
 
-\input{defs}
+%\input{defs}
 
 %%%
 %%% Misc.
@@ -138,7 +141,7 @@ O \textbf{Aprendizado de Máquina} (ML) complementa essas abordagens ao reduzir 
 %%%
 
 \begin{document}
-
+\listofalgorithms  % <---- Adicione esta linha aqui
  % \input{introduction}
   \input{chapter-1}
   \input{chapter-2}  % Fundamentação teórica
